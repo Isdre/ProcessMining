@@ -39,6 +39,29 @@ def count_nests(process_tree):
 
 W = "->( *( 'NEW', tau ), X( tau, +( X( tau, *( 'BILLED', tau ) ), X( tau, ->( +( X( tau, *( 'DELETE', tau ) ), X( tau, ->( *( X( 'CHANGE DIAGN', 'CHANGE END', ->( X( tau, 'JOIN-PAT', 'SET STATUS' ), X( tau, +( X( tau, *( 'CODE ERROR', tau ) ), ->( X( tau, *( 'RELEASE', tau ) ), X( tau, 'CODE OK', 'MANUAL' ), X( tau, +( X( tau, *( 'CODE NOK', tau ) ), X( tau, ->( X( tau, +( X( tau, *( 'REJECT', tau ) ), X( tau, *( 'STORNO', tau ) ) ) ), X( tau, +( X( tau, *( 'REOPEN', tau ) ), X( tau, 'FIN' ) ) ) ) ) ) ) ) ) ) ) ), tau ), X( tau, 'EMPTY' ) ) ) ), X( tau, 'ZDBC_BEHAN' ) ) ) ) ) )"
 W_prim = count_nests(W)
+print(W_prim)
+
+def find_pattern(): #returns logic_pattern
+    Seq = word.index("->")
+    Loop = word.index("*")
+    And = word.index("+")
+    Xor = word.index("X")
+    sth = [Seq, Loop, And, Xor]
+    number = 0
+    if Seq == min(sth):
+        number = Seq + 3
+    elif Loop == min(sth):
+        number = Loop + 2
+    elif And == min(sth):
+        number = And + 2
+    elif Xor == min(sth):
+        number = Xor + 2
+    else:
+        return word
+
+def create_ZW(W):
+    ZW = None
+    return ZW
 
 sigma = {}
 
