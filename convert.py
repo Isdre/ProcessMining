@@ -41,30 +41,19 @@ W = "->( *( 'NEW', tau ), X( tau, +( X( tau, *( 'BILLED', tau ) ), X( tau, ->( +
 W_prim = count_nests(W)
 print(W_prim)
 
-def find_pattern(): #returns logic_pattern
-    Seq = word.index("->")
-    Loop = word.index("*")
-    And = word.index("+")
-    Xor = word.index("X")
-    sth = [Seq, Loop, And, Xor]
-    number = 0
-    if Seq == min(sth):
-        number = Seq + 3
-    elif Loop == min(sth):
-        number = Loop + 2
-    elif And == min(sth):
-        number = And + 2
-    elif Xor == min(sth):
-        number = Xor + 2
+def calc_consolidated_exp(W,t,sigma):
+    ex = None
+    argType = None
+    if t == 'ini':
+        ex = sigma.W.ini #!!!!!!
+        argType = 'ini'
     else:
-        return word
+        ex = sigma.W.fin #!!!!!
+        argType = 'fin'
 
-def create_ZW(W):
-    ZW = None
-    return ZW
+    for a in W.children:
+        if a.type != argType: continue #!!!!!!!
+        if type(a.children) == list:
+            W.children.replace(a,calc_consolidated_exp(a.children,t,sigma))
 
-sigma = {}
-
-def generate_logic_spec(W,sigma):
-    L = None
-
+    return ex
