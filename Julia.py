@@ -127,8 +127,15 @@ class ProcessTreeAdapter:
 
     @staticmethod
     def extract_arguments_from_labelled_expression(labelled_expression):
-        pattern_label_number = int(labelled_expression[labelled_expression.index("(")+1:labelled_expression.index("]")])
+        #print(labelled_expression[labelled_expression.index("(")+1:labelled_expression.index("]")])
+        pattern_label_number = int(labelled_expression[-2])
         trimmed_labelled_expression = labelled_expression[labelled_expression.index("]") + 1:-3]
+
+        print(labelled_expression)
+        print(trimmed_labelled_expression)
+        print(labelled_expression[-2])
+        print(labelled_expression[labelled_expression.index("(")+1:labelled_expression.index("]")])
+
         split = trimmed_labelled_expression.split(",")
         arguments = []
         brackets_counter = 0
@@ -377,7 +384,12 @@ class WorkflowPattern:
 
         number_of_arguments = workflow_pattern_template.get_number_of_arguments()
         pattern_label_number = int(labelled_expression[-2])
+        #pattern_label_number = int(labelled_expression[labelled_expression.index("(") + 1:labelled_expression.index("]")])
+        print(pattern_label_number)
+        print(labelled_expression[-2])
+        print(labelled_expression[labelled_expression.index("(") + 1:labelled_expression.index("]")])
         trimmed_labelled_expression = labelled_expression[labelled_expression.index("]") + 1:-3]
+
         split = trimmed_labelled_expression.split(",")
         arguments = []
         brackets_counter = 0
@@ -392,6 +404,8 @@ class WorkflowPattern:
                 temp_arg = ""
 
         if len(arguments) != number_of_arguments:
+            print(labelled_expression)
+            print(pattern_label_number)
             raise Exception(f"Found arguments ({arguments}) different from the required number ({number_of_arguments})")
         return arguments
 
@@ -507,6 +521,9 @@ class GeneratingLogicalSpecifications:
         workflow_name = re.split(r",", split_by_bracket[-1])[-1]
         workflow_exp = workflow_name + f"({l}]" + pattern_content + f"[{l})"
         return WorkflowPattern.get_workflow_pattern_from_expression(workflow_exp, pattern_property_set)
+
+pattern_rules= "approved_patterns.json"
+ltl_pattern_property_set = WorkflowPatternTemplate.load_pattern_property_set(pattern_rules)
 
 def get_results(pattern_expression):
     print(pattern_expression)
