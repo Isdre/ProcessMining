@@ -28,5 +28,5 @@ def convert_all_to_tptp(rules):
 tptp_output = convert_all_to_tptp(rules)
 
 # Zapisz do pliku
-with open("converted_rules.tptp", "w") as file:
+with open("problem.p", "w") as file:
     file.write(tptp_output)
