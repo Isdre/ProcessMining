@@ -43,31 +43,37 @@ def convert_to_tptp(logic_statements):
             cleaned_statement = copy_statement[:x.end()+1]
             X.append(x.group(0)[2:-3])
             while len(X) > 0:
-                copy_statement = copy_statement[x.end():]
-                print(copy_statement)
-                print(X)
+                copy_statement = copy_statement[x.end()+1:]
+                # print(copy_statement)
                 x = re.search("[a-z_A-Z0-9]+", copy_statement)
-                print(x)
+                # print(x)
                 if x is None: break
-                for i in range(x.start(0)):
+                for i in range(1,x.start(0)):
                     if copy_statement[i] == ")" and len(X) > 0:
                         X.pop()
 
                 if x.group(0)[0] == "X":
                     x = re.search("\[X[0-9]+]: ",copy_statement)
                     X.append(x.group(0)[2:-3])
-                    cleaned_statement += copy_statement[:x.end()]
+                    cleaned_statement += copy_statement[:x.end()+1]
                 else:
-                    print()
-                    cleaned_statement += copy_statement[:x.end()] + f"(X{X[-1]})"
+                    # print(copy_statement[:x.end()])
+                    # print(X)
+                    cleaned_statement += copy_statement[:x.end()] + f"(X{X[-1]})" + copy_statement[x.end()]
+                # print(cleaned_statement)
+                # print()
 
             brackets_bilans = 0
             for c in cleaned_statement:
                 if c == "(": brackets_bilans += 1
-                elif c == ")": brackets_bilans -= 1
+                elif c == ")":
+                    brackets_bilans -= 1
+                    if brackets_bilans < 0: brackets_bilans = 0
             for i in range(brackets_bilans):
                 cleaned_statement += ")"
 
+
+        cleaned_statement = cleaned_statement.replace("^","&")
 
         tptp_line = tptp_prefix + cleaned_statement + ")"
 
