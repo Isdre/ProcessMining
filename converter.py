@@ -75,7 +75,7 @@ def convert_to_tptp(logic_statements):
 
         cleaned_statement = cleaned_statement.replace("^","&")
 
-        tptp_line = tptp_prefix + cleaned_statement + ")"
+        tptp_line = tptp_prefix + cleaned_statement + ")."
 
 
         tptp_lines.append(tptp_line)
