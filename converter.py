@@ -59,7 +59,9 @@ def convert_to_tptp(logic_statements):
                 else:
                     # print(copy_statement[:x.end()])
                     # print(X)
-                    cleaned_statement += copy_statement[:x.end()] + f"(X{X[-1]})" + copy_statement[x.end()]
+                    cleaned_statement += copy_statement[:x.start()]
+                    cleaned_statement += (copy_statement[x.start():x.end()]).lower()
+                    cleaned_statement += f"(X{X[-1]})" + copy_statement[x.end()]
                 # print(cleaned_statement)
                 # print()
 
