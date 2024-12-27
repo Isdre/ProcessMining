@@ -1,1 +1,1 @@
-ForAll((a2_s) => (Exist(Inform_User) ^ Exist(x3_s | x3_e)))
+ForAll(~((l_s | Repair_Simple) ^ (x3_e)))

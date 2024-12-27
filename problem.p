@@ -1,1 +1,1 @@
-fof(rule_1, axiom, ![X1]:((a2_s(X1) => (?[X0]:(Inform_User(X0) ^ ?[X2]:(x3_s(X2)| x3_e(X2))
+fof(rule_1, axiom, ![X1]: (((a2_s(X1)) => (?[X0]: (Inform_User(X0)) ^ ?[X2]: (x3_s(X2) | x3_e(X2))))))
