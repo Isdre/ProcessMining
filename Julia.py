@@ -1,3 +1,4 @@
+from typing import List
 import pandas as pd
 import os
 import pm4py
@@ -16,87 +17,91 @@ from datetime import datetime
 
 def draw_graph(log):
 
-  log['trace'] = [trace.split(';') for trace in  log['Activity']]
+    log['trace'] = [trace.split(';') for trace in log['Activity']]
 
-  w_net = dict()
-  ev_start_set = set()
-  ev_end_set = set()
-  for index, row in log[['trace','count']].iterrows():
-    if row['trace'][0] not in ev_start_set:
-      ev_start_set.add(row['trace'][0])
-    if row['trace'][-1] not in ev_end_set:
-      ev_end_set.add(row['trace'][-1])
-    for ev_i, ev_j in pairwise(row['trace']):
-      if ev_i not in w_net.keys():
-        w_net[ev_i] = Counter()
-      w_net[ev_i][ev_j] += row['count']
+    w_net = dict()
+    ev_start_set = set()
+    ev_end_set = set()
+    for index, row in log[['trace', 'count']].iterrows():
+        if row['trace'][0] not in ev_start_set:
+            ev_start_set.add(row['trace'][0])
+        if row['trace'][-1] not in ev_end_set:
+            ev_end_set.add(row['trace'][-1])
+        for ev_i, ev_j in pairwise(row['trace']):
+            if ev_i not in w_net.keys():
+                w_net[ev_i] = Counter()
+            w_net[ev_i][ev_j] += row['count']
 
-  G = pgv.AGraph(strict=False, directed=True)
-  G.graph_attr['rankdir'] = 'LR'
-  G.node_attr['shape'] = 'Mrecord'
-  for event, succesors in w_net.items():
-    G.add_node(event, style="rounded,filled", fillcolor="#ffffcc")
-    G.add_edges_from([(event, sc) for sc in succesors])
-  G.draw('simple_heuristic_net.png', prog='dot')
-  display(Image('simple_heuristic_net.png'))
+    G = pgv.AGraph(strict=False, directed=True)
+    G.graph_attr['rankdir'] = 'LR'
+    G.node_attr['shape'] = 'Mrecord'
+    for event, succesors in w_net.items():
+        G.add_node(event, style="rounded,filled", fillcolor="#ffffcc")
+        G.add_edges_from([(event, sc) for sc in succesors])
+    G.draw('simple_heuristic_net.png', prog='dot')
+    display(Image('simple_heuristic_net.png'))
+
 
 def draw_graph(dfs, case_id, timestamp, activity):
-  ev_counter = dfs.Activity.value_counts()
-  dfs = (dfs
-      .sort_values(by=[case_id, timestamp])
-      .groupby([case_id])
-      .agg({activity: ';'.join})
-  )
-  dfs['count'] = 0
-  dfs = (
-      dfs.groupby(activity, as_index=False).count()
-      .sort_values(['count'], ascending=False)
-      .reset_index(drop=True)
-  )
-  dfs['trace'] = [trace.split(';') for trace in dfs[activity]]
+    ev_counter = dfs.Activity.value_counts()
+    dfs = (dfs
+           .sort_values(by=[case_id, timestamp])
+           .groupby([case_id])
+           .agg({activity: ';'.join})
+           )
+    dfs['count'] = 0
+    dfs = (
+        dfs.groupby(activity, as_index=False).count()
+        .sort_values(['count'], ascending=False)
+        .reset_index(drop=True)
+    )
+    dfs['trace'] = [trace.split(';') for trace in dfs[activity]]
 
-  w_net = dict()
-  ev_start_set = set()
-  ev_end_set = set()
-  for index, row in dfs[['trace','count']].iterrows():
-      if row['trace'][0] not in ev_start_set:
-          ev_start_set.add(row['trace'][0])
-      if row['trace'][-1] not in ev_end_set:
-          ev_end_set.add(row['trace'][-1])
-      for ev_i, ev_j in pairwise(row['trace']):
-          if ev_i not in w_net.keys():
-              w_net[ev_i] = Counter()
-          w_net[ev_i][ev_j] += row['count']
+    w_net = dict()
+    ev_start_set = set()
+    ev_end_set = set()
+    for index, row in dfs[['trace', 'count']].iterrows():
+        if row['trace'][0] not in ev_start_set:
+            ev_start_set.add(row['trace'][0])
+        if row['trace'][-1] not in ev_end_set:
+            ev_end_set.add(row['trace'][-1])
+        for ev_i, ev_j in pairwise(row['trace']):
+            if ev_i not in w_net.keys():
+                w_net[ev_i] = Counter()
+            w_net[ev_i][ev_j] += row['count']
 
-  trace_counts = sorted(chain(*[c.values() for c in w_net.values()]))
-  trace_min = trace_counts[0]
-  trace_max = trace_counts[-1]
-  color_min = ev_counter.min()
-  color_max = ev_counter.max()
+    trace_counts = sorted(chain(*[c.values() for c in w_net.values()]))
+    trace_min = trace_counts[0]
+    trace_max = trace_counts[-1]
+    color_min = ev_counter.min()
+    color_max = ev_counter.max()
 
-  G = pgv.AGraph(strict= False, directed=True)
-  G.graph_attr['rankdir'] = 'LR'
-  G.node_attr['shape'] = 'Mrecord'
+    G = pgv.AGraph(strict=False, directed=True)
+    G.graph_attr['rankdir'] = 'LR'
+    G.node_attr['shape'] = 'Mrecord'
 
-  G.add_node("start", shape="circle", label="")
-  for ev_start in ev_start_set:
-    G.add_edge("start", ev_start)
+    G.add_node("start", shape="circle", label="")
+    for ev_start in ev_start_set:
+        G.add_edge("start", ev_start)
 
-  for event, succesors in w_net.items():
-    value = ev_counter[event]
-    color = int(float(color_min-value)/float(color_min-color_max)*100.00)
-    label = str(event) + ": " + str(ev_counter[event])
-    my_color = "#ff9933"+str(hex(color))[2:]
-    G.add_node(event, style="rounded,filled", fillcolor=my_color, label=label)
-    for succesor, cnt in succesors.items():
-      G.add_edge(event, succesor, penwidth=4*cnt/(trace_max-trace_min)+0.1, label=cnt)
+    for event, succesors in w_net.items():
+        value = ev_counter[event]
+        color = int(float(color_min-value)/float(color_min-color_max)*100.00)
+        label = str(event) + ": " + str(ev_counter[event])
+        my_color = "#ff9933"+str(hex(color))[2:]
+        G.add_node(event, style="rounded,filled",
+                   fillcolor=my_color, label=label)
+        for succesor, cnt in succesors.items():
+            G.add_edge(event, succesor, penwidth=4*cnt /
+                       (trace_max-trace_min)+0.1, label=cnt)
 
-  G.add_node("end", shape="circle", label="", penwidth='3')
-  for ev_end in ev_end_set:
-    G.add_edge(ev_end, "end")
+    G.add_node("end", shape="circle", label="", penwidth='3')
+    for ev_end in ev_end_set:
+        G.add_edge(ev_end, "end")
 
-  G.draw('simple_heuristic_net_with_events.png', prog='dot')
-  display(Image('simple_heuristic_net_with_events.png'))
+    G.draw('simple_heuristic_net_with_events.png', prog='dot')
+    display(Image('simple_heuristic_net_with_events.png'))
+
 
 class ProcessTreeAdapter:
 
@@ -127,14 +132,16 @@ class ProcessTreeAdapter:
 
     @staticmethod
     def extract_arguments_from_labelled_expression(labelled_expression):
-        #print(labelled_expression[labelled_expression.index("(")+1:labelled_expression.index("]")])
+        # print(labelled_expression[labelled_expression.index("(")+1:labelled_expression.index("]")])
         pattern_label_number = int(labelled_expression[-2])
-        trimmed_labelled_expression = labelled_expression[labelled_expression.index("]") + 1:-3]
+        trimmed_labelled_expression = labelled_expression[labelled_expression.index(
+            "]") + 1:-3]
 
         print(labelled_expression)
         print(trimmed_labelled_expression)
         print(labelled_expression[-2])
-        print(labelled_expression[labelled_expression.index("(")+1:labelled_expression.index("]")])
+        print(labelled_expression[labelled_expression.index(
+            "(")+1:labelled_expression.index("]")])
 
         split = trimmed_labelled_expression.split(",")
         arguments = []
@@ -173,7 +180,8 @@ class ProcessTreeAdapter:
     def replace_symbol_with_name(labelled_pattern_expression, pattern_label_number, old_symbol, new_name):
         pattern = rf"{re.escape(old_symbol)}\(({pattern_label_number}\])"
         new_name = new_name + "(" + str(pattern_label_number) + "]"
-        replaced_string = re.sub(pattern, new_name, labelled_pattern_expression)
+        replaced_string = re.sub(
+            pattern, new_name, labelled_pattern_expression)
 
         return replaced_string
 
@@ -194,6 +202,7 @@ class ProcessTreeAdapter:
                 sb += c
         return maxLabel
 
+
 class Sequence:
     @staticmethod
     def change_symbol_into_name(labelled_expression):
@@ -211,25 +220,30 @@ class Sequence:
             raise Exception("pattern does not exist")
         return pattern_name
 
+
 class Loop:
     @staticmethod
     def change_symbol_into_name(labelled_expression, pattern_label_number):
         pattern_symbol = '*'
         pattern_name = 'Loop'
-        labelled_expression_to_replace = "(" + str(pattern_label_number) + "]" + ",".join(labelled_expression) + "[" + str(pattern_label_number) + ")"
+        labelled_expression_to_replace = "(" + str(pattern_label_number) + "]" + ",".join(
+            labelled_expression) + "[" + str(pattern_label_number) + ")"
         if len(labelled_expression) == 2:
             labelled_expression = ['l_s'] + labelled_expression
         else:
             raise Exception("pattern does not exist")
-        new_labelled_expression = "(" + str(pattern_label_number) + "]" + ",".join(labelled_expression) + "[" + str(pattern_label_number) + ")"
+        new_labelled_expression = "(" + str(pattern_label_number) + "]" + ",".join(
+            labelled_expression) + "[" + str(pattern_label_number) + ")"
         return pattern_name, labelled_expression_to_replace, new_labelled_expression
+
 
 class ExclusiveChoice:
     @staticmethod
     def change_symbol_into_name(labelled_expression, pattern_label_number):
         pattern_symbol = 'X'
         pattern_name = 'Xor'
-        labelled_expression_to_replace = "(" + str(pattern_label_number) + "]" + ",".join(labelled_expression) + "[" + str(pattern_label_number) + ")"
+        labelled_expression_to_replace = "(" + str(pattern_label_number) + "]" + ",".join(
+            labelled_expression) + "[" + str(pattern_label_number) + ")"
         if len(labelled_expression) == 2:
             pattern_name = 'Xor2'
             labelled_expression = ['x2_s'] + labelled_expression + ['x2_e']
@@ -238,15 +252,18 @@ class ExclusiveChoice:
             labelled_expression = ['x3_s'] + labelled_expression + ['x3_e']
         else:
             raise Exception("pattern does not exist")
-        new_labelled_expression = "(" + str(pattern_label_number) + "]" + ",".join(labelled_expression) + "[" + str(pattern_label_number) + ")"
+        new_labelled_expression = "(" + str(pattern_label_number) + "]" + ",".join(
+            labelled_expression) + "[" + str(pattern_label_number) + ")"
         return pattern_name, labelled_expression_to_replace, new_labelled_expression
+
 
 class Parallelism:
     @staticmethod
     def change_symbol_into_name(labelled_expression, pattern_label_number):
         pattern_symbol = '+'
         pattern_name = 'And'
-        labelled_expression_to_replace = "(" + str(pattern_label_number) + "]" + ",".join(labelled_expression) + "[" + str(pattern_label_number) + ")"
+        labelled_expression_to_replace = "(" + str(pattern_label_number) + "]" + ",".join(
+            labelled_expression) + "[" + str(pattern_label_number) + ")"
         if len(labelled_expression) == 2:
             pattern_name = 'And2'
             labelled_expression = ['a2_s'] + labelled_expression + ['a2_e']
@@ -255,50 +272,64 @@ class Parallelism:
             labelled_expression = ['a3_s'] + labelled_expression + ['a3_e']
         else:
             raise Exception("pattern does not exist")
-        new_labelled_expression = "(" + str(pattern_label_number) + "]" + ",".join(labelled_expression) + "[" + str(pattern_label_number) + ")"
+        new_labelled_expression = "(" + str(pattern_label_number) + "]" + ",".join(
+            labelled_expression) + "[" + str(pattern_label_number) + ")"
         return pattern_name, labelled_expression_to_replace, new_labelled_expression
+
 
 class PatternExpressionGenerator:
     def __init__(self, converted_expression):
         self.converted_expression = converted_expression
 
     def add_approved_workflow_patterns(self, expression):
-          if expression == None or isinstance(expression , list):
+        if expression == None or isinstance(expression, list):
             return
 
-          symbol = ProcessTreeAdapter.find_symbol(expression)
-          pattern = r'>|X|\+|\*'
-          matches = re.findall(pattern, expression)
+        symbol = ProcessTreeAdapter.find_symbol(expression)
+        pattern = r'>|X|\+|\*'
+        matches = re.findall(pattern, expression)
 
-          if (len(matches) != 0):
-            arguments = ProcessTreeAdapter.extract_arguments_from_labelled_expression(expression)
+        if (len(matches) != 0):
+            arguments = ProcessTreeAdapter.extract_arguments_from_labelled_expression(
+                expression)
             expression = arguments[0]
             pattern_label_number = arguments[1]
             if symbol == '>':
                 new_name = Sequence.change_symbol_into_name(expression)
-                self.converted_expression = ProcessTreeAdapter.replace_symbol_with_name(self.converted_expression, pattern_label_number, symbol, new_name)
+                self.converted_expression = ProcessTreeAdapter.replace_symbol_with_name(
+                    self.converted_expression, pattern_label_number, symbol, new_name)
             elif symbol == '*':
-                new_name = Loop.change_symbol_into_name(expression, pattern_label_number)
-                self.converted_expression = ProcessTreeAdapter.replace_symbol_with_name(self.converted_expression, pattern_label_number, symbol, new_name[0])
+                new_name = Loop.change_symbol_into_name(
+                    expression, pattern_label_number)
+                self.converted_expression = ProcessTreeAdapter.replace_symbol_with_name(
+                    self.converted_expression, pattern_label_number, symbol, new_name[0])
                 expression_to_replace = self.converted_expression
-                self.converted_expression = expression_to_replace.replace(new_name[1], new_name[2])
+                self.converted_expression = expression_to_replace.replace(
+                    new_name[1], new_name[2])
             elif symbol == '+':
-                new_name = Parallelism.change_symbol_into_name(expression, pattern_label_number)
-                self.converted_expression = ProcessTreeAdapter.replace_symbol_with_name(self.converted_expression, pattern_label_number, symbol, new_name[0])
+                new_name = Parallelism.change_symbol_into_name(
+                    expression, pattern_label_number)
+                self.converted_expression = ProcessTreeAdapter.replace_symbol_with_name(
+                    self.converted_expression, pattern_label_number, symbol, new_name[0])
 
                 expression_to_replace = self.converted_expression
-                self.converted_expression = expression_to_replace.replace(new_name[1], new_name[2])
+                self.converted_expression = expression_to_replace.replace(
+                    new_name[1], new_name[2])
             elif symbol == 'X':
-                new_name = ExclusiveChoice.change_symbol_into_name(expression, pattern_label_number)
-                self.converted_expression = ProcessTreeAdapter.replace_symbol_with_name(self.converted_expression, pattern_label_number, symbol, new_name[0])
+                new_name = ExclusiveChoice.change_symbol_into_name(
+                    expression, pattern_label_number)
+                self.converted_expression = ProcessTreeAdapter.replace_symbol_with_name(
+                    self.converted_expression, pattern_label_number, symbol, new_name[0])
                 expression_to_replace = self.converted_expression
-                self.converted_expression = expression_to_replace.replace(new_name[1], new_name[2])
+                self.converted_expression = expression_to_replace.replace(
+                    new_name[1], new_name[2])
             else:
                 raise Exception("pattern does not exist")
-          return expression
+        return expression
 
     def get_converted_expression(self):
         return self.converted_expression
+
 
 def process_patterns(pattern_list, instance):
     new_pattern_list = []
@@ -309,6 +340,7 @@ def process_patterns(pattern_list, instance):
         new_pattern_list.append(new_pattern)
     return new_pattern_list
 
+
 def recursive_process(pattern_list, instance, depth):
     if depth <= 0:
         return pattern_list
@@ -316,13 +348,17 @@ def recursive_process(pattern_list, instance, depth):
         pattern_list = process_patterns(pattern_list, instance)
         return recursive_process(pattern_list, instance, depth - 1)
 
+
 def get_pattern_expression(labelled_pattern_expression):
     pattern_list = []
     pattern_list.append(labelled_pattern_expression)
-    pattern_expression_generator = PatternExpressionGenerator(labelled_pattern_expression)
-    recursive_process(pattern_list, pattern_expression_generator, ProcessTreeAdapter.get_highest_label(labelled_pattern_expression))
+    pattern_expression_generator = PatternExpressionGenerator(
+        labelled_pattern_expression)
+    recursive_process(pattern_list, pattern_expression_generator,
+                      ProcessTreeAdapter.get_highest_label(labelled_pattern_expression))
 
     return pattern_expression_generator.get_converted_expression()
+
 
 class WorkflowPatternTemplate:
     def __init__(self, name, number_of_arguments, rules):
@@ -338,7 +374,8 @@ class WorkflowPatternTemplate:
             for workflow_pattern_template_name, pattern_descr_json_object in data.items():
                 number_of_arguments = pattern_descr_json_object["number of args"]
                 rules = pattern_descr_json_object["rules"]
-                workflow_pattern_template = WorkflowPatternTemplate(workflow_pattern_template_name, number_of_arguments, rules)
+                workflow_pattern_template = WorkflowPatternTemplate(
+                    workflow_pattern_template_name, number_of_arguments, rules)
                 pattern_property_set.append(workflow_pattern_template)
             return pattern_property_set
 
@@ -360,6 +397,7 @@ class WorkflowPatternTemplate:
     def set_rules(self, rules):
         self.rules = rules
 
+
 class WorkflowPattern:
     def __init__(self, workflow_pattern_template, pattern_arguments):
         self.workflow_pattern_template = workflow_pattern_template
@@ -368,27 +406,32 @@ class WorkflowPattern:
     @staticmethod
     def get_workflow_pattern_from_expression(pattern_expression, pattern_property_set):
         workflow_name = pattern_expression[:pattern_expression.index("(")]
-        workflow_pattern_template = next((template for template in pattern_property_set if template.get_name() == workflow_name), None)
+        workflow_pattern_template = next(
+            (template for template in pattern_property_set if template.get_name() == workflow_name), None)
 
         if workflow_pattern_template is None:
             raise Exception("Workflow pattern template not found!")
-        pattern_arguments = WorkflowPattern.extract_arguments_from_labelled_expression(pattern_expression, pattern_property_set)
+        pattern_arguments = WorkflowPattern.extract_arguments_from_labelled_expression(
+            pattern_expression, pattern_property_set)
         return WorkflowPattern(workflow_pattern_template, pattern_arguments)
 
     @staticmethod
     def extract_arguments_from_labelled_expression(labelled_expression, pattern_property_set):
         workflow_name = labelled_expression[:labelled_expression.index("(")]
-        workflow_pattern_template = next((template for template in pattern_property_set if template.get_name() == workflow_name), None)
+        workflow_pattern_template = next(
+            (template for template in pattern_property_set if template.get_name() == workflow_name), None)
         if workflow_pattern_template is None:
             raise Exception("Workflow pattern template not found!")
 
         number_of_arguments = workflow_pattern_template.get_number_of_arguments()
         pattern_label_number = int(labelled_expression[-2])
-        #pattern_label_number = int(labelled_expression[labelled_expression.index("(") + 1:labelled_expression.index("]")])
+        # pattern_label_number = int(labelled_expression[labelled_expression.index("(") + 1:labelled_expression.index("]")])
         print(pattern_label_number)
         print(labelled_expression[-2])
-        print(labelled_expression[labelled_expression.index("(") + 1:labelled_expression.index("]")])
-        trimmed_labelled_expression = labelled_expression[labelled_expression.index("]") + 1:-3]
+        print(labelled_expression[labelled_expression.index(
+            "(") + 1:labelled_expression.index("]")])
+        trimmed_labelled_expression = labelled_expression[labelled_expression.index(
+            "]") + 1:-3]
 
         split = trimmed_labelled_expression.split(",")
         arguments = []
@@ -406,7 +449,8 @@ class WorkflowPattern:
         if len(arguments) != number_of_arguments:
             print(labelled_expression)
             print(pattern_label_number)
-            raise Exception(f"Found arguments ({arguments}) different from the required number ({number_of_arguments})")
+            raise Exception(f"Found arguments ({
+                            arguments}) different from the required number ({number_of_arguments})")
         return arguments
 
     @staticmethod
@@ -429,11 +473,13 @@ class WorkflowPattern:
             for outcome in self.workflow_pattern_template.get_rules():
                 outcome_with_params = outcome
                 for i, arg in enumerate(self.pattern_arguments):
-                    outcome_with_params = outcome_with_params.replace("arg" + str(i), arg)
+                    outcome_with_params = outcome_with_params.replace(
+                        "arg" + str(i), arg)
                 outcomes.append(outcome_with_params)
             return outcomes
         else:
-            raise Exception("No arguments for the given pattern in the expression")
+            raise Exception(
+                "No arguments for the given pattern in the expression")
 
     def get_pattern_arguments(self):
         return self.pattern_arguments
@@ -441,7 +487,6 @@ class WorkflowPattern:
     def set_pattern_arguments(self, pattern_arguments):
         self.pattern_arguments = pattern_arguments
 
-from typing import List
 
 class CalculatingConsolidatedExpression:
 
@@ -452,7 +497,8 @@ class CalculatingConsolidatedExpression:
             raise Exception("type must equal 'ini' or 'fin'!")
 
         ex = ""
-        workflow_pattern = WorkflowPattern.get_workflow_pattern_from_expression(pattern_expression, pattern_property_set)
+        workflow_pattern = WorkflowPattern.get_workflow_pattern_from_expression(
+            pattern_expression, pattern_property_set)
         rules_with_atomic_activities = workflow_pattern.get_workflow_pattern_filled_rules()
         ini = rules_with_atomic_activities[0]
         fin = rules_with_atomic_activities[1]
@@ -463,17 +509,16 @@ class CalculatingConsolidatedExpression:
         else:
             ex = fin
 
-        expression_arguments = WorkflowPattern.extract_arguments_from_labelled_expression(pattern_expression, pattern_property_set)
+        expression_arguments = WorkflowPattern.extract_arguments_from_labelled_expression(
+            pattern_expression, pattern_property_set)
         for argument in expression_arguments:
             if WorkflowPattern.is_not_atomic(argument):
-                inner_consolidated_expression = CalculatingConsolidatedExpression.generate_consolidated_expression(argument, expression_type, pattern_property_set)
+                inner_consolidated_expression = CalculatingConsolidatedExpression.generate_consolidated_expression(
+                    argument, expression_type, pattern_property_set)
 
                 ex = ex.replace(argument, inner_consolidated_expression)
         return ex
 
-from typing import List
-import re
-from collections import Counter
 
 class GeneratingLogicalSpecifications:
 
@@ -481,21 +526,26 @@ class GeneratingLogicalSpecifications:
     def generate_logical_specifications(pattern_expression: str, pattern_property_set: List[WorkflowPatternTemplate]) -> str:
         logical_specification = []
         labelled_expression = pattern_expression
-        highest_label_number = ProcessTreeAdapter.get_highest_label(labelled_expression)
+        highest_label_number = ProcessTreeAdapter.get_highest_label(
+            labelled_expression)
         for l in range(highest_label_number, 0, -1):
             c = 1
-            pat = GeneratingLogicalSpecifications.get_pat(labelled_expression, l, c, pattern_property_set)
+            pat = GeneratingLogicalSpecifications.get_pat(
+                labelled_expression, l, c, pattern_property_set)
             while pat is not None:
                 L2 = pat.get_workflow_pattern_filled_rules()
                 L2 = L2[2:]
                 for arg in pat.get_pattern_arguments():
                     if WorkflowPattern.is_not_atomic(arg):
-                        cons = CalculatingConsolidatedExpression.generate_consolidated_expression(arg, "ini", pattern_property_set) + " | " + CalculatingConsolidatedExpression.generate_consolidated_expression(arg, "fin", pattern_property_set)
-                        L2_cons = [outcome.replace(arg, cons) for outcome in L2]
+                        cons = CalculatingConsolidatedExpression.generate_consolidated_expression(
+                            arg, "ini", pattern_property_set) + " | " + CalculatingConsolidatedExpression.generate_consolidated_expression(arg, "fin", pattern_property_set)
+                        L2_cons = [outcome.replace(arg, cons)
+                                   for outcome in L2]
                         L2 = L2_cons
                 c += 1
                 logical_specification.extend(L2)
-                pat = GeneratingLogicalSpecifications.get_pat(labelled_expression, l, c, pattern_property_set)
+                pat = GeneratingLogicalSpecifications.get_pat(
+                    labelled_expression, l, c, pattern_property_set)
 
         logical_specification = list(set(logical_specification))
         connected_string = ""
@@ -516,21 +566,28 @@ class GeneratingLogicalSpecifications:
             return None
 
         expression_split_by_entry = re.split(rf"\({l}\]", labelled_expression)
-        pattern_content = re.split(rf"\[{l}\)", expression_split_by_entry[c])[0]
+        pattern_content = re.split(
+            rf"\[{l}\)", expression_split_by_entry[c])[0]
         split_by_bracket = re.split(r"\]", expression_split_by_entry[c - 1])
         workflow_name = re.split(r",", split_by_bracket[-1])[-1]
         workflow_exp = workflow_name + f"({l}]" + pattern_content + f"[{l})"
         return WorkflowPattern.get_workflow_pattern_from_expression(workflow_exp, pattern_property_set)
 
-pattern_rules= "approved_patterns.json"
-ltl_pattern_property_set = WorkflowPatternTemplate.load_pattern_property_set(pattern_rules)
+
+pattern_rules = "approved_patterns.json"
+ltl_pattern_property_set = WorkflowPatternTemplate.load_pattern_property_set(
+    pattern_rules)
+
 
 def get_results(pattern_expression):
     print(pattern_expression)
 
-    ini = CalculatingConsolidatedExpression.generate_consolidated_expression(pattern_expression.replace(" ", ""), "ini", ltl_pattern_property_set)
+    ini = CalculatingConsolidatedExpression.generate_consolidated_expression(
+        pattern_expression.replace(" ", ""), "ini", ltl_pattern_property_set)
     print("ini: " + ini)
-    fin = CalculatingConsolidatedExpression.generate_consolidated_expression(pattern_expression.replace(" ", ""), "fin", ltl_pattern_property_set)
+    fin = CalculatingConsolidatedExpression.generate_consolidated_expression(
+        pattern_expression.replace(" ", ""), "fin", ltl_pattern_property_set)
     print("fin: " + fin)
 
-    GeneratingLogicalSpecifications.generate_logical_specifications(pattern_expression.replace(" ", ""), ltl_pattern_property_set)
+    GeneratingLogicalSpecifications.generate_logical_specifications(
+        pattern_expression.replace(" ", ""), ltl_pattern_property_set)
