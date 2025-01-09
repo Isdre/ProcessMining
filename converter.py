@@ -37,7 +37,7 @@ def convert_to_tptp(logic_statements):
         copy_statement = cleaned_statement
 
         X = []
-        x = re.search("\[X[0-9]+]: ",copy_statement)
+        x = re.search("[X[0-9]+]: ",copy_statement)
 
         if x:
             cleaned_statement = copy_statement[:x.end()+1]
@@ -53,7 +53,7 @@ def convert_to_tptp(logic_statements):
                         X.pop()
 
                 if x.group(0)[0] == "X":
-                    x = re.search("\[X[0-9]+]: ",copy_statement)
+                    x = re.search("[X[0-9]+]: ",copy_statement)
                     X.append(x.group(0)[2:-3])
                     cleaned_statement += copy_statement[:x.end()+1]
                 else:
