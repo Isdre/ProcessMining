@@ -133,6 +133,8 @@ class ProcessTreeAdapter:
     @staticmethod
     def extract_arguments_from_labelled_expression(labelled_expression):
         # print(labelled_expression[labelled_expression.index("(")+1:labelled_expression.index("]")])
+        if labelled_expression[-2] == ")":
+            print(labelled_expression)
         pattern_label_number = int(labelled_expression[-2])
         trimmed_labelled_expression = labelled_expression[labelled_expression.index(
             "]") + 1:-3]
@@ -551,7 +553,7 @@ class GeneratingLogicalSpecifications:
         connected_string = ""
         print("\nWynik: ")
         for l_value in logical_specification:
-            connected_string += l_value + ", "
+            connected_string += l_value + "\n"
             print(l_value)
         return connected_string
 
@@ -589,5 +591,39 @@ def get_results(pattern_expression):
         pattern_expression.replace(" ", ""), "fin", ltl_pattern_property_set)
     print("fin: " + fin)
 
-    GeneratingLogicalSpecifications.generate_logical_specifications(
+    return GeneratingLogicalSpecifications.generate_logical_specifications(
         pattern_expression.replace(" ", ""), ltl_pattern_property_set)
+
+
+if __name__ == "__main__":
+    # Load the logs
+    # ----------------------------------------------
+    # log_1 = pm4py.read_xes("Hospital Billing - Event Log.xes")
+    # ----------------------------------------------
+    log_1 = pm4py.format_dataframe(pd.read_csv(
+        "repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
+    # ----------------------------------------------
+
+
+    # Discover process trees using Inductive Miner
+    process_tree_1 = pm4py.discover_process_tree_inductive(
+        log_1, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
+    
+    # Convert process trees to strings
+    W1 = str(process_tree_1)
+
+    # Process the strings to remove brackets and replace spaces
+    W1 = ProcessTreeAdapter.remove_brackets_between_single_quotes(W1)
+    W1 = ProcessTreeAdapter.replace_spaces_with_underscore(W1)
+    W1 = W1.replace("( ", "(").replace(") ", ")").replace(" )", ")").replace("->", ">")
+
+    # Label the expressions
+    labelled_pattern_expression1 = ProcessTreeAdapter.label_expressions(W1)
+
+    # Get pattern expressions
+    pattern_expression1 = get_pattern_expression(labelled_pattern_expression1)
+
+    # Get results
+    results = get_results(pattern_expression1)
+    with open("problem.txt", "w") as f:
+        f.write(results)
