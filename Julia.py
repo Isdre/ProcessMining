@@ -1,106 +1,105 @@
 from typing import List
+from datetime import datetime
+from IPython.display import Image, display
+import pygraphviz as pgv
+from collections import Counter
+from more_itertools import pairwise
+from itertools import chain
+from itertools import groupby
+from functools import reduce
+import json
+import re
 import pandas as pd
 import os
 import pm4py
-import re
-import json
-
-from functools import reduce
-from itertools import groupby
-from itertools import chain
-from more_itertools import pairwise
-from collections import Counter
-import pygraphviz as pgv
-from IPython.display import Image, display
-from datetime import datetime
+os.environ["PATH"] += os.pathsep + r"C:\Program Files\Graphviz\bin"
 
 
 def draw_graph(log):
 
-    log['trace'] = [trace.split(';') for trace in log['Activity']]
+  log['trace'] = [trace.split(';') for trace in log['Activity']]
 
-    w_net = dict()
-    ev_start_set = set()
-    ev_end_set = set()
-    for index, row in log[['trace', 'count']].iterrows():
-        if row['trace'][0] not in ev_start_set:
-            ev_start_set.add(row['trace'][0])
-        if row['trace'][-1] not in ev_end_set:
-            ev_end_set.add(row['trace'][-1])
-        for ev_i, ev_j in pairwise(row['trace']):
-            if ev_i not in w_net.keys():
-                w_net[ev_i] = Counter()
-            w_net[ev_i][ev_j] += row['count']
+  w_net = dict()
+  ev_start_set = set()
+  ev_end_set = set()
+  for index, row in log[['trace', 'count']].iterrows():
+    if row['trace'][0] not in ev_start_set:
+      ev_start_set.add(row['trace'][0])
+    if row['trace'][-1] not in ev_end_set:
+      ev_end_set.add(row['trace'][-1])
+    for ev_i, ev_j in pairwise(row['trace']):
+      if ev_i not in w_net.keys():
+        w_net[ev_i] = Counter()
+      w_net[ev_i][ev_j] += row['count']
 
-    G = pgv.AGraph(strict=False, directed=True)
-    G.graph_attr['rankdir'] = 'LR'
-    G.node_attr['shape'] = 'Mrecord'
-    for event, succesors in w_net.items():
-        G.add_node(event, style="rounded,filled", fillcolor="#ffffcc")
-        G.add_edges_from([(event, sc) for sc in succesors])
-    G.draw('simple_heuristic_net.png', prog='dot')
-    display(Image('simple_heuristic_net.png'))
+  G = pgv.AGraph(strict=False, directed=True)
+  G.graph_attr['rankdir'] = 'LR'
+  G.node_attr['shape'] = 'Mrecord'
+  for event, succesors in w_net.items():
+    G.add_node(event, style="rounded,filled", fillcolor="#ffffcc")
+    G.add_edges_from([(event, sc) for sc in succesors])
+  G.draw('simple_heuristic_net.png', prog='dot')
+  display(Image('simple_heuristic_net.png'))
 
 
 def draw_graph(dfs, case_id, timestamp, activity):
-    ev_counter = dfs.Activity.value_counts()
-    dfs = (dfs
-           .sort_values(by=[case_id, timestamp])
-           .groupby([case_id])
-           .agg({activity: ';'.join})
-           )
-    dfs['count'] = 0
-    dfs = (
-        dfs.groupby(activity, as_index=False).count()
-        .sort_values(['count'], ascending=False)
-        .reset_index(drop=True)
-    )
-    dfs['trace'] = [trace.split(';') for trace in dfs[activity]]
+  ev_counter = dfs.Activity.value_counts()
+  dfs = (dfs
+         .sort_values(by=[case_id, timestamp])
+         .groupby([case_id])
+         .agg({activity: ';'.join})
+         )
+  dfs['count'] = 0
+  dfs = (
+      dfs.groupby(activity, as_index=False).count()
+      .sort_values(['count'], ascending=False)
+      .reset_index(drop=True)
+  )
+  dfs['trace'] = [trace.split(';') for trace in dfs[activity]]
 
-    w_net = dict()
-    ev_start_set = set()
-    ev_end_set = set()
-    for index, row in dfs[['trace', 'count']].iterrows():
-        if row['trace'][0] not in ev_start_set:
-            ev_start_set.add(row['trace'][0])
-        if row['trace'][-1] not in ev_end_set:
-            ev_end_set.add(row['trace'][-1])
-        for ev_i, ev_j in pairwise(row['trace']):
-            if ev_i not in w_net.keys():
-                w_net[ev_i] = Counter()
-            w_net[ev_i][ev_j] += row['count']
+  w_net = dict()
+  ev_start_set = set()
+  ev_end_set = set()
+  for index, row in dfs[['trace', 'count']].iterrows():
+      if row['trace'][0] not in ev_start_set:
+          ev_start_set.add(row['trace'][0])
+      if row['trace'][-1] not in ev_end_set:
+          ev_end_set.add(row['trace'][-1])
+      for ev_i, ev_j in pairwise(row['trace']):
+          if ev_i not in w_net.keys():
+              w_net[ev_i] = Counter()
+          w_net[ev_i][ev_j] += row['count']
 
-    trace_counts = sorted(chain(*[c.values() for c in w_net.values()]))
-    trace_min = trace_counts[0]
-    trace_max = trace_counts[-1]
-    color_min = ev_counter.min()
-    color_max = ev_counter.max()
+  trace_counts = sorted(chain(*[c.values() for c in w_net.values()]))
+  trace_min = trace_counts[0]
+  trace_max = trace_counts[-1]
+  color_min = ev_counter.min()
+  color_max = ev_counter.max()
 
-    G = pgv.AGraph(strict=False, directed=True)
-    G.graph_attr['rankdir'] = 'LR'
-    G.node_attr['shape'] = 'Mrecord'
+  G = pgv.AGraph(strict=False, directed=True)
+  G.graph_attr['rankdir'] = 'LR'
+  G.node_attr['shape'] = 'Mrecord'
 
-    G.add_node("start", shape="circle", label="")
-    for ev_start in ev_start_set:
-        G.add_edge("start", ev_start)
+  G.add_node("start", shape="circle", label="")
+  for ev_start in ev_start_set:
+    G.add_edge("start", ev_start)
 
-    for event, succesors in w_net.items():
-        value = ev_counter[event]
-        color = int(float(color_min-value)/float(color_min-color_max)*100.00)
-        label = str(event) + ": " + str(ev_counter[event])
-        my_color = "#ff9933"+str(hex(color))[2:]
-        G.add_node(event, style="rounded,filled",
-                   fillcolor=my_color, label=label)
-        for succesor, cnt in succesors.items():
-            G.add_edge(event, succesor, penwidth=4*cnt /
-                       (trace_max-trace_min)+0.1, label=cnt)
+  for event, succesors in w_net.items():
+    value = ev_counter[event]
+    color = int(float(color_min-value)/float(color_min-color_max)*100.00)
+    label = str(event) + ": " + str(ev_counter[event])
+    my_color = "#ff9933"+str(hex(color))[2:]
+    G.add_node(event, style="rounded,filled", fillcolor=my_color, label=label)
+    for succesor, cnt in succesors.items():
+      G.add_edge(event, succesor, penwidth=4*cnt /
+                 (trace_max-trace_min)+0.1, label=cnt)
 
-    G.add_node("end", shape="circle", label="", penwidth='3')
-    for ev_end in ev_end_set:
-        G.add_edge(ev_end, "end")
+  G.add_node("end", shape="circle", label="", penwidth='3')
+  for ev_end in ev_end_set:
+    G.add_edge(ev_end, "end")
 
-    G.draw('simple_heuristic_net_with_events.png', prog='dot')
-    display(Image('simple_heuristic_net_with_events.png'))
+  G.draw('simple_heuristic_net_with_events.png', prog='dot')
+  display(Image('simple_heuristic_net_with_events.png'))
 
 
 class ProcessTreeAdapter:
@@ -133,17 +132,15 @@ class ProcessTreeAdapter:
     @staticmethod
     def extract_arguments_from_labelled_expression(labelled_expression):
         # print(labelled_expression[labelled_expression.index("(")+1:labelled_expression.index("]")])
-        if labelled_expression[-2] == ")":
-            print(labelled_expression)
-        pattern_label_number = int(labelled_expression[-2])
-        trimmed_labelled_expression = labelled_expression[labelled_expression.index(
-            "]") + 1:-3]
+        # pattern_label_number = int(labelled_expression[-2])
+        pattern_label_number = int(labelled_expression[labelled_expression.index(
+            "(") + 1:labelled_expression.index("]")])
+        trimmed_labelled_expression = labelled_expression[labelled_expression.index("]") + 1: list(re.finditer(r'\[', labelled_expression))[-1].start()]
 
-        print(labelled_expression)
-        print(trimmed_labelled_expression)
-        print(labelled_expression[-2])
-        print(labelled_expression[labelled_expression.index(
-            "(")+1:labelled_expression.index("]")])
+        # print(labelled_expression)
+        # print(trimmed_labelled_expression)
+        # print(labelled_expression[-2])
+        # print(labelled_expression[labelled_expression.index("(")+1:labelled_expression.index("]")])
 
         split = trimmed_labelled_expression.split(",")
         arguments = []
@@ -424,16 +421,35 @@ class WorkflowPattern:
             (template for template in pattern_property_set if template.get_name() == workflow_name), None)
         if workflow_pattern_template is None:
             raise Exception("Workflow pattern template not found!")
+        
+        # number_of_arguments = 0
+        # if labelled_expression[:4] == "Seq2":
+        #     number_of_arguments = 2
+        # elif labelled_expression[:4] == "Seq3":
+        #     number_of_arguments = 3
+        # elif labelled_expression[:4] == "Seq4":
+        #     number_of_arguments = 4
+        # elif labelled_expression[:4] == "Seq5":
+        #     number_of_arguments = 5
+        # elif labelled_expression[:4] == "Xor2":
+        #     number_of_arguments = 4
+        # elif labelled_expression[:4] == "Xor3":
+        #     number_of_arguments = 5
+        # elif labelled_expression[:4] == "And2":
+        #     number_of_arguments = 4
+        # elif labelled_expression[:4] == "And3":
+        #     number_of_arguments = 5
+        # elif labelled_expression[:4] == "Loop":
+        #     number_of_arguments = 3
 
-        number_of_arguments = workflow_pattern_template.get_number_of_arguments()
-        pattern_label_number = int(labelled_expression[-2])
-        # pattern_label_number = int(labelled_expression[labelled_expression.index("(") + 1:labelled_expression.index("]")])
-        print(pattern_label_number)
-        print(labelled_expression[-2])
-        print(labelled_expression[labelled_expression.index(
+        number_of_arguments = int(workflow_pattern_template.get_number_of_arguments())
+        # pattern_label_number = int(labelled_expression[-2])
+        # print(pattern_label_number)
+        # print(labelled_expression[-2])
+        # print(labelled_expression[labelled_expression.index("(") + 1:labelled_expression.index("]")])
+        pattern_label_number = int(labelled_expression[labelled_expression.index(
             "(") + 1:labelled_expression.index("]")])
-        trimmed_labelled_expression = labelled_expression[labelled_expression.index(
-            "]") + 1:-3]
+        trimmed_labelled_expression = labelled_expression[labelled_expression.index("]") + 1 : list(re.finditer(r'\[', labelled_expression))[-1].start()]
 
         split = trimmed_labelled_expression.split(",")
         arguments = []
@@ -451,8 +467,12 @@ class WorkflowPattern:
         if len(arguments) != number_of_arguments:
             print(labelled_expression)
             print(pattern_label_number)
-            raise Exception(f"Found arguments ({
-                            arguments}) different from the required number ({number_of_arguments})")
+            raise Exception(f'''
+Found {len(arguments)} arguments instead of {number_of_arguments}: 
+{arguments}
+labelled_expression: {labelled_expression}
+trimmed_labelled_expression: {trimmed_labelled_expression}
+''')
         return arguments
 
     @staticmethod
@@ -490,6 +510,8 @@ class WorkflowPattern:
         self.pattern_arguments = pattern_arguments
 
 
+
+
 class CalculatingConsolidatedExpression:
 
     @staticmethod
@@ -520,6 +542,8 @@ class CalculatingConsolidatedExpression:
 
                 ex = ex.replace(argument, inner_consolidated_expression)
         return ex
+
+
 
 
 class GeneratingLogicalSpecifications:
@@ -595,19 +619,34 @@ def get_results(pattern_expression):
         pattern_expression.replace(" ", ""), ltl_pattern_property_set)
 
 
+
+def to_pretty_string(str):
+    str = re.sub(r'\W+', '_', str)
+    return str
+
+def to_pretty_tree(processTree):
+    processTree.label = to_pretty_string(processTree.label) if processTree.label else None
+    for child in processTree.children:
+        to_pretty_tree(child)
+
+
+
+
 if __name__ == "__main__":
     # Load the logs
     # ----------------------------------------------
-    # log_1 = pm4py.read_xes("Hospital Billing - Event Log.xes")
+    log_1 = pm4py.read_xes("Hospital Billing - Event Log.xes")
     # ----------------------------------------------
-    log_1 = pm4py.format_dataframe(pd.read_csv(
-        "repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
+    # log_1 = pm4py.format_dataframe(pd.read_csv(
+    #     "repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
     # ----------------------------------------------
 
 
     # Discover process trees using Inductive Miner
     process_tree_1 = pm4py.discover_process_tree_inductive(
         log_1, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
+    
+    to_pretty_tree(process_tree_1)
     
     # Convert process trees to strings
     W1 = str(process_tree_1)
