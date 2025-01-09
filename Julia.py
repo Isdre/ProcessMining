@@ -317,6 +317,8 @@ class PatternExpressionGenerator:
             elif symbol == 'X':
                 new_name = ExclusiveChoice.change_symbol_into_name(
                     expression, pattern_label_number)
+                # print("------------------------------------------")
+                # print(new_name[2])
                 self.converted_expression = ProcessTreeAdapter.replace_symbol_with_name(
                     self.converted_expression, pattern_label_number, symbol, new_name[0])
                 expression_to_replace = self.converted_expression
@@ -330,13 +332,15 @@ class PatternExpressionGenerator:
         return self.converted_expression
 
 
-def process_patterns(pattern_list, instance):
+def process_patterns(pattern_list: list, instance) -> list:
     new_pattern_list = []
     for pattern in pattern_list:
         new_pattern = instance.add_approved_workflow_patterns(pattern)
         if isinstance(new_pattern, list):
             new_pattern = process_patterns(new_pattern, instance)
         new_pattern_list.append(new_pattern)
+    #     print("------------------------------------------")
+    # print(new_pattern_list)
     return new_pattern_list
 
 
@@ -421,26 +425,6 @@ class WorkflowPattern:
             (template for template in pattern_property_set if template.get_name() == workflow_name), None)
         if workflow_pattern_template is None:
             raise Exception("Workflow pattern template not found!")
-        
-        # number_of_arguments = 0
-        # if labelled_expression[:4] == "Seq2":
-        #     number_of_arguments = 2
-        # elif labelled_expression[:4] == "Seq3":
-        #     number_of_arguments = 3
-        # elif labelled_expression[:4] == "Seq4":
-        #     number_of_arguments = 4
-        # elif labelled_expression[:4] == "Seq5":
-        #     number_of_arguments = 5
-        # elif labelled_expression[:4] == "Xor2":
-        #     number_of_arguments = 4
-        # elif labelled_expression[:4] == "Xor3":
-        #     number_of_arguments = 5
-        # elif labelled_expression[:4] == "And2":
-        #     number_of_arguments = 4
-        # elif labelled_expression[:4] == "And3":
-        #     number_of_arguments = 5
-        # elif labelled_expression[:4] == "Loop":
-        #     number_of_arguments = 3
 
         number_of_arguments = int(workflow_pattern_template.get_number_of_arguments())
         # pattern_label_number = int(labelled_expression[-2])
@@ -629,6 +613,32 @@ def to_pretty_tree(processTree):
     for child in processTree.children:
         to_pretty_tree(child)
 
+def generate_pattern_expression(tree, depth=1):
+    # print("-------------------------------------------------")
+    # print(tree)
+    # print(tree.operator)
+    # print(tree.label)
+    if str(tree.operator) == "->":
+        return f'Seq{len(tree.children)}({depth}]{str.join(", ", [generate_pattern_expression(c, depth+1) for c in tree.children])}[{depth})'
+    elif str(tree.operator) == "X":
+        return f'Xor{len(tree.children)}({depth}]{str.join(", ", [f"x{len(tree.children)}_s"] + [generate_pattern_expression(c, depth+1) for c in tree.children] + [f"x{len(tree.children)}_e"])}[{depth})'
+    elif str(tree.operator) == "+":
+        return f'And{len(tree.children)}({depth}]{str.join(", ", [f"a{len(tree.children)}_s"] + [generate_pattern_expression(c, depth+1) for c in tree.children] + [f"a{len(tree.children)}_e"])}[{depth})'
+    elif str(tree.operator) == "*":
+        return f'Loop({depth}]{str.join(", ", ["l_s"] + [generate_pattern_expression(c, depth+1) for c in tree.children])}[{depth})'
+    elif tree.label:
+        return tree.label
+    elif str(tree) == "tau":
+        return "tau"
+    else:
+        raise Exception(f"Unknown tree {tree}")
+    
+def print_tree(tree, depth=0):
+    print(f'{"    "*depth} {tree.label}  {tree.operator}  {tree == 'tau'}')
+    for child in tree.children:
+        print_tree(child, depth+1)
+
+
 
 
 
@@ -645,22 +655,15 @@ if __name__ == "__main__":
     # Discover process trees using Inductive Miner
     process_tree_1 = pm4py.discover_process_tree_inductive(
         log_1, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
+    # pm4py.view_process_tree(process_tree_1)
+
+    print_tree(process_tree_1)
     
     to_pretty_tree(process_tree_1)
-    
-    # Convert process trees to strings
-    W1 = str(process_tree_1)
-
-    # Process the strings to remove brackets and replace spaces
-    W1 = ProcessTreeAdapter.remove_brackets_between_single_quotes(W1)
-    W1 = ProcessTreeAdapter.replace_spaces_with_underscore(W1)
-    W1 = W1.replace("( ", "(").replace(") ", ")").replace(" )", ")").replace("->", ">")
-
-    # Label the expressions
-    labelled_pattern_expression1 = ProcessTreeAdapter.label_expressions(W1)
 
     # Get pattern expressions
-    pattern_expression1 = get_pattern_expression(labelled_pattern_expression1)
+    pattern_expression1 = generate_pattern_expression(process_tree_1)
+
 
     # Get results
     results = get_results(pattern_expression1)
