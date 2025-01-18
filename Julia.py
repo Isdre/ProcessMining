@@ -413,7 +413,7 @@ class WorkflowPattern:
             (template for template in pattern_property_set if template.get_name() == workflow_name), None)
 
         if workflow_pattern_template is None:
-            raise Exception("Workflow pattern template not found!")
+            raise Exception("Workflow pattern template not found! Workflow name: " + workflow_name)
         pattern_arguments = WorkflowPattern.extract_arguments_from_labelled_expression(
             pattern_expression, pattern_property_set)
         return WorkflowPattern(workflow_pattern_template, pattern_arguments)
@@ -645,19 +645,24 @@ def print_tree(tree, depth=0):
 if __name__ == "__main__":
     # Load the logs
     # ----------------------------------------------
-    log_1 = pm4py.read_xes("Hospital Billing - Event Log.xes")
+    # log_1 = pm4py.read_xes('bpic2012.xes')
     # ----------------------------------------------
-    # log_1 = pm4py.format_dataframe(pd.read_csv(
-    #     "repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
+    log_1 = pm4py.format_dataframe(pd.read_csv(
+        "repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
     # ----------------------------------------------
+    # log_1 = pm4py.read_xes('Hospital Billing - Event Log.xes')
+    # ----------------------------------------------
+    # log_1 = pm4py.read_xes('BPI_Challenge_2013_closed_problems.xes')
+    # ----------------------------------------------
+
 
 
     # Discover process trees using Inductive Miner
     process_tree_1 = pm4py.discover_process_tree_inductive(
         log_1, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
-    # pm4py.view_process_tree(process_tree_1)
+    pm4py.view_process_tree(process_tree_1)
 
-    print_tree(process_tree_1)
+    # print_tree(process_tree_1)
     
     to_pretty_tree(process_tree_1)
 
