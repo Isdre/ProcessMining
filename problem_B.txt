@@ -1,0 +1,39 @@
+fof(rule_1_B, axiom, ![X0]: (~((x2_s(X0) | x2_e(X0)) & (l_s(X0) | accepted(X0))))).
+fof(rule_2_B, axiom, ![X0]: (~((x2_s(X0)) & (unmatched(X0))))).
+fof(rule_3_B, axiom, ![X0]: (~((x2_s(X0) | x2_e(X0)) & (l_s(X0) | queued(X0))))).
+fof(rule_4_B, axiom, ![X1]: ((tau(X1)) => ?[X0]: (queued(X0)))).
+fof(rule_5_B, axiom, ![X0]: (~((x2_s(X0)) & (x2_e(X0))))).
+fof(rule_6_B, axiom, ![X0]: (~((queued(X0)) & (tau(X0))))).
+fof(rule_7_B, axiom, ![X1]: ((l_s(X1)) => ?[X0]: (accepted(X0)))).
+fof(rule_8_B, axiom, ?[X0]: (l_s(X0))).
+fof(rule_9_B, axiom, ![X1]: ((x2_s(X1) | x2_e(X1)) => ?[X0]: (l_s(X0) | queued(X0)))).
+fof(rule_10_B, axiom, ![X0]: (~((x2_s(X0)) & (x2_s(X0) | queued(X0))))).
+fof(rule_11_B, axiom, ![X1]: ((tau(X1)) => ?[X0]: (completed(X0)))).
+fof(rule_12_B, axiom, ![X0]: (~((l_s(X0)) & (tau(X0))))).
+fof(rule_13_B, axiom, ![X0]: (~((x2_s(X0) | x2_e(X0)) & (l_s(X0) | completed(X0))))).
+fof(rule_14_B, axiom, ![X1]: ((l_s(X1) | accepted(X1)) => ?[X0]: (l_s(X0) | completed(X0)))).
+fof(rule_15_B, axiom, ![X0]: (~((l_s(X0) | accepted(X0)) & (l_s(X0) | completed(X0))))).
+fof(rule_16_B, axiom, ![X0]: (~((unmatched(X0)) & (x2_e(X0))))).
+fof(rule_17_B, axiom, ![X1]: ((l_s(X1)) => ?[X0]: (queued(X0)))).
+fof(rule_18_B, axiom, ?[X0]: (x2_s(X0))).
+fof(rule_19_B, axiom, ![X0]: (~((accepted(X0)) & (tau(X0))))).
+fof(rule_20_B, axiom, ![X0]: (~((l_s(X0)) & (completed(X0))))).
+fof(rule_21_B, axiom, ![X1]: ((l_s(X1)) => ?[X0]: (completed(X0)))).
+fof(rule_22_B, axiom, ![X0]: (~((x2_s(X0) | queued(X0)) & (x2_e(X0))))).
+fof(rule_23_B, axiom, ![X1]: ((x2_s(X1) | x2_e(X1)) => ?[X0]: (l_s(X0) | accepted(X0)))).
+fof(rule_24_B, axiom, ![X0]: (~((completed(X0)) & (tau(X0))))).
+fof(rule_25_B, axiom, ![X1]: ((x2_s(X1)) => ((?[X0]: (tau(X0)) & ~(?[X2]: (unmatched(X2)))) | (~(?[X3]: (tau(X3))) & ?[X4]: (unmatched(X4)))))).
+fof(rule_26_B, axiom, ![X1]: ((tau(X1)) => ?[X0]: (accepted(X0)))).
+fof(rule_27_B, axiom, ![X1]: ((accepted(X1)) => ((?[X0]: (tau(X0)) & ?[X2]: (accepted(X2))) | (~(?[X3]: (tau(X3))))))).
+fof(rule_28_B, axiom, ![X0]: (~((tau(X0)) & (x2_e(X0))))).
+fof(rule_29_B, axiom, ![X1]: (((tau(X1)) | (unmatched(X1))) => ?[X0]: (x2_e(X0)))).
+fof(rule_30_B, axiom, ?[X0]: (x2_s(X0) | x2_e(X0))).
+fof(rule_31_B, axiom, ![X0]: (~((tau(X0)) & (unmatched(X0))))).
+fof(rule_32_B, axiom, ![X0]: (~((tau(X0)) & (x2_s(X0) | queued(X0))))).
+fof(rule_33_B, axiom, ![X1]: ((completed(X1)) => ((?[X0]: (tau(X0)) & ?[X2]: (completed(X2))) | (~(?[X3]: (tau(X3))))))).
+fof(rule_34_B, axiom, ![X0]: (~((x2_s(X0)) & (tau(X0))))).
+fof(rule_35_B, axiom, ![X1]: ((queued(X1)) => ((?[X0]: (tau(X0)) & ?[X2]: (queued(X2))) | (~(?[X3]: (tau(X3))))))).
+fof(rule_36_B, axiom, ![X1]: ((x2_s(X1)) => ((?[X0]: (tau(X0)) & ~(?[X2]: (x2_s(X2) | queued(X2)))) | (~(?[X3]: (tau(X3))) & ?[X4]: (x2_s(X4) | queued(X4)))))).
+fof(rule_37_B, axiom, ![X1]: (((tau(X1)) | (x2_s(X1) | queued(X1))) => ?[X0]: (x2_e(X0)))).
+fof(rule_38_B, axiom, ![X0]: (~((l_s(X0)) & (accepted(X0))))).
+fof(rule_39_B, axiom, ![X0]: (~((l_s(X0)) & (queued(X0))))).
