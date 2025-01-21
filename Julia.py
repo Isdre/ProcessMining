@@ -645,19 +645,24 @@ def print_tree(tree, depth=0):
 if __name__ == "__main__":
     # Load the logs
     # ----------------------------------------------
-    # log_1 = pm4py.read_xes('bpic2012.xes')
+    # problem4 A noise 0.25 B noise 0.5
+    # log_1 = pm4py.read_xes('Data/bpic2012.xes')
     # ----------------------------------------------
     # problem2 A noise 0.5 B noise 1
     # log_1 = pm4py.format_dataframe(pd.read_csv("repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
     # ----------------------------------------------
     # problem3 A noise 0.5 B noise 0.25
-    log_1 = pm4py.read_xes('Hospital Billing - Event Log.xes')
+    # log_1 = pm4py.read_xes('Hospital Billing - Event Log.xes')
     # ----------------------------------------------
     # problem1 A noise 0 B noise 0.5
     # log_1 = pm4py.read_xes('Data/BPI_Challenge_2013_closed_problems.xes')
     # ----------------------------------------------
-
-
+    # problem5 A noise 0.25 B noise 0
+    # log_1 = pm4py.read_xes('Data/log_1_1732138120.xes')
+    # problem6 A noise 0.25 B noise 0.5
+    # log_1 = pm4py.read_xes('Data/log_2_1732138120.xes')
+    # problem7 A noise 0.25 B noise 0.5
+    log_1 = pm4py.read_xes('Data/log_3_1732138120.xes')
 
     # Discover process trees using Inductive Miner
     process_tree_1 = pm4py.discover_process_tree_inductive(
