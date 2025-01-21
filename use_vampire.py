@@ -15,10 +15,22 @@ import os
 
 script_path = os.getcwd() + '/vampire'
 
+files_to_process = []
+
 for root, dirs, files in os.walk('problems'):
     for file in files:
         file_path = os.path.join(root, file)
-        result = subprocess.run([script_path, file_path], capture_output=True, text=True)
-        print(f"-------- Folder: {os.path.basename(root)}, File: {file} --------")
-        print(f"\n{result.stdout}")
-        print(f"\n{result.stderr}")
+        files_to_process.append((root, file, file_path))
+
+# Sort by folder name and then by file name
+files_to_process.sort(key=lambda x: (os.path.basename(x[0]), x[1]))
+
+for root, file, file_path in files_to_process:
+    result = subprocess.run([script_path, file_path], capture_output=True, text=True)
+    print(f"{os.path.basename(root)} - {file}")
+    for line in result.stdout.splitlines():
+        if line.startswith('% SZS'):
+            print(line)
+            break
+    # print(f"\n{result.stdout}")
+    # print(f"\n{result.stderr}")
