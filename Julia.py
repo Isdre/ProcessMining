@@ -650,8 +650,8 @@ if __name__ == "__main__":
     # problem2 A noise 0.5 B noise 1
     # log_1 = pm4py.format_dataframe(pd.read_csv("repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
     # ----------------------------------------------
-    # problem3 A noise 0.5 B noise 1
-    # log_1 = pm4py.read_xes('Hospital Billing - Event Log.xes')
+    # problem3 A noise 0.5 B noise 0.25
+    log_1 = pm4py.read_xes('Hospital Billing - Event Log.xes')
     # ----------------------------------------------
     # problem1 A noise 0 B noise 0.5
     # log_1 = pm4py.read_xes('Data/BPI_Challenge_2013_closed_problems.xes')
