@@ -1,0 +1,70 @@
+fof(rule_1_B, axiom, ![X0]: (~((d(X0)) & (x2_e(X0))))).
+fof(rule_2_B, axiom, ![X1]: (((x2_s(X1) | x2_e(X1)) | (random_activity_3(X1))) => ?[X0]: (x2_e(X0)))).
+fof(rule_3_B, axiom, ![X1]: (((x2_s(X1) | x2_e(X1)) | (a(X1))) => ?[X0]: (x2_e(X0)))).
+fof(rule_4_B, axiom, ![X1]: ((x2_s(X1) | x2_e(X1)) => ?[X0]: (x2_s(X0) | x2_e(X0)))).
+fof(rule_5_B, axiom, ![X0]: (~((x2_s(X0)) & (x2_e(X0))))).
+fof(rule_6_B, axiom, ![X0]: (~((j(X0)) & (x2_e(X0))))).
+fof(rule_7_B, axiom, ![X0]: (~((tau(X0)) & (d(X0))))).
+fof(rule_8_B, axiom, ![X0]: (~((x2_s(X0)) & (random_activity_1(X0))))).
+fof(rule_9_B, axiom, ![X0]: (~((l_s(X0)) & (c(X0))))).
+fof(rule_10_B, axiom, ![X0]: (~((l_s(X0)) & (x2_s(X0) | f(X0))))).
+fof(rule_11_B, axiom, ![X0]: (~((i(X0)) & (j(X0))))).
+fof(rule_12_B, axiom, ![X0]: (~((x2_s(X0)) & (b(X0) | g(X0))))).
+fof(rule_13_B, axiom, ?[X0]: (x2_s(X0) | x2_e(X0))).
+fof(rule_14_B, axiom, ![X1]: (((l_s(X1) | c(X1)) | (b(X1) | g(X1))) => ?[X0]: (x2_e(X0)))).
+fof(rule_15_B, axiom, ![X1]: ((x2_s(X1)) => ((?[X0]: (i(X0)) & ~(?[X2]: (j(X2)))) | (~(?[X3]: (i(X3))) & ?[X4]: (j(X4)))))).
+fof(rule_16_B, axiom, ![X1]: ((c(X1)) => ((?[X0]: (x2_s(X0) | f(X0)) & ?[X2]: (c(X2))) | (~(?[X3]: (x2_s(X3) | f(X3))))))).
+fof(rule_17_B, axiom, ![X0]: (~((tau(X0)) & (x2_s(X0) | x2_e(X0))))).
+fof(rule_18_B, axiom, ![X0]: (~((x2_s(X0) | x2_e(X0)) & (random_activity_3(X0))))).
+fof(rule_19_B, axiom, ![X1]: ((x2_s(X1) | f(X1)) => ?[X0]: (c(X0)))).
+fof(rule_20_B, axiom, ?[X0]: (b(X0))).
+fof(rule_21_B, axiom, ![X1]: ((x2_s(X1)) => ((?[X0]: (tau(X0)) & ~(?[X2]: (x2_s(X2) | x2_e(X2)))) | (~(?[X3]: (tau(X3))) & ?[X4]: (x2_s(X4) | x2_e(X4)))))).
+fof(rule_22_B, axiom, ![X0]: (~((random_activity_1(X0)) & (x2_e(X0))))).
+fof(rule_23_B, axiom, ![X1]: ((x2_s(X1)) => ((?[X0]: (x2_s(X0) | x2_e(X0)) & ~(?[X2]: (a(X2)))) | (~(?[X3]: (x2_s(X3) | x2_e(X3))) & ?[X4]: (a(X4)))))).
+fof(rule_24_B, axiom, ![X0]: (~((a(X0)) & (x2_e(X0))))).
+fof(rule_25_B, axiom, ![X0]: (~((i(X0)) & (x2_e(X0))))).
+fof(rule_26_B, axiom, ![X0]: (~((b(X0) | g(X0)) & (x2_e(X0))))).
+fof(rule_27_B, axiom, ![X0]: (~((x2_s(X0) | x2_e(X0)) & (f(X0))))).
+fof(rule_28_B, axiom, ![X0]: (~((x2_s(X0)) & (l_s(X0) | c(X0))))).
+fof(rule_29_B, axiom, ![X0]: (~((x2_s(X0)) & (random_activity_2(X0))))).
+fof(rule_30_B, axiom, ![X1]: ((x2_s(X1)) => ((?[X0]: (l_s(X0) | c(X0)) & ~(?[X2]: (b(X2) | g(X2)))) | (~(?[X3]: (l_s(X3) | c(X3))) & ?[X4]: (b(X4) | g(X4)))))).
+fof(rule_31_B, axiom, ![X0]: (~((x2_s(X0)) & (e(X0))))).
+fof(rule_32_B, axiom, ?[X0]: (l_s(X0))).
+fof(rule_33_B, axiom, ![X1]: (((tau(X1)) | (x2_s(X1) | x2_e(X1))) => ?[X0]: (x2_e(X0)))).
+fof(rule_34_B, axiom, ![X1]: ((x2_s(X1)) => ((?[X0]: (tau(X0)) & ~(?[X2]: (random_activity_1(X2)))) | (~(?[X3]: (tau(X3))) & ?[X4]: (random_activity_1(X4)))))).
+fof(rule_35_B, axiom, ![X1]: (((e(X1)) | (h(X1))) => ?[X0]: (x2_e(X0)))).
+fof(rule_36_B, axiom, ![X0]: (~((e(X0)) & (h(X0))))).
+fof(rule_37_B, axiom, ![X1]: ((x2_s(X1)) => ((?[X0]: (x2_s(X0) | x2_e(X0)) & ~(?[X2]: (random_activity_3(X2)))) | (~(?[X3]: (x2_s(X3) | x2_e(X3))) & ?[X4]: (random_activity_3(X4)))))).
+fof(rule_38_B, axiom, ![X1]: ((b(X1)) => ?[X0]: (g(X0)))).
+fof(rule_39_B, axiom, ![X1]: (((tau(X1)) | (random_activity_2(X1))) => ?[X0]: (x2_e(X0)))).
+fof(rule_40_B, axiom, ![X0]: (~((tau(X0)) & (random_activity_1(X0))))).
+fof(rule_41_B, axiom, ![X0]: (~((x2_s(X0)) & (j(X0))))).
+fof(rule_42_B, axiom, ![X0]: (~((e(X0)) & (x2_e(X0))))).
+fof(rule_43_B, axiom, ![X1]: ((x2_s(X1)) => ((?[X0]: (e(X0)) & ~(?[X2]: (h(X2)))) | (~(?[X3]: (e(X3))) & ?[X4]: (h(X4)))))).
+fof(rule_44_B, axiom, ![X0]: (~((x2_s(X0)) & (a(X0))))).
+fof(rule_45_B, axiom, ![X1]: (((tau(X1)) | (random_activity_1(X1))) => ?[X0]: (x2_e(X0)))).
+fof(rule_46_B, axiom, ![X1]: ((x2_s(X1)) => ((?[X0]: (tau(X0)) & ~(?[X2]: (d(X2)))) | (~(?[X3]: (tau(X3))) & ?[X4]: (d(X4)))))).
+fof(rule_47_B, axiom, ![X0]: (~((tau(X0)) & (random_activity_2(X0))))).
+fof(rule_48_B, axiom, ![X0]: (~((x2_s(X0) | x2_e(X0)) & (a(X0))))).
+fof(rule_49_B, axiom, ![X0]: (~((h(X0)) & (x2_e(X0))))).
+fof(rule_50_B, axiom, ![X0]: (~((b(X0)) & (g(X0))))).
+fof(rule_51_B, axiom, ![X0]: (~((x2_s(X0)) & (tau(X0))))).
+fof(rule_52_B, axiom, ![X0]: (~((l_s(X0) | c(X0)) & (b(X0) | g(X0))))).
+fof(rule_53_B, axiom, ![X1]: (((tau(X1)) | (d(X1))) => ?[X0]: (x2_e(X0)))).
+fof(rule_54_B, axiom, ![X1]: (((i(X1)) | (j(X1))) => ?[X0]: (x2_e(X0)))).
+fof(rule_55_B, axiom, ![X0]: (~((x2_s(X0) | x2_e(X0)) & (x2_e(X0))))).
+fof(rule_56_B, axiom, ![X1]: ((l_s(X1)) => ?[X0]: (c(X0)))).
+fof(rule_57_B, axiom, ![X0]: (~((x2_s(X0)) & (i(X0))))).
+fof(rule_58_B, axiom, ![X0]: (~((x2_s(X0)) & (x2_s(X0) | x2_e(X0))))).
+fof(rule_59_B, axiom, ![X0]: (~((tau(X0)) & (x2_e(X0))))).
+fof(rule_60_B, axiom, ![X0]: (~((random_activity_2(X0)) & (x2_e(X0))))).
+fof(rule_61_B, axiom, ![X1]: ((x2_s(X1)) => ((?[X0]: (tau(X0)) & ~(?[X2]: (random_activity_2(X2)))) | (~(?[X3]: (tau(X3))) & ?[X4]: (random_activity_2(X4)))))).
+fof(rule_62_B, axiom, ![X1]: ((x2_s(X1) | x2_e(X1)) => ?[X0]: (f(X0)))).
+fof(rule_63_B, axiom, ![X0]: (~((x2_s(X0)) & (random_activity_3(X0))))).
+fof(rule_64_B, axiom, ?[X0]: (x2_s(X0))).
+fof(rule_65_B, axiom, ![X0]: (~((x2_s(X0)) & (h(X0))))).
+fof(rule_66_B, axiom, ![X0]: (~((c(X0)) & (x2_s(X0) | f(X0))))).
+fof(rule_67_B, axiom, ![X0]: (~((x2_s(X0)) & (d(X0))))).
+fof(rule_68_B, axiom, ![X0]: (~((l_s(X0) | c(X0)) & (x2_e(X0))))).
+fof(rule_69_B, axiom, ![X0]: (~((x2_s(X0) | x2_e(X0)) & (x2_s(X0) | x2_e(X0))))).
+fof(rule_70_B, axiom, ![X0]: (~((random_activity_3(X0)) & (x2_e(X0))))).
