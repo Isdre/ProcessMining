@@ -1,17 +1,19 @@
 
+number = "5"
+
 word1 = "A"
-file_1_name = f"problems/problem3/problem_{word1}.txt"
+file_1_name = f"problems/problem{number}/problem_{word1}.txt"
 
 word2 = "B"
-file_2_name = f"problems/problem3/problem_{word2}.txt"
+file_2_name = f"problems/problem{number}/problem_{word2}.txt"
 
 #<=> => <=
 #Vampire Zenon
 
-sign = "<="
+sign = "<=>"
 
 if __name__ == "__main__":
-    with open("problems/problem3/problem3.p", "w") as file:
+    with open(f"problems/problem{number}/problem1.p", "w") as file:
         fl1 = 0
         with open(file_1_name, "r") as file_1:
             for l in file_1:
