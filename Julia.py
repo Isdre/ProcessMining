@@ -651,7 +651,7 @@ if __name__ == "__main__":
     # problem2 A noise 0.5 B noise 1
     # log_1 = pm4py.format_dataframe(pd.read_csv("repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
     # ----------------------------------------------
-    # problem3 A noise 0.5 B noise 0.25
+    # problem6 A noise 0.5 B noise 0.25
     # log_1 = pm4py.read_xes('Hospital Billing - Event Log.xes')
     # ----------------------------------------------
     # problem1 A noise 0 B noise 0.5
@@ -659,14 +659,14 @@ if __name__ == "__main__":
     # ----------------------------------------------
     # problem5 A noise 0.25 B noise 0
     # log_1 = pm4py.read_xes('Data/log_1_1732138120.xes')
-    # problem6 A noise 0.25 B noise 0.5
+    # problem3 A noise 0.25 B noise 0.5
     # log_1 = pm4py.read_xes('Data/log_2_1732138120.xes')
     # problem7 A noise 0.25 B noise 0.5
-    log_1 = pm4py.read_xes('Data/log_3_1732138120.xes')
+    # log_1 = pm4py.read_xes('Data/log_3_1732138120.xes')
 
     # Discover process trees using Inductive Miner
     process_tree_1 = pm4py.discover_process_tree_inductive(
-        log_1,0.5, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
+        log_1,0.25, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
     pm4py.view_process_tree(process_tree_1)
 
     # print_tree(process_tree_1)
