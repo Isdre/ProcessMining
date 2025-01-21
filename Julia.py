@@ -634,7 +634,7 @@ def generate_pattern_expression(tree, depth=1):
         raise Exception(f"Unknown tree {tree}")
     
 def print_tree(tree, depth=0):
-    print(f'{"    "*depth} {tree.label}  {tree.operator}  {tree == 'tau'}')
+    print(f'{"    "*depth} {tree.label}  {tree.operator}  {tree == "tau"}')
     for child in tree.children:
         print_tree(child, depth+1)
 
@@ -659,7 +659,7 @@ if __name__ == "__main__":
 
     # Discover process trees using Inductive Miner
     process_tree_1 = pm4py.discover_process_tree_inductive(
-        log_1, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
+        log_1,2, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
     pm4py.view_process_tree(process_tree_1)
 
     # print_tree(process_tree_1)

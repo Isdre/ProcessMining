@@ -1,6 +1,8 @@
 import json
 import re
 
+word = "B"
+
 with open('problem.txt', 'r') as file:
     rules = [line.rstrip() for line in file]
 
@@ -12,7 +14,7 @@ def convert_to_tptp(logic_statements):
         cleaned_statement = statement.strip()
         # print(cleaned_statement)
         tptp_line = ""
-        tptp_prefix = f"fof(rule_{idx + 1}, axiom, "
+        tptp_prefix = f"fof(rule_{idx + 1}_{word}, axiom, "
         inner_content = ""
 
         X_count = 0
@@ -87,5 +89,5 @@ def convert_to_tptp(logic_statements):
 tptp_output = convert_to_tptp(rules)
 
 # Zapisz do pliku
-with open("problem.p", "w") as file:
+with open(f"problem_{word}.txt", "w") as file:
     file.write(tptp_output)
