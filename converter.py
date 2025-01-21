@@ -1,7 +1,7 @@
 import json
 import re
 
-word = "B"
+word = "A"
 
 with open('problem.txt', 'r') as file:
     rules = [line.rstrip() for line in file]
