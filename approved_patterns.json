@@ -83,7 +83,7 @@
       "arg0",
       "arg4",
       "Exist(arg0)",
-      "ForAll((arg0) => ((Exist(arg1) ^ ~(Exist(arg2)) ^ ~(Exist(arg3))) | (~(Exist(arg1)) ^ Exist(arg2) ^ ~(Exist(arg3)) | (~(Exist(arg1)) ^ ~(Exist(arg2)) ^ Exist(arg3))))",
+      "ForAll((arg0) => ((Exist(arg1) ^ ~(Exist(arg2)) ^ ~(Exist(arg3))) | ((~(Exist(arg1)) ^ Exist(arg2) ^ ~(Exist(arg3))) | (~(Exist(arg1)) ^ ~(Exist(arg2)) ^ Exist(arg3)))))",
       "ForAll(((arg1) | (arg2) | (arg3)) => Exist(arg4))",
       "ForAll(~((arg0) ^ (arg1)))",
       "ForAll(~((arg0) ^ (arg2)))",
