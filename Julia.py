@@ -12,6 +12,7 @@ import re
 import pandas as pd
 import os
 import pm4py
+from converter import convert_to_tptp
 os.environ["PATH"] += os.pathsep + r"C:\Program Files\Graphviz\bin"
 
 
@@ -640,6 +641,15 @@ def print_tree(tree, depth=0):
 
 
 
+def tree_to_tptp(tree, file_name, make_pretty=True, rule_prefix=None):
+    if make_pretty:
+        to_pretty_tree(tree)
+    pattern_expression = generate_pattern_expression(tree)
+    results = get_results(pattern_expression)
+    results = [x.rstrip() for x in results.splitlines()]
+    tptp = convert_to_tptp(results, file_name, rule_prefix)
+    with open(file_name, "w") as f:
+        f.write(tptp)
 
 
 if __name__ == "__main__":
@@ -649,7 +659,7 @@ if __name__ == "__main__":
     # log_1 = pm4py.read_xes('Data/bpic2012.xes')
     # ----------------------------------------------
     # problem2 A noise 0.5 B noise 1
-    # log_1 = pm4py.format_dataframe(pd.read_csv("repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
+    log_1 = pm4py.format_dataframe(pd.read_csv("repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
     # ----------------------------------------------
     # problem6 A noise 0.5 B noise 0.25
     # log_1 = pm4py.read_xes('Hospital Billing - Event Log.xes')
@@ -664,20 +674,8 @@ if __name__ == "__main__":
     # problem7 A noise 0.25 B noise 0.5
     # log_1 = pm4py.read_xes('Data/log_3_1732138120.xes')
 
-    # Discover process trees using Inductive Miner
     process_tree_1 = pm4py.discover_process_tree_inductive(
         log_1,0.25, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
     pm4py.view_process_tree(process_tree_1)
 
-    # print_tree(process_tree_1)
-    
-    to_pretty_tree(process_tree_1)
-
-    # Get pattern expressions
-    pattern_expression1 = generate_pattern_expression(process_tree_1)
-
-
-    # Get results
-    results = get_results(pattern_expression1)
-    with open("problem.txt", "w") as f:
-        f.write(results)
+    tree_to_tptp(process_tree_1, "problem.txt")
