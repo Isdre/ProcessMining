@@ -1,4 +1,5 @@
 from enum import Enum
+import re
 
 
 class LogicFunctions(Enum):
@@ -17,6 +18,7 @@ def create_thesis_with_2_spec(input_file_1: str, input_file_2: str, output_file,
     fl1 = 0
     with open(input_file_1, "r") as file_1:
         for l in file_1:
+            l = re.sub(r'fof\(rule.*?,', f'fof(rule{fl1},', l)
             result += l
             fl1 += 1
 
@@ -24,8 +26,12 @@ def create_thesis_with_2_spec(input_file_1: str, input_file_2: str, output_file,
     fl2 = 0
     with open(input_file_2, "r") as file_2:
         for l in file_2:
+            l = re.sub(r'fof\(rule.*?,', f'fof(rule{fl1+fl2},', l)
             result += l
             fl2 += 1
+
+    
+
     result += "\n\n"
     result += "fof(thesis, conjecture,\n"
     result += "![X]: (("
