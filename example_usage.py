@@ -5,32 +5,34 @@ import subprocess
 from Julia import tree_to_tptp
 from create_thesis_with_2_spec import LogicFunctions, create_thesis_with_2_spec
 
-def use_provers(file_name):
+def use_provers(file_name, verbose=False):
     vampire_result = "No result"
     try:
         # use vampire
         script_path = os.getcwd() + '/vampire'
         result = subprocess.run([script_path, file_name], capture_output=True, text=True)
-        print(f"Output:\n{result.stdout}")
-        print(f"Errors:\n{result.stderr}")
+        if verbose:
+            print(f"Output:\n{result.stdout}")
+            print(f"Errors:\n{result.stderr}")
         vampire_result = [line for line in result.stdout.splitlines() if line.startswith('% SZS')][0]
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error occured due to prover error. Error: {e}")
         print("Vampire not fond or did not work properly")
-        print("HINT: Check prover path")
+        print("HINT: Check prover path. Maybe try Linux? :)\n")
     
     e_prover_result = "No result"
     try:
         # use E prover
         script_path = os.getcwd() + "/E/PROVER/eprover-ho"
         result = subprocess.run([script_path, file_name], capture_output=True, text=True, env=os.environ)
-        print(f"Output:\n{result.stdout}")
-        print(f"Errors:\n{result.stderr}")
+        if verbose:
+            print(f"Output:\n{result.stdout}")
+            print(f"Errors:\n{result.stderr}")
         e_prover_result = [line for line in result.stdout.splitlines() if line.startswith('# SZS')][0]
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error occured due to prover error. Error: {e}")
         print("E-prover not fond or did not work properly")
-        print("HINT: Check prover path")
+        print("HINT: Check prover path. Maybe try Linux? :)\n")
     
     return f'{file_name}\nVampire: {vampire_result}\nE-Prover: {e_prover_result}\n'
 
