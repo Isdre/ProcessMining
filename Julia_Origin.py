@@ -522,7 +522,7 @@ def get_results(pattern_expression):
     fin = CalculatingConsolidatedExpression.generate_consolidated_expression(pattern_expression.replace(" ", ""), "fin", ltl_pattern_property_set)
     print("fin: " + fin)
 
-    return GeneratingLogicalSpecifications.generate_logical_specifications(pattern_expression.replace(" ", ""), ltl_pattern_property_set)
+    return GeneratingLogicalSpecifications.generate_logical_specifications(pattern_expression.replace(" ", ""), ltl_pattern_property_set).replace(',','\n')
 
 
 if __name__ == "__main__":
@@ -546,9 +546,11 @@ if __name__ == "__main__":
     # log_1 = pm4py.read_xes('Data/log_2_1732138120.xes')
     # problem7 A noise 0.25 B noise 0.5
     # log_1 = pm4py.read_xes('Data/log_3_1732138120.xes')
+    #
+    # log_1 = pm4py.read_xes("Data/running-example.xes")
 
     process_tree_1 = pm4py.discover_process_tree_inductive(
-        log_1,0.25, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
+        log_1, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
     pm4py.view_process_tree(process_tree_1)
 
     tree_1 = pm4py.discover_process_tree_inductive(log_1)
@@ -564,7 +566,9 @@ if __name__ == "__main__":
 
     pattern_expression1 = get_pattern_expression(labelled_pattern_expression1)
 
-    result = get_results(pattern_expression1)
+    result = get_results(pattern_expression1)[:-1]
+
+    print(result)
 
     with open("problem.txt","w") as f:
         f.write(result)
