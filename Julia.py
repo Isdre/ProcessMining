@@ -641,11 +641,13 @@ def print_tree(tree, depth=0):
 
 
 
-def tree_to_tptp(tree, file_name, make_pretty=True, rule_prefix=None):
+def tree_to_tptp(tree, file_name, make_pretty=True, rule_prefix=None, verbose=False):
     if make_pretty:
         to_pretty_tree(tree)
     pattern_expression = generate_pattern_expression(tree)
     results = get_results(pattern_expression)
+    if(verbose):
+        print(results)
     results = [x.rstrip() for x in results.splitlines()]
     tptp = convert_to_tptp(results, file_name, rule_prefix)
     with open(file_name, "w") as f:

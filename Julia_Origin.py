@@ -549,7 +549,7 @@ if __name__ == "__main__":
     #
     # log_1 = pm4py.read_xes("Data/running-example.xes")
 
-    tree_1 = pm4py.discover_process_tree_inductive(log_1,noise_threshold=1)
+    tree_1 = pm4py.discover_process_tree_inductive(log_1,noise_threshold=1.0)
 
     W1 = str(tree_1)
 
@@ -563,6 +563,7 @@ if __name__ == "__main__":
     pattern_expression1 = get_pattern_expression(labelled_pattern_expression1)
 
     result = get_results(pattern_expression1)[:-1]
+    pm4py.view_process_tree(tree_1)
 
     print(result)
 

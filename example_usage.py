@@ -14,7 +14,9 @@ def use_provers(file_name, verbose=False):
         if verbose:
             print(f"Output:\n{result.stdout}")
             print(f"Errors:\n{result.stderr}")
-        vampire_result = [line for line in result.stdout.splitlines() if line.startswith('% SZS')][0]
+        vampire_result = ' '.join(result.stdout.splitlines()[1:3])
+        if vampire_result.strip() == "":
+            vampire_result = "No result"
     except Exception as e:
         print(f"Error occured due to prover error. Error: {e}")
         print("Vampire not fond or did not work properly")
@@ -28,13 +30,15 @@ def use_provers(file_name, verbose=False):
         if verbose:
             print(f"Output:\n{result.stdout}")
             print(f"Errors:\n{result.stderr}")
-        e_prover_result = [line for line in result.stdout.splitlines() if line.startswith('# SZS')][0]
+        e_prover_result = ' '.join(result.stdout.splitlines()[-2:])
+        if e_prover_result.strip() == "":
+            e_prover_result = "No result"
     except Exception as e:
         print(f"Error occured due to prover error. Error: {e}")
         print("E-prover not fond or did not work properly")
         print("HINT: Check prover path. Maybe try Linux? :)\n")
     
-    return f'{file_name}\nVampire: {vampire_result}\nE-Prover: {e_prover_result}\n'
+    return (file_name, vampire_result, e_prover_result)
 
 
 if __name__ == "__main__":
