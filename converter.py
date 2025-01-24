@@ -1,5 +1,7 @@
 import json
 import re
+import sys
+
 
 def convert_to_tptp(logic_statements, filename, prefix=None):
 
@@ -9,7 +11,7 @@ def convert_to_tptp(logic_statements, filename, prefix=None):
         cleaned_statement = statement.strip()
         # print(cleaned_statement)
         tptp_line = ""
-        tptp_prefix = f"fof(rule_{idx + 1}_{prefix if prefix else ""}, axiom, "
+        tptp_prefix = f"fof(rule_{idx + 1}_{prefix if prefix else ''}, axiom, "
         inner_content = ""
 
         X_count = 0
@@ -82,3 +84,11 @@ def convert_to_tptp(logic_statements, filename, prefix=None):
     with open(filename, "w") as file:
         file.write("\n".join(tptp_lines))
     return "\n".join(tptp_lines)
+
+if __name__ == "__main__":
+    logic_statements = []
+
+    with open("problem.txt","r") as file:
+        logic_statements = file.readlines()
+
+    convert_to_tptp(logic_statements,"problem.p")
