@@ -47,6 +47,8 @@ def create_thesis_with_2_spec(input_file_1: str, input_file_2: str, output_file,
         file.write(result)
 
 
+if __name__ == "__main__":
+    create_thesis_with_2_spec("problems/problem_4.p", "problems/problem_1.p", "problems/problem_10.p", LogicFunctions.EQUIVALENT)
 
 # number = "5"
 
