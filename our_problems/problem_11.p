@@ -36,3 +36,8 @@ fof(rule_35_A, axiom, ![X1]: ((l_s(X1)) => ?[X0]: (a2_s(X0) | decide(X0)))).
 fof(rule_36_A, axiom, ![X0]: (~((a2_s(X0)) & ((check_ticket(X0)) | (x2_s(X0) | x2_e(X0)))))).
 fof(rule_37_A, axiom, ![X1]: ((register_request(X1)) => ?[X0]: (l_s(X0) | decide(X0)))).
 fof(rule_38_A, axiom, ![X1]: ((x2_s(X1)) => ((?[X0]: (examine_thoroughly(X0)) & ~(?[X2]: (examine_casually(X2)))) | (~(?[X3]: (examine_thoroughly(X3))) & ?[X4]: (examine_casually(X4)))))).
+
+
+fof(thesis, conjecture, (
+    ! [X]: (register_request(X) => ?[Y]: (reject_request(Y) | pay_compensation(Y)))
+)).

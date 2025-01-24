@@ -4,7 +4,6 @@
 *.xml
 *.pdf
 *.png
-*.ipynb
 *.csv
 *.svg
 *.iml

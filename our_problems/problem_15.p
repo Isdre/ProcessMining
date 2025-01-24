@@ -49,3 +49,8 @@ fof(rule_48_D, axiom, ![X0]: (~((l_s(X0) | repair_complex_(X0)) & (x3_e(X0))))).
 fof(rule_49_D, axiom, ![X0]: (~((l_s(X0)) & (test_repair(X0))))).
 fof(rule_50_D, axiom, ![X0]: (~((a2_s(X0) | a2_e(X0)) & (end(X0))))).
 fof(rule_51_D, axiom, ![X1]: ((analyze_defect(X1)) => ?[X0]: (a2_s(X0) | a2_e(X0)))).
+
+
+fof(thesis, conjecture, (
+    ! [X]: (register(X) => ?[Y]: (repair_simple(Y) | repair_complex(Y)))
+)).

@@ -45,3 +45,8 @@ fof(rule_44_C, axiom, ![X1]: ((x2_s(X1) | x2_e(X1)) => ?[X0]: (a2_e(X0)))).
 fof(rule_45_C, axiom, ?[X0]: (x2_s(X0))).
 fof(rule_46_C, axiom, ![X0]: (~((a2_s(X0) | a2_e(X0)) & (end(X0))))).
 fof(rule_47_C, axiom, ![X1]: ((analyze_defect(X1)) => ?[X0]: (a2_s(X0) | a2_e(X0)))).
+
+
+fof(thesis, conjecture, (
+    ! [X]: (~(inform_user(X) & tau(X)))
+)).
