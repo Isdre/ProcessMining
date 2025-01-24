@@ -316,6 +316,7 @@ def get_pattern_expression(labelled_pattern_expression):
 
     return pattern_expression_generator.get_converted_expression()
 
+
 class WorkflowPatternTemplate:
     def __init__(self, name, number_of_arguments, rules):
         self.name = name
@@ -351,6 +352,7 @@ class WorkflowPatternTemplate:
 
     def set_rules(self, rules):
         self.rules = rules
+
 
 class WorkflowPattern:
     def __init__(self, workflow_pattern_template, pattern_arguments):
@@ -456,6 +458,7 @@ class CalculatingConsolidatedExpression:
                 ex = ex.replace(argument, inner_consolidated_expression)
         return ex
 
+
 from typing import List
 import re
 from collections import Counter
@@ -507,7 +510,11 @@ class GeneratingLogicalSpecifications:
         workflow_exp = workflow_name + f"({l}]" + pattern_content + f"[{l})"
         return WorkflowPattern.get_workflow_pattern_from_expression(workflow_exp, pattern_property_set)
 
+
 def get_results(pattern_expression):
+    pattern_rules = "approved_patterns.json"
+    ltl_pattern_property_set = WorkflowPatternTemplate.load_pattern_property_set(pattern_rules)
+
     print(pattern_expression)
 
     ini = CalculatingConsolidatedExpression.generate_consolidated_expression(pattern_expression.replace(" ", ""), "ini", ltl_pattern_property_set)
@@ -515,7 +522,7 @@ def get_results(pattern_expression):
     fin = CalculatingConsolidatedExpression.generate_consolidated_expression(pattern_expression.replace(" ", ""), "fin", ltl_pattern_property_set)
     print("fin: " + fin)
 
-    GeneratingLogicalSpecifications.generate_logical_specifications(pattern_expression.replace(" ", ""), ltl_pattern_property_set)
+    return GeneratingLogicalSpecifications.generate_logical_specifications(pattern_expression.replace(" ", ""), ltl_pattern_property_set)
 
 
 if __name__ == "__main__":
@@ -525,7 +532,7 @@ if __name__ == "__main__":
     # log_1 = pm4py.read_xes('Data/bpic2012.xes')
     # ----------------------------------------------
     # problem2 A noise 0.5 B noise 1
-    # log_1 = pm4py.format_dataframe(pd.read_csv("repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
+    log_1 = pm4py.format_dataframe(pd.read_csv("Data/repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
     # ----------------------------------------------
     # problem6 A noise 0.5 B noise 0.25
     # log_1 = pm4py.read_xes('Hospital Billing - Event Log.xes')
@@ -540,19 +547,24 @@ if __name__ == "__main__":
     # problem7 A noise 0.25 B noise 0.5
     # log_1 = pm4py.read_xes('Data/log_3_1732138120.xes')
 
-    # Discover process trees using Inductive Miner
     process_tree_1 = pm4py.discover_process_tree_inductive(
-        log_1, 0.25, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
+        log_1,0.25, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
     pm4py.view_process_tree(process_tree_1)
 
-    # print_tree(process_tree_1)
+    tree_1 = pm4py.discover_process_tree_inductive(log_1)
 
-    to_pretty_tree(process_tree_1)
+    W1 = str(tree_1)
 
-    # Get pattern expressions
-    pattern_expression1 = generate_pattern_expression(process_tree_1)
+    W1 = ProcessTreeAdapter.remove_brackets_between_single_quotes(W1)
 
-    # Get results
-    results = get_results(pattern_expression1)
-    with open("problem.txt", "w") as f:
-        f.write(results)
+    W1 = ProcessTreeAdapter.replace_spaces_with_underscore(W1)
+    W1 = W1.replace("( ", "(").replace(") ", ")").replace(" )", ")").replace("->", ">")
+
+    labelled_pattern_expression1 = ProcessTreeAdapter.label_expressions(W1)
+
+    pattern_expression1 = get_pattern_expression(labelled_pattern_expression1)
+
+    result = get_results(pattern_expression1)
+
+    with open("problem.txt","w") as f:
+        f.write(result)
