@@ -549,11 +549,7 @@ if __name__ == "__main__":
     #
     # log_1 = pm4py.read_xes("Data/running-example.xes")
 
-    process_tree_1 = pm4py.discover_process_tree_inductive(
-        log_1, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
-    pm4py.view_process_tree(process_tree_1)
-
-    tree_1 = pm4py.discover_process_tree_inductive(log_1)
+    tree_1 = pm4py.discover_process_tree_inductive(log_1,noise_threshold=1)
 
     W1 = str(tree_1)
 
