@@ -188,3 +188,8 @@ fof(rule_187_A, axiom, ![X1]: (((tau(X1)) | (empty(X1))) => ?[X0]: (x2_e(X0)))).
 fof(rule_188_A, axiom, ![X1]: ((tau(X1)) => ?[X0]: (reject(X0)))).
 fof(rule_189_A, axiom, ![X0]: (~((a2_s(X0)) & ((l_s(X0) | code_nok(X0)) | (l_s(X0) | reject(X0)))))).
 fof(rule_190_A, axiom, ![X0]: (~((l_s(X0) | reopen(X0)) & (x2_e(X0))))).
+
+
+fof(thesis, conjecture, (
+    ?[X]: new(X) => ?[Y]: join_pat(Y)
+)).
