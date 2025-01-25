@@ -39,3 +39,4 @@ fof(rule_38_A, axiom, ![X1]: (((reject_request(X1)) | (pay_compensation(X1))) =>
 
 fof(thesis, conjecture, (
     ! [X]: (~(reject_request(X) & pay_compensation(X)))
+)).

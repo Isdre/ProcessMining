@@ -606,7 +606,7 @@ def get_results(pattern_expression):
 
 
 def to_pretty_string(str):
-    str = re.sub(r'\W+', ' ', str).strip().replace(" ", "_")
+    str = re.sub(r'\W+', ' ', str).strip().replace(" ", "_").lower()
     return str
 
 def to_pretty_tree(processTree):

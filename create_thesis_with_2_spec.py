@@ -36,14 +36,14 @@ def create_thesis_with_2_spec(input_file_1: str, input_file_2: str, output_file,
     result += "fof(thesis, conjecture,\n"
     result += "![X]: (("
     for i in range(fl1):
-        result += f"rule_{i + 1}_1(X)"
+        result += f"rule{i}(X)"
         if i != fl1 - 1:
             result +=" & "
 
     result += f") {sign.value} ("
 
     for i in range(fl2):
-        result += f"rule_{i + 1}_2(X)"
+        result += f"rule{fl1 + i}(X)"
         if i != fl2 - 1:
             result += " & "
 
