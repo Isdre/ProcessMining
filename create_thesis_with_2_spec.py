@@ -6,6 +6,8 @@ class LogicFunctions(Enum):
     EQUIVALENT = "<=>"
     IMPLIES = "=>"
     IMPLIED_BY = "<="
+    AND = "&"
+    OR = "|"
 
 
 def create_thesis_with_2_spec(input_file_1: str, input_file_2: str, output_file, sign: LogicFunctions):
