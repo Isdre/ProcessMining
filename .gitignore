@@ -1,10 +1,7 @@
 *.xes
 *.xes.gz
-*.txt
 *.xml
 *.pdf
-*.png
-*.csv
 *.svg
 *.iml
 *.html

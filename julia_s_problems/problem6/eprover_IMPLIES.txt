@@ -1,0 +1,14 @@
+# Initializing proof state
+# Scanning for AC axioms
+#
+#cnf(i_0_23, plain, (x2_s(esk10_0))).
+#
+#cnf(i_0_76, plain, (l_s(esk30_0))).
+#
+#cnf(i_0_224, plain, (l_s(esk56_0))).
+#
+#cnf(i_0_95, plain, (~l_s(X1))).
+
+# Proof found!
+# SZS status ContradictoryAxioms
+

@@ -1,0 +1,51 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Theorem for tptp_thesis
+% SZS output start Proof for tptp_thesis
+111. ! [X1] : (x2_s_4(X1) => ((? [X4] : n(X4) & ~? [X3] : g(X3)) | (~? [X2] : n(X2) & ? [X0] : g(X0)))) [input]
+122. ? [X0] : x2_s_4(X0) [input]
+173. ! [X5] : ~(g(X5) & n(X5)) [input]
+174. ~! [X5] : ~(g(X5) & n(X5)) [negated conjecture 173]
+210. ! [X0] : (x2_s_4(X0) => ((? [X1] : n(X1) & ~? [X2] : g(X2)) | (~? [X3] : n(X3) & ? [X4] : g(X4)))) [rectify 111]
+235. ~! [X0] : ~(g(X0) & n(X0)) [rectify 174]
+339. ! [X0] : (((? [X1] : n(X1) & ! [X2] : ~g(X2)) | (! [X3] : ~n(X3) & ? [X4] : g(X4))) | ~x2_s_4(X0)) [ennf transformation 210]
+340. ! [X0] : ((? [X1] : n(X1) & ! [X2] : ~g(X2)) | (! [X3] : ~n(X3) & ? [X4] : g(X4)) | ~x2_s_4(X0)) [flattening 339]
+398. ? [X0] : (g(X0) & n(X0)) [ennf transformation 235]
+515. ? [X1] : n(X1) => n(sK65) [choice axiom]
+516. ? [X4] : g(X4) => g(sK66) [choice axiom]
+517. ! [X0] : ((n(sK65) & ! [X2] : ~g(X2)) | (! [X3] : ~n(X3) & g(sK66)) | ~x2_s_4(X0)) [skolemisation 340,516,515]
+530. ? [X0] : x2_s_4(X0) => x2_s_4(sK73) [choice axiom]
+531. x2_s_4(sK73) [skolemisation 122,530]
+591. ? [X0] : (g(X0) & n(X0)) => (g(sK107) & n(sK107)) [choice axiom]
+592. g(sK107) & n(sK107) [skolemisation 398,591]
+800. ~g(X2) | ~n(X3) | ~x2_s_4(X0) [cnf transformation 517]
+816. x2_s_4(sK73) [cnf transformation 531]
+910. n(sK107) [cnf transformation 592]
+911. g(sK107) [cnf transformation 592]
+1043. 33 <=> ! [X0] : ~n(X0) [avatar definition]
+1044. ~n(X0) <- (33) [avatar component clause 1043]
+1051. 35 <=> ! [X0] : ~g(X0) [avatar definition]
+1052. ~g(X0) <- (35) [avatar component clause 1051]
+1398. 112 <=> ! [X0] : ~x2_s_4(X0) [avatar definition]
+1399. ~x2_s_4(X0) <- (112) [avatar component clause 1398]
+1410. 112 | 33 | 35 [avatar split clause 800,1051,1043,1398]
+1777. $false <- (35) [resolution 1052,911]
+1778. ~35 [avatar contradiction clause 1777]
+1779. $false <- (33) [resolution 1044,910]
+1780. ~33 [avatar contradiction clause 1779]
+1807. $false <- (112) [resolution 1399,816]
+1808. ~112 [avatar contradiction clause 1807]
+1809. $false [avatar sat refutation 1410,1778,1780,1808]
+% SZS output end Proof for tptp_thesis
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 1057
+% Time elapsed: 0.004 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

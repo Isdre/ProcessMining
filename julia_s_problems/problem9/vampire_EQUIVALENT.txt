@@ -1,0 +1,31 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Theorem for tptp_EQUIVALENT
+% SZS output start Proof for tptp_EQUIVALENT
+47. ? [X0] : l_s(X0) [input]
+59. ! [X0] : ~((repair_complex(X0) | l_s(X0)) & (test_repair(X0) | l_s(X0))) [input]
+183. ! [X0] : ((~repair_complex(X0) & ~l_s(X0)) | (~test_repair(X0) & ~l_s(X0))) [ennf transformation 59]
+263. ? [X0] : l_s(X0) => l_s(sK25) [choice axiom]
+264. l_s(sK25) [skolemisation 47,263]
+393. l_s(sK25) [cnf transformation 264]
+409. ~l_s(X0) | ~l_s(X0) [cnf transformation 183]
+2641. ~l_s(X0) [duplicate literal removal 409]
+2688. 11 <=> ! [X0] : ~l_s(X0) [avatar definition]
+2689. ~l_s(X0) <- (11) [avatar component clause 2688]
+2839. 11 [avatar split clause 2641,2688]
+5528. $false <- (11) [resolution 2689,393]
+5531. ~11 [avatar contradiction clause 5528]
+5532. $false [avatar sat refutation 2839,5531]
+% SZS output end Proof for tptp_EQUIVALENT
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 2371
+% Time elapsed: 0.018 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

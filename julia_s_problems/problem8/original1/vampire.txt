@@ -1,0 +1,33 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for tptp
+% SZS output start Proof for tptp
+32. ! [X1] : ~((a2_e(X1) | a2_s(X1) | x2_e(X1) | x2_s(X1)) & a2_s(X1)) [input]
+39. ? [X1] : a2_s(X1) [input]
+86. ! [X0] : ~((a2_e(X0) | a2_s(X0) | x2_e(X0) | x2_s(X0)) & a2_s(X0)) [rectify 32]
+91. ? [X0] : a2_s(X0) [rectify 39]
+144. ! [X0] : ((~a2_e(X0) & ~a2_s(X0) & ~x2_e(X0) & ~x2_s(X0)) | ~a2_s(X0)) [ennf transformation 86]
+214. ? [X0] : a2_s(X0) => a2_s(sK18) [choice axiom]
+215. a2_s(sK18) [skolemisation 91,214]
+290. ~a2_s(X0) | ~a2_s(X0) [cnf transformation 144]
+306. a2_s(sK18) [cnf transformation 215]
+363. ~a2_s(X0) [duplicate literal removal 290]
+365. 1 <=> ! [X0] : ~a2_s(X0) [avatar definition]
+366. ~a2_s(X0) <- (1) [avatar component clause 365]
+499. 1 [avatar split clause 363,365]
+625. $false <- (1) [resolution 366,306]
+626. ~1 [avatar contradiction clause 625]
+627. $false [avatar sat refutation 499,626]
+% SZS output end Proof for tptp
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 591
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

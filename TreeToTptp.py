@@ -638,13 +638,16 @@ class TreeToTptp:
             return f'Seq{len(tree.children)}({depth}]{str.join(", ", [self.__generate_pattern_expression(c, depth+1) for c in tree.children])}[{depth})'
         elif str(tree.operator) == "X":
             self.__xor_it += 1
-            return f'Xor{len(tree.children)}({depth}]{str.join(", ", [f"x{len(tree.children)}_s_{self.__prefix}{self.__xor_it}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children] + [f"x{len(tree.children)}_e_{self.__prefix}{self.__xor_it}"])}[{depth})'
+            this_xor = self.__xor_it
+            return f'Xor{len(tree.children)}({depth}]{str.join(", ", [f"x{len(tree.children)}_s_{self.__prefix}{this_xor}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children] + [f"x{len(tree.children)}_e_{self.__prefix}{this_xor}"])}[{depth})'
         elif str(tree.operator) == "+":
             self.__and_it += 1
-            return f'And{len(tree.children)}({depth}]{str.join(", ", [f"a{len(tree.children)}_s_{self.__prefix}{self.__and_it}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children] + [f"a{len(tree.children)}_e_{self.__prefix}{self.__and_it}"])}[{depth})'
+            this_and = self.__and_it
+            return f'And{len(tree.children)}({depth}]{str.join(", ", [f"a{len(tree.children)}_s_{self.__prefix}{this_and}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children] + [f"a{len(tree.children)}_e_{self.__prefix}{this_and}"])}[{depth})'
         elif str(tree.operator) == "*":
             self.__loop_it += 1
-            return f'Loop({depth}]{str.join(", ", [f"l_s_{self.__prefix}{self.__loop_it}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children])}[{depth})'
+            this_loop = self.__loop_it
+            return f'Loop({depth}]{str.join(", ", [f"l_s_{self.__prefix}{this_loop}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children])}[{depth})'
         elif tree.label:
             return tree.label
         elif str(tree).startswith("tau"):

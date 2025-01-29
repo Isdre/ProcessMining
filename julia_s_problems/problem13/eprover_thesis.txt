@@ -1,0 +1,82 @@
+# Initializing proof state
+# Scanning for AC axioms
+#
+#cnf(i_0_23, plain, (x2_s(esk10_0))).
+#
+#cnf(i_0_76, plain, (l_s(esk30_0))).
+#
+#cnf(i_0_44, plain, (a2_s(esk19_0))).
+#
+#cnf(i_0_77, negated_conjecture, (~repair_complex(X1))).
+#
+#cnf(i_0_30, plain, (register(esk12_0))).
+#
+#cnf(i_0_79, negated_conjecture, (register(esk31_0))).
+##
+#cnf(i_0_78, negated_conjecture, (~repair_simple(X1))).
+##
+#cnf(i_0_40, plain, (x2_e(esk17_0)|~inform_user(X1))).
+#
+#cnf(i_0_41, plain, (x2_e(esk17_0)|~tau(X1))).
+##
+#cnf(i_0_25, plain, (a2_e(esk11_0)|~test_repair(X1))).
+#
+#cnf(i_0_7, plain, (a2_e(esk5_0)|~x2_e(X1))).
+#
+#cnf(i_0_8, plain, (a2_e(esk5_0)|~x2_s(X1))).
+##
+#cnf(i_0_26, plain, (a2_e(esk11_0)|~l_s(X1))).
+#
+#cnf(i_0_31, plain, (archive_repair(esk13_0)|~a2_e(X1))).
+#
+#cnf(i_0_32, plain, (archive_repair(esk13_0)|~a2_s(X1))).
+##
+#cnf(i_0_11, plain, (test_repair(esk6_0)|~x2_e(X1))).
+#
+#cnf(i_0_12, plain, (test_repair(esk6_0)|~l_s(X1))).
+#
+#cnf(i_0_13, plain, (end(esk7_0)|~archive_repair(X1))).
+#
+#cnf(i_0_39, plain, (~x2_s(X1)|~x2_e(X1))).
+#
+#cnf(i_0_42, plain, (analyze_defect(esk18_0)|~register(X1))).
+#
+#cnf(i_0_80, plain, (a2_e(esk11_0)|~x2_e(X1))).
+##
+#cnf(i_0_63, plain, (~restart_repair(X1)|~x2_e(X1))).
+#
+#cnf(i_0_6, plain, (l_s(esk4_0)|x2_e(esk4_0))).
+#
+#cnf(i_0_82, plain, (l_s(esk4_0)|~x2_s(esk4_0))).
+#
+#cnf(i_0_83, plain, (l_s(esk4_0)|~restart_repair(esk4_0))).
+#
+#cnf(i_0_21, plain, (~l_s(X1)|~x2_e(X1))).
+#
+#cnf(i_0_3, plain, (restart_repair(esk1_0)|~restart_repair(X1)|~x2_e(X2))).
+#
+#cnf(i_0_5, plain, (restart_repair(esk1_0)|~restart_repair(X1)|~x2_s(X2))).
+#
+#cnf(i_0_86, plain, (restart_repair(esk1_0)|~restart_repair(X1))).
+#
+#cnf(i_0_48, plain, (~a2_e(X1)|~x2_e(X1))).
+###
+#cnf(i_0_65, plain, (inform_user(esk23_0)|~inform_user(X1)|~x2_s(X2))).
+#
+#cnf(i_0_18, plain, (~a2_s(X1)|~x2_e(X1))).
+#
+#cnf(i_0_94, plain, (l_s(esk4_0)|~a2_s(esk4_0))).
+##
+#cnf(i_0_68, plain, (tau(esk22_0)|~tau(X1)|~x2_s(X2))).
+#
+#cnf(i_0_55, plain, (~test_repair(X1)|~x2_e(X1))).
+###
+#cnf(i_0_37, plain, (a2_s(esk15_0)|a2_e(esk16_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_45, plain, (~inform_user(X1)|~x2_e(X1))).
+#
+#cnf(i_0_72, plain, (~x2_s(X1))).
+
+# Proof found!
+# SZS status Theorem
+

@@ -1,0 +1,51 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Theorem for tptp_thesis
+% SZS output start Proof for tptp_thesis
+13. ? [X0] : x2_s(X0) [input]
+43. ! [X1] : (x2_s(X1) => ((? [X4] : inform_user(X4) & ~? [X3] : tau(X3)) | (~? [X2] : inform_user(X2) & ? [X0] : tau(X0)))) [input]
+48. ! [X5] : ~(tau(X5) & inform_user(X5)) [input]
+49. ~! [X5] : ~(tau(X5) & inform_user(X5)) [negated conjecture 48]
+62. ! [X0] : (x2_s(X0) => ((? [X1] : inform_user(X1) & ~? [X2] : tau(X2)) | (~? [X3] : inform_user(X3) & ? [X4] : tau(X4)))) [rectify 43]
+65. ~! [X0] : ~(tau(X0) & inform_user(X0)) [rectify 49]
+105. ! [X0] : (((? [X1] : inform_user(X1) & ! [X2] : ~tau(X2)) | (! [X3] : ~inform_user(X3) & ? [X4] : tau(X4))) | ~x2_s(X0)) [ennf transformation 62]
+106. ! [X0] : ((? [X1] : inform_user(X1) & ! [X2] : ~tau(X2)) | (! [X3] : ~inform_user(X3) & ? [X4] : tau(X4)) | ~x2_s(X0)) [flattening 105]
+111. ? [X0] : (tau(X0) & inform_user(X0)) [ennf transformation 65]
+125. ? [X0] : x2_s(X0) => x2_s(sK7) [choice axiom]
+126. x2_s(sK7) [skolemisation 13,125]
+145. ? [X1] : inform_user(X1) => inform_user(sK17) [choice axiom]
+146. ? [X4] : tau(X4) => tau(sK18) [choice axiom]
+147. ! [X0] : ((inform_user(sK17) & ! [X2] : ~tau(X2)) | (! [X3] : ~inform_user(X3) & tau(sK18)) | ~x2_s(X0)) [skolemisation 106,146,145]
+156. ? [X0] : (tau(X0) & inform_user(X0)) => (tau(sK24) & inform_user(sK24)) [choice axiom]
+157. tau(sK24) & inform_user(sK24) [skolemisation 111,156]
+180. x2_s(sK7) [cnf transformation 126]
+223. ~tau(X2) | ~inform_user(X3) | ~x2_s(X0) [cnf transformation 147]
+234. inform_user(sK24) [cnf transformation 157]
+235. tau(sK24) [cnf transformation 157]
+252. 5 <=> ! [X0] : ~x2_s(X0) [avatar definition]
+253. ~x2_s(X0) <- (5) [avatar component clause 252]
+348. 27 <=> ! [X0] : ~inform_user(X0) [avatar definition]
+349. ~inform_user(X0) <- (27) [avatar component clause 348]
+356. 29 <=> ! [X0] : ~tau(X0) [avatar definition]
+357. ~tau(X0) <- (29) [avatar component clause 356]
+386. 5 | 27 | 29 [avatar split clause 223,356,348,252]
+426. $false <- (5) [resolution 253,180]
+427. ~5 [avatar contradiction clause 426]
+432. $false <- (29) [resolution 357,235]
+433. ~29 [avatar contradiction clause 432]
+434. $false <- (27) [resolution 349,234]
+435. ~27 [avatar contradiction clause 434]
+436. $false [avatar sat refutation 386,427,433,435]
+% SZS output end Proof for tptp_thesis
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 515
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

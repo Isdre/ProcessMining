@@ -1,0 +1,44 @@
+  "And2": {
+    "number of args": 4,
+    "rules": [
+      "arg0",
+      "arg3",
+      "Exist(arg0)",
+      "ForAll((arg0) => (Exist(arg1) ^ Exist(arg2)))",
+      "ForAll((arg1) => Exist(arg3))",
+      "ForAll((arg2) => Exist(arg3))",
+      "ForAll(~((arg0) ^ ((arg1) | (arg2))))",
+      "ForAll(~(((arg1) | (arg2)) ^ (arg3)))"
+    ]
+  },
+  "And3": {
+    "number of args": 5,
+    "rules": [
+      "arg0",
+      "arg4",
+      "Exist(arg0)",
+      "ForAll((arg0) => (Exist(arg1) ^ Exist(arg2) ^ Exist(arg3)))",
+      "ForAll((arg1) => Exist(arg4))",
+      "ForAll((arg2) => Exist(arg4))",
+      "ForAll((arg3) => Exist(arg4))",
+      "ForAll(~((arg0) ^ ((arg1) | (arg2) | (arg3))))",
+      "ForAll(~(((arg1) | (arg2) | (arg3)) ^ (arg4)))"
+    ]
+  },
+
+
+"And4": {
+    "number of args": 6,
+    "rules": [
+      "arg0",
+      "arg5",
+      "Exist(arg0)",
+      "ForAll((arg0) => (Exist(arg1) ^ Exist(arg2) ^ Exist(arg3) ^ Exist(arg4)))",
+      "ForAll((arg1) => Exist(arg5))",
+      "ForAll((arg2) => Exist(arg5))",
+      "ForAll((arg3) => Exist(arg5))",
+      "ForAll((arg4) => Exist(arg5))",
+      "ForAll(~((arg0) ^ ((arg1) | (arg2) | (arg3) | (arg4))))",
+      "ForAll(~(((arg1) | (arg2) | (arg3) | (arg4)) ^ (arg5)))"
+    ]
+  }

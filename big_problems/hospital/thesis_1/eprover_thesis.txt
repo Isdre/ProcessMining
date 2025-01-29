@@ -1,0 +1,66 @@
+# Initializing proof state
+# Scanning for AC axioms
+#
+#cnf(i_0_1, plain, (x2_s_3(esk1_0))).
+#
+#cnf(i_0_2, plain, (l_s_5(esk2_0))).
+#
+#cnf(i_0_211, plain, (l_s_4(esk76_0))).
+#
+#cnf(i_0_417, negated_conjecture, (~x2_e_0(X1))).
+#
+#cnf(i_0_55, plain, (l_s_10(esk19_0))).
+#
+#cnf(i_0_8, plain, (x3_s_4(esk6_0))).
+#
+#cnf(i_0_151, plain, (l_s_8(esk52_0))).
+#
+#cnf(i_0_153, negated_conjecture, (~l_s_0(X1))).
+#
+#cnf(i_0_271, plain, (x2_s_9(esk103_0))).
+#
+#cnf(i_0_334, plain, (l_s_14(esk127_0))).
+#
+#cnf(i_0_100, plain, (x2_s_5(esk35_0))).
+#
+#cnf(i_0_310, negated_conjecture, (~tau_0(X1))).
+#
+#cnf(i_0_148, plain, (l_s_7(esk51_0))).
+#
+#cnf(i_0_19, plain, (x2_s_1(esk10_0))).
+#
+#cnf(i_0_267, plain, (x2_s_8(esk101_0))).
+#
+#cnf(i_0_460, negated_conjecture, (~join_pat(X1))).
+#
+#cnf(i_0_158, plain, (a2_s_0(esk57_0))).
+#
+#cnf(i_0_372, plain, (a2_s_1(esk138_0))).
+#
+#cnf(i_0_202, plain, (l_s_6(esk71_0))).
+#
+#cnf(i_0_418, negated_conjecture, (~x2_s_0(X1))).
+#
+#cnf(i_0_131, plain, (l_s_11(esk46_0))).
+#
+#cnf(i_0_175, plain, (l_s_12(esk61_0))).
+#
+#cnf(i_0_103, plain, (l_s_3(esk38_0))).
+#
+#cnf(i_0_298, plain, (~l_s_10(X1)|~x2_s_3(X1))).
+#
+#cnf(i_0_206, plain, (x2_s_2(esk74_0))).
+#
+#cnf(i_0_49, plain, (l_s_9(esk18_0))).
+#
+#cnf(i_0_454, plain, (a2_s_2(esk175_0))).
+#
+#cnf(i_0_487, plain, (~x2_s_3(esk19_0))).
+#
+#cnf(i_0_436, plain, (l_s_1(esk167_0))).
+#
+#cnf(i_0_300, plain, (x2_s_7(esk112_0))).
+#
+# Proof found!
+# SZS status Theorem
+

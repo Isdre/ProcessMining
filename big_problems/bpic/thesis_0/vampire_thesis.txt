@@ -1,0 +1,67 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Theorem for tptp_thesis
+% SZS output start Proof for tptp_thesis
+109. ! [X1] : (x3_s_0(X1) => ((? [X9] : a_preaccepted(X9) & ~? [X8] : w_beoordelen_fraude(X8) & ~? [X7] : w_afhandelen_leads(X7)) | (~? [X6] : a_preaccepted(X6) & ? [X5] : w_beoordelen_fraude(X5) & ~? [X4] : w_afhandelen_leads(X4)) | (~? [X3] : a_preaccepted(X3) & ~? [X2] : w_beoordelen_fraude(X2) & ? [X0] : w_afhandelen_leads(X0)))) [input]
+167. ? [X0] : x3_s_0(X0) [input]
+277. ! [X10] : ~(a_preaccepted(X10) & w_afhandelen_leads(X10)) [input]
+278. ~! [X10] : ~(a_preaccepted(X10) & w_afhandelen_leads(X10)) [negated conjecture 277]
+303. ! [X0] : (x3_s_0(X0) => ((? [X1] : a_preaccepted(X1) & ~? [X2] : w_beoordelen_fraude(X2) & ~? [X3] : w_afhandelen_leads(X3)) | (~? [X4] : a_preaccepted(X4) & ? [X5] : w_beoordelen_fraude(X5) & ~? [X6] : w_afhandelen_leads(X6)) | (~? [X7] : a_preaccepted(X7) & ~? [X8] : w_beoordelen_fraude(X8) & ? [X9] : w_afhandelen_leads(X9)))) [rectify 109]
+359. ~! [X0] : ~(a_preaccepted(X0) & w_afhandelen_leads(X0)) [rectify 278]
+452. ! [X0] : (((? [X1] : a_preaccepted(X1) & ! [X2] : ~w_beoordelen_fraude(X2) & ! [X3] : ~w_afhandelen_leads(X3)) | (! [X4] : ~a_preaccepted(X4) & ? [X5] : w_beoordelen_fraude(X5) & ! [X6] : ~w_afhandelen_leads(X6)) | (! [X7] : ~a_preaccepted(X7) & ! [X8] : ~w_beoordelen_fraude(X8) & ? [X9] : w_afhandelen_leads(X9))) | ~x3_s_0(X0)) [ennf transformation 303]
+453. ! [X0] : ((? [X1] : a_preaccepted(X1) & ! [X2] : ~w_beoordelen_fraude(X2) & ! [X3] : ~w_afhandelen_leads(X3)) | (! [X4] : ~a_preaccepted(X4) & ? [X5] : w_beoordelen_fraude(X5) & ! [X6] : ~w_afhandelen_leads(X6)) | (! [X7] : ~a_preaccepted(X7) & ! [X8] : ~w_beoordelen_fraude(X8) & ? [X9] : w_afhandelen_leads(X9)) | ~x3_s_0(X0)) [flattening 452]
+624. ? [X0] : (a_preaccepted(X0) & w_afhandelen_leads(X0)) [ennf transformation 359]
+625. (! [X7] : ~a_preaccepted(X7) & ! [X8] : ~w_beoordelen_fraude(X8) & ? [X9] : w_afhandelen_leads(X9)) | ~sP0 [predicate definition introduction]
+626. (! [X4] : ~a_preaccepted(X4) & ? [X5] : w_beoordelen_fraude(X5) & ! [X6] : ~w_afhandelen_leads(X6)) | ~sP1 [predicate definition introduction]
+627. ! [X0] : ((? [X1] : a_preaccepted(X1) & ! [X2] : ~w_beoordelen_fraude(X2) & ! [X3] : ~w_afhandelen_leads(X3)) | sP1 | sP0 | ~x3_s_0(X0)) [definition folding 453,626,625]
+734. (! [X4] : ~a_preaccepted(X4) & ? [X5] : w_beoordelen_fraude(X5) & ! [X6] : ~w_afhandelen_leads(X6)) | ~sP1 [nnf transformation 626]
+735. (! [X0] : ~a_preaccepted(X0) & ? [X1] : w_beoordelen_fraude(X1) & ! [X2] : ~w_afhandelen_leads(X2)) | ~sP1 [rectify 734]
+736. ? [X1] : w_beoordelen_fraude(X1) => w_beoordelen_fraude(sK60) [choice axiom]
+737. (! [X0] : ~a_preaccepted(X0) & w_beoordelen_fraude(sK60) & ! [X2] : ~w_afhandelen_leads(X2)) | ~sP1 [skolemisation 735,736]
+738. (! [X7] : ~a_preaccepted(X7) & ! [X8] : ~w_beoordelen_fraude(X8) & ? [X9] : w_afhandelen_leads(X9)) | ~sP0 [nnf transformation 625]
+739. (! [X0] : ~a_preaccepted(X0) & ! [X1] : ~w_beoordelen_fraude(X1) & ? [X2] : w_afhandelen_leads(X2)) | ~sP0 [rectify 738]
+740. ? [X2] : w_afhandelen_leads(X2) => w_afhandelen_leads(sK61) [choice axiom]
+741. (! [X0] : ~a_preaccepted(X0) & ! [X1] : ~w_beoordelen_fraude(X1) & w_afhandelen_leads(sK61)) | ~sP0 [skolemisation 739,740]
+742. ? [X1] : a_preaccepted(X1) => a_preaccepted(sK62) [choice axiom]
+743. ! [X0] : ((a_preaccepted(sK62) & ! [X2] : ~w_beoordelen_fraude(X2) & ! [X3] : ~w_afhandelen_leads(X3)) | sP1 | sP0 | ~x3_s_0(X0)) [skolemisation 627,742]
+787. ? [X0] : x3_s_0(X0) => x3_s_0(sK87) [choice axiom]
+788. x3_s_0(sK87) [skolemisation 167,787]
+922. ? [X0] : (a_preaccepted(X0) & w_afhandelen_leads(X0)) => (a_preaccepted(sK157) & w_afhandelen_leads(sK157)) [choice axiom]
+923. a_preaccepted(sK157) & w_afhandelen_leads(sK157) [skolemisation 624,922]
+1094. ~w_afhandelen_leads(X2) | ~sP1 [cnf transformation 737]
+1099. ~a_preaccepted(X0) | ~sP0 [cnf transformation 741]
+1100. ~w_afhandelen_leads(X3) | sP1 | sP0 | ~x3_s_0(X0) [cnf transformation 743]
+1206. x3_s_0(sK87) [cnf transformation 788]
+1445. w_afhandelen_leads(sK157) [cnf transformation 923]
+1446. a_preaccepted(sK157) [cnf transformation 923]
+1808. 85 <=> ! [X0] : ~a_preaccepted(X0) [avatar definition]
+1809. ~a_preaccepted(X0) <- (85) [avatar component clause 1808]
+1820. 88 <=> ! [X0] : ~w_afhandelen_leads(X0) [avatar definition]
+1821. ~w_afhandelen_leads(X0) <- (88) [avatar component clause 1820]
+1842. 93 <=> sP1 [avatar definition]
+1851. ~93 | 88 [avatar split clause 1094,1820,1842]
+1853. 95 <=> sP0 [avatar definition]
+1856. ~95 | 85 [avatar split clause 1099,1808,1853]
+1864. 97 <=> ! [X0] : ~x3_s_0(X0) [avatar definition]
+1865. ~x3_s_0(X0) <- (97) [avatar component clause 1864]
+1872. 97 | 95 | 93 | 88 [avatar split clause 1100,1820,1842,1853,1864]
+2779. $false <- (85) [resolution 1809,1446]
+2780. ~85 [avatar contradiction clause 2779]
+2781. $false <- (88) [resolution 1821,1445]
+2782. ~88 [avatar contradiction clause 2781]
+2783. $false <- (97) [resolution 1865,1206]
+2784. ~97 [avatar contradiction clause 2783]
+2785. $false [avatar sat refutation 1851,1856,1872,2780,2782,2784]
+% SZS output end Proof for tptp_thesis
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 1467
+% Time elapsed: 0.011 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

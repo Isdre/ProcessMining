@@ -1,0 +1,51 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Theorem for tptp_thesis
+% SZS output start Proof for tptp_thesis
+9. ? [X0] : x2_s_1(X0) [input]
+37. ! [X1] : (x2_s_1(X1) => ((? [X4] : reject_request(X4) & ~? [X3] : pay_compensation(X3)) | (~? [X2] : reject_request(X2) & ? [X0] : pay_compensation(X0)))) [input]
+41. ! [X5] : ~(pay_compensation(X5) & reject_request(X5)) [input]
+42. ~! [X5] : ~(pay_compensation(X5) & reject_request(X5)) [negated conjecture 41]
+54. ! [X0] : (x2_s_1(X0) => ((? [X1] : reject_request(X1) & ~? [X2] : pay_compensation(X2)) | (~? [X3] : reject_request(X3) & ? [X4] : pay_compensation(X4)))) [rectify 37]
+56. ~! [X0] : ~(pay_compensation(X0) & reject_request(X0)) [rectify 42]
+90. ! [X0] : (((? [X1] : reject_request(X1) & ! [X2] : ~pay_compensation(X2)) | (! [X3] : ~reject_request(X3) & ? [X4] : pay_compensation(X4))) | ~x2_s_1(X0)) [ennf transformation 54]
+91. ! [X0] : ((? [X1] : reject_request(X1) & ! [X2] : ~pay_compensation(X2)) | (! [X3] : ~reject_request(X3) & ? [X4] : pay_compensation(X4)) | ~x2_s_1(X0)) [flattening 90]
+94. ? [X0] : (pay_compensation(X0) & reject_request(X0)) [ennf transformation 56]
+101. ? [X0] : x2_s_1(X0) => x2_s_1(sK3) [choice axiom]
+102. x2_s_1(sK3) [skolemisation 9,101]
+130. ? [X1] : reject_request(X1) => reject_request(sK19) [choice axiom]
+131. ? [X4] : pay_compensation(X4) => pay_compensation(sK20) [choice axiom]
+132. ! [X0] : ((reject_request(sK19) & ! [X2] : ~pay_compensation(X2)) | (! [X3] : ~reject_request(X3) & pay_compensation(sK20)) | ~x2_s_1(X0)) [skolemisation 91,131,130]
+137. ? [X0] : (pay_compensation(X0) & reject_request(X0)) => (pay_compensation(sK23) & reject_request(sK23)) [choice axiom]
+138. pay_compensation(sK23) & reject_request(sK23) [skolemisation 94,137]
+150. x2_s_1(sK3) [cnf transformation 102]
+199. ~pay_compensation(X2) | ~reject_request(X3) | ~x2_s_1(X0) [cnf transformation 132]
+206. reject_request(sK23) [cnf transformation 138]
+207. pay_compensation(sK23) [cnf transformation 138]
+353. 34 <=> ! [X0] : ~x2_s_1(X0) [avatar definition]
+354. ~x2_s_1(X0) <- (34) [avatar component clause 353]
+356. 35 <=> ! [X3] : ~reject_request(X3) [avatar definition]
+357. ~reject_request(X3) <- (35) [avatar component clause 356]
+369. 38 <=> ! [X2] : ~pay_compensation(X2) [avatar definition]
+370. ~pay_compensation(X2) <- (38) [avatar component clause 369]
+371. 34 | 35 | 38 [avatar split clause 199,369,356,353]
+401. $false <- (34) [resolution 354,150]
+402. ~34 [avatar contradiction clause 401]
+407. $false <- (35) [resolution 357,206]
+408. ~35 [avatar contradiction clause 407]
+409. $false <- (38) [resolution 370,207]
+410. ~38 [avatar contradiction clause 409]
+411. $false [avatar sat refutation 371,402,408,410]
+% SZS output end Proof for tptp_thesis
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 518
+% Time elapsed: 0.001 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

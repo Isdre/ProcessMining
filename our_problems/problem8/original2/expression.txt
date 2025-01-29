@@ -1,0 +1,1 @@
+Seq5(1]register, analyze_defect, And2(2]a2_s_B0, Xor2(3]x2_s_B0, tau_B0, inform_user, x2_e_B0[3), Seq2(3]Loop(4]l_s_B0, Xor2(5]x2_s_B1, repair_simple, repair_complex, x2_e_B1[5), restart_repair[4), test_repair[3), a2_e_B0[2), archive_repair, end[1)

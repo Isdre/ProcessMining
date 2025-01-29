@@ -1,0 +1,48 @@
+# Initializing proof state
+# Scanning for AC axioms
+#
+#cnf(i_0_102, plain, (x3_s_0(esk10_0))).
+#
+#cnf(i_0_153, plain, (l_s_0(esk29_0))).
+#
+#cnf(i_0_132, plain, (l_s_1(esk23_0))).
+#
+#cnf(i_0_154, negated_conjecture, (~repair_complex(X1))).
+#
+#cnf(i_0_119, plain, (register(esk19_0))).
+#
+#cnf(i_0_156, negated_conjecture, (register(esk30_0))).
+#
+#cnf(i_0_106, plain, (a2_s_0(esk13_0))).
+#
+#cnf(i_0_155, negated_conjecture, (~repair_simple(X1))).
+#
+#cnf(i_0_117, plain, (archive_repair(esk18_0)|~a2_e_0(X1))).
+#
+#cnf(i_0_107, plain, (test_repair(esk14_0)|~tau_1(X1))).
+#
+#cnf(i_0_144, plain, (~tau_2(X1))).
+#
+#cnf(i_0_87, plain, (~end(X1)|~archive_repair(X1))).
+#
+#cnf(i_0_142, plain, (x3_e_0(esk24_0)|~tau_0(X1))).
+#
+#cnf(i_0_88, plain, (a2_e_0(esk8_0)|~inform_user(X1))).
+#
+#cnf(i_0_128, plain, (a2_e_0(esk22_0)|~x3_e_0(X1))).
+#
+#cnf(i_0_101, plain, (~register(X1)|~archive_repair(X1))).
+#
+#cnf(i_0_118, plain, (archive_repair(esk18_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_1, plain, (end(esk1_0)|~archive_repair(X1))).
+#
+#cnf(i_0_143, plain, (test_repair(esk25_0)|~l_s_0(X1))).
+#
+#cnf(i_0_131, plain, (~analyze_defect(X1)|~archive_repair(X1))).
+#
+#cnf(i_0_97, plain, (~l_s_1(X1))).
+
+# Proof found!
+# SZS status Theorem
+

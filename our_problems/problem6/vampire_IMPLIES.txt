@@ -1,0 +1,67 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Theorem for tptp_IMPLIES
+% SZS output start Proof for tptp_IMPLIES
+55. ? [X0] : l_s_b0(X0) [input]
+73. ? [X0] : x3_s_b0(X0) [input]
+88. ? [X0] : l_s_b1(X0) [input]
+94. ! [X1] : (x3_s_b0(X1) => ((? [X9] : (repair_complex(X9) | l_s_b1(X9)) & ~? [X8] : (test_repair(X8) | l_s_b0(X8)) & ~? [X7] : tau_b0(X7)) | (~? [X6] : (repair_complex(X6) | l_s_b1(X6)) & ? [X5] : (test_repair(X5) | l_s_b0(X5)) & ~? [X4] : tau_b0(X4)) | (~? [X3] : (repair_complex(X3) | l_s_b1(X3)) & ~? [X2] : (test_repair(X2) | l_s_b0(X2)) & ? [X0] : tau_b0(X0)))) [input]
+129. ! [X0] : (x3_s_b0(X0) => ((? [X1] : (repair_complex(X1) | l_s_b1(X1)) & ~? [X2] : (test_repair(X2) | l_s_b0(X2)) & ~? [X3] : tau_b0(X3)) | (~? [X4] : (repair_complex(X4) | l_s_b1(X4)) & ? [X5] : (test_repair(X5) | l_s_b0(X5)) & ~? [X6] : tau_b0(X6)) | (~? [X7] : (repair_complex(X7) | l_s_b1(X7)) & ~? [X8] : (test_repair(X8) | l_s_b0(X8)) & ? [X9] : tau_b0(X9)))) [rectify 94]
+268. ! [X0] : (((? [X1] : (repair_complex(X1) | l_s_b1(X1)) & ! [X2] : (~test_repair(X2) & ~l_s_b0(X2)) & ! [X3] : ~tau_b0(X3)) | (! [X4] : (~repair_complex(X4) & ~l_s_b1(X4)) & ? [X5] : (test_repair(X5) | l_s_b0(X5)) & ! [X6] : ~tau_b0(X6)) | (! [X7] : (~repair_complex(X7) & ~l_s_b1(X7)) & ! [X8] : (~test_repair(X8) & ~l_s_b0(X8)) & ? [X9] : tau_b0(X9))) | ~x3_s_b0(X0)) [ennf transformation 129]
+269. ! [X0] : ((? [X1] : (repair_complex(X1) | l_s_b1(X1)) & ! [X2] : (~test_repair(X2) & ~l_s_b0(X2)) & ! [X3] : ~tau_b0(X3)) | (! [X4] : (~repair_complex(X4) & ~l_s_b1(X4)) & ? [X5] : (test_repair(X5) | l_s_b0(X5)) & ! [X6] : ~tau_b0(X6)) | (! [X7] : (~repair_complex(X7) & ~l_s_b1(X7)) & ! [X8] : (~test_repair(X8) & ~l_s_b0(X8)) & ? [X9] : tau_b0(X9)) | ~x3_s_b0(X0)) [flattening 268]
+273. (! [X7] : (~repair_complex(X7) & ~l_s_b1(X7)) & ! [X8] : (~test_repair(X8) & ~l_s_b0(X8)) & ? [X9] : tau_b0(X9)) | ~sP0 [predicate definition introduction]
+274. (! [X4] : (~repair_complex(X4) & ~l_s_b1(X4)) & ? [X5] : (test_repair(X5) | l_s_b0(X5)) & ! [X6] : ~tau_b0(X6)) | ~sP1 [predicate definition introduction]
+275. ! [X0] : ((? [X1] : (repair_complex(X1) | l_s_b1(X1)) & ! [X2] : (~test_repair(X2) & ~l_s_b0(X2)) & ! [X3] : ~tau_b0(X3)) | sP1 | sP0 | ~x3_s_b0(X0)) [definition folding 269,274,273]
+331. ? [X0] : l_s_b0(X0) => l_s_b0(sK32) [choice axiom]
+332. l_s_b0(sK32) [skolemisation 55,331]
+348. ? [X0] : x3_s_b0(X0) => x3_s_b0(sK41) [choice axiom]
+349. x3_s_b0(sK41) [skolemisation 73,348]
+357. ? [X0] : l_s_b1(X0) => l_s_b1(sK46) [choice axiom]
+358. l_s_b1(sK46) [skolemisation 88,357]
+363. (! [X4] : (~repair_complex(X4) & ~l_s_b1(X4)) & ? [X5] : (test_repair(X5) | l_s_b0(X5)) & ! [X6] : ~tau_b0(X6)) | ~sP1 [nnf transformation 274]
+364. (! [X0] : (~repair_complex(X0) & ~l_s_b1(X0)) & ? [X1] : (test_repair(X1) | l_s_b0(X1)) & ! [X2] : ~tau_b0(X2)) | ~sP1 [rectify 363]
+365. ? [X1] : (test_repair(X1) | l_s_b0(X1)) => (test_repair(sK49) | l_s_b0(sK49)) [choice axiom]
+366. (! [X0] : (~repair_complex(X0) & ~l_s_b1(X0)) & (test_repair(sK49) | l_s_b0(sK49)) & ! [X2] : ~tau_b0(X2)) | ~sP1 [skolemisation 364,365]
+367. (! [X7] : (~repair_complex(X7) & ~l_s_b1(X7)) & ! [X8] : (~test_repair(X8) & ~l_s_b0(X8)) & ? [X9] : tau_b0(X9)) | ~sP0 [nnf transformation 273]
+368. (! [X0] : (~repair_complex(X0) & ~l_s_b1(X0)) & ! [X1] : (~test_repair(X1) & ~l_s_b0(X1)) & ? [X2] : tau_b0(X2)) | ~sP0 [rectify 367]
+369. ? [X2] : tau_b0(X2) => tau_b0(sK50) [choice axiom]
+370. (! [X0] : (~repair_complex(X0) & ~l_s_b1(X0)) & ! [X1] : (~test_repair(X1) & ~l_s_b0(X1)) & tau_b0(sK50)) | ~sP0 [skolemisation 368,369]
+371. ? [X1] : (repair_complex(X1) | l_s_b1(X1)) => (repair_complex(sK51) | l_s_b1(sK51)) [choice axiom]
+372. ! [X0] : (((repair_complex(sK51) | l_s_b1(sK51)) & ! [X2] : (~test_repair(X2) & ~l_s_b0(X2)) & ! [X3] : ~tau_b0(X3)) | sP1 | sP0 | ~x3_s_b0(X0)) [skolemisation 275,371]
+461. l_s_b0(sK32) [cnf transformation 332]
+484. x3_s_b0(sK41) [cnf transformation 349]
+511. l_s_b1(sK46) [cnf transformation 358]
+521. ~l_s_b1(X0) | ~sP1 [cnf transformation 366]
+524. ~l_s_b0(X1) | ~sP0 [cnf transformation 370]
+529. ~l_s_b0(X2) | sP1 | sP0 | ~x3_s_b0(X0) [cnf transformation 372]
+744. 48 <=> ! [X0] : ~l_s_b1(X0) [avatar definition]
+745. ~l_s_b1(X0) <- (48) [avatar component clause 744]
+749. 49 <=> ! [X0] : ~l_s_b0(X0) [avatar definition]
+750. ~l_s_b0(X0) <- (49) [avatar component clause 749]
+819. 65 <=> ! [X0] : ~x3_s_b0(X0) [avatar definition]
+820. ~x3_s_b0(X0) <- (65) [avatar component clause 819]
+852. 72 <=> sP1 [avatar definition]
+856. ~72 | 48 [avatar split clause 521,744,852]
+868. 75 <=> sP0 [avatar definition]
+874. ~75 | 49 [avatar split clause 524,749,868]
+890. 65 | 75 | 72 | 49 [avatar split clause 529,749,852,868,819]
+928. $false <- (48) [resolution 745,511]
+929. ~48 [avatar contradiction clause 928]
+930. $false <- (49) [resolution 750,461]
+931. ~49 [avatar contradiction clause 930]
+936. $false <- (65) [resolution 820,484]
+937. ~65 [avatar contradiction clause 936]
+938. $false [avatar sat refutation 856,874,890,929,931,937]
+% SZS output end Proof for tptp_IMPLIES
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 788
+% Time elapsed: 0.006 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

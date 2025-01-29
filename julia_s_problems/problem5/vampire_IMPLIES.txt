@@ -1,0 +1,33 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Theorem for tptp_IMPLIES
+% SZS output start Proof for tptp_IMPLIES
+32. ! [X1] : ~((a2_e(X1) | a2_s(X1) | x2_e(X1) | x2_s(X1)) & a2_s(X1)) [input]
+39. ? [X1] : a2_s(X1) [input]
+135. ! [X0] : ~((a2_e(X0) | a2_s(X0) | x2_e(X0) | x2_s(X0)) & a2_s(X0)) [rectify 32]
+140. ? [X0] : a2_s(X0) [rectify 39]
+295. ! [X0] : ((~a2_e(X0) & ~a2_s(X0) & ~x2_e(X0) & ~x2_s(X0)) | ~a2_s(X0)) [ennf transformation 135]
+410. ? [X0] : a2_s(X0) => a2_s(sK18) [choice axiom]
+411. a2_s(sK18) [skolemisation 140,410]
+530. ~a2_s(X0) | ~a2_s(X0) [cnf transformation 295]
+546. a2_s(sK18) [cnf transformation 411]
+679. ~a2_s(X0) [duplicate literal removal 530]
+681. 1 <=> ! [X0] : ~a2_s(X0) [avatar definition]
+682. ~a2_s(X0) <- (1) [avatar component clause 681]
+815. 1 [avatar split clause 679,681]
+1081. $false <- (1) [resolution 682,546]
+1084. ~1 [avatar contradiction clause 1081]
+1085. $false [avatar sat refutation 815,1084]
+% SZS output end Proof for tptp_IMPLIES
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 879
+% Time elapsed: 0.005 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

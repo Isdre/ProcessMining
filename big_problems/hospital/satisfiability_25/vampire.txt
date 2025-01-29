@@ -1,0 +1,67 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for tptp
+% SZS output start Proof for tptp
+6. ? [X0] : x3_s_4(X0) [input]
+55. ? [X0] : x2_s_5(X0) [input]
+91. ? [X0] : l_s_7(X0) [input]
+214. ! [X1] : (x3_s_4(X1) => ((? [X9] : (change_diagn(X9) | l_s_8(X9)) & ~? [X8] : (change_end(X8) | l_s_7(X8)) & ~? [X7] : (x2_e_6(X7) | x2_s_5(X7))) | (~? [X6] : (change_diagn(X6) | l_s_8(X6)) & ? [X5] : (change_end(X5) | l_s_7(X5)) & ~? [X4] : (x2_e_6(X4) | x2_s_5(X4))) | (~? [X3] : (change_diagn(X3) | l_s_8(X3)) & ~? [X2] : (change_end(X2) | l_s_7(X2)) & ? [X0] : (x2_e_6(X0) | x2_s_5(X0))))) [input]
+320. ! [X0] : (x3_s_4(X0) => ((? [X1] : (change_diagn(X1) | l_s_8(X1)) & ~? [X2] : (change_end(X2) | l_s_7(X2)) & ~? [X3] : (x2_e_6(X3) | x2_s_5(X3))) | (~? [X4] : (change_diagn(X4) | l_s_8(X4)) & ? [X5] : (change_end(X5) | l_s_7(X5)) & ~? [X6] : (x2_e_6(X6) | x2_s_5(X6))) | (~? [X7] : (change_diagn(X7) | l_s_8(X7)) & ~? [X8] : (change_end(X8) | l_s_7(X8)) & ? [X9] : (x2_e_6(X9) | x2_s_5(X9))))) [rectify 214]
+537. ! [X0] : (((? [X1] : (change_diagn(X1) | l_s_8(X1)) & ! [X2] : (~change_end(X2) & ~l_s_7(X2)) & ! [X3] : (~x2_e_6(X3) & ~x2_s_5(X3))) | (! [X4] : (~change_diagn(X4) & ~l_s_8(X4)) & ? [X5] : (change_end(X5) | l_s_7(X5)) & ! [X6] : (~x2_e_6(X6) & ~x2_s_5(X6))) | (! [X7] : (~change_diagn(X7) & ~l_s_8(X7)) & ! [X8] : (~change_end(X8) & ~l_s_7(X8)) & ? [X9] : (x2_e_6(X9) | x2_s_5(X9)))) | ~x3_s_4(X0)) [ennf transformation 320]
+538. ! [X0] : ((? [X1] : (change_diagn(X1) | l_s_8(X1)) & ! [X2] : (~change_end(X2) & ~l_s_7(X2)) & ! [X3] : (~x2_e_6(X3) & ~x2_s_5(X3))) | (! [X4] : (~change_diagn(X4) & ~l_s_8(X4)) & ? [X5] : (change_end(X5) | l_s_7(X5)) & ! [X6] : (~x2_e_6(X6) & ~x2_s_5(X6))) | (! [X7] : (~change_diagn(X7) & ~l_s_8(X7)) & ! [X8] : (~change_end(X8) & ~l_s_7(X8)) & ? [X9] : (x2_e_6(X9) | x2_s_5(X9))) | ~x3_s_4(X0)) [flattening 537]
+582. (! [X7] : (~change_diagn(X7) & ~l_s_8(X7)) & ! [X8] : (~change_end(X8) & ~l_s_7(X8)) & ? [X9] : (x2_e_6(X9) | x2_s_5(X9))) | ~sP2 [predicate definition introduction]
+583. (! [X4] : (~change_diagn(X4) & ~l_s_8(X4)) & ? [X5] : (change_end(X5) | l_s_7(X5)) & ! [X6] : (~x2_e_6(X6) & ~x2_s_5(X6))) | ~sP3 [predicate definition introduction]
+584. ! [X0] : ((? [X1] : (change_diagn(X1) | l_s_8(X1)) & ! [X2] : (~change_end(X2) & ~l_s_7(X2)) & ! [X3] : (~x2_e_6(X3) & ~x2_s_5(X3))) | sP3 | sP2 | ~x3_s_4(X0)) [definition folding 538,583,582]
+596. ? [X0] : x3_s_4(X0) => x3_s_4(sK10) [choice axiom]
+597. x3_s_4(sK10) [skolemisation 6,596]
+646. ? [X0] : x2_s_5(X0) => x2_s_5(sK37) [choice axiom]
+647. x2_s_5(sK37) [skolemisation 55,646]
+676. ? [X0] : l_s_7(X0) => l_s_7(sK53) [choice axiom]
+677. l_s_7(sK53) [skolemisation 91,676]
+813. (! [X4] : (~change_diagn(X4) & ~l_s_8(X4)) & ? [X5] : (change_end(X5) | l_s_7(X5)) & ! [X6] : (~x2_e_6(X6) & ~x2_s_5(X6))) | ~sP3 [nnf transformation 583]
+814. (! [X0] : (~change_diagn(X0) & ~l_s_8(X0)) & ? [X1] : (change_end(X1) | l_s_7(X1)) & ! [X2] : (~x2_e_6(X2) & ~x2_s_5(X2))) | ~sP3 [rectify 813]
+815. ? [X1] : (change_end(X1) | l_s_7(X1)) => (change_end(sK125) | l_s_7(sK125)) [choice axiom]
+816. (! [X0] : (~change_diagn(X0) & ~l_s_8(X0)) & (change_end(sK125) | l_s_7(sK125)) & ! [X2] : (~x2_e_6(X2) & ~x2_s_5(X2))) | ~sP3 [skolemisation 814,815]
+817. (! [X7] : (~change_diagn(X7) & ~l_s_8(X7)) & ! [X8] : (~change_end(X8) & ~l_s_7(X8)) & ? [X9] : (x2_e_6(X9) | x2_s_5(X9))) | ~sP2 [nnf transformation 582]
+818. (! [X0] : (~change_diagn(X0) & ~l_s_8(X0)) & ! [X1] : (~change_end(X1) & ~l_s_7(X1)) & ? [X2] : (x2_e_6(X2) | x2_s_5(X2))) | ~sP2 [rectify 817]
+819. ? [X2] : (x2_e_6(X2) | x2_s_5(X2)) => (x2_e_6(sK126) | x2_s_5(sK126)) [choice axiom]
+820. (! [X0] : (~change_diagn(X0) & ~l_s_8(X0)) & ! [X1] : (~change_end(X1) & ~l_s_7(X1)) & (x2_e_6(sK126) | x2_s_5(sK126))) | ~sP2 [skolemisation 818,819]
+821. ? [X1] : (change_diagn(X1) | l_s_8(X1)) => (change_diagn(sK127) | l_s_8(sK127)) [choice axiom]
+822. ! [X0] : (((change_diagn(sK127) | l_s_8(sK127)) & ! [X2] : (~change_end(X2) & ~l_s_7(X2)) & ! [X3] : (~x2_e_6(X3) & ~x2_s_5(X3))) | sP3 | sP2 | ~x3_s_4(X0)) [skolemisation 584,821]
+885. x3_s_4(sK10) [cnf transformation 597]
+977. x2_s_5(sK37) [cnf transformation 647]
+1025. l_s_7(sK53) [cnf transformation 677]
+1245. ~x2_s_5(X2) | ~sP3 [cnf transformation 816]
+1251. ~l_s_7(X1) | ~sP2 [cnf transformation 820]
+1255. ~x2_s_5(X3) | sP3 | sP2 | ~x3_s_4(X0) [cnf transformation 822]
+1393. 14 <=> ! [X0] : ~l_s_7(X0) [avatar definition]
+1394. ~l_s_7(X0) <- (14) [avatar component clause 1393]
+1401. 16 <=> ! [X0] : ~x2_s_5(X0) [avatar definition]
+1402. ~x2_s_5(X0) <- (16) [avatar component clause 1401]
+1514. 43 <=> ! [X0] : ~x3_s_4(X0) [avatar definition]
+1515. ~x3_s_4(X0) <- (43) [avatar component clause 1514]
+2202. 199 <=> sP3 [avatar definition]
+2217. ~199 | 16 [avatar split clause 1245,1401,2202]
+2219. 202 <=> sP2 [avatar definition]
+2225. ~202 | 14 [avatar split clause 1251,1393,2219]
+2247. 43 | 202 | 199 | 16 [avatar split clause 1255,1401,2202,2219,1514]
+2482. $false <- (14) [resolution 1394,1025]
+2483. ~14 [avatar contradiction clause 2482]
+2484. $false <- (16) [resolution 1402,977]
+2485. ~16 [avatar contradiction clause 2484]
+2520. $false <- (43) [resolution 1515,885]
+2521. ~43 [avatar contradiction clause 2520]
+2522. $false [avatar sat refutation 2217,2225,2247,2483,2485,2521]
+% SZS output end Proof for tptp
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 1318
+% Time elapsed: 0.006 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)
