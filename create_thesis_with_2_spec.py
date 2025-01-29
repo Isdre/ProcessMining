@@ -10,7 +10,7 @@ class LogicFunctions(Enum):
     OR = "|"
 
 
-def create_thesis_with_2_spec(input_file_1: str, input_file_2: str, output_file, sign: LogicFunctions):
+def create_thesis_with_2_spec(input_file_1: str, input_file_2: str, sign: LogicFunctions):
     '''
     Create a thesis file with 2 specifications
     Remebmer to put specifications with different rule_prefixes! (see tree_to_tptp())
@@ -51,8 +51,7 @@ def create_thesis_with_2_spec(input_file_1: str, input_file_2: str, output_file,
 
     result += ")))."
         
-    with open(output_file, "w") as file:
-        file.write(result)
+    return result
 
 
 if __name__ == "__main__":
