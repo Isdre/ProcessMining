@@ -3,7 +3,7 @@ import re
 import sys
 
 
-def convert_to_tptp(logic_statements, filename, prefix=None):
+def convert_to_tptp(logic_statements, prefix=None):
 
     tptp_lines = []
 
@@ -80,9 +80,6 @@ def convert_to_tptp(logic_statements, filename, prefix=None):
 
 
         tptp_lines.append(tptp_line)
-    
-    with open(filename, "w") as file:
-        file.write("\n".join(tptp_lines))
     return "\n".join(tptp_lines)
 
 if __name__ == "__main__":

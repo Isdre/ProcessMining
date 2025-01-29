@@ -534,7 +534,7 @@ class CalculatingConsolidatedExpression:
 class GeneratingLogicalSpecifications:
 
     @staticmethod
-    def generate_logical_specifications(pattern_expression: str, pattern_property_set: List[WorkflowPatternTemplate]) -> str:
+    def generate_logical_specifications(pattern_expression: str, pattern_property_set: List[WorkflowPatternTemplate], verbose=False) -> str:
         logical_specification = []
         labelled_expression = pattern_expression
         highest_label_number = ProcessTreeAdapter.get_highest_label(
@@ -560,10 +560,12 @@ class GeneratingLogicalSpecifications:
 
         logical_specification = list(set(logical_specification))
         connected_string = ""
-        print("\nWynik: ")
+        if verbose:
+            print("\nWynik: ")
         for l_value in logical_specification:
             connected_string += l_value + "\n"
-            print(l_value)
+            if verbose:
+                print(l_value)
         return connected_string
 
     @staticmethod
@@ -605,53 +607,61 @@ def get_results(pattern_expression):
 
 
 
-def to_pretty_string(str):
-    str = re.sub(r'\W+', ' ', str).strip().replace(" ", "_").lower()
-    return str
+class TreeToTptp:
+    def __init__(self):
+        self.__tau_it = -1
+        self.__xor_it = -1
+        self.__and_it = -1
+        self.__loop_it = -1
 
-def to_pretty_tree(processTree):
-    processTree.label = to_pretty_string(processTree.label) if processTree.label else None
-    for child in processTree.children:
-        to_pretty_tree(child)
+    def __to_pretty_string(self, str):
+        str = re.sub(r'\W+', ' ', str).strip().replace(" ", "_").lower()
+        return str
 
-def generate_pattern_expression(tree, depth=1):
-    # print("-------------------------------------------------")
-    # print(tree)
-    # print(tree.operator)
-    # print(tree.label)
-    if str(tree.operator) == "->":
-        return f'Seq{len(tree.children)}({depth}]{str.join(", ", [generate_pattern_expression(c, depth+1) for c in tree.children])}[{depth})'
-    elif str(tree.operator) == "X":
-        return f'Xor{len(tree.children)}({depth}]{str.join(", ", [f"x{len(tree.children)}_s"] + [generate_pattern_expression(c, depth+1) for c in tree.children] + [f"x{len(tree.children)}_e"])}[{depth})'
-    elif str(tree.operator) == "+":
-        return f'And{len(tree.children)}({depth}]{str.join(", ", [f"a{len(tree.children)}_s"] + [generate_pattern_expression(c, depth+1) for c in tree.children] + [f"a{len(tree.children)}_e"])}[{depth})'
-    elif str(tree.operator) == "*":
-        return f'Loop({depth}]{str.join(", ", ["l_s"] + [generate_pattern_expression(c, depth+1) for c in tree.children])}[{depth})'
-    elif tree.label:
-        return tree.label
-    elif str(tree) == "tau":
-        return "tau"
-    else:
-        raise Exception(f"Unknown tree {tree}")
-    
-def print_tree(tree, depth=0):
-    print(f'{"    "*depth} {tree.label}  {tree.operator}  {tree == "tau"}')
-    for child in tree.children:
-        print_tree(child, depth+1)
+    def to_pretty_tree(self, processTree):
+        processTree.label = self.__to_pretty_string(processTree.label) if processTree.label else None
+        for child in processTree.children:
+            self.to_pretty_tree(child)
+
+    def __generate_pattern_expression(self, tree, depth=1):
+        # print("-------------------------------------------------")
+        # print(tree)
+        # print(tree.operator)
+        # print(tree.label)
+        if str(tree.operator) == "->":
+            return f'Seq{len(tree.children)}({depth}]{str.join(", ", [self.__generate_pattern_expression(c, depth+1) for c in tree.children])}[{depth})'
+        elif str(tree.operator) == "X":
+            self.__xor_it += 1
+            return f'Xor{len(tree.children)}({depth}]{str.join(", ", [f"x{len(tree.children)}_s{self.__xor_it}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children] + [f"x{len(tree.children)}_e{self.__xor_it}"])}[{depth})'
+        elif str(tree.operator) == "+":
+            self.__and_it += 1
+            return f'And{len(tree.children)}({depth}]{str.join(", ", [f"a{len(tree.children)}_s{self.__and_it}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children] + [f"a{len(tree.children)}_e{self.__and_it}"])}[{depth})'
+        elif str(tree.operator) == "*":
+            self.__loop_it += 1
+            return f'Loop({depth}]{str.join(", ", [f"l_s{self.__loop_it}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children])}[{depth})'
+        elif tree.label:
+            return tree.label
+        elif str(tree).startswith("tau"):
+            self.__tau_it += 1
+            return f"tau{self.__tau_it}"
+        else:
+            raise Exception(f"Unknown tree {tree}")
+        
+    def print_tree(self, tree, depth=0):
+        print(f'{"    "*depth} {tree.label}  {tree.operator}  {tree == "tau"}')
+        for child in tree.children:
+            self.print_tree(child, depth+1)
 
 
 
-def tree_to_tptp(tree, file_name, make_pretty=True, rule_prefix=None, verbose=False):
-    if make_pretty:
-        to_pretty_tree(tree)
-    pattern_expression = generate_pattern_expression(tree)
-    results = get_results(pattern_expression)
-    if(verbose):
-        print(results)
-    results = [x.rstrip() for x in results.splitlines()]
-    tptp = convert_to_tptp(results, file_name, rule_prefix)
-    with open(file_name, "w") as f:
-        f.write(tptp)
+    def tree_to_tptp(self, tree, make_pretty=True):
+        if make_pretty:
+            self.to_pretty_tree(tree)
+        pattern_expression = self.__generate_pattern_expression(tree)
+        results = get_results(pattern_expression)
+        results = [x.rstrip() for x in results.splitlines()]
+        tptp = convert_to_tptp(results)
+        return pattern_expression, '\n'.join(results), tptp
 
 
 if __name__ == "__main__":
@@ -680,4 +690,4 @@ if __name__ == "__main__":
         log_1,0.25, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
     pm4py.view_process_tree(process_tree_1)
 
-    tree_to_tptp(process_tree_1, "problem.txt")
+    TreeToTptp().tree_to_tptp(process_tree_1, "problem.txt")

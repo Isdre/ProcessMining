@@ -2,19 +2,16 @@ import pm4py
 import pandas as pd
 import os
 import subprocess
-from TreeToTptp import tree_to_tptp
+from TreeToTptp import TreeToTptp
 from create_thesis_with_2_spec import LogicFunctions, create_thesis_with_2_spec
 
-def use_provers(file_name, verbose=False):
+def use_provers(file_name):
     vampire_result = "No result"
     try:
         # use vampire
         script_path = os.getcwd() + '/vampire'
         result = subprocess.run([script_path, file_name], capture_output=True, text=True)
-        if verbose:
-            print(f"Output:\n{result.stdout}")
-            print(f"Errors:\n{result.stderr}")
-        vampire_result = ' '.join(result.stdout.splitlines()[1:3])
+        vampire_result = f'{result.stdout}\n{result.stderr}'
         if vampire_result.strip() == "":
             vampire_result = "No result"
     except Exception as e:
@@ -27,10 +24,7 @@ def use_provers(file_name, verbose=False):
         # use E prover
         script_path = os.getcwd() + "/E/PROVER/eprover-ho"
         result = subprocess.run([script_path, file_name], capture_output=True, text=True, env=os.environ)
-        if verbose:
-            print(f"Output:\n{result.stdout}")
-            print(f"Errors:\n{result.stderr}")
-        e_prover_result = ' '.join(result.stdout.splitlines()[-2:])
+        e_prover_result = f'{result.stdout}\n{result.stderr}'
         if e_prover_result.strip() == "":
             e_prover_result = "No result"
     except Exception as e:
@@ -38,7 +32,7 @@ def use_provers(file_name, verbose=False):
         print("E-prover not fond or did not work properly")
         print("HINT: Check prover path. Maybe try Linux? :)\n")
     
-    return (file_name, vampire_result, e_prover_result)
+    return vampire_result, e_prover_result
 
 
 if __name__ == "__main__":
@@ -46,11 +40,11 @@ if __name__ == "__main__":
 
     process_tree = pm4py.discover_process_tree_inductive(log,0.25, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
     pm4py.view_process_tree(process_tree)
-    tree_to_tptp(process_tree, "problem25.p", rule_prefix="A")
+    TreeToTptp().tree_to_tptp(process_tree, "problem25.p", rule_prefix="A")
 
     process_tree = pm4py.discover_process_tree_inductive(log,0.75, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
     pm4py.view_process_tree(process_tree)
-    tree_to_tptp(process_tree, "problem75.p", rule_prefix="B")
+    TreeToTptp().tree_to_tptp(process_tree, "problem75.p", rule_prefix="B")
 
     create_thesis_with_2_spec("problem25.p", "problem75.p", "problem_implied_by.p", LogicFunctions.IMPLIED_BY)
 
