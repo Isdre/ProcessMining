@@ -608,7 +608,12 @@ def get_results(pattern_expression):
 
 
 class TreeToTptp:
-    def __init__(self, prefix=""):
+    '''
+    Trees need two different prefixes if you want to compare them. 
+    Otherwise there would be conflict in: x2_s, tau etc. 
+    If you dont compare trees you can put empty string as prefix.
+    '''
+    def __init__(self, prefix):
         self.__tau_it = -1
         self.__xor_it = -1
         self.__and_it = -1

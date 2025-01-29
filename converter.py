@@ -11,7 +11,7 @@ def convert_to_tptp(logic_statements, prefix=None):
         cleaned_statement = statement.strip()
         # print(cleaned_statement)
         tptp_line = ""
-        tptp_prefix = f"fof(rule_{idx + 1}_{prefix if prefix else ''}, axiom, "
+        tptp_prefix = f"fof(rule_{idx + 1}{f'_{prefix}' if prefix else ''}, axiom, "
         inner_content = ""
 
         X_count = 0
