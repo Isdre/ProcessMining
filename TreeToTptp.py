@@ -608,11 +608,12 @@ def get_results(pattern_expression):
 
 
 class TreeToTptp:
-    def __init__(self):
+    def __init__(self, prefix=""):
         self.__tau_it = -1
         self.__xor_it = -1
         self.__and_it = -1
         self.__loop_it = -1
+        self.__prefix = prefix
 
     def __to_pretty_string(self, str):
         str = re.sub(r'\W+', ' ', str).strip().replace(" ", "_").lower()
@@ -632,18 +633,18 @@ class TreeToTptp:
             return f'Seq{len(tree.children)}({depth}]{str.join(", ", [self.__generate_pattern_expression(c, depth+1) for c in tree.children])}[{depth})'
         elif str(tree.operator) == "X":
             self.__xor_it += 1
-            return f'Xor{len(tree.children)}({depth}]{str.join(", ", [f"x{len(tree.children)}_s{self.__xor_it}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children] + [f"x{len(tree.children)}_e{self.__xor_it}"])}[{depth})'
+            return f'Xor{len(tree.children)}({depth}]{str.join(", ", [f"x{len(tree.children)}_s_{self.__prefix}{self.__xor_it}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children] + [f"x{len(tree.children)}_e_{self.__prefix}{self.__xor_it}"])}[{depth})'
         elif str(tree.operator) == "+":
             self.__and_it += 1
-            return f'And{len(tree.children)}({depth}]{str.join(", ", [f"a{len(tree.children)}_s{self.__and_it}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children] + [f"a{len(tree.children)}_e{self.__and_it}"])}[{depth})'
+            return f'And{len(tree.children)}({depth}]{str.join(", ", [f"a{len(tree.children)}_s_{self.__prefix}{self.__and_it}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children] + [f"a{len(tree.children)}_e_{self.__prefix}{self.__and_it}"])}[{depth})'
         elif str(tree.operator) == "*":
             self.__loop_it += 1
-            return f'Loop({depth}]{str.join(", ", [f"l_s{self.__loop_it}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children])}[{depth})'
+            return f'Loop({depth}]{str.join(", ", [f"l_s_{self.__prefix}{self.__loop_it}"] + [self.__generate_pattern_expression(c, depth+1) for c in tree.children])}[{depth})'
         elif tree.label:
             return tree.label
         elif str(tree).startswith("tau"):
             self.__tau_it += 1
-            return f"tau{self.__tau_it}"
+            return f"tau_{self.__prefix}{self.__tau_it}"
         else:
             raise Exception(f"Unknown tree {tree}")
         
