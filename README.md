@@ -20,7 +20,7 @@ Schemat:
 
 [liczba] - zaszumienie * 100
 
-## przykład struktury folderu z problemem złożonego z 2 problemów
+## przykład struktury folderu z problemem relacji dwóch specyfikacji
 
 ![image](https://github.com/user-attachments/assets/f317447f-9fd9-47ed-bb40-6a511c453bf3)
 
