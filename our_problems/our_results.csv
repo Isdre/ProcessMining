@@ -1,9 +1,9 @@
-our_problems/problem1,% SZS status Satisfiable for tptp % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
+our_problems/problem1,% SZS status Satisfiable for tptp_0 % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
 our_problems/problem11,% Refutation found. Thanks to Tanya! % SZS status Theorem for tptp_thesis % Termination reason: Refutation,# Proof found! # SZS status Theorem
 our_problems/problem12,% Refutation found. Thanks to Tanya! % SZS status Theorem for tptp_thesis % Termination reason: Refutation,# Proof found! # SZS status Theorem
-our_problems/problem2,% SZS status Satisfiable for tptp % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
-our_problems/problem3,% SZS status Satisfiable for tptp % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
-our_problems/problem4,% Refutation found. Thanks to Tanya! % SZS status Unsatisfiable for tptp % Termination reason: Refutation,# Proof found! # SZS status Unsatisfiable
+our_problems/problem2,% SZS status Satisfiable for tptp_0 % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
+our_problems/problem3,% SZS status Satisfiable for tptp_50 % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
+our_problems/problem4,% Refutation found. Thanks to Tanya! % SZS status Unsatisfiable for tptp_100 % Termination reason: Refutation,# Proof found! # SZS status Unsatisfiable
 our_problems/problem5,% SZS status CounterSatisfiable for tptp_IMPLIES % Termination reason: Satisfiable,# No proof found! # SZS status CounterSatisfiable
 our_problems/problem6,% Refutation found. Thanks to Tanya! % SZS status Theorem for tptp_IMPLIES % Termination reason: Refutation,# Proof found! # SZS status ContradictoryAxioms
 our_problems/problem8,% SZS status CounterSatisfiable for tptp_EQUIVALENT % Termination reason: Satisfiable,# No proof found! # SZS status CounterSatisfiable

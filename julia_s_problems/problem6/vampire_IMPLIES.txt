@@ -2,28 +2,28 @@
 % Refutation found. Thanks to Tanya!
 % SZS status Theorem for tptp_IMPLIES
 % SZS output start Proof for tptp_IMPLIES
-47. ? [X0] : l_s(X0) [input]
-59. ! [X0] : ~((repair_complex(X0) | l_s(X0)) & (test_repair(X0) | l_s(X0))) [input]
-231. ! [X0] : ((~repair_complex(X0) & ~l_s(X0)) | (~test_repair(X0) & ~l_s(X0))) [ennf transformation 59]
-310. ? [X0] : l_s(X0) => l_s(sK25) [choice axiom]
-311. l_s(sK25) [skolemisation 47,310]
-436. l_s(sK25) [cnf transformation 311]
-452. ~l_s(X0) | ~l_s(X0) [cnf transformation 231]
-521. ~l_s(X0) [duplicate literal removal 452]
-568. 11 <=> ! [X0] : ~l_s(X0) [avatar definition]
-569. ~l_s(X0) <- (11) [avatar component clause 568]
-719. 11 [avatar split clause 521,568]
-871. $false <- (11) [resolution 569,436]
-874. ~11 [avatar contradiction clause 871]
-875. $false [avatar sat refutation 719,874]
+37. ? [X0] : l_s(X0) [input]
+54. ! [X0] : ~((repair_simple(X0) | l_s(X0)) & (test_repair(X0) | l_s(X0))) [input]
+233. ! [X0] : ((~repair_simple(X0) & ~l_s(X0)) | (~test_repair(X0) & ~l_s(X0))) [ennf transformation 54]
+316. ? [X0] : l_s(X0) => l_s(sK21) [choice axiom]
+317. l_s(sK21) [skolemisation 37,316]
+444. l_s(sK21) [cnf transformation 317]
+467. ~l_s(X0) | ~l_s(X0) [cnf transformation 233]
+559. ~l_s(X0) [duplicate literal removal 467]
+653. 23 <=> ! [X0] : ~l_s(X0) [avatar definition]
+654. ~l_s(X0) <- (23) [avatar component clause 653]
+753. 23 [avatar split clause 559,653]
+948. $false <- (23) [resolution 654,444]
+951. ~23 [avatar contradiction clause 948]
+952. $false [avatar sat refutation 753,951]
 % SZS output end Proof for tptp_IMPLIES
 % ------------------------------
 % Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
 % Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
 % Termination reason: Refutation
 
-% Memory used [KB]: 767
-% Time elapsed: 0.002 s
+% Memory used [KB]: 791
+% Time elapsed: 0.003 s
 % ------------------------------
 % ------------------------------
 

@@ -1,0 +1,2536 @@
+% Running in auto input_syntax mode. Trying TPTP
+% SZS status Satisfiable for tptp_0
+% # SZS output start Saturation.
+cnf(u1835,axiom,
+    x2_e_a12(sK2)).
+
+cnf(u1839,axiom,
+    ~manual(X0)).
+
+cnf(u1847,axiom,
+    x2_e_a14(sK4)).
+
+cnf(u1855,axiom,
+    ~tau_a17(X0)).
+
+cnf(u1859,axiom,
+    ~l_s_a3(sK5)).
+
+cnf(u1864,axiom,
+    x3_e_a6(sK5)).
+
+cnf(u1868,axiom,
+    ~tau_a6(X0)).
+
+cnf(u1880,axiom,
+    x2_e_a1(sK8)).
+
+cnf(u1888,axiom,
+    ~tau_a2(X0)).
+
+cnf(u1895,axiom,
+    ~storno(sK10)).
+
+cnf(u1900,axiom,
+    x2_e_a17(sK10)).
+
+cnf(u1904,axiom,
+    ~tau_a12(X0)).
+
+cnf(u1916,axiom,
+    x2_e_a10(sK12)).
+
+cnf(u1924,axiom,
+    ~tau_a13(X0)).
+
+cnf(u1934,axiom,
+    ~l_s_a2(sK13)).
+
+cnf(u1939,axiom,
+    join_pat(sK13)).
+
+cnf(u1947,axiom,
+    ~tau_a5(sK14)).
+
+cnf(u1952,axiom,
+    ~tau_a5(X2)).
+
+cnf(u1961,axiom,
+    ~x2_s_a18(sK15)).
+
+cnf(u1966,axiom,
+    x2_e_a18(sK15)).
+
+cnf(u1977,axiom,
+    ~x2_s_a23(sK16)).
+
+cnf(u1982,axiom,
+    x2_e_a23(sK16)).
+
+cnf(u1994,axiom,
+    x2_e_a13(sK17)).
+
+cnf(u2002,axiom,
+    ~tau_a16(X0)).
+
+cnf(u2010,axiom,
+    x2_e_a2(sK18)).
+
+cnf(u2015,axiom,
+    ~tau_a4(X0)).
+
+cnf(u2023,axiom,
+    a2_e_a3(sK20)).
+
+cnf(u2035,axiom,
+    a2_s_a3(sK22)).
+
+cnf(u2038,axiom,
+    ~a2_e_a3(sK22)).
+
+cnf(u2044,axiom,
+    ~tau_a16(sK23)).
+
+cnf(u2056,axiom,
+    ~tau_a3(X1)).
+
+cnf(u2069,axiom,
+    ~tau_a18(X1)).
+
+cnf(u2084,axiom,
+    ~l_s_a3(sK28)).
+
+cnf(u2089,axiom,
+    x2_e_a21(sK28)).
+
+cnf(u2097,axiom,
+    ~tau_a8(sK29)).
+
+cnf(u2102,axiom,
+    ~tau_a8(X2)).
+
+cnf(u2108,axiom,
+    ~x2_s_a15(sK31)).
+
+cnf(u2113,axiom,
+    x2_e_a15(sK31)).
+
+cnf(u2117,axiom,
+    ~x2_s_a14(sK32)).
+
+cnf(u2122,axiom,
+    x2_e_a14(sK32)).
+
+cnf(u2132,axiom,
+    ~l_s_a4(sK33)).
+
+cnf(u2137,axiom,
+    code_error(sK33)).
+
+cnf(u2145,axiom,
+    ~tau_a11(sK34)).
+
+cnf(u2150,axiom,
+    ~tau_a11(X2)).
+
+cnf(u2157,axiom,
+    x2_e_a9(sK35)).
+
+cnf(u2167,axiom,
+    a2_e_a4(sK36)).
+
+cnf(u2179,axiom,
+    x2_s_a13(sK37)).
+
+cnf(u2182,axiom,
+    ~x2_e_a13(sK37)).
+
+cnf(u2195,axiom,
+    fin(sK38)).
+
+cnf(u2199,axiom,
+    ~tau_a27(sK39)).
+
+cnf(u2204,axiom,
+    ~tau_a27(X2)).
+
+cnf(u2213,axiom,
+    x2_e_a19(sK43)).
+
+cnf(u2221,axiom,
+    ~tau_a25(X0)).
+
+cnf(u2226,axiom,
+    release(sK44)).
+
+cnf(u2230,axiom,
+    ~x2_s_a10(sK45)).
+
+cnf(u2235,axiom,
+    x2_e_a10(sK45)).
+
+cnf(u2243,axiom,
+    x2_e_a23(sK46)).
+
+cnf(u2247,axiom,
+    ~tau_a32(X0)).
+
+cnf(u2251,axiom,
+    ~tau_a14(X0)).
+
+cnf(u2263,axiom,
+    l_s_a1(sK48)).
+
+cnf(u2280,axiom,
+    ~empty(X0)).
+
+cnf(u2284,axiom,
+    x2_e_a21(sK51)).
+
+cnf(u2292,axiom,
+    ~tau_a0(X0)).
+
+cnf(u2306,axiom,
+    ~l_s_a8(sK54)).
+
+cnf(u2311,axiom,
+    reject(sK54)).
+
+cnf(u2319,axiom,
+    ~tau_a21(sK55)).
+
+cnf(u2324,axiom,
+    ~tau_a21(X2)).
+
+cnf(u2333,axiom,
+    ~x2_s_a0(sK56)).
+
+cnf(u2338,axiom,
+    x2_e_a0(sK56)).
+
+cnf(u2347,axiom,
+    x2_e_a17(sK58)).
+
+cnf(u2356,axiom,
+    ~x2_s_a8(sK61)).
+
+cnf(u2361,axiom,
+    x2_e_a8(sK61)).
+
+cnf(u2370,axiom,
+    code_nok(sK63)).
+
+cnf(u2382,axiom,
+    x2_e_a22(sK64)).
+
+cnf(u2387,axiom,
+    ~tau_a31(X0)).
+
+cnf(u2399,axiom,
+    a2_e_a2(sK67)).
+
+cnf(u2404,axiom,
+    ~change_diagn(X0)).
+
+cnf(u2408,axiom,
+    x3_e_a6(sK69)).
+
+cnf(u2412,axiom,
+    ~change_end(X0)).
+
+cnf(u2422,axiom,
+    x2_s_a16(sK70)).
+
+cnf(u2434,axiom,
+    a2_e_a2(sK71)).
+
+cnf(u2451,axiom,
+    tau_a29(sK73)).
+
+cnf(u2461,axiom,
+    a2_e_a0(sK74)).
+
+cnf(u2473,axiom,
+    a2_e_a4(sK75)).
+
+cnf(u2485,axiom,
+    ~tau_a26(X1)).
+
+cnf(u2505,axiom,
+    ~tau_a23(X1)).
+
+cnf(u2530,axiom,
+    x2_e_a5(sK82)).
+
+cnf(u2546,axiom,
+    new(sK84)).
+
+cnf(u2554,axiom,
+    x2_e_a0(sK85)).
+
+cnf(u2562,axiom,
+    ~tau_a1(X0)).
+
+cnf(u2570,axiom,
+    a2_e_a1(sK86)).
+
+cnf(u2579,axiom,
+    l_s_a6(sK88)).
+
+cnf(u2602,axiom,
+    ~l_s_a10(sK90)).
+
+cnf(u2607,axiom,
+    delete(sK90)).
+
+cnf(u2615,axiom,
+    ~tau_a30(sK91)).
+
+cnf(u2620,axiom,
+    ~tau_a30(X2)).
+
+cnf(u2632,axiom,
+    ~a2_s_a4(sK94)).
+
+cnf(u2637,axiom,
+    a2_e_a4(sK94)).
+
+cnf(u2645,axiom,
+    ~tau_a24(sK95)).
+
+cnf(u2650,axiom,
+    ~tau_a24(X2)).
+
+cnf(u2656,axiom,
+    ~tau_a22(X0)).
+
+cnf(u2668,axiom,
+    x2_s_a10(sK97)).
+
+cnf(u2677,axiom,
+    x2_s_a9(sK98)).
+
+cnf(u2689,axiom,
+    set_status(sK99)).
+
+cnf(u2693,axiom,
+    ~tau_a9(sK100)).
+
+cnf(u2698,axiom,
+    ~tau_a9(X2)).
+
+cnf(u2704,axiom,
+    x2_s_a5(sK101)).
+
+cnf(u2728,axiom,
+    l_s_a0(sK106)).
+
+cnf(u2737,axiom,
+    x2_s_a17(sK108)).
+
+cnf(u2740,axiom,
+    ~x2_e_a17(sK108)).
+
+cnf(u2752,axiom,
+    x2_s_a16(sK109)).
+
+cnf(u2766,axiom,
+    ~tau_a19(X2)).
+
+cnf(u2773,axiom,
+    a2_s_a1(sK111)).
+
+cnf(u2797,axiom,
+    a2_s_a2(sK115)).
+
+cnf(u2811,axiom,
+    ~tau_a10(X2)).
+
+cnf(u2818,axiom,
+    join_pat(sK117)).
+
+cnf(u2823,axiom,
+    l_s_a9(sK118)).
+
+cnf(u2851,axiom,
+    x2_e_a16(sK124)).
+
+cnf(u2856,axiom,
+    ~tau_a20(X0)).
+
+cnf(u2861,axiom,
+    reopen(sK125)).
+
+cnf(u2869,axiom,
+    a2_e_a3(sK127)).
+
+cnf(u2878,axiom,
+    x2_s_a5(sK128)).
+
+cnf(u2881,axiom,
+    ~x2_e_a22(sK128)).
+
+cnf(u2887,axiom,
+    ~tau_a7(sK129)).
+
+cnf(u2892,axiom,
+    ~tau_a7(X2)).
+
+cnf(u2909,axiom,
+    x2_e_a18(sK133)).
+
+cnf(u2916,axiom,
+    billed(sK134)).
+
+cnf(u2931,axiom,
+    x2_e_a3(sK137)).
+
+cnf(u2938,axiom,
+    delete(sK138)).
+
+cnf(u2943,axiom,
+    x2_e_a7(sK139)).
+
+cnf(u2959,axiom,
+    ~tau_a28(X1)).
+
+cnf(u2977,axiom,
+    a2_e_a0(sK143)).
+
+cnf(u2982,axiom,
+    ~x3_s_a6(sK144)).
+
+cnf(u2987,axiom,
+    x3_e_a6(sK144)).
+
+cnf(u2997,axiom,
+    reject(sK147)).
+
+cnf(u3001,axiom,
+    ~x2_s_a4(sK150)).
+
+cnf(u3006,axiom,
+    x2_e_a4(sK150)).
+
+cnf(u3011,axiom,
+    x2_s_a3(sK151)).
+
+cnf(u3014,axiom,
+    ~x2_e_a3(sK151)).
+
+cnf(u3022,axiom,
+    ~x2_s_a12(sK152)).
+
+cnf(u3027,axiom,
+    x2_e_a12(sK152)).
+
+cnf(u3040,axiom,
+    ~tau_a15(X2)).
+
+cnf(u3049,axiom,
+    ~x2_s_a11(sK154)).
+
+cnf(u3054,axiom,
+    x2_e_a11(sK154)).
+
+cnf(u3060,axiom,
+    code_error(sK155)).
+
+cnf(u3065,axiom,
+    x2_s_a21(sK156)).
+
+cnf(u3075,axiom,
+    x2_s_a7(sK157)).
+
+cnf(u3103,axiom,
+    x2_e_a22(sK162)).
+
+cnf(u3113,axiom,
+    zdbc_behan(sK163)).
+
+cnf(u3125,axiom,
+    x2_e_a20(sK165)).
+
+cnf(u3131,axiom,
+    ~sP1).
+
+cnf(u3143,axiom,
+    ~sP0).
+
+cnf(u3156,axiom,
+    ~x2_s_a7(sK169)).
+
+cnf(u3161,axiom,
+    x2_e_a8(sK169)).
+
+cnf(u3166,axiom,
+    x2_e_a4(sK173)).
+
+cnf(u3176,axiom,
+    a2_e_a1(sK175)).
+
+cnf(u3187,axiom,
+    x2_e_a15(sK177)).
+
+cnf(u3194,axiom,
+    code_ok(sK179)).
+
+cnf(u3198,axiom,
+    ~manual(sK180)).
+
+cnf(u3206,axiom,
+    l_s_a7(sK181)).
+
+cnf(u3224,axiom,
+    x2_e_a11(sK183)).
+
+cnf(u3231,axiom,
+    x2_s_a20(sK185)).
+
+cnf(u3240,axiom,
+    x2_s_a19(sK186)).
+
+cnf(u3248,axiom,
+    ~x2_s_a2(sK187)).
+
+cnf(u3253,axiom,
+    x2_e_a2(sK187)).
+
+cnf(u3258,axiom,
+    x2_s_a1(sK188)).
+
+cnf(u3261,axiom,
+    ~x2_e_a1(sK188)).
+
+cnf(u3267,axiom,
+    l_s_a5(sK189)).
+
+cnf(u3285,axiom,
+    a2_s_a1(sK191)).
+
+cnf(u3297,axiom,
+    a2_s_a0(sK193)).
+
+cnf(u3315,axiom,
+    x2_e_a8(sK195)).
+
+cnf(u3712,axiom,
+    ~x2_e_a3(sK175)).
+
+cnf(u1612,axiom,
+    ~x2_e_a18(X0) | ~x2_s_a18(X0)).
+
+cnf(u1606,axiom,
+    ~x2_s_a1(X0) | ~a2_s_a0(X0)).
+
+cnf(u3725,axiom,
+    ~a2_s_a4(sK165)).
+
+cnf(u1296,axiom,
+    ~x2_e_a20(X0) | ~fin(X0)).
+
+cnf(u1194,axiom,
+    ~x2_s_a23(X0) | ~a2_e_a1(X0)).
+
+cnf(u3631,axiom,
+    ~x2_e_a17(sK147)).
+
+cnf(u3935,axiom,
+    ~reopen(sK43)).
+
+cnf(u1752,axiom,
+    ~x2_e_a0(X0) | ~a2_e_a0(X0)).
+
+cnf(u3956,axiom,
+    ~x2_s_a21(sK144)).
+
+cnf(u1765,axiom,
+    ~tau_a22(X0) | ~reject(X0)).
+
+cnf(u3748,axiom,
+    ~x2_s_a21(sK73)).
+
+cnf(u3722,axiom,
+    ~a2_s_a4(sK43)).
+
+cnf(u3955,axiom,
+    ~x2_s_a21(sK69)).
+
+cnf(u3735,axiom,
+    ~l_s_a6(sK63)).
+
+cnf(u1572,axiom,
+    ~x3_s_a6(X0) | ~change_end(X0)).
+
+cnf(u3937,axiom,
+    ~l_s_a6(sK32)).
+
+cnf(u3839,axiom,
+    ~a2_s_a0(sK18)).
+
+cnf(u1349,axiom,
+    ~x2_e_a21(X0) | ~x2_s_a21(X0)).
+
+cnf(u3758,axiom,
+    ~x2_e_a12(sK42)).
+
+cnf(u1489,axiom,
+    ~x2_s_a11(X0) | ~x2_s_a12(X0)).
+
+cnf(u3948,axiom,
+    ~x2_e_a14(sK22)).
+
+cnf(u1519,axiom,
+    l_s_a9(sK107)).
+
+cnf(u3740,axiom,
+    ~x2_s_a3(sK111)).
+
+cnf(u3845,axiom,
+    ~x2_e_a1(sK113)).
+
+cnf(u3737,axiom,
+    ~l_s_a7(sK10)).
+
+cnf(u1582,axiom,
+    ~x2_e_a11(X0) | ~x2_e_a10(X0)).
+
+cnf(u3643,axiom,
+    ~x2_s_a16(sK130)).
+
+cnf(u3947,axiom,
+    ~x2_e_a14(sK57)).
+
+cnf(u1808,axiom,
+    ~tau_a5(X0) | ~join_pat(X0)).
+
+cnf(u1780,axiom,
+    ~tau_a20(X0) | ~x2_e_a17(X0)).
+
+cnf(u3713,axiom,
+    ~a2_e_a1(sK53)).
+
+cnf(u1555,axiom,
+    ~a2_s_a2(X0) | ~x2_s_a9(X0)).
+
+cnf(u1613,axiom,
+    ~x2_s_a1(X0) | ~x2_e_a1(X0)).
+
+cnf(u1201,axiom,
+    ~a2_e_a2(X0) | ~x2_s_a9(X0)).
+
+cnf(u3958,axiom,
+    ~l_s_a3(sK51)).
+
+cnf(u3736,axiom,
+    ~l_s_a7(sK192)).
+
+cnf(u1267,axiom,
+    ~x2_e_a8(X0) | ~x3_e_a6(X0)).
+
+cnf(u1767,axiom,
+    ~x2_e_a19(X0) | ~reopen(X0)).
+
+cnf(u3749,axiom,
+    ~x2_e_a14(sK60)).
+
+cnf(u1510,axiom,
+    ~x2_s_a13(X0) | ~a2_s_a3(X0)).
+
+cnf(u3959,axiom,
+    ~x3_e_a6(sK28)).
+
+cnf(u1790,axiom,
+    ~tau_a20(X0) | ~x2_e_a16(X0)).
+
+cnf(u3723,axiom,
+    ~a2_s_a4(sK123)).
+
+cnf(u1250,axiom,
+    ~a2_e_a4(X0) | ~x2_s_a18(X0)).
+
+cnf(u1610,axiom,
+    ~x2_e_a5(X0) | ~l_s_a3(X0)).
+
+cnf(u1352,axiom,
+    ~tau_a23(X0) | ~l_s_a7(X0)).
+
+cnf(u1517,axiom,
+    ~x2_e_a17(X0) | ~storno(X0)).
+
+cnf(u3954,axiom,
+    ~x2_s_a21(sK5)).
+
+cnf(u1465,axiom,
+    ~x2_s_a4(X0) | ~a2_s_a1(X0)).
+
+cnf(u3746,axiom,
+    ~a2_s_a1(sK150)).
+
+cnf(u1367,axiom,
+    ~x2_s_a10(X0) | ~l_s_a5(X0)).
+
+cnf(u3936,axiom,
+    ~l_s_a6(sK4)).
+
+cnf(u3728,axiom,
+    ~x2_s_a13(sK42)).
+
+cnf(u1290,axiom,
+    ~x2_e_a13(X0) | ~x2_e_a10(X0)).
+
+cnf(u1262,axiom,
+    x2_s_a16(sK30)).
+
+cnf(u3741,axiom,
+    ~x2_s_a3(sK191)).
+
+cnf(u1570,axiom,
+    ~x2_e_a12(X0) | ~code_ok(X0)).
+
+cnf(u3647,axiom,
+    ~x2_e_a16(sK15)).
+
+cnf(u3951,axiom,
+    ~a2_s_a3(sK31)).
+
+cnf(u3844,axiom,
+    ~x2_s_a18(sK133)).
+
+cnf(u1297,axiom,
+    ~x3_s_a6(X0) | ~l_s_a3(X0)).
+
+cnf(u1601,axiom,
+    ~x2_s_a8(X0) | ~tau_a10(X0)).
+
+cnf(u3946,axiom,
+    ~a2_s_a3(sK60)).
+
+cnf(u3738,axiom,
+    ~l_s_a7(sK58)).
+
+cnf(u1358,axiom,
+    ~x2_e_a11(X0) | ~x2_e_a12(X0)).
+
+cnf(u1498,axiom,
+    x2_s_a19(sK102)).
+
+cnf(u1588,axiom,
+    ~x3_s_a6(X0) | ~x3_e_a6(X0)).
+
+cnf(u3953,axiom,
+    ~x2_s_a21(sK68)).
+
+cnf(u1380,axiom,
+    ~x2_s_a2(X0) | ~a2_e_a0(X0)).
+
+cnf(u1778,axiom,
+    ~x2_e_a14(X0) | ~code_nok(X0)).
+
+cnf(u3727,axiom,
+    ~x2_e_a12(sK148)).
+
+cnf(u1172,axiom,
+    ~x2_e_a10(X0) | ~release(X0)).
+
+cnf(u3854,axiom,
+    ~x2_s_a5(sK120)).
+
+cnf(u1365,axiom,
+    x2_s_a23(sK62)).
+
+cnf(u3774,axiom,
+    ~x2_e_a17(sK30)).
+
+cnf(u1611,axiom,
+    ~x2_e_a5(X0) | ~x2_e_a21(X0)).
+
+cnf(u1505,axiom,
+    ~x2_s_a16(X0) | ~x2_e_a17(X0)).
+
+cnf(u1379,axiom,
+    ~x2_e_a1(X0) | ~a2_e_a0(X0)).
+
+cnf(u1535,axiom,
+    ~change_diagn(X0) | ~x2_s_a7(X0)).
+
+cnf(u3747,axiom,
+    ~a2_s_a1(sK173)).
+
+cnf(u1318,axiom,
+    ~tau_a8(X0) | ~l_s_a3(X0)).
+
+cnf(u3753,axiom,
+    ~x2_e_a10(sK92)).
+
+cnf(u1598,axiom,
+    ~a2_e_a4(X0) | ~x2_e_a18(X0)).
+
+cnf(u1340,axiom,
+    x2_s_a4(sK53)).
+
+cnf(u3963,axiom,
+    ~billed(sK8)).
+
+cnf(u1668,axiom,
+    ~x2_s_a20(X0) | ~a2_e_a4(X0)).
+
+cnf(u3729,axiom,
+    ~x2_s_a13(sK154)).
+
+cnf(u1616,axiom,
+    ~l_s_a10(X0) | ~tau_a30(X0)).
+
+cnf(u1408,axiom,
+    ~x2_e_a7(X0) | ~set_status(X0)).
+
+cnf(u1571,axiom,
+    ~zdbc_behan(X0) | ~x2_s_a23(X0)).
+
+cnf(u1629,axiom,
+    ~l_s_a6(X0) | ~tau_a17(X0)).
+
+cnf(u3960,axiom,
+    ~x3_e_a6(sK51)).
+
+cnf(u1339,axiom,
+    ~x2_e_a18(X0) | ~tau_a19(X0)).
+
+cnf(u1628,axiom,
+    ~x2_e_a5(X0) | ~x2_e_a22(X0)).
+
+cnf(u1678,axiom,
+    ~l_s_a4(X0) | ~tau_a12(X0)).
+
+cnf(u1576,axiom,
+    ~tau_a26(X0) | ~reopen(X0)).
+
+cnf(u3739,axiom,
+    ~x2_s_a3(sK161)).
+
+cnf(u1266,axiom,
+    ~x2_s_a7(X0) | ~x3_e_a6(X0)).
+
+cnf(u1420,axiom,
+    ~x2_s_a12(X0) | ~x2_e_a12(X0)).
+
+cnf(u1626,axiom,
+    ~x2_s_a22(X0) | ~x2_e_a5(X0)).
+
+cnf(u1368,axiom,
+    ~x2_s_a10(X0) | ~release(X0)).
+
+cnf(u1589,axiom,
+    ~tau_a21(X0) | ~x2_s_a17(X0)).
+
+cnf(u1160,axiom,
+    ~a2_s_a0(X0) | ~x2_s_a0(X0)).
+
+cnf(u3842,axiom,
+    ~x2_e_a21(sK82)).
+
+cnf(u1779,axiom,
+    ~tau_a20(X0) | ~l_s_a7(X0)).
+
+cnf(u1353,axiom,
+    ~x2_s_a13(X0) | ~tau_a16(X0)).
+
+cnf(u3762,axiom,
+    ~a2_e_a2(sK126)).
+
+cnf(u1615,axiom,
+    ~tau_a25(X0) | ~x2_e_a19(X0)).
+
+cnf(u1383,axiom,
+    ~tau_a18(X0) | ~l_s_a6(X0)).
+
+cnf(u3952,axiom,
+    ~a2_s_a3(sK177)).
+
+cnf(u3744,axiom,
+    ~x2_e_a3(sK191)).
+
+cnf(u1306,axiom,
+    a2_s_a0(sK41)).
+
+cnf(u1278,axiom,
+    ~x2_s_a12(X0) | ~manual(X0)).
+
+cnf(u3757,axiom,
+    ~x2_s_a12(sK42)).
+
+cnf(u1586,axiom,
+    ~l_s_a4(X0) | ~code_error(X0)).
+
+cnf(u1328,axiom,
+    ~a2_s_a3(X0) | ~tau_a16(X0)).
+
+cnf(u1784,axiom,
+    l_s_a10(sK184)).
+
+cnf(u1669,axiom,
+    ~x2_e_a20(X0) | ~a2_e_a4(X0)).
+
+cnf(u3652,axiom,
+    ~l_s_a3(sK69)).
+
+cnf(u1617,axiom,
+    ~delete(X0) | ~tau_a30(X0)).
+
+cnf(u3572,axiom,
+    ~new(sK85)).
+
+cnf(u3962,axiom,
+    ~l_s_a1(sK8)).
+
+cnf(u3756,axiom,
+    ~code_error(sK35)).
+
+cnf(u1159,axiom,
+    ~fin(X0) | ~tau_a27(X0)).
+
+cnf(u3754,axiom,
+    ~x2_e_a10(sK97)).
+
+cnf(u1514,axiom,
+    ~tau_a21(X0) | ~l_s_a8(X0)).
+
+cnf(u3571,axiom,
+    ~new(sK56)).
+
+cnf(u1666,axiom,
+    ~a2_e_a4(X0) | ~x2_s_a19(X0)).
+
+cnf(u1396,axiom,
+    ~x2_s_a1(X0) | ~billed(X0)).
+
+cnf(u3841,axiom,
+    ~l_s_a3(sK82)).
+
+cnf(u3743,axiom,
+    ~x2_e_a3(sK111)).
+
+cnf(u1188,axiom,
+    l_s_a7(sK7)).
+
+cnf(u1381,axiom,
+    ~x2_e_a2(X0) | ~a2_e_a0(X0)).
+
+cnf(u1577,axiom,
+    ~tau_a11(X0) | ~x2_s_a9(X0)).
+
+cnf(u1627,axiom,
+    ~x2_e_a22(X0) | ~x2_s_a5(X0)).
+
+cnf(u1521,axiom,
+    ~tau_a15(X0) | ~x2_s_a11(X0)).
+
+cnf(u1395,axiom,
+    ~x2_s_a1(X0) | ~l_s_a1(X0)).
+
+cnf(u3877,axiom,
+    ~x2_e_a22(sK184)).
+
+cnf(u3763,axiom,
+    ~x2_e_a3(sK9)).
+
+cnf(u3769,axiom,
+    ~x2_e_a22(sK53)).
+
+cnf(u3851,axiom,
+    ~x2_s_a2(sK18)).
+
+cnf(u3745,axiom,
+    ~a2_s_a1(sK53)).
+
+cnf(u1632,axiom,
+    ~x2_e_a5(X0) | ~tau_a8(X0)).
+
+cnf(u1476,axiom,
+    ~tau_a14(X0) | ~l_s_a5(X0)).
+
+cnf(u1587,axiom,
+    ~x2_e_a2(X0) | ~tau_a4(X0)).
+
+cnf(u1645,axiom,
+    ~x2_s_a17(X0) | ~reject(X0)).
+
+cnf(u3768,axiom,
+    ~x2_s_a5(sK53)).
+
+cnf(u1171,axiom,
+    ~x2_e_a10(X0) | ~l_s_a5(X0)).
+
+cnf(u1475,axiom,
+    ~x2_s_a14(X0) | ~x2_e_a14(X0)).
+
+cnf(u3653,axiom,
+    ~l_s_a3(sK144)).
+
+cnf(u3863,axiom,
+    ~x2_s_a7(sK19)).
+
+cnf(u1694,axiom,
+    ~a2_s_a4(X0) | ~tau_a24(X0)).
+
+cnf(u1362,axiom,
+    x2_s_a14(sK60)).
+
+cnf(u1644,axiom,
+    ~x2_s_a17(X0) | ~l_s_a8(X0)).
+
+cnf(u3869,axiom,
+    ~x2_e_a17(sK172)).
+
+cnf(u3755,axiom,
+    ~x2_e_a9(sK149)).
+
+cnf(u1642,axiom,
+    ~x3_s_a6(X0) | ~x2_s_a7(X0)).
+
+cnf(u3858,axiom,
+    ~x2_e_a22(sK82)).
+
+cnf(u1667,axiom,
+    ~x2_e_a19(X0) | ~a2_e_a4(X0)).
+
+cnf(u1369,axiom,
+    ~x2_e_a23(X0) | ~x2_s_a23(X0)).
+
+cnf(u3650,axiom,
+    ~l_s_a3(sK19)).
+
+cnf(u3840,axiom,
+    ~a2_s_a0(sK187)).
+
+cnf(u3760,axiom,
+    ~x2_s_a8(sK171)).
+
+cnf(u3865,axiom,
+    ~l_s_a8(sK172)).
+
+cnf(u1166,axiom,
+    ~x2_s_a5(X0) | ~tau_a7(X0)).
+
+cnf(u3773,axiom,
+    ~l_s_a7(sK109)).
+
+cnf(u3855,axiom,
+    ~x2_e_a5(sK120)).
+
+cnf(u3876,axiom,
+    ~x2_s_a5(sK82)).
+
+cnf(u3566,axiom,
+    ~x2_s_a0(sK174)).
+
+cnf(u1329,axiom,
+    ~a2_e_a3(X0) | ~tau_a16(X0)).
+
+cnf(u3668,axiom,
+    ~l_s_a9(sK125)).
+
+cnf(u3772,axiom,
+    ~l_s_a7(sK70)).
+
+cnf(u1175,axiom,
+    ~reopen(X0) | ~x2_s_a19(X0)).
+
+cnf(u3564,axiom,
+    ~x2_s_a0(sK74)).
+
+cnf(u3770,axiom,
+    ~x2_s_a9(sK35)).
+
+cnf(u3875,axiom,
+    ~l_s_a1(sK134)).
+
+cnf(u1390,axiom,
+    ~a2_e_a1(X0) | ~x2_s_a3(X0)).
+
+cnf(u1734,axiom,
+    ~l_s_a3(X0) | ~x2_s_a5(X0)).
+
+cnf(u1682,axiom,
+    ~change_diagn(X0) | ~x3_e_a6(X0)).
+
+cnf(u3857,axiom,
+    ~x2_s_a5(sK162)).
+
+cnf(u1740,axiom,
+    l_s_a0(sK174)).
+
+cnf(u1204,axiom,
+    ~a2_e_a2(X0) | ~x2_e_a13(X0)).
+
+cnf(u3563,axiom,
+    ~x2_s_a0(sK193)).
+
+cnf(u3886,axiom,
+    ~a2_e_a4(sK165)).
+
+cnf(u1216,axiom,
+    ~l_s_a4(X0) | ~x2_s_a9(X0)).
+
+cnf(u1643,axiom,
+    ~x3_s_a6(X0) | ~x2_e_a8(X0)).
+
+cnf(u1409,axiom,
+    ~a2_s_a4(X0) | ~x2_s_a19(X0)).
+
+cnf(u3654,axiom,
+    ~x2_s_a19(sK43)).
+
+cnf(u3868,axiom,
+    ~reject(sK108)).
+
+cnf(u3893,axiom,
+    ~x2_e_a14(sK20)).
+
+cnf(u3657,axiom,
+    ~x2_e_a8(sK115)).
+
+cnf(u1700,axiom,
+    ~tau_a25(X0) | ~reopen(X0)).
+
+cnf(u3867,axiom,
+    ~reject(sK172)).
+
+cnf(u3761,axiom,
+    ~x2_s_a8(sK115)).
+
+cnf(u1648,axiom,
+    ~join_pat(X0) | ~l_s_a2(X0)).
+
+cnf(u1492,axiom,
+    ~a2_s_a2(X0) | ~x2_s_a8(X0)).
+
+cnf(u1173,axiom,
+    x2_s_a9(sK3)).
+
+cnf(u3864,axiom,
+    ~x2_e_a8(sK19)).
+
+cnf(u1477,axiom,
+    ~l_s_a1(X0) | ~tau_a2(X0)).
+
+cnf(u3878,axiom,
+    ~x2_e_a22(sK90)).
+
+cnf(u3656,axiom,
+    ~x2_e_a8(sK171)).
+
+cnf(u1187,axiom,
+    ~change_end(X0) | ~x2_e_a8(X0)).
+
+cnf(u1687,axiom,
+    ~x2_e_a0(X0) | ~x2_s_a0(X0)).
+
+cnf(u1491,axiom,
+    ~x2_e_a7(X0) | ~tau_a9(X0)).
+
+cnf(u3879,axiom,
+    ~x2_e_a22(sK138)).
+
+cnf(u1378,axiom,
+    ~x2_s_a1(X0) | ~a2_e_a0(X0)).
+
+cnf(u1660,axiom,
+    l_s_a4(sK149)).
+
+cnf(u3771,axiom,
+    ~l_s_a7(sK30)).
+
+cnf(u1170,axiom,
+    ~tau_a28(X0) | ~l_s_a3(X0)).
+
+cnf(u1452,axiom,
+    ~tau_a23(X0) | ~x2_e_a17(X0)).
+
+cnf(u3567,axiom,
+    ~x2_s_a0(sK106)).
+
+cnf(u1192,axiom,
+    x2_s_a3(sK9)).
+
+cnf(u3874,axiom,
+    ~l_s_a2(sK117)).
+
+cnf(u1683,axiom,
+    ~tau_a15(X0) | ~x2_e_a11(X0)).
+
+cnf(u1385,axiom,
+    l_s_a2(sK66)).
+
+cnf(u1741,axiom,
+    ~x2_s_a22(X0) | ~x2_e_a22(X0)).
+
+cnf(u3666,axiom,
+    ~x2_e_a22(sK150)).
+
+cnf(u1647,axiom,
+    ~code_ok(X0) | ~manual(X0)).
+
+cnf(u1689,axiom,
+    ~a2_e_a3(X0) | ~x2_e_a14(X0)).
+
+cnf(u1451,axiom,
+    ~tau_a23(X0) | ~storno(X0)).
+
+cnf(u1287,axiom,
+    ~x2_s_a13(X0) | ~x2_s_a10(X0)).
+
+cnf(u3856,axiom,
+    ~x2_s_a5(sK64)).
+
+cnf(u1231,axiom,
+    ~x2_s_a8(X0) | ~x2_e_a8(X0)).
+
+cnf(u3648,axiom,
+    ~x2_e_a16(sK133)).
+
+cnf(u3881,axiom,
+    ~x2_s_a19(sK75)).
+
+cnf(u1338,axiom,
+    ~x2_s_a16(X0) | ~tau_a19(X0)).
+
+cnf(u1182,axiom,
+    ~x2_e_a3(X0) | ~l_s_a2(X0)).
+
+cnf(u1542,axiom,
+    ~x2_e_a7(X0) | ~x2_e_a8(X0)).
+
+cnf(u1688,axiom,
+    ~x2_s_a14(X0) | ~a2_e_a3(X0)).
+
+cnf(u3892,axiom,
+    ~a2_e_a3(sK60)).
+
+cnf(u3582,axiom,
+    ~x2_s_a19(sK107)).
+
+cnf(u1701,axiom,
+    ~x2_e_a15(X0) | ~x2_s_a16(X0)).
+
+cnf(u1161,axiom,
+    ~a2_e_a0(X0) | ~x2_s_a0(X0)).
+
+cnf(u3684,axiom,
+    ~x2_e_a12(sK183)).
+
+cnf(u1649,axiom,
+    ~billed(X0) | ~l_s_a1(X0)).
+
+cnf(u3866,axiom,
+    ~l_s_a8(sK108)).
+
+cnf(u3580,axiom,
+    ~release(sK12)).
+
+cnf(u3658,axiom,
+    ~x2_e_a8(sK67)).
+
+cnf(u3891,axiom,
+    ~x2_s_a0(sK85)).
+
+cnf(u3565,axiom,
+    ~x2_s_a0(sK143)).
+
+cnf(u1750,axiom,
+    ~new(X0) | ~l_s_a0(X0)).
+
+cnf(u3775,axiom,
+    ~x2_e_a17(sK70)).
+
+cnf(u1756,axiom,
+    ~set_status(X0) | ~x2_s_a7(X0)).
+
+cnf(u3579,axiom,
+    ~l_s_a5(sK45)).
+
+cnf(u1659,axiom,
+    x2_s_a12(sK148)).
+
+cnf(u1425,axiom,
+    ~x2_s_a11(X0) | ~x2_s_a13(X0)).
+
+cnf(u1729,axiom,
+    l_s_a8(sK170)).
+
+cnf(u3670,axiom,
+    ~x2_s_a15(sK177)).
+
+cnf(u3884,axiom,
+    ~a2_e_a4(sK123)).
+
+cnf(u3667,axiom,
+    ~x2_e_a22(sK173)).
+
+cnf(u3885,axiom,
+    ~a2_e_a4(sK185)).
+
+cnf(u1486,axiom,
+    ~x2_s_a10(X0) | ~x2_e_a10(X0)).
+
+cnf(u3883,axiom,
+    ~a2_e_a4(sK43)).
+
+cnf(u3649,axiom,
+    ~fin(sK165)).
+
+cnf(u1536,axiom,
+    ~change_diagn(X0) | ~x2_e_a8(X0)).
+
+cnf(u3880,axiom,
+    ~x2_s_a19(sK36)).
+
+cnf(u1493,axiom,
+    ~x2_s_a8(X0) | ~a2_e_a2(X0)).
+
+cnf(u3570,axiom,
+    ~l_s_a0(sK85)).
+
+cnf(u1739,axiom,
+    ~x2_e_a20(X0) | ~x2_s_a20(X0)).
+
+cnf(u3894,axiom,
+    ~x2_e_a14(sK127)).
+
+cnf(u1203,axiom,
+    ~a2_e_a2(X0) | ~x2_s_a10(X0)).
+
+cnf(u1703,axiom,
+    ~a2_s_a3(X0) | ~x2_e_a13(X0)).
+
+cnf(u1507,axiom,
+    ~tau_a6(X0) | ~l_s_a2(X0)).
+
+cnf(u3568,axiom,
+    ~x2_s_a0(sK84)).
+
+cnf(u3895,axiom,
+    ~x2_s_a15(sK20)).
+
+cnf(u1806,axiom,
+    ~x3_e_a6(X0) | ~tau_a28(X0)).
+
+cnf(u1548,axiom,
+    ~x2_s_a3(X0) | ~join_pat(X0)).
+
+cnf(u1394,axiom,
+    l_s_a3(sK68)).
+
+cnf(u1238,axiom,
+    ~reject(X0) | ~l_s_a8(X0)).
+
+cnf(u3659,axiom,
+    ~x2_e_a8(sK71)).
+
+cnf(u1186,axiom,
+    ~change_end(X0) | ~x2_s_a7(X0)).
+
+cnf(u1546,axiom,
+    x2_s_a2(sK114)).
+
+cnf(u1288,axiom,
+    ~x2_s_a13(X0) | ~x2_e_a10(X0)).
+
+cnf(u1260,axiom,
+    ~tau_a13(X0) | ~x2_e_a10(X0)).
+
+cnf(u3583,axiom,
+    ~x2_s_a19(sK118)).
+
+cnf(u1813,axiom,
+    ~l_s_a3(X0) | ~x2_s_a21(X0)).
+
+cnf(u1699,axiom,
+    ~tau_a25(X0) | ~l_s_a9(X0)).
+
+cnf(u1663,axiom,
+    ~change_diagn(X0) | ~x3_s_a6(X0)).
+
+cnf(u3682,axiom,
+    ~x2_s_a12(sK183)).
+
+cnf(u1757,axiom,
+    x2_s_a0(sK178)).
+
+cnf(u1217,axiom,
+    ~code_error(X0) | ~x2_s_a9(X0)).
+
+cnf(u1705,axiom,
+    ~tau_a1(X0) | ~x2_e_a0(X0)).
+
+cnf(u1303,axiom,
+    l_s_a6(sK40)).
+
+cnf(u3664,axiom,
+    ~x2_s_a5(sK150)).
+
+cnf(u3897,axiom,
+    ~a2_e_a3(sK31)).
+
+cnf(u1198,axiom,
+    ~x2_e_a21(X0) | ~empty(X0)).
+
+cnf(u1558,axiom,
+    ~a2_s_a2(X0) | ~x2_e_a13(X0)).
+
+cnf(u3677,axiom,
+    ~x2_s_a21(sK51)).
+
+cnf(u1474,axiom,
+    ~change_end(X0) | ~x3_e_a6(X0)).
+
+cnf(u1704,axiom,
+    ~a2_e_a3(X0) | ~x2_e_a13(X0)).
+
+cnf(u3887,axiom,
+    ~x2_s_a16(sK124)).
+
+cnf(u1496,axiom,
+    ~tau_a3(X0) | ~billed(X0)).
+
+cnf(u1717,axiom,
+    l_s_a1(sK166)).
+
+cnf(u3700,axiom,
+    ~a2_e_a0(sK8)).
+
+cnf(u1537,axiom,
+    ~x2_s_a14(X0) | ~l_s_a6(X0)).
+
+cnf(u1799,axiom,
+    ~tau_a15(X0) | ~x2_s_a12(X0)).
+
+cnf(u3676,axiom,
+    ~x2_s_a21(sK28)).
+
+cnf(u3882,axiom,
+    ~x2_s_a19(sK94)).
+
+cnf(u1511,axiom,
+    ~x2_s_a13(X0) | ~a2_e_a3(X0)).
+
+cnf(u1294,axiom,
+    ~x2_e_a18(X0) | ~x2_s_a16(X0)).
+
+cnf(u3687,axiom,
+    ~l_s_a5(sK92)).
+
+cnf(u3581,axiom,
+    ~release(sK45)).
+
+cnf(u1766,axiom,
+    ~x2_e_a19(X0) | ~l_s_a9(X0)).
+
+cnf(u1226,axiom,
+    ~tau_a10(X0) | ~x2_e_a8(X0)).
+
+cnf(u1316,axiom,
+    ~a2_s_a2(X0) | ~x2_e_a8(X0)).
+
+cnf(u3710,axiom,
+    ~x2_s_a3(sK175)).
+
+cnf(u1547,axiom,
+    ~x2_s_a3(X0) | ~l_s_a2(X0)).
+
+cnf(u1441,axiom,
+    ~change_diagn(X0) | ~change_end(X0)).
+
+cnf(u1801,axiom,
+    ~x2_s_a10(X0) | ~tau_a13(X0)).
+
+cnf(u3780,axiom,
+    ~a2_e_a3(sK59)).
+
+cnf(u1745,axiom,
+    ~a2_s_a2(X0) | ~tau_a10(X0)).
+
+cnf(u1259,axiom,
+    ~tau_a5(X0) | ~x2_s_a3(X0)).
+
+cnf(u3683,axiom,
+    ~x2_e_a12(sK154)).
+
+cnf(u3689,axiom,
+    ~release(sK92)).
+
+cnf(u1812,axiom,
+    ~x2_e_a15(X0) | ~a2_s_a3(X0)).
+
+cnf(u3665,axiom,
+    ~x2_s_a5(sK173)).
+
+cnf(u3896,axiom,
+    ~x2_s_a15(sK127)).
+
+cnf(u1811,axiom,
+    ~a2_s_a3(X0) | ~x2_s_a15(X0)).
+
+cnf(u3790,axiom,
+    ~code_ok(sK148)).
+
+cnf(u3688,axiom,
+    ~l_s_a5(sK97)).
+
+cnf(u3562,axiom,
+    ~x2_s_a0(sK41)).
+
+cnf(u3701,axiom,
+    ~a2_e_a0(sK114)).
+
+cnf(u1462,axiom,
+    ~x2_e_a17(X0) | ~l_s_a7(X0)).
+
+cnf(u1202,axiom,
+    ~a2_e_a2(X0) | ~x2_e_a9(X0)).
+
+cnf(u3569,axiom,
+    ~l_s_a0(sK56)).
+
+cnf(u1304,axiom,
+    ~x2_e_a19(X0) | ~x2_s_a19(X0)).
+
+cnf(u1276,axiom,
+    ~l_s_a8(X0) | ~x2_e_a17(X0)).
+
+cnf(u1289,axiom,
+    ~x2_e_a13(X0) | ~x2_s_a10(X0)).
+
+cnf(u3698,axiom,
+    ~a2_e_a0(sK113)).
+
+cnf(u1319,axiom,
+    ~tau_a8(X0) | ~x2_e_a21(X0)).
+
+cnf(u1263,axiom,
+    ~tau_a24(X0) | ~x2_e_a18(X0)).
+
+cnf(u3781,axiom,
+    ~a2_e_a3(sK37)).
+
+cnf(u3779,axiom,
+    ~a2_s_a3(sK37)).
+
+cnf(u3693,axiom,
+    ~x2_e_a13(sK59)).
+
+cnf(u1800,axiom,
+    ~tau_a15(X0) | ~x2_e_a12(X0)).
+
+cnf(u1490,axiom,
+    ~x2_s_a11(X0) | ~x2_e_a12(X0)).
+
+cnf(u3903,axiom,
+    ~x2_s_a16(sK31)).
+
+cnf(u1512,axiom,
+    ~release(X0) | ~l_s_a5(X0)).
+
+cnf(u1605,axiom,
+    ~zdbc_behan(X0) | ~tau_a32(X0)).
+
+cnf(u1193,axiom,
+    ~x2_s_a23(X0) | ~a2_s_a1(X0)).
+
+cnf(u3588,axiom,
+    ~a2_e_a1(sK62)).
+
+cnf(u1815,axiom,
+    ~x2_e_a21(X0) | ~l_s_a3(X0)).
+
+cnf(u1497,axiom,
+    ~x2_e_a15(X0) | ~tau_a19(X0)).
+
+cnf(u3778,axiom,
+    ~a2_s_a3(sK59)).
+
+cnf(u1759,axiom,
+    ~x2_s_a20(X0) | ~tau_a27(X0)).
+
+cnf(u3692,axiom,
+    ~x2_s_a23(sK46)).
+
+cnf(u3898,axiom,
+    ~a2_e_a3(sK177)).
+
+cnf(u3690,axiom,
+    ~release(sK97)).
+
+cnf(u3703,axiom,
+    ~a2_e_a0(sK187)).
+
+cnf(u1810,axiom,
+    ~a2_s_a3(X0) | ~x2_e_a14(X0)).
+
+cnf(u1332,axiom,
+    x2_s_a7(sK50)).
+
+cnf(u1264,axiom,
+    ~tau_a8(X0) | ~x2_s_a5(X0)).
+
+cnf(u1317,axiom,
+    ~a2_e_a2(X0) | ~x2_e_a8(X0)).
+
+cnf(u3598,axiom,
+    ~x2_e_a9(sK67)).
+
+cnf(u3702,axiom,
+    ~a2_e_a0(sK18)).
+
+cnf(u1331,axiom,
+    ~x2_e_a4(X0) | ~x2_e_a22(X0)).
+
+cnf(u1359,axiom,
+    ~tau_a30(X0) | ~x2_e_a22(X0)).
+
+cnf(u3699,axiom,
+    ~a2_e_a0(sK188)).
+
+cnf(u1828,axiom,
+    ~x2_e_a1(X0) | ~billed(X0)).
+
+cnf(u3705,axiom,
+    ~x2_s_a15(sK70)).
+
+cnf(u1518,axiom,
+    ~l_s_a10(X0) | ~delete(X0)).
+
+cnf(u3681,axiom,
+    ~x2_s_a12(sK154)).
+
+cnf(u1412,axiom,
+    ~x2_e_a20(X0) | ~a2_s_a4(X0)).
+
+cnf(u1581,axiom,
+    ~x2_e_a11(X0) | ~x2_s_a10(X0)).
+
+cnf(u1827,axiom,
+    ~x2_e_a1(X0) | ~l_s_a1(X0)).
+
+cnf(u3806,axiom,
+    ~join_pat(sK151)).
+
+cnf(u3704,axiom,
+    ~x2_s_a15(sK30)).
+
+cnf(u1607,axiom,
+    ~x2_e_a1(X0) | ~a2_s_a0(X0)).
+
+cnf(u3578,axiom,
+    ~l_s_a5(sK12)).
+
+cnf(u3782,axiom,
+    ~l_s_a5(sK44)).
+
+cnf(u1411,axiom,
+    ~x2_s_a20(X0) | ~a2_s_a4(X0)).
+
+cnf(u3589,axiom,
+    ~a2_s_a1(sK16)).
+
+cnf(u3788,axiom,
+    ~storno(sK58)).
+
+cnf(u1350,axiom,
+    a2_s_a3(sK57)).
+
+cnf(u1298,axiom,
+    ~x3_e_a6(X0) | ~l_s_a3(X0)).
+
+cnf(u1580,axiom,
+    ~x2_s_a11(X0) | ~x2_e_a10(X0)).
+
+cnf(u3785,axiom,
+    ~storno(sK172)).
+
+cnf(u1630,axiom,
+    ~code_nok(X0) | ~tau_a17(X0)).
+
+cnf(u1372,axiom,
+    ~tau_a1(X0) | ~x2_s_a0(X0)).
+
+cnf(u1164,axiom,
+    ~x2_e_a0(X0) | ~l_s_a0(X0)).
+
+cnf(u1776,axiom,
+    ~tau_a11(X0) | ~x2_e_a9(X0)).
+
+cnf(u1357,axiom,
+    ~x2_e_a11(X0) | ~x2_s_a12(X0)).
+
+cnf(u1305,axiom,
+    ~tau_a5(X0) | ~x2_e_a3(X0)).
+
+cnf(u1789,axiom,
+    ~tau_a32(X0) | ~x2_s_a23(X0)).
+
+cnf(u3586,axiom,
+    ~join_pat(sK137)).
+
+cnf(u1249,axiom,
+    ~a2_s_a4(X0) | ~x2_s_a18(X0)).
+
+cnf(u1609,axiom,
+    ~x2_e_a2(X0) | ~a2_s_a0(X0)).
+
+cnf(u1371,axiom,
+    ~zdbc_behan(X0) | ~x2_e_a23(X0)).
+
+cnf(u1335,axiom,
+    ~reopen(X0) | ~l_s_a9(X0)).
+
+cnf(u3696,axiom,
+    ~fin(sK123)).
+
+cnf(u3797,axiom,
+    ~x2_s_a7(sK195)).
+
+cnf(u3795,axiom,
+    ~x2_s_a7(sK61)).
+
+cnf(u3709,axiom,
+    ~x2_s_a3(sK86)).
+
+cnf(u1816,axiom,
+    ~x2_e_a21(X0) | ~x3_e_a6(X0)).
+
+cnf(u1506,axiom,
+    ~tau_a29(X0) | ~empty(X0)).
+
+cnf(u1608,axiom,
+    ~x2_s_a2(X0) | ~a2_s_a0(X0)).
+
+cnf(u1528,axiom,
+    ~x2_s_a12(X0) | ~code_ok(X0)).
+
+cnf(u1261,axiom,
+    ~tau_a29(X0) | ~x2_e_a21(X0)).
+
+cnf(u3604,axiom,
+    ~x2_s_a9(sK149)).
+
+cnf(u1569,axiom,
+    x2_s_a20(sK123)).
+
+cnf(u1513,axiom,
+    ~delete(X0) | ~tau_a31(X0)).
+
+cnf(u3794,axiom,
+    ~x2_s_a8(sK139)).
+
+cnf(u1775,axiom,
+    ~tau_a25(X0) | ~x2_s_a19(X0)).
+
+cnf(u3708,axiom,
+    ~x2_s_a15(sK133)).
+
+cnf(u3706,axiom,
+    ~x2_s_a15(sK109)).
+
+cnf(u3776,axiom,
+    ~x2_e_a17(sK109)).
+
+cnf(u1466,axiom,
+    ~x2_e_a4(X0) | ~a2_s_a1(X0)).
+
+cnf(u3591,axiom,
+    ~a2_e_a1(sK16)).
+
+cnf(u1826,axiom,
+    ~x2_e_a20(X0) | ~tau_a27(X0)).
+
+cnf(u3789,axiom,
+    ~delete(sK184)).
+
+cnf(u3695,axiom,
+    ~x2_e_a23(sK163)).
+
+cnf(u1676,axiom,
+    ~x2_e_a16(X0) | ~x2_s_a16(X0)).
+
+cnf(u1360,axiom,
+    x2_s_a13(sK59)).
+
+cnf(u1579,axiom,
+    ~x2_s_a11(X0) | ~x2_s_a10(X0)).
+
+cnf(u1777,axiom,
+    ~x2_e_a14(X0) | ~l_s_a6(X0)).
+
+cnf(u3812,axiom,
+    ~x2_s_a10(sK115)).
+
+cnf(u3590,axiom,
+    ~a2_s_a1(sK46)).
+
+cnf(u3587,axiom,
+    ~a2_s_a1(sK62)).
+
+cnf(u3786,axiom,
+    ~storno(sK108)).
+
+cnf(u3799,axiom,
+    ~x2_e_a8(sK139)).
+
+cnf(u3697,axiom,
+    ~fin(sK185)).
+
+cnf(u1428,axiom,
+    ~x2_e_a11(X0) | ~x2_e_a13(X0)).
+
+cnf(u1220,axiom,
+    ~tau_a24(X0) | ~x2_s_a18(X0)).
+
+cnf(u1597,axiom,
+    ~a2_s_a4(X0) | ~x2_e_a18(X0)).
+
+cnf(u3822,axiom,
+    ~x2_s_a10(sK183)).
+
+cnf(u3592,axiom,
+    ~a2_e_a1(sK46)).
+
+cnf(u1623,axiom,
+    ~tau_a4(X0) | ~x2_s_a2(X0)).
+
+cnf(u1427,axiom,
+    ~x2_s_a11(X0) | ~x2_e_a13(X0)).
+
+cnf(u3605,axiom,
+    ~x2_s_a9(sK33)).
+
+cnf(u3804,axiom,
+    ~l_s_a2(sK151)).
+
+cnf(u3909,axiom,
+    ~x2_e_a13(sK20)).
+
+cnf(u1646,axiom,
+    ~x2_s_a17(X0) | ~x2_e_a17(X0)).
+
+cnf(u1158,axiom,
+    ~empty(X0) | ~x2_s_a21(X0)).
+
+cnf(u1596,axiom,
+    x2_s_a18(sK130)).
+
+cnf(u3801,axiom,
+    ~x2_s_a22(sK90)).
+
+cnf(u3707,axiom,
+    ~x2_s_a15(sK15)).
+
+cnf(u1180,axiom,
+    ~tau_a13(X0) | ~l_s_a5(X0)).
+
+cnf(u1664,axiom,
+    ~l_s_a10(X0) | ~x2_e_a22(X0)).
+
+cnf(u1373,axiom,
+    ~x2_s_a20(X0) | ~fin(X0)).
+
+cnf(u1677,axiom,
+    ~tau_a32(X0) | ~x2_e_a23(X0)).
+
+cnf(u1321,axiom,
+    ~tau_a18(X0) | ~code_nok(X0)).
+
+cnf(u1265,axiom,
+    ~x2_e_a7(X0) | ~x2_s_a7(X0)).
+
+cnf(u3602,axiom,
+    ~x2_e_a13(sK67)).
+
+cnf(u1583,axiom,
+    x2_s_a8(sK126)).
+
+cnf(u1625,axiom,
+    ~x2_s_a22(X0) | ~x2_s_a5(X0)).
+
+cnf(u1387,axiom,
+    ~x2_e_a18(X0) | ~x2_s_a15(X0)).
+
+cnf(u3800,axiom,
+    ~x2_s_a22(sK184)).
+
+cnf(u1167,axiom,
+    ~x2_e_a22(X0) | ~tau_a7(X0)).
+
+cnf(u3584,axiom,
+    ~x2_s_a19(sK125)).
+
+cnf(u3813,axiom,
+    ~x2_e_a13(sK171)).
+
+cnf(u3811,axiom,
+    ~x2_s_a10(sK171)).
+
+cnf(u3597,axiom,
+    ~x2_s_a9(sK71)).
+
+cnf(u1624,axiom,
+    ~x2_e_a2(X0) | ~x2_s_a2(X0)).
+
+cnf(u1277,axiom,
+    ~reject(X0) | ~x2_e_a17(X0)).
+
+cnf(u3620,axiom,
+    ~x2_s_a18(sK75)).
+
+cnf(u1163,axiom,
+    ~new(X0) | ~x2_s_a0(X0)).
+
+cnf(u3810,axiom,
+    ~x2_e_a9(sK115)).
+
+cnf(u3596,axiom,
+    ~x2_s_a9(sK67)).
+
+cnf(u3792,axiom,
+    ~code_nok(sK60)).
+
+cnf(u3607,axiom,
+    ~a2_s_a1(sK114)).
+
+cnf(u1686,axiom,
+    ~x2_s_a22(X0) | ~tau_a30(X0)).
+
+cnf(u3805,axiom,
+    ~join_pat(sK9)).
+
+cnf(u3711,axiom,
+    ~x2_e_a3(sK86)).
+
+cnf(u1376,axiom,
+    ~tau_a11(X0) | ~l_s_a4(X0)).
+
+cnf(u3630,axiom,
+    ~x2_e_a17(sK54)).
+
+cnf(u3908,axiom,
+    ~x2_e_a13(sK22)).
+
+cnf(u1361,axiom,
+    ~code_error(X0) | ~tau_a12(X0)).
+
+cnf(u3828,axiom,
+    ~x3_e_a6(sK19)).
+
+cnf(u1665,axiom,
+    ~delete(X0) | ~x2_e_a22(X0)).
+
+cnf(u3606,axiom,
+    ~x2_s_a9(sK155)).
+
+cnf(u1391,axiom,
+    ~a2_e_a1(X0) | ~x2_e_a3(X0)).
+
+cnf(u3603,axiom,
+    ~x2_e_a13(sK71)).
+
+cnf(u3802,axiom,
+    ~x2_s_a22(sK138)).
+
+cnf(u3907,axiom,
+    ~x2_e_a13(sK57)).
+
+cnf(u3609,axiom,
+    ~x2_e_a8(sK126)).
+
+cnf(u3815,axiom,
+    ~code_ok(sK152)).
+
+cnf(u3585,axiom,
+    ~l_s_a2(sK137)).
+
+cnf(u1444,axiom,
+    ~code_nok(X0) | ~l_s_a6(X0)).
+
+cnf(u3791,axiom,
+    ~l_s_a6(sK60)).
+
+cnf(u1236,axiom,
+    ~tau_a1(X0) | ~a2_s_a0(X0)).
+
+cnf(u3838,axiom,
+    ~a2_s_a0(sK114)).
+
+cnf(u3608,axiom,
+    ~x2_e_a23(sK114)).
+
+cnf(u1639,axiom,
+    x2_s_a21(sK142)).
+
+cnf(u3814,axiom,
+    ~x2_e_a13(sK115)).
+
+cnf(u1443,axiom,
+    l_s_a5(sK87)).
+
+cnf(u3621,axiom,
+    ~x2_s_a18(sK94)).
+
+cnf(u3820,axiom,
+    ~x2_e_a10(sK42)).
+
+cnf(u3925,axiom,
+    ~a2_s_a0(sK56)).
+
+cnf(u1382,axiom,
+    ~tau_a0(X0) | ~l_s_a0(X0)).
+
+cnf(u1330,axiom,
+    ~x2_e_a4(X0) | ~x2_s_a5(X0)).
+
+cnf(u1174,axiom,
+    ~l_s_a9(X0) | ~x2_s_a19(X0)).
+
+cnf(u3817,axiom,
+    ~x2_s_a23(sK163)).
+
+cnf(u1732,axiom,
+    ~tau_a0(X0) | ~new(X0)).
+
+cnf(u3793,axiom,
+    ~x2_s_a7(sK126)).
+
+cnf(u1196,axiom,
+    ~x2_e_a23(X0) | ~a2_e_a1(X0)).
+
+cnf(u1693,axiom,
+    ~tau_a9(X0) | ~x2_s_a7(X0)).
+
+cnf(u1337,axiom,
+    ~x2_e_a15(X0) | ~x2_s_a15(X0)).
+
+cnf(u3618,axiom,
+    ~x2_s_a18(sK21)).
+
+cnf(u1641,axiom,
+    ~tau_a4(X0) | ~x2_e_a23(X0)).
+
+cnf(u3910,axiom,
+    ~x2_e_a13(sK127)).
+
+cnf(u3816,axiom,
+    ~code_ok(sK2)).
+
+cnf(u1219,axiom,
+    ~x2_s_a2(X0) | ~x2_e_a23(X0)).
+
+cnf(u1183,axiom,
+    ~x2_e_a3(X0) | ~join_pat(X0)).
+
+cnf(u3829,axiom,
+    ~x2_e_a18(sK21)).
+
+cnf(u3600,axiom,
+    ~x2_s_a10(sK67)).
+
+cnf(u1487,axiom,
+    ~l_s_a4(X0) | ~x2_e_a9(X0)).
+
+cnf(u3613,axiom,
+    ~x2_e_a23(sK187)).
+
+cnf(u1410,axiom,
+    ~x2_e_a19(X0) | ~a2_s_a4(X0)).
+
+cnf(u3917,axiom,
+    ~x2_e_a22(sK120)).
+
+cnf(u1742,axiom,
+    ~x2_e_a11(X0) | ~x2_s_a11(X0)).
+
+cnf(u3803,axiom,
+    ~l_s_a2(sK9)).
+
+cnf(u1640,axiom,
+    ~tau_a4(X0) | ~a2_s_a1(X0)).
+
+cnf(u1690,axiom,
+    ~a2_e_a3(X0) | ~x2_s_a15(X0)).
+
+cnf(u1165,axiom,
+    ~x2_e_a0(X0) | ~new(X0)).
+
+cnf(u3636,axiom,
+    ~x2_s_a10(sK37)).
+
+cnf(u3906,axiom,
+    ~x2_e_a18(sK177)).
+
+cnf(u1417,axiom,
+    ~x2_s_a14(X0) | ~tau_a17(X0)).
+
+cnf(u1179,axiom,
+    ~tau_a19(X0) | ~x2_s_a15(X0)).
+
+cnf(u3612,axiom,
+    ~x2_e_a23(sK18)).
+
+cnf(u3610,axiom,
+    ~a2_s_a1(sK18)).
+
+cnf(u3808,axiom,
+    ~x2_s_a9(sK115)).
+
+cnf(u3913,axiom,
+    ~x2_s_a5(sK68)).
+
+cnf(u1370,axiom,
+    ~x2_s_a13(X0) | ~x2_e_a13(X0)).
+
+cnf(u3623,axiom,
+    ~x2_s_a7(sK139)).
+
+cnf(u1702,axiom,
+    ~x2_e_a15(X0) | ~x2_e_a18(X0)).
+
+cnf(u1162,axiom,
+    ~l_s_a0(X0) | ~x2_s_a0(X0)).
+
+cnf(u3821,axiom,
+    ~x2_s_a10(sK154)).
+
+cnf(u1650,axiom,
+    ~x2_e_a5(X0) | ~x2_s_a5(X0)).
+
+cnf(u3599,axiom,
+    ~x2_e_a9(sK71)).
+
+cnf(u1392,axiom,
+    ~x2_s_a4(X0) | ~a2_e_a1(X0)).
+
+cnf(u3646,axiom,
+    ~x2_s_a16(sK133)).
+
+cnf(u3924,axiom,
+    ~l_s_a0(sK84)).
+
+cnf(u1377,axiom,
+    ~tau_a11(X0) | ~code_error(X0)).
+
+cnf(u1733,axiom,
+    ~x2_s_a1(X0) | ~tau_a2(X0)).
+
+cnf(u3716,axiom,
+    ~l_s_a1(sK113)).
+
+cnf(u3622,axiom,
+    ~x2_e_a21(sK73)).
+
+cnf(u1731,axiom,
+    x2_s_a17(sK172)).
+
+cnf(u3619,axiom,
+    ~x2_s_a18(sK36)).
+
+cnf(u3923,axiom,
+    ~x2_e_a17(sK124)).
+
+cnf(u3625,axiom,
+    ~x3_e_a6(sK157)).
+
+cnf(u1798,axiom,
+    ~tau_a26(X0) | ~l_s_a9(X0)).
+
+cnf(u3831,axiom,
+    ~x2_e_a18(sK75)).
+
+cnf(u1540,axiom,
+    ~x2_e_a7(X0) | ~x2_s_a8(X0)).
+
+cnf(u3601,axiom,
+    ~x2_s_a10(sK71)).
+
+cnf(u3905,axiom,
+    ~x2_e_a18(sK31)).
+
+cnf(u1460,axiom,
+    x2_s_a5(sK93)).
+
+cnf(u1730,axiom,
+    a2_s_a2(sK171)).
+
+cnf(u3807,axiom,
+    ~x2_s_a9(sK171)).
+
+cnf(u3934,axiom,
+    ~l_s_a9(sK43)).
+
+cnf(u1805,axiom,
+    ~x3_s_a6(X0) | ~tau_a28(X0)).
+
+cnf(u1691,axiom,
+    ~x2_e_a15(X0) | ~a2_e_a3(X0)).
+
+cnf(u3624,axiom,
+    ~x3_e_a6(sK50)).
+
+cnf(u1655,axiom,
+    x2_s_a15(sK146)).
+
+cnf(u3830,axiom,
+    ~x2_e_a18(sK36)).
+
+cnf(u1459,axiom,
+    x2_s_a10(sK92)).
+
+cnf(u3916,axiom,
+    ~x2_s_a20(sK165)).
+
+cnf(u3637,axiom,
+    ~x2_e_a10(sK59)).
+
+cnf(u3836,axiom,
+    ~a2_s_a0(sK188)).
+
+cnf(u3611,axiom,
+    ~a2_s_a1(sK187)).
+
+cnf(u1292,axiom,
+    ~x2_s_a18(X0) | ~x2_s_a16(X0)).
+
+cnf(u3915,axiom,
+    ~x2_s_a5(sK51)).
+
+cnf(u1748,axiom,
+    ~x2_e_a16(X0) | ~l_s_a7(X0)).
+
+cnf(u3809,axiom,
+    ~x2_e_a9(sK171)).
+
+cnf(u1488,axiom,
+    ~x2_e_a9(X0) | ~code_error(X0)).
+
+cnf(u1657,axiom,
+    ~tau_a14(X0) | ~release(X0)).
+
+cnf(u1291,axiom,
+    ~x2_e_a14(X0) | ~tau_a17(X0)).
+
+cnf(u3926,axiom,
+    ~a2_s_a0(sK85)).
+
+cnf(u3832,axiom,
+    ~x2_e_a18(sK94)).
+
+cnf(u1235,axiom,
+    ~x2_e_a2(X0) | ~x2_e_a23(X0)).
+
+cnf(u1735,axiom,
+    ~x2_e_a21(X0) | ~x2_s_a5(X0)).
+
+cnf(u1199,axiom,
+    ~set_status(X0) | ~tau_a9(X0)).
+
+cnf(u3717,axiom,
+    ~l_s_a1(sK188)).
+
+cnf(u3927,axiom,
+    ~a2_e_a0(sK56)).
+
+cnf(u1478,axiom,
+    ~billed(X0) | ~tau_a2(X0)).
+
+cnf(u3715,axiom,
+    ~a2_e_a1(sK173)).
+
+cnf(u3629,axiom,
+    ~x2_e_a17(sK170)).
+
+cnf(u1426,axiom,
+    ~x2_e_a11(X0) | ~x2_s_a13(X0)).
+
+cnf(u1758,axiom,
+    ~tau_a22(X0) | ~l_s_a8(X0)).
+
+cnf(u1656,axiom,
+    ~tau_a16(X0) | ~x2_e_a13(X0)).
+
+cnf(u3819,axiom,
+    ~x2_s_a10(sK42)).
+
+cnf(u1218,axiom,
+    ~x2_s_a2(X0) | ~a2_s_a1(X0)).
+
+cnf(u1500,axiom,
+    ~x2_s_a4(X0) | ~x2_e_a22(X0)).
+
+cnf(u1706,axiom,
+    a2_s_a1(sK161)).
+
+cnf(u1181,axiom,
+    ~tau_a13(X0) | ~release(X0)).
+
+cnf(u1541,axiom,
+    ~x2_e_a8(X0) | ~x2_s_a7(X0)).
+
+cnf(u1240,axiom,
+    a2_s_a4(sK21)).
+
+cnf(u3922,axiom,
+    ~l_s_a7(sK124)).
+
+cnf(u1695,axiom,
+    ~a2_e_a4(X0) | ~tau_a24(X0)).
+
+cnf(u1195,axiom,
+    ~x2_e_a23(X0) | ~a2_s_a1(X0)).
+
+cnf(u3714,axiom,
+    ~a2_e_a1(sK150)).
+
+cnf(u3628,axiom,
+    ~x3_e_a6(sK195)).
+
+cnf(u1499,axiom,
+    ~x2_s_a4(X0) | ~x2_s_a5(X0)).
+
+cnf(u1463,axiom,
+    ~a2_s_a1(X0) | ~x2_s_a3(X0)).
+
+cnf(u3626,axiom,
+    ~x3_e_a6(sK61)).
+
+cnf(u3904,axiom,
+    ~x2_s_a16(sK177)).
+
+cnf(u3824,axiom,
+    ~x2_e_a10(sK183)).
+
+cnf(u3929,axiom,
+    ~x2_s_a7(sK99)).
+
+cnf(u1386,axiom,
+    ~x2_s_a16(X0) | ~x2_s_a15(X0)).
+
+cnf(u3639,axiom,
+    ~x2_s_a10(sK17)).
+
+cnf(u1230,axiom,
+    x3_s_a6(sK19)).
+
+cnf(u1804,axiom,
+    ~tau_a3(X0) | ~l_s_a1(X0)).
+
+cnf(u3837,axiom,
+    ~a2_s_a0(sK8)).
+
+cnf(u1538,axiom,
+    ~x2_s_a14(X0) | ~code_nok(X0)).
+
+cnf(u3615,axiom,
+    ~l_s_a8(sK147)).
+
+cnf(u3919,axiom,
+    ~x2_s_a11(sK183)).
+
+cnf(u1393,axiom,
+    ~x2_e_a4(X0) | ~a2_e_a1(X0)).
+
+cnf(u1749,axiom,
+    ~x2_e_a16(X0) | ~x2_e_a17(X0)).
+
+cnf(u1803,axiom,
+    ~tau_a6(X0) | ~join_pat(X0)).
+
+cnf(u3732,axiom,
+    ~x2_e_a13(sK154)).
+
+cnf(u3638,axiom,
+    ~x2_e_a10(sK37)).
+
+cnf(u1295,axiom,
+    ~x2_e_a18(X0) | ~x2_e_a16(X0)).
+
+cnf(u3914,axiom,
+    ~x2_s_a5(sK28)).
+
+cnf(u1239,axiom,
+    ~x2_e_a4(X0) | ~x2_s_a4(X0)).
+
+cnf(u3635,axiom,
+    ~x2_s_a10(sK59)).
+
+cnf(u3939,axiom,
+    ~code_nok(sK32)).
+
+cnf(u1814,axiom,
+    ~x3_e_a6(X0) | ~x2_s_a21(X0)).
+
+cnf(u1556,axiom,
+    ~a2_s_a2(X0) | ~x2_e_a9(X0)).
+
+cnf(u3719,axiom,
+    ~billed(sK188)).
+
+cnf(u3617,axiom,
+    ~x2_s_a4(sK173)).
+
+cnf(u1746,axiom,
+    ~tau_a10(X0) | ~a2_e_a2(X0)).
+
+cnf(u3823,axiom,
+    ~x2_e_a10(sK154)).
+
+cnf(u3950,axiom,
+    ~x2_s_a15(sK22)).
+
+cnf(u1461,axiom,
+    ~storno(X0) | ~l_s_a7(X0)).
+
+cnf(u1707,axiom,
+    ~tau_a20(X0) | ~x2_s_a16(X0)).
+
+cnf(u3742,axiom,
+    ~x2_e_a3(sK161)).
+
+cnf(u1473,axiom,
+    ~tau_a29(X0) | ~x2_s_a21(X0)).
+
+cnf(u3640,axiom,
+    ~x2_e_a10(sK17)).
+
+cnf(u1543,axiom,
+    x2_s_a1(sK113)).
+
+cnf(u3718,axiom,
+    ~billed(sK113)).
+
+cnf(u3724,axiom,
+    ~a2_s_a4(sK185)).
+
+cnf(u1286,axiom,
+    ~x2_e_a4(X0) | ~tau_a7(X0)).
+
+cnf(u3721,axiom,
+    ~x2_s_a19(sK21)).
+
+cnf(u1566,axiom,
+    x2_s_a22(sK120)).
+
+cnf(u3627,axiom,
+    ~x3_e_a6(sK169)).
+
+cnf(u1308,axiom,
+    x2_s_a11(sK42)).
+
+cnf(u1764,axiom,
+    ~x2_e_a12(X0) | ~manual(X0)).
+
+cnf(u3825,axiom,
+    ~code_error(sK149)).
+
+cnf(u1504,axiom,
+    ~x2_s_a16(X0) | ~l_s_a7(X0)).
+
+cnf(u1293,axiom,
+    ~x2_s_a18(X0) | ~x2_e_a16(X0)).
+
+cnf(u1539,axiom,
+    ~x2_s_a8(X0) | ~x2_s_a7(X0)).
+
+cnf(u1237,axiom,
+    ~tau_a1(X0) | ~a2_e_a0(X0)).
+
+cnf(u3928,axiom,
+    ~a2_e_a0(sK85)).
+
+cnf(u1545,axiom,
+    ~delete(X0) | ~x2_s_a22(X0)).
+
+cnf(u1307,axiom,
+    ~x2_e_a1(X0) | ~tau_a2(X0)).
+
+cnf(u1807,axiom,
+    ~tau_a5(X0) | ~l_s_a2(X0)).
+
+cnf(u3720,axiom,
+    ~set_status(sK139)).
+
+cnf(u1751,axiom,
+    ~x2_e_a0(X0) | ~a2_s_a0(X0)).
+
+cnf(u3733,axiom,
+    ~x2_e_a13(sK183)).
+
+cnf(u1494,axiom,
+    ~x2_s_a3(X0) | ~x2_e_a3(X0)).
+
+cnf(u3731,axiom,
+    ~x2_e_a13(sK42)).
+
+cnf(u3645,axiom,
+    ~x2_s_a16(sK15)).
+
+cnf(u3949,axiom,
+    ~x2_s_a15(sK57)).
+
+cnf(u1442,axiom,
+    ~l_s_a10(X0) | ~tau_a31(X0)).
+
+cnf(u1774,axiom,
+    ~tau_a21(X0) | ~x2_e_a17(X0)).
+
+cnf(u1802,axiom,
+    storno(sK192)).
+
+cnf(u3835,axiom,
+    ~a2_s_a0(sK113)).
+
+cnf(u1544,axiom,
+    ~l_s_a10(X0) | ~x2_s_a22(X0)).
+
+cnf(u1234,axiom,
+    ~x2_e_a2(X0) | ~a2_s_a1(X0)).
+
+cnf(u1516,axiom,
+    ~x2_s_a17(X0) | ~storno(X0)).
+
+cnf(u1464,axiom,
+    ~a2_s_a1(X0) | ~x2_e_a3(X0)).
+
+cnf(u1557,axiom,
+    ~a2_s_a2(X0) | ~x2_s_a10(X0)).
+
+cnf(u1501,axiom,
+    ~x2_e_a9(X0) | ~x2_s_a9(X0)).
+
+cnf(u3938,axiom,
+    ~code_nok(sK4)).
+
+cnf(u1809,axiom,
+    ~x2_s_a14(X0) | ~a2_s_a3(X0)).
+
+cnf(u3730,axiom,
+    ~x2_s_a13(sK183)).
+
+cnf(u3644,axiom,
+    ~x2_e_a16(sK130)).
+
+cnf(u1515,axiom,
+    ~tau_a21(X0) | ~reject(X0)).
+
+cnf(u1351,axiom,
+    ~x2_s_a4(X0) | ~tau_a7(X0)).
+
+% # SZS output end Saturation.
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 1870
+% Time elapsed: 0.012 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

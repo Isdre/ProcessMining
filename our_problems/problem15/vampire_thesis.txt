@@ -2,45 +2,44 @@
 % Refutation found. Thanks to Tanya!
 % SZS status Theorem for tptp_thesis
 % SZS output start Proof for tptp_thesis
-14. ! [X0] : (l_s_1(X0) => ? [X1] : repair_complex(X1)) [input]
-37. ? [X1] : l_s_1(X1) [input]
-49. ! [X10] : (register(X10) => ? [X11] : (repair_complex(X11) | repair_simple(X11))) [input]
-50. ~! [X10] : (register(X10) => ? [X11] : (repair_complex(X11) | repair_simple(X11))) [negated conjecture 49]
-79. ? [X0] : l_s_1(X0) [rectify 37]
-88. ~! [X0] : (register(X0) => ? [X1] : (repair_complex(X1) | repair_simple(X1))) [rectify 50]
-89. ~! [X0] : (register(X0) => ? [X1] : repair_complex(X1)) [pure predicate removal 88]
-104. ! [X0] : (? [X1] : repair_complex(X1) | ~l_s_1(X0)) [ennf transformation 14]
-136. ? [X0] : (! [X1] : ~repair_complex(X1) & register(X0)) [ennf transformation 89]
-156. ? [X1] : repair_complex(X1) => repair_complex(sK8) [choice axiom]
-157. ! [X0] : (repair_complex(sK8) | ~l_s_1(X0)) [skolemisation 104,156]
-178. ? [X0] : l_s_1(X0) => l_s_1(sK20) [choice axiom]
-179. l_s_1(sK20) [skolemisation 79,178]
-191. ? [X0] : (! [X1] : ~repair_complex(X1) & register(X0)) => (! [X1] : ~repair_complex(X1) & register(sK27)) [choice axiom]
-192. ! [X1] : ~repair_complex(X1) & register(sK27) [skolemisation 136,191]
-222. repair_complex(sK8) | ~l_s_1(X0) [cnf transformation 157]
-257. l_s_1(sK20) [cnf transformation 179]
-280. ~repair_complex(X1) [cnf transformation 192]
-294. 4 <=> ! [X0] : ~repair_complex(X0) [avatar definition]
-295. ~repair_complex(X0) <- (4) [avatar component clause 294]
-298. 5 <=> ! [X0] : ~l_s_1(X0) [avatar definition]
-299. ~l_s_1(X0) <- (5) [avatar component clause 298]
-365. 20 <=> repair_complex(sK8) [avatar definition]
-367. repair_complex(sK8) <- (20) [avatar component clause 365]
-368. 5 | 20 [avatar split clause 222,365,298]
-466. 4 [avatar split clause 280,294]
-467. $false <- (5) [resolution 299,257]
-468. ~5 [avatar contradiction clause 467]
-471. $false <- (4, 20) [subsumption resolution 367,295]
-472. ~4 | ~20 [avatar contradiction clause 471]
-473. $false [avatar sat refutation 368,466,468,472]
+9. ? [X1] : l_s_2(X1) [input]
+23. ! [X0] : (l_s_2(X0) => ? [X1] : repair_complex(X1)) [input]
+56. ! [X10] : (register(X10) => ? [X11] : (repair_complex(X11) | repair_simple(X11))) [input]
+57. ~! [X10] : (register(X10) => ? [X11] : (repair_complex(X11) | repair_simple(X11))) [negated conjecture 56]
+64. ? [X0] : l_s_2(X0) [rectify 9]
+100. ~! [X0] : (register(X0) => ? [X1] : (repair_complex(X1) | repair_simple(X1))) [rectify 57]
+122. ! [X0] : (? [X1] : repair_complex(X1) | ~l_s_2(X0)) [ennf transformation 23]
+154. ? [X0] : (! [X1] : (~repair_complex(X1) & ~repair_simple(X1)) & register(X0)) [ennf transformation 100]
+167. ? [X0] : l_s_2(X0) => l_s_2(sK7) [choice axiom]
+168. l_s_2(sK7) [skolemisation 64,167]
+188. ? [X1] : repair_complex(X1) => repair_complex(sK16) [choice axiom]
+189. ! [X0] : (repair_complex(sK16) | ~l_s_2(X0)) [skolemisation 122,188]
+218. ? [X0] : (! [X1] : (~repair_complex(X1) & ~repair_simple(X1)) & register(X0)) => (! [X1] : (~repair_complex(X1) & ~repair_simple(X1)) & register(sK32)) [choice axiom]
+219. ! [X1] : (~repair_complex(X1) & ~repair_simple(X1)) & register(sK32) [skolemisation 154,218]
+237. l_s_2(sK7) [cnf transformation 168]
+272. repair_complex(sK16) | ~l_s_2(X0) [cnf transformation 189]
+325. ~repair_complex(X1) [cnf transformation 219]
+367. 11 <=> ! [X0] : ~repair_complex(X0) [avatar definition]
+368. ~repair_complex(X0) <- (11) [avatar component clause 367]
+371. 12 <=> ! [X0] : ~l_s_2(X0) [avatar definition]
+372. ~l_s_2(X0) <- (12) [avatar component clause 371]
+445. 26 <=> repair_complex(sK16) [avatar definition]
+447. repair_complex(sK16) <- (26) [avatar component clause 445]
+448. 12 | 26 [avatar split clause 272,445,371]
+544. 11 [avatar split clause 325,367]
+566. $false <- (11, 26) [subsumption resolution 447,368]
+567. ~11 | ~26 [avatar contradiction clause 566]
+574. $false <- (12) [resolution 372,237]
+575. ~12 [avatar contradiction clause 574]
+576. $false [avatar sat refutation 448,544,567,575]
 % SZS output end Proof for tptp_thesis
 % ------------------------------
 % Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
 % Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
 % Termination reason: Refutation
 
-% Memory used [KB]: 520
-% Time elapsed: 0.002 s
+% Memory used [KB]: 592
+% Time elapsed: 0.004 s
 % ------------------------------
 % ------------------------------
 

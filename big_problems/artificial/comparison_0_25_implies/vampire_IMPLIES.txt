@@ -1,4031 +1,3593 @@
 % Running in auto input_syntax mode. Trying TPTP
 % SZS status CounterSatisfiable for tptp_IMPLIES
 % # SZS output start Saturation.
-cnf(u2716,axiom,
-    b(sK2)).
-
-cnf(u2720,axiom,
-    ~j(sK3)).
-
-cnf(u2725,axiom,
-    ~j(X2)).
-
-cnf(u2734,axiom,
-    x2_e_a14(sK5)).
-
-cnf(u2742,axiom,
-    ~tau_a21(X0)).
-
-cnf(u2750,axiom,
-    a2_e_a1(sK7)).
-
-cnf(u2758,axiom,
-    ~tau_a9(X0)).
-
-cnf(u2766,axiom,
-    ~x2_s_a2(sK11)).
-
-cnf(u2771,axiom,
-    x2_e_a2(sK11)).
-
-cnf(u2782,axiom,
-    l_s_a8(sK12)).
-
-cnf(u2785,axiom,
-    ~h(sK12)).
-
-cnf(u2794,axiom,
-    ~tau_a17(sK13)).
-
-cnf(u2799,axiom,
-    ~tau_a17(X2)).
-
-cnf(u2812,axiom,
-    random_activity_4(sK14)).
-
-cnf(u2816,axiom,
-    ~tau_a23(sK15)).
-
-cnf(u2821,axiom,
-    ~tau_a23(X2)).
-
-cnf(u2837,axiom,
-    a3_e_a2(sK16)).
-
-cnf(u2845,axiom,
-    ~tau_a2(sK17)).
-
-cnf(u2850,axiom,
-    ~tau_a2(X2)).
-
-cnf(u2860,axiom,
-    ~tau_a18(X1)).
-
-cnf(u2874,axiom,
-    x2_e_a9(sK21)).
-
-cnf(u2883,axiom,
-    d(sK22)).
-
-cnf(u2903,axiom,
-    a2_e_a0(sK23)).
-
-cnf(u2912,axiom,
-    ~tau_a22(X1)).
-
-cnf(u2921,axiom,
-    ~tau_a13(X0)).
-
-cnf(u2933,axiom,
-    a3_e_a2(sK29)).
-
-cnf(u2945,axiom,
-    l_s_a10(sK30)).
-
-cnf(u2966,axiom,
-    a3_e_a3(sK33)).
-
-cnf(u2978,axiom,
-    x2_e_a3(sK34)).
-
-cnf(u2986,axiom,
-    ~tau_a3(X0)).
-
-cnf(u2994,axiom,
-    a3_e_a2(sK35)).
-
-cnf(u3005,axiom,
-    ~a2_s_a5(sK37)).
-
-cnf(u3010,axiom,
-    a2_e_a5(sK37)).
-
-cnf(u3015,axiom,
-    i(sK38)).
-
-cnf(u3023,axiom,
-    x2_s_a15(sK39)).
-
-cnf(u3036,axiom,
-    x2_e_a8(sK40)).
-
-cnf(u3044,axiom,
-    ~tau_a12(X0)).
-
-cnf(u3048,axiom,
-    ~x2_s_a2(sK41)).
-
-cnf(u3053,axiom,
-    x2_e_a9(sK41)).
-
-cnf(u3060,axiom,
-    ~a2_s_a1(sK42)).
-
-cnf(u3065,axiom,
-    a2_e_a1(sK42)).
-
-cnf(u3074,axiom,
-    random_activity_2(sK43)).
-
-cnf(u3082,axiom,
-    e(sK45)).
-
-cnf(u3090,axiom,
-    a3_e_a3(sK46)).
-
-cnf(u3099,axiom,
-    h(sK49)).
-
-cnf(u3110,axiom,
-    ~tau_a20(X1)).
-
-cnf(u3120,axiom,
-    l_s_a6(sK52)).
-
-cnf(u3138,axiom,
-    x2_e_a2(sK55)).
-
-cnf(u3148,axiom,
-    x2_s_a14(sK57)).
-
-cnf(u3156,axiom,
-    ~x2_s_a13(sK58)).
-
-cnf(u3161,axiom,
-    x2_e_a13(sK58)).
-
-cnf(u3166,axiom,
-    x2_s_a12(sK59)).
-
-cnf(u3175,axiom,
-    x2_e_a0(sK60)).
-
-cnf(u3180,axiom,
-    ~tau_a11(X0)).
-
-cnf(u3192,axiom,
-    a2_e_a1(sK62)).
-
-cnf(u3206,axiom,
-    ~l_s_a5(sK63)).
-
-cnf(u3211,axiom,
-    random_activity_1(sK63)).
-
-cnf(u3219,axiom,
-    ~tau_a10(sK64)).
-
-cnf(u3224,axiom,
-    ~tau_a10(X2)).
-
-cnf(u3234,axiom,
+cnf(u2635,axiom,
     ~tau_a4(X1)).
 
-cnf(u3254,axiom,
-    x2_s_a2(sK72)).
-
-cnf(u3257,axiom,
-    ~x2_e_a9(sK72)).
-
-cnf(u3263,axiom,
-    ~tau_a15(X0)).
-
-cnf(u3272,axiom,
-    random_activity_1(sK74)).
-
-cnf(u3280,axiom,
-    x2_e_a1(sK75)).
-
-cnf(u3285,axiom,
-    ~tau_a0(X0)).
-
-cnf(u3292,axiom,
-    ~l_s_a3(sK76)).
-
-cnf(u3297,axiom,
-    c(sK76)).
-
-cnf(u3305,axiom,
-    ~tau_a5(sK77)).
-
-cnf(u3310,axiom,
-    ~tau_a5(X2)).
-
-cnf(u3335,axiom,
-    l_s_a0(sK82)).
-
-cnf(u3356,axiom,
-    x2_e_a5(sK85)).
-
-cnf(u3364,axiom,
-    ~tau_a7(X0)).
-
-cnf(u3369,axiom,
-    m(sK86)).
-
-cnf(u3374,axiom,
-    k(sK87)).
-
-cnf(u3379,axiom,
-    x2_e_a4(sK89)).
-
-cnf(u3388,axiom,
-    ~l_s_a1(sK90)).
-
-cnf(u3393,axiom,
-    x2_e_a9(sK90)).
-
-cnf(u3398,axiom,
-    x2_s_a1(sK91)).
-
-cnf(u3401,axiom,
-    ~x2_e_a1(sK91)).
-
-cnf(u3407,axiom,
-    l_s_a4(sK92)).
-
-cnf(u3410,axiom,
-    ~l(sK92)).
-
-cnf(u3419,axiom,
-    ~tau_a8(sK93)).
-
-cnf(u3424,axiom,
-    ~tau_a8(X2)).
-
-cnf(u3434,axiom,
-    ~tau_a6(X1)).
-
-cnf(u3447,axiom,
-    a3_e_a6(sK96)).
-
-cnf(u3459,axiom,
-    a2_e_a0(sK97)).
-
-cnf(u3464,axiom,
-    x2_e_a15(sK98)).
-
-cnf(u3473,axiom,
-    l_s_a2(sK99)).
-
-cnf(u3476,axiom,
-    ~f(sK99)).
-
-cnf(u3482,axiom,
-    ~tau_a3(sK100)).
-
-cnf(u3501,axiom,
-    x2_s_a0(sK103)).
-
-cnf(u3513,axiom,
-    a3_e_a2(sK106)).
-
-cnf(u3519,axiom,
-    l(sK107)).
-
-cnf(u3523,axiom,
-    ~a2_s_a0(sK108)).
-
-cnf(u3528,axiom,
-    a2_e_a0(sK108)).
-
-cnf(u3532,axiom,
-    sP1).
-
-cnf(u3536,axiom,
-    ~random_activity_5(X0)).
-
-cnf(u3541,axiom,
-    n(sK109)).
-
-cnf(u3545,axiom,
-    ~g(X2)).
-
-cnf(u3550,axiom,
-    ~sP0).
-
-cnf(u3558,axiom,
-    ~g(sK110)).
-
-cnf(u3566,axiom,
-    ~random_activity_5(sK111)).
-
-cnf(u3574,axiom,
-    x2_e_a13(sK112)).
-
-cnf(u3582,axiom,
-    ~tau_a19(X0)).
-
-cnf(u3590,axiom,
-    x2_e_a9(sK113)).
-
-cnf(u3595,axiom,
-    ~tau_a14(X0)).
-
-cnf(u3603,axiom,
-    x2_s_a9(sK114)).
-
-cnf(u3606,axiom,
-    ~x2_e_a9(sK114)).
-
-cnf(u3612,axiom,
-    ~a3_s_a3(sK117)).
-
-cnf(u3617,axiom,
-    a3_e_a3(sK117)).
-
-cnf(u3622,axiom,
-    ~tau_a7(sK118)).
-
-cnf(u3634,axiom,
-    ~tau_a1(X1)).
-
-cnf(u3647,axiom,
-    a3_e_a6(sK122)).
-
-cnf(u3655,axiom,
-    ~x2_s_a11(sK123)).
-
-cnf(u3660,axiom,
-    x2_e_a11(sK123)).
-
-cnf(u3665,axiom,
-    l_s_a7(sK124)).
-
-cnf(u3674,axiom,
-    x3_e_a10(sK128)).
-
-cnf(u3684,axiom,
-    x2_e_a11(sK129)).
-
-cnf(u3689,axiom,
-    ~tau_a16(X0)).
-
-cnf(u3697,axiom,
-    x2_s_a0(sK130)).
-
-cnf(u3706,axiom,
-    a(sK131)).
-
-cnf(u3716,axiom,
-    x2_s_a8(sK133)).
-
-cnf(u3725,axiom,
-    x2_s_a7(sK134)).
-
-cnf(u3734,axiom,
-    x2_s_a6(sK135)).
-
-cnf(u3743,axiom,
-    f(sK136)).
-
-cnf(u3751,axiom,
-    a2_e_a4(sK138)).
-
-cnf(u3756,axiom,
-    c(sK139)).
-
-cnf(u3763,axiom,
-    ~x3_s_a10(sK140)).
-
-cnf(u3768,axiom,
-    x3_e_a10(sK140)).
-
-cnf(u3808,axiom,
-    a3_e_a3(sK147)).
-
-cnf(u3813,axiom,
-    ~l_s_a9(sK148)).
-
-cnf(u3818,axiom,
-    random_activity_3(sK148)).
-
-cnf(u3834,axiom,
-    ~a2_s_a4(sK150)).
-
-cnf(u3839,axiom,
-    a2_e_a4(sK150)).
-
-cnf(u3845,axiom,
-    random_activity_3(sK151)).
-
-cnf(u3850,axiom,
-    o(sK152)).
-
-cnf(u3855,axiom,
-    x2_e_a12(sK153)).
-
-cnf(u3870,axiom,
-    a2_e_a4(sK155)).
-
-cnf(u3876,axiom,
-    x2_s_a5(sK157)).
-
-cnf(u3879,axiom,
-    ~x2_e_a5(sK157)).
-
-cnf(u3884,axiom,
-    ~x2_s_a4(sK158)).
-
-cnf(u3889,axiom,
-    x2_e_a4(sK158)).
-
-cnf(u3893,axiom,
-    ~x2_s_a3(sK159)).
-
-cnf(u3898,axiom,
-    x2_e_a3(sK159)).
-
-cnf(u3903,axiom,
-    x2_e_a6(sK161)).
-
-cnf(u3913,axiom,
-    a3_e_a6(sK162)).
-
-cnf(u3922,axiom,
-    a2_e_a5(sK164)).
-
-cnf(u3931,axiom,
-    a3_s_a6(sK167)).
-
-cnf(u3954,axiom,
-    a2_e_a5(sK170)).
-
-cnf(u3960,axiom,
-    x2_e_a7(sK171)).
-
-cnf(u3970,axiom,
-    e(sK172)).
-
-cnf(u3975,axiom,
-    x2_s_b7(sK173)).
-
-cnf(u3985,axiom,
-    a3_e_b3(sK174)).
-
-cnf(u3993,axiom,
-    ~tau_b6(X1)).
-
-cnf(u4010,axiom,
-    m(sK177)).
-
-cnf(u4019,axiom,
-    random_activity_1(sK178)).
-
-cnf(u4023,axiom,
-    ~l_s_b3(sK179)).
-
-cnf(u4028,axiom,
-    l(sK179)).
-
-cnf(u4036,axiom,
-    ~tau_b2(X1)).
-
-cnf(u4049,axiom,
-    k(sK182)).
-
-cnf(u4053,axiom,
-    ~x2_s_b6(sK183)).
-
-cnf(u4058,axiom,
-    x2_e_b6(sK183)).
-
-cnf(u4063,axiom,
-    h(sK184)).
-
-cnf(u4071,axiom,
-    a3_e_b1(sK185)).
-
-cnf(u4080,axiom,
-    x2_e_b5(sK186)).
-
-cnf(u4084,axiom,
-    ~tau_b8(X0)).
-
-cnf(u4092,axiom,
-    e(sK187)).
-
-cnf(u4098,axiom,
-    a3_e_b1(sK188)).
-
-cnf(u4110,axiom,
-    random_activity_1(sK189)).
-
-cnf(u4117,axiom,
-    ~l_s_b1(sK191)).
-
-cnf(u4122,axiom,
-    f(sK191)).
-
-cnf(u4130,axiom,
-    ~tau_b1(sK192)).
-
-cnf(u4135,axiom,
-    ~tau_b1(X2)).
-
-cnf(u4142,axiom,
-    a3_e_b2(sK193)).
-
-cnf(u4154,axiom,
-    a3_e_b3(sK194)).
-
-cnf(u4162,axiom,
-    ~tau_b5(X0)).
-
-cnf(u4171,axiom,
-    x2_e_b6(sK196)).
-
-cnf(u4175,axiom,
-    ~tau_b9(X0)).
-
-cnf(u4182,axiom,
-    ~x2_s_b0(sK197)).
-
-cnf(u4187,axiom,
-    x2_e_b0(sK197)).
-
-cnf(u4192,axiom,
-    a(sK198)).
-
-cnf(u4199,axiom,
-    ~l_s_b6(sK199)).
-
-cnf(u4204,axiom,
-    i(sK199)).
-
-cnf(u4210,axiom,
-    a3_e_b3(sK200)).
-
-cnf(u4218,axiom,
-    b(sK203)).
-
-cnf(u4233,axiom,
-    random_activity_2(sK205)).
-
-cnf(u4245,axiom,
-    i(sK207)).
-
-cnf(u4254,axiom,
-    x2_s_b5(sK209)).
-
-cnf(u4277,axiom,
-    a2_e_b0(sK213)).
-
-cnf(u4282,axiom,
-    a3_e_b2(sK214)).
-
-cnf(u4291,axiom,
-    a3_s_b1(sK217)).
-
-cnf(u4294,axiom,
-    ~x2_e_b4(sK217)).
-
-cnf(u4304,axiom,
-    ~tau_b7(X1)).
-
-cnf(u4316,axiom,
-    ~x2_s_b3(sK220)).
-
-cnf(u4321,axiom,
-    x2_e_b3(sK220)).
-
-cnf(u4325,axiom,
-    ~l_s_b2(sK221)).
-
-cnf(u4330,axiom,
-    c(sK221)).
-
-cnf(u4334,axiom,
-    ~x2_s_b2(sK222)).
-
-cnf(u4339,axiom,
-    x2_e_b2(sK222)).
-
-cnf(u4344,axiom,
-    x2_e_b1(sK224)).
-
-cnf(u4353,axiom,
-    l_s_b6(sK225)).
-
-cnf(u4356,axiom,
-    ~e(sK225)).
-
-cnf(u4362,axiom,
-    f(sK226)).
-
-cnf(u4370,axiom,
-    ~tau_b3(X1)).
-
-cnf(u4380,axiom,
-    x2_e_b7(sK229)).
-
-cnf(u4384,axiom,
-    ~tau_b10(X0)).
-
-cnf(u4389,axiom,
-    a3_s_b1(sK230)).
-
-cnf(u4392,axiom,
-    ~x2_e_b4(sK230)).
-
-cnf(u4399,axiom,
-    d(sK231)).
-
-cnf(u4416,axiom,
-    a3_s_b2(sK232)).
-
-cnf(u4430,axiom,
-    ~tau_b4(X2)).
-
-cnf(u4437,axiom,
-    x2_e_b3(sK234)).
-
-cnf(u4444,axiom,
-    c(sK237)).
-
-cnf(u4451,axiom,
-    ~l_s_b0(sK238)).
-
-cnf(u4456,axiom,
-    x2_e_b4(sK238)).
-
-cnf(u4467,axiom,
-    a3_s_b1(sK241)).
-
-cnf(u4470,axiom,
-    ~x2_e_b4(sK241)).
-
-cnf(u4479,axiom,
-    random_activity_4(sK242)).
-
-cnf(u4491,axiom,
-    a2_s_b0(sK245)).
-
-cnf(u4500,axiom,
-    x2_e_b2(sK246)).
-
-cnf(u4510,axiom,
-    n(sK247)).
-
-cnf(u4514,axiom,
-    ~g(sK248)).
-
-cnf(u4524,axiom,
-    ~random_activity_5(sK249)).
-
-cnf(u4530,axiom,
-    tau_b0(sK250)).
-
-cnf(u4539,axiom,
-    ~x2_s_b1(sK253)).
-
-cnf(u4544,axiom,
-    x2_e_b1(sK253)).
-
-cnf(u4550,axiom,
-    a3_e_b2(sK255)).
-
-cnf(u4556,axiom,
-    a2_s_b0(sK257)).
-
-cnf(u4568,axiom,
-    a3_e_b1(sK258)).
-
-cnf(u4577,axiom,
-    a2_e_b0(sK259)).
-
-cnf(u4588,axiom,
-    e(sK263)).
-
-cnf(u4597,axiom,
-    a3_e_b3(sK264)).
-
-cnf(u4604,axiom,
-    x2_e_b4(sK265)).
-
-cnf(u4610,axiom,
-    random_activity_3(sK266)).
-
-cnf(u4614,axiom,
-    ~tau_b9(sK267)).
-
-cnf(u4622,axiom,
-    o(sK268)).
-
-cnf(u4634,axiom,
-    ~x2_s_b4(sK271)).
-
-cnf(u4639,axiom,
-    x2_e_b4(sK271)).
-
-cnf(u4650,axiom,
-    m(sK273)).
-
-cnf(u4655,axiom,
-    a3_s_b1(sK274)).
-
-cnf(u4664,axiom,
-    a2_s_b0(sK275)).
-
-cnf(u4667,axiom,
-    ~x2_e_b5(sK275)).
-
-cnf(u4673,axiom,
-    l(sK277)).
-
-cnf(u4678,axiom,
-    x2_e_b0(sK278)).
-
-cnf(u5366,axiom,
-    ~x2_e_a3(sK106)).
-
-cnf(u2179,axiom,
-    x2_s_a15(sK104)).
-
-cnf(u5726,axiom,
-    ~m(sK193)).
-
-cnf(u5186,axiom,
-    ~a2_e_a0(sK131)).
-
-cnf(u5551,axiom,
-    ~x2_e_b7(sK275)).
-
-cnf(u2283,axiom,
-    ~x2_s_a5(X0) | ~a3_e_a2(X0)).
-
-cnf(u5208,axiom,
-    ~a2_s_a0(sK198)).
-
-cnf(u5260,axiom,
-    ~x2_s_a11(sK37)).
-
-cnf(u5149,axiom,
-    ~a2_e_a4(sK37)).
-
-cnf(u2094,axiom,
-    ~a(X0) | ~a2_s_a0(X0)).
-
-cnf(u5093,axiom,
-    ~l_s_a6(sK273)).
-
-cnf(u1960,axiom,
-    x2_s_a1(sK32)).
-
-cnf(u5126,axiom,
-    ~a3_e_a3(sK157)).
-
-cnf(u2010,axiom,
-    x2_s_a7(sK48)).
-
-cnf(u5582,axiom,
-    ~d(sK217)).
-
-cnf(u5663,axiom,
-    ~x2_s_b4(sK241)).
-
-cnf(u5163,axiom,
-    ~x2_e_a2(sK16)).
-
-cnf(u2702,axiom,
-    x2_s_b7(sK276)).
-
-cnf(u5345,axiom,
-    ~a2_s_a5(sK88)).
-
-cnf(u5705,axiom,
-    ~x2_e_b5(sK253)).
-
-cnf(u5148,axiom,
-    ~a2_s_a5(sK155)).
-
-cnf(u5632,axiom,
-    ~x2_s_b2(sK241)).
-
-cnf(u5604,axiom,
-    ~h(sK256)).
-
-cnf(u5645,axiom,
-    ~c(sK274)).
-
-cnf(u5375,axiom,
-    ~x2_e_a5(sK16)).
-
-cnf(u5001,axiom,
-    ~x2_e_a12(sK96)).
-
-cnf(u1975,axiom,
-    ~x2_s_a5(X0) | ~a3_s_a3(X0)).
-
-cnf(u5589,axiom,
-    ~o(sK212)).
-
-cnf(u5686,axiom,
-    ~x2_e_b4(sK245)).
-
-cnf(u5146,axiom,
-    ~a2_s_a5(sK138)).
-
-cnf(u5135,axiom,
-    ~a3_e_a6(sK123)).
-
-cnf(u5168,axiom,
-    ~x2_e_a6(sK36)).
-
-cnf(u5624,axiom,
-    ~a3_s_b2(sK215)).
-
-cnf(u5542,axiom,
-    ~i(sK263)).
-
-cnf(u2512,axiom,
-    ~tau_b2(X0) | ~f(X0)).
-
-cnf(u5490,axiom,
-    ~l_s_b6(sK186)).
-
-cnf(u5665,axiom,
-    ~x2_s_b4(sK185)).
-
-cnf(u5715,axiom,
-    ~x2_s_b2(sK246)).
-
-cnf(u5564,axiom,
-    ~x2_s_b3(sK188)).
-
-cnf(u5384,axiom,
-    ~x2_s_a12(sK49)).
-
-cnf(u5511,axiom,
-    ~h(sK264)).
-
-cnf(u2223,axiom,
-    ~x2_e_a11(X0) | ~tau_a16(X0)).
-
-cnf(u1977,axiom,
-    ~x2_s_a3(X0) | ~l_s_a2(X0)).
-
-cnf(u5549,axiom,
-    ~x2_e_b7(sK245)).
-
-cnf(u2693,axiom,
-    ~a2_e_b0(X0) | ~x2_s_b1(X0)).
-
-cnf(u5497,axiom,
-    ~l_s_b0(sK217)).
-
-cnf(u5563,axiom,
-    ~x2_s_b3(sK185)).
-
-cnf(u5562,axiom,
-    ~c(sK258)).
-
-cnf(u2605,axiom,
-    ~a3_s_b3(X0) | ~k(X0)).
-
-cnf(u5399,axiom,
-    ~x2_s_a0(sK60)).
-
-cnf(u1860,axiom,
-    ~a3_e_a3(X0) | ~x2_e_a8(X0)).
-
-cnf(u5020,axiom,
-    ~x2_s_a6(sK46)).
-
-cnf(u5441,axiom,
-    ~x2_e_a1(sK7)).
-
-cnf(u2374,axiom,
-    ~a3_s_a6(X0) | ~x2_e_a12(X0)).
-
-cnf(u5471,axiom,
-    ~x2_e_b4(sK209)).
-
-cnf(u5188,axiom,
-    ~x2_s_a0(sK23)).
-
-cnf(u2604,axiom,
-    ~x2_e_b6(X0) | ~a3_s_b3(X0)).
-
-cnf(u5259,axiom,
-    ~a2_e_a5(sK263)).
-
-cnf(u2101,axiom,
-    ~tau_a7(X0) | ~x2_e_a5(X0)).
-
-cnf(u1859,axiom,
-    ~a3_e_a3(X0) | ~x2_s_a8(X0)).
-
-cnf(u2396,axiom,
-    ~a3_e_b2(X0) | ~x2_s_b3(X0)).
-
-cnf(u5325,axiom,
-    ~x2_s_a6(sK161)).
-
-cnf(u5019,axiom,
-    ~x2_s_a6(sK33)).
-
-cnf(u5273,axiom,
-    ~x2_s_a8(sK52)).
-
-cnf(u2226,axiom,
-    ~tau_a1(X0) | ~l_s_a0(X0)).
-
-cnf(u5630,axiom,
-    ~x2_s_b2(sK217)).
-
-cnf(u2381,axiom,
-    ~a2_e_a1(X0) | ~l_s_a1(X0)).
-
-cnf(u2328,axiom,
-    ~j(X0) | ~x2_s_a0(X0)).
-
-cnf(u5680,axiom,
-    ~l_s_b0(sK245)).
-
-cnf(u5303,axiom,
-    ~x2_s_a12(sK153)).
-
-cnf(u2091,axiom,
-    ~tau_a22(X0) | ~k(X0)).
-
-cnf(u5524,axiom,
-    ~a3_s_b2(sK220)).
-
-cnf(u1870,axiom,
-    ~l_s_a10(X0) | ~tau_a21(X0)).
-
-cnf(u2304,axiom,
-    l_s_a7(sK146)).
-
-cnf(u2395,axiom,
-    ~a3_s_b2(X0) | ~x2_s_b3(X0)).
-
-cnf(u5030,axiom,
-    ~x2_s_a7(sK147)).
-
-cnf(u2224,axiom,
-    ~l_s_a4(X0) | ~tau_a8(X0)).
-
-cnf(u5390,axiom,
-    ~l_s_a1(sK152)).
-
-cnf(u5693,axiom,
-    ~x2_s_b5(sK235)).
-
-cnf(u5153,axiom,
-    ~x2_e_a1(sK47)).
-
-cnf(u5509,axiom,
-    ~h(sK194)).
-
-cnf(u2343,axiom,
-    l_s_a0(sK160)).
-
-cnf(u2614,axiom,
-    ~x2_e_b0(X0) | ~j(X0)).
-
-cnf(u2319,axiom,
-    ~tau_a2(X0) | ~x2_s_a2(X0)).
-
-cnf(u5183,axiom,
-    ~x2_s_a0(sK42)).
-
-cnf(u2500,axiom,
-    a3_s_b2(sK216)).
-
-cnf(u1877,axiom,
-    ~x2_e_a3(X0) | ~tau_a3(X0)).
-
-cnf(u5344,axiom,
-    ~a2_s_a4(sK207)).
-
-cnf(u5037,axiom,
-    ~x2_s_a8(sK117)).
-
-cnf(u2611,axiom,
-    ~a2_e_b0(X0) | ~x2_e_b0(X0)).
-
-cnf(u5462,axiom,
-    ~o(sK208)).
-
-cnf(u2031,axiom,
-    ~a3_s_a2(X0) | ~x2_e_a2(X0)).
-
-cnf(u2285,axiom,
-    ~tau_a21(X0) | ~x2_s_a14(X0)).
-
-cnf(u5690,axiom,
-    ~x2_e_b4(sK253)).
-
-cnf(u5484,axiom,
-    ~n(sK265)).
-
-cnf(u2499,axiom,
-    ~x2_s_b0(X0) | ~j(X0)).
-
-cnf(u5432,axiom,
-    ~x2_s_a13(sK167)).
-
-cnf(u2299,axiom,
-    ~h(X0) | ~x2_s_a12(X0)).
-
-cnf(u1976,axiom,
-    ~x2_s_a5(X0) | ~a3_e_a3(X0)).
-
-cnf(u5469,axiom,
-    ~l_s_b0(sK209)).
-
-cnf(u2026,axiom,
-    ~tau_a12(X0) | ~x2_e_a8(X0)).
-
-cnf(u5016,axiom,
-    ~l_s_a0(sK75)).
-
-cnf(u5642,axiom,
-    ~c(sK217)).
-
-cnf(u5700,axiom,
-    ~x2_e_b5(sK245)).
-
-cnf(u2497,axiom,
-    ~x2_e_b3(X0) | ~a3_e_b2(X0)).
-
-cnf(u5483,axiom,
-    ~n(sK238)).
-
-cnf(u2694,axiom,
-    ~x2_e_b1(X0) | ~a2_s_b0(X0)).
-
-cnf(u5301,axiom,
-    ~x2_s_a6(sK179)).
-
-cnf(u5096,axiom,
-    ~x2_s_a15(sK150)).
-
-cnf(u5059,axiom,
-    ~x2_s_a8(sK40)).
-
-cnf(u2033,axiom,
-    x3_s_a10(sK56)).
-
-cnf(u5214,axiom,
-    ~a2_s_a4(sK23)).
-
-cnf(u5031,axiom,
-    ~x2_e_a7(sK33)).
-
-cnf(u2626,axiom,
-    ~a3_s_b1(X0) | ~c(X0)).
-
-cnf(u5187,axiom,
-    ~a2_e_a0(sK198)).
-
-cnf(u2603,axiom,
-    ~x2_s_b6(X0) | ~a3_s_b3(X0)).
-
-cnf(u5720,axiom,
-    ~l(sK255)).
-
-cnf(u1846,axiom,
-    ~a3_e_a6(X0) | ~x2_s_a14(X0)).
-
-cnf(u5111,axiom,
-    ~x2_s_a4(sK237)).
-
-cnf(u5070,axiom,
-    ~x2_e_a9(sK231)).
-
-cnf(u1858,axiom,
-    ~a3_e_a3(X0) | ~x2_e_a7(X0)).
-
-cnf(u5373,axiom,
-    ~a3_e_a2(sK166)).
-
-cnf(u5733,axiom,
-    ~a2_s_b0(sK253)).
-
-cnf(u5660,axiom,
-    ~x2_s_b4(sK212)).
-
-cnf(u5193,axiom,
-    ~a2_e_a1(sK97)).
-
-cnf(u5350,axiom,
-    ~x2_e_a6(sK92)).
-
-cnf(u5710,axiom,
-    ~i(sK173)).
-
-cnf(u2209,axiom,
-    ~tau_a13(X0) | ~m(X0)).
-
-cnf(u5298,axiom,
-    ~x2_s_a6(sK125)).
-
-cnf(u5372,axiom,
-    ~a3_e_a2(sK158)).
-
-cnf(u5223,axiom,
-    ~x2_e_a8(sK54)).
-
-cnf(u2239,axiom,
-    ~x2_s_a9(X0) | ~tau_a14(X0)).
-
-cnf(u1853,axiom,
-    ~x2_e_a1(X0) | ~random_activity_2(X0)).
-
-cnf(u5133,axiom,
-    ~a3_s_a6(sK123)).
-
-cnf(u5192,axiom,
-    ~a2_e_a1(sK108)).
-
-cnf(u1865,axiom,
-    ~x2_e_a5(X0) | ~a3_s_a3(X0)).
-
-cnf(u5438,axiom,
-    ~x2_e_a14(sK167)).
-
-cnf(u5147,axiom,
-    ~a2_s_a5(sK150)).
-
-cnf(u5647,axiom,
-    ~x2_s_b3(sK217)).
-
-cnf(u5329,axiom,
-    ~x2_s_a2(sK163)).
-
-cnf(u2621,axiom,
-    ~x2_e_b0(X0) | ~x2_s_b0(X0)).
-
-cnf(u5370,axiom,
-    ~x2_s_a4(sK106)).
-
-cnf(u5730,axiom,
-    ~x2_s_b1(sK213)).
-
-cnf(u5359,axiom,
-    ~a3_s_a2(sK166)).
-
-cnf(u1876,axiom,
-    ~random_activity_5(X0) | ~n(X0)).
-
-cnf(u5264,axiom,
-    ~x2_e_a11(sK164)).
-
-cnf(u2631,axiom,
-    ~l_s_b2(X0) | ~c(X0)).
-
-cnf(u5130,axiom,
-    ~x2_s_a3(sK226)).
-
-cnf(u5586,axiom,
-    ~d(sK238)).
-
-cnf(u2308,axiom,
-    ~x2_s_a11(X0) | ~a3_e_a6(X0)).
-
-cnf(u2620,axiom,
-    ~a3_s_b2(X0) | ~m(X0)).
-
-cnf(u5152,axiom,
-    ~x2_s_a1(sK47)).
-
-cnf(u1875,axiom,
-    ~g(X0) | ~x3_s_a10(X0)).
-
-cnf(u5608,axiom,
-    ~k(sK256)).
-
-cnf(u1933,axiom,
-    ~a2_e_a4(X0) | ~x2_s_a15(X0)).
-
-cnf(u2204,axiom,
-    ~c(X0) | ~l_s_a3(X0)).
-
-cnf(u5108,axiom,
-    ~x2_s_a4(sK76)).
-
-cnf(u2114,axiom,
-    ~l_s_a5(X0) | ~tau_a10(X0)).
-
-cnf(u5649,axiom,
-    ~x2_s_b3(sK241)).
-
-cnf(u5593,axiom,
-    ~o(sK274)).
-
-cnf(u2344,axiom,
-    ~x2_e_a15(X0) | ~random_activity_4(X0)).
-
-cnf(u2307,axiom,
-    ~a3_s_a6(X0) | ~x2_s_a11(X0)).
-
-cnf(u2701,axiom,
-    ~x2_e_b2(X0) | ~f(X0)).
-
-cnf(u2218,axiom,
-    ~x3_e_a10(X0) | ~x3_s_a10(X0)).
-
-cnf(u2107,axiom,
-    l_s_a8(sK81)).
-
-cnf(u2136,axiom,
-    ~tau_a11(X0) | ~l_s_a5(X0)).
-
-cnf(u2320,axiom,
-    ~x3_e_a10(X0) | ~random_activity_5(X0)).
-
-cnf(u1886,axiom,
-    ~x2_e_a8(X0) | ~x2_s_a8(X0)).
-
-cnf(u5623,axiom,
-    ~random_activity_1(sK232)).
-
-cnf(u5488,axiom,
-    ~l_s_b6(sK257)).
-
-cnf(u2329,axiom,
-    ~l_s_a5(X0) | ~x2_s_a7(X0)).
-
-cnf(u5332,axiom,
-    ~x2_e_a2(sK114)).
-
-cnf(u5221,axiom,
-    ~a2_e_a4(sK108)).
-
-cnf(u5107,axiom,
-    ~x2_s_a4(sK44)).
-
-cnf(u5546,axiom,
-    ~x2_s_b7(sK275)).
-
-cnf(u2032,axiom,
-    ~a3_e_a2(X0) | ~x2_e_a2(X0)).
-
-cnf(u2359,axiom,
-    ~x2_s_a15(X0) | ~a2_s_a0(X0)).
-
-cnf(u5735,axiom,
-    ~a2_e_b0(sK253)).
-
-cnf(u5440,axiom,
-    ~a2_e_a1(sK91)).
-
-cnf(u1893,axiom,
-    ~o(X0) | ~x2_e_a9(X0)).
-
-cnf(u2700,axiom,
-    ~x2_e_b2(X0) | ~l_s_b1(X0)).
-
-cnf(u1841,axiom,
-    ~x2_e_a13(X0) | ~x2_s_a13(X0)).
-
-cnf(u5118,axiom,
-    ~x2_e_a4(sK76)).
-
-cnf(u5553,axiom,
-    ~x2_s_b1(sK250)).
-
-cnf(u2301,axiom,
-    ~o(X0) | ~l_s_a1(X0)).
-
-cnf(u2211,axiom,
-    ~x2_e_a0(X0) | ~j(X0)).
-
-cnf(u2506,axiom,
-    ~x2_e_b1(X0) | ~tau_b0(X0)).
-
-cnf(u5218,axiom,
-    ~a2_s_a0(sK150)).
-
-cnf(u5292,axiom,
-    ~x2_e_a3(sK191)).
-
-cnf(u2233,axiom,
-    ~a3_s_a6(X0) | ~tau_a16(X0)).
-
-cnf(u5181,axiom,
-    ~x2_e_a0(sK47)).
-
-cnf(u1852,axiom,
-    ~x2_e_a1(X0) | ~l_s_a0(X0)).
-
-cnf(u5240,axiom,
-    ~a2_s_a5(sK45)).
-
-cnf(u5026,axiom,
-    ~x2_e_a6(sK147)).
-
-cnf(u4997,axiom,
-    ~x2_s_a13(sK112)).
-
-cnf(u5158,axiom,
-    ~x2_e_a13(sK71)).
-
-cnf(u5614,axiom,
-    ~x2_e_b0(sK213)).
-
-cnf(u5695,axiom,
-    ~x2_s_b5(sK257)).
-
-cnf(u2135,axiom,
-    ~a3_e_a2(X0) | ~x2_s_a2(X0)).
-
-cnf(u5249,axiom,
-    ~x2_s_a2(sK20)).
-
-cnf(u2513,axiom,
-    l_s_b4(sK223)).
-
-cnf(u5180,axiom,
-    ~x2_s_a0(sK47)).
-
-cnf(u5664,axiom,
-    ~x2_s_b4(sK274)).
-
-cnf(u5508,axiom,
-    ~h(sK174)).
-
-cnf(u5677,axiom,
-    ~x2_e_b4(sK188)).
-
-cnf(u5279,axiom,
-    ~l_s_a9(sK266)).
-
-cnf(u5033,axiom,
-    ~x2_e_a7(sK117)).
-
-cnf(u1879,axiom,
-    ~x3_e_a10(X0) | ~tau_a14(X0)).
-
-cnf(u2543,axiom,
-    a2_s_b0(sK235)).
-
-cnf(u1921,axiom,
-    a3_s_a2(sK20)).
-
-cnf(u5621,axiom,
-    ~a3_s_b2(sK223)).
-
-cnf(u2642,axiom,
-    ~a3_e_b1(X0) | ~x2_e_b4(X0)).
-
-cnf(u2619,axiom,
-    ~l_s_b5(X0) | ~a3_s_b2(X0)).
-
-cnf(u5167,axiom,
-    ~x2_s_a6(sK36)).
-
-cnf(u5580,axiom,
-    ~l_s_b6(sK264)).
-
-cnf(u5446,axiom,
-    ~l_s_a1(sK62)).
-
-cnf(u2624,axiom,
-    ~x2_e_b2(X0) | ~a3_s_b1(X0)).
-
-cnf(u1874,axiom,
-    ~tau_a5(X0) | ~x2_s_a4(X0)).
-
-cnf(u2206,axiom,
-    ~l_s_a4(X0) | ~x2_s_a6(X0)).
-
-cnf(u1932,axiom,
-    ~a2_s_a4(X0) | ~x2_s_a15(X0)).
-
-cnf(u2544,axiom,
-    ~a2_s_b0(X0) | ~x2_s_b7(X0)).
-
-cnf(u5394,axiom,
-    ~a3_e_a6(sK126)).
-
-cnf(u5513,axiom,
-    ~a3_e_b3(sK183)).
-
-cnf(u2225,axiom,
-    ~tau_a8(X0) | ~l(X0)).
-
-cnf(u5468,axiom,
-    ~l_s_b0(sK202)).
-
-cnf(u5579,axiom,
-    ~l_s_b6(sK200)).
-
-cnf(u5543,axiom,
-    ~x2_s_b7(sK235)).
-
-cnf(u5453,axiom,
-    ~l_s_a1(sK21)).
-
-cnf(u2127,axiom,
-    ~x2_s_a11(X0) | ~a2_s_a5(X0)).
-
-cnf(u1881,axiom,
-    ~x3_e_a10(X0) | ~x2_e_a9(X0)).
-
-cnf(u1931,axiom,
-    ~tau_a10(X0) | ~x2_s_a7(X0)).
-
-cnf(u5699,axiom,
-    ~x2_e_b5(sK235)).
-
-cnf(u5401,axiom,
-    ~x2_s_a7(sK63)).
-
-cnf(u5466,axiom,
-    ~x2_s_b3(sK214)).
-
-cnf(u5467,axiom,
-    ~x2_s_b3(sK255)).
-
-cnf(u5431,axiom,
-    ~x2_s_a13(sK137)).
-
-cnf(u2634,axiom,
-    ~l_s_b1(X0) | ~x2_s_b2(X0)).
-
-cnf(u5140,axiom,
-    ~x2_e_a14(sK182)).
-
-cnf(u1892,axiom,
-    ~o(X0) | ~x2_s_a2(X0)).
-
-cnf(u1840,axiom,
-    ~x2_e_a14(X0) | ~x2_s_a14(X0)).
-
-cnf(u2430,axiom,
-    l_s_b3(sK190)).
-
-cnf(u5198,axiom,
-    ~l_s_a2(sK226)).
-
-cnf(u2647,axiom,
-    ~x2_e_b1(X0) | ~x2_e_b4(X0)).
-
-cnf(u5072,axiom,
-    ~x2_s_a2(sK152)).
-
-cnf(u5473,axiom,
-    ~x2_e_b4(sK186)).
-
-cnf(u5704,axiom,
-    ~x2_e_b5(sK224)).
-
-cnf(u5220,axiom,
-    ~a2_e_a4(sK23)).
-
-cnf(u5503,axiom,
-    ~random_activity_3(sK196)).
-
-cnf(u5357,axiom,
-    ~a3_s_a2(sK89)).
-
-cnf(u5291,axiom,
-    ~x2_e_a3(sK136)).
-
-cnf(u2116,axiom,
-    ~tau_a7(X0) | ~a3_s_a3(X0)).
-
-cnf(u2428,axiom,
-    ~tau_b6(X0) | ~random_activity_1(X0)).
-
-cnf(u1891,axiom,
-    ~d(X0) | ~x2_e_a9(X0)).
-
-cnf(u5319,axiom,
-    ~x2_e_a7(sK189)).
-
-cnf(u1949,axiom,
-    ~c(X0) | ~x2_s_a4(X0)).
-
-cnf(u1855,axiom,
-    ~a3_e_a3(X0) | ~x2_s_a6(X0)).
-
-cnf(u5717,axiom,
-    ~a3_e_b2(sK190)).
-
-cnf(u5305,axiom,
-    ~x3_s_a10(sK128)).
-
-cnf(u5087,axiom,
-    ~x2_s_a14(sK87)).
-
-cnf(u2130,axiom,
-    a2_s_a4(sK88)).
-
-cnf(u5534,axiom,
-    ~e(sK200)).
-
-cnf(u5371,axiom,
-    ~a3_e_a2(sK89)).
-
-cnf(u2360,axiom,
-    ~a2_e_a0(X0) | ~x2_s_a15(X0)).
-
-cnf(u2234,axiom,
-    ~tau_a16(X0) | ~a3_e_a6(X0)).
-
-cnf(u5207,axiom,
-    ~a2_s_a0(sK131)).
-
-cnf(u5556,axiom,
-    ~a3_e_b1(sK244)).
-
-cnf(u2336,axiom,
-    x2_s_a14(sK156)).
-
-cnf(u2345,axiom,
-    ~f(X0) | ~tau_a4(X0)).
-
-cnf(u2128,axiom,
-    ~x2_e_a11(X0) | ~a2_s_a5(X0)).
-
-cnf(u5082,axiom,
-    ~x2_s_a13(sK148)).
-
-cnf(u5541,axiom,
-    ~i(sK187)).
-
-cnf(u2321,axiom,
-    ~x2_e_a0(X0) | ~x2_s_a0(X0)).
-
-cnf(u5354,axiom,
-    ~a3_s_a2(sK70)).
-
-cnf(u2625,axiom,
-    ~a3_s_b1(X0) | ~l_s_b2(X0)).
-
-cnf(u5555,axiom,
-    ~l(sK190)).
-
-cnf(u2532,axiom,
-    ~l_s_b6(X0) | ~i(X0)).
-
-cnf(u2351,axiom,
-    ~l_s_a2(X0) | ~tau_a3(X0)).
-
-cnf(u5494,axiom,
-    ~i(sK275)).
-
-cnf(u5248,axiom,
-    ~x2_s_a2(sK55)).
-
-cnf(u5137,axiom,
-    ~x2_e_a14(sK28)).
-
-cnf(u2508,axiom,
-    ~a3_e_b3(X0) | ~e(X0)).
-
-cnf(u5089,axiom,
-    ~d(sK152)).
-
-cnf(u2546,axiom,
-    ~a2_s_b0(X0) | ~x2_e_b7(X0)).
-
-cnf(u1935,axiom,
-    ~x2_e_a15(X0) | ~a2_e_a4(X0)).
-
 cnf(u2648,axiom,
-    ~tau_b8(X0) | ~random_activity_2(X0)).
-
-cnf(u2227,axiom,
-    x2_s_a8(sK121)).
-
-cnf(u5388,axiom,
-    ~l_s_a1(sK231)).
-
-cnf(u5584,axiom,
-    ~d(sK241)).
-
-cnf(u5501,axiom,
-    ~x2_e_b4(sK208)).
-
-cnf(u2507,axiom,
-    ~a3_s_b3(X0) | ~e(X0)).
-
-cnf(u5092,axiom,
-    ~l_s_a6(sK177)).
-
-cnf(u1880,axiom,
-    ~x3_s_a10(X0) | ~x2_e_a9(X0)).
-
-cnf(u2553,axiom,
-    d(sK239)).
-
-cnf(u1930,axiom,
-    ~m(X0) | ~l_s_a6(X0)).
-
-cnf(u5317,axiom,
-    ~x2_e_a7(sK74)).
-
-cnf(u5732,axiom,
-    ~a2_s_b0(sK224)).
-
-cnf(u5387,axiom,
-    ~l_s_a1(sK116)).
-
-cnf(u5331,axiom,
-    ~x2_e_a2(sK163)).
-
-cnf(u5316,axiom,
-    ~x2_e_a7(sK63)).
-
-cnf(u5205,axiom,
-    ~l_s_a7(sK187)).
-
-cnf(u5091,axiom,
-    ~l_s_a6(sK86)).
-
-cnf(u5000,axiom,
-    ~x2_s_a12(sK162)).
-
-cnf(u1895,axiom,
-    ~a3_s_a2(X0) | ~tau_a2(X0)).
-
-cnf(u1937,axiom,
-    ~b(X0) | ~j(X0)).
-
-cnf(u5246,axiom,
-    ~a2_s_a5(sK129)).
-
-cnf(u2658,axiom,
-    ~a2_s_b0(X0) | ~x2_e_b5(X0)).
-
-cnf(u5219,axiom,
-    ~a2_s_a0(sK155)).
-
-cnf(u5719,axiom,
-    ~l(sK214)).
-
-cnf(u5692,axiom,
-    ~b(sK278)).
-
-cnf(u2640,axiom,
-    ~a3_e_b1(X0) | ~x2_s_b4(X0)).
-
-cnf(u5015,axiom,
-    ~x2_e_a14(sK162)).
-
-cnf(u1890,axiom,
-    ~d(X0) | ~x2_s_a2(X0)).
-
-cnf(u1948,axiom,
-    ~l_s_a3(X0) | ~x2_s_a4(X0)).
-
-cnf(u2222,axiom,
-    ~tau_a19(X0) | ~x2_s_a13(X0)).
-
-cnf(u5637,axiom,
-    ~l_s_b2(sK217)).
-
-cnf(u5336,axiom,
-    ~x2_e_a9(sK11)).
-
-cnf(u5225,axiom,
-    ~x2_e_a8(sK86)).
-
-cnf(u5254,axiom,
-    ~a2_e_a5(sK146)).
-
-cnf(u5742,axiom,
-    ~f(sK222)).
-
-cnf(u5202,axiom,
-    ~random_activity_2(sK91)).
-
-cnf(u5276,axiom,
-    ~x2_s_a8(sK273)).
-
-cnf(u5224,axiom,
-    ~x2_e_a8(sK52)).
-
-cnf(u2143,axiom,
-    ~x3_e_a10(X0) | ~g(X0)).
-
-cnf(u5127,axiom,
-    ~l_s_a2(sK70)).
-
-cnf(u5165,axiom,
-    ~x2_e_a2(sK35)).
-
-cnf(u5010,axiom,
-    ~x2_s_a14(sK96)).
-
-cnf(u5109,axiom,
-    ~x2_s_a4(sK139)).
-
-cnf(u1947,axiom,
-    ~x2_s_a3(X0) | ~tau_a3(X0)).
-
-cnf(u5679,axiom,
-    ~l_s_b0(sK235)).
-
-cnf(u5361,axiom,
-    ~x2_e_a5(sK20)).
-
-cnf(u5274,axiom,
-    ~x2_s_a8(sK86)).
-
-cnf(u5634,axiom,
-    ~a3_s_b1(sK222)).
-
-cnf(u5263,axiom,
-    ~x2_e_a11(sK37)).
-
-cnf(u5017,axiom,
-    ~random_activity_2(sK75)).
-
-cnf(u5422,axiom,
-    ~x2_s_a15(sK97)).
-
-cnf(u5296,axiom,
-    ~l_s_a3(sK221)).
-
-cnf(u2318,axiom,
-    ~n(X0) | ~g(X0)).
-
-cnf(u5162,axiom,
-    ~x2_e_a2(sK20)).
-
-cnf(u5618,axiom,
-    ~a3_s_b2(sK190)).
-
-cnf(u2340,axiom,
-    ~tau_a19(X0) | ~l_s_a9(X0)).
-
-cnf(u2639,axiom,
-    ~a3_s_b1(X0) | ~x2_s_b4(X0)).
-
-cnf(u5429,axiom,
-    ~x2_e_a12(sK137)).
-
-cnf(u1907,axiom,
-    ~tau_a17(X0) | ~x2_e_a12(X0)).
-
-cnf(u5512,axiom,
-    ~a3_e_b3(sK269)).
-
-cnf(u1965,axiom,
-    ~c(X0) | ~x2_e_a4(X0)).
-
-cnf(u2354,axiom,
-    x2_s_a9(sK163)).
-
-cnf(u2236,axiom,
-    ~l_s_a5(X0) | ~x2_e_a7(X0)).
-
-cnf(u5012,axiom,
-    ~x2_s_a14(sK162)).
-
-cnf(u5681,axiom,
-    ~l_s_b0(sK257)).
-
-cnf(u5625,axiom,
-    ~m(sK216)).
-
-cnf(u2429,axiom,
-    ~tau_b10(X0) | ~x2_e_b7(X0)).
-
-cnf(u2330,axiom,
-    ~random_activity_1(X0) | ~x2_s_a7(X0)).
-
-cnf(u1991,axiom,
-    ~k(X0) | ~x2_e_a14(X0)).
-
-cnf(u5652,axiom,
-    ~x2_e_b3(sK217)).
-
-cnf(u5342,axiom,
-    ~a2_s_a4(sK38)).
-
-cnf(u2352,axiom,
-    ~f(X0) | ~tau_a3(X0)).
-
-cnf(u5527,axiom,
-    ~a3_e_b2(sK234)).
-
-cnf(u2361,axiom,
-    ~x2_e_a15(X0) | ~a2_s_a0(X0)).
-
-cnf(u5364,axiom,
-    ~x2_e_a3(sK29)).
-
-cnf(u2144,axiom,
-    ~tau_a14(X0) | ~x2_e_a9(X0)).
-
-cnf(u5125,axiom,
-    ~a3_e_a3(sK166)).
-
-cnf(u5011,axiom,
-    ~x2_s_a14(sK122)).
-
-cnf(u5450,axiom,
-    ~x2_s_a15(sK98)).
-
-cnf(u1936,axiom,
-    ~x2_e_a4(X0) | ~tau_a5(X0)).
-
-cnf(u5569,axiom,
-    ~a(sK235)).
-
-cnf(u2641,axiom,
-    ~a3_s_b1(X0) | ~x2_e_b4(X0)).
-
-cnf(u2628,axiom,
-    ~a3_s_b1(X0) | ~x2_e_b3(X0)).
-
-cnf(u5139,axiom,
-    ~x2_e_a14(sK87)).
-
-cnf(u5639,axiom,
-    ~l_s_b2(sK241)).
-
-cnf(u5472,axiom,
-    ~l_s_b0(sK186)).
-
-cnf(u2548,axiom,
-    ~tau_b0(X0) | ~x2_s_b1(X0)).
-
-cnf(u5022,axiom,
-    ~x2_s_a6(sK147)).
-
-cnf(u5691,axiom,
-    ~b(sK197)).
-
-cnf(u2533,axiom,
-    ~e(X0) | ~i(X0)).
-
-cnf(u5302,axiom,
-    ~x2_s_a6(sK277)).
-
-cnf(u2205,axiom,
-    l_s_a2(sK115)).
-
-cnf(u2115,axiom,
-    ~random_activity_1(X0) | ~tau_a10(X0)).
-
-cnf(u5662,axiom,
-    ~x2_s_b4(sK230)).
-
-cnf(u5487,axiom,
-    ~l_s_b6(sK245)).
-
-cnf(u2547,axiom,
-    ~x2_e_b5(X0) | ~x2_e_b7(X0)).
-
-cnf(u2219,axiom,
-    ~h(X0) | ~l_s_a8(X0)).
-
-cnf(u5196,axiom,
-    ~l_s_a2(sK136)).
-
-cnf(u2137,axiom,
-    ~l_s_a7(X0) | ~a2_e_a5(X0)).
-
-cnf(u5144,axiom,
-    ~a2_e_a4(sK199)).
-
-cnf(u5071,axiom,
-    ~x2_e_a9(sK239)).
-
-cnf(u5029,axiom,
-    ~x2_s_a7(sK117)).
-
-cnf(u1896,axiom,
-    ~a3_e_a2(X0) | ~tau_a2(X0)).
-
-cnf(u1946,axiom,
-    ~b(X0) | ~x2_s_a0(X0)).
-
-cnf(u5518,axiom,
-    ~k(sK264)).
-
-cnf(u2545,axiom,
-    ~x2_e_b5(X0) | ~x2_s_b7(X0)).
-
-cnf(u5641,axiom,
-    ~c(sK212)).
-
-cnf(u2471,axiom,
-    l_s_b0(sK208)).
-
-cnf(u5540,axiom,
-    ~i(sK172)).
-
-cnf(u2005,axiom,
-    ~a2_s_a1(X0) | ~x2_e_a1(X0)).
-
-cnf(u5066,axiom,
-    ~x2_s_a2(sK231)).
-
-cnf(u1953,axiom,
-    ~tau_a8(X0) | ~x2_e_a6(X0)).
-
-cnf(u5525,axiom,
-    ~a3_s_b2(sK234)).
-
-cnf(u5721,axiom,
-    ~a3_e_b2(sK223)).
-
-cnf(u2674,axiom,
-    ~tau_b4(X0) | ~x2_s_b3(X0)).
-
-cnf(u5590,axiom,
-    ~o(sK217)).
-
-cnf(u5538,axiom,
-    ~i(sK225)).
-
-cnf(u5539,axiom,
-    ~i(sK45)).
-
-cnf(u5612,axiom,
-    ~x2_s_b0(sK213)).
-
-cnf(u5560,axiom,
-    ~c(sK185)).
-
-cnf(u2656,axiom,
-    ~a2_s_b0(X0) | ~x2_s_b5(X0)).
-
-cnf(u1906,axiom,
-    ~k(X0) | ~x2_s_a14(X0)).
-
-cnf(u5073,axiom,
-    ~x2_s_a2(sK268)).
-
-cnf(u1964,axiom,
-    ~l_s_a3(X0) | ~x2_e_a4(X0)).
-
-cnf(u2238,axiom,
-    x2_s_a11(sK126)).
-
-cnf(u5426,axiom,
-    ~x2_e_a15(sK97)).
-
-cnf(u5597,axiom,
-    ~random_activity_2(sK202)).
-
-cnf(u2129,axiom,
-    ~x2_e_a2(X0) | ~x2_s_a2(X0)).
-
-cnf(u5545,axiom,
-    ~x2_s_b7(sK257)).
-
-cnf(u5500,axiom,
-    ~l_s_b0(sK274)).
-
-cnf(u5611,axiom,
-    ~a(sK259)).
-
-cnf(u5485,axiom,
-    ~n(sK271)).
-
-cnf(u5447,axiom,
-    ~x2_e_a9(sK7)).
-
-cnf(u1963,axiom,
-    ~c(X0) | ~tau_a5(X0)).
-
-cnf(u5731,axiom,
-    ~x2_s_b1(sK259)).
-
-cnf(u5433,axiom,
-    ~x2_e_a13(sK137)).
-
-cnf(u5498,axiom,
-    ~l_s_b0(sK230)).
-
-cnf(u5068,axiom,
-    ~x2_e_a9(sK22)).
-
-cnf(u5499,axiom,
-    ~l_s_b0(sK241)).
-
-cnf(u5315,axiom,
-    ~x2_e_a7(sK26)).
-
-cnf(u5708,axiom,
-    ~l_s_b6(sK173)).
-
-cnf(u5392,axiom,
-    ~x2_s_a11(sK137)).
-
-cnf(u5172,axiom,
-    ~x2_e_a8(sK36)).
-
-cnf(u1974,axiom,
-    ~x2_e_a15(X0) | ~tau_a23(X0)).
-
-cnf(u2679,axiom,
-    ~x2_e_b7(X0) | ~x2_s_b7(X0)).
-
-cnf(u5377,axiom,
-    ~x2_e_a5(sK35)).
-
-cnf(u5104,axiom,
-    ~x2_s_a0(sK2)).
-
-cnf(u5067,axiom,
-    ~x2_s_a2(sK239)).
-
-cnf(u5124,axiom,
-    ~a3_s_a3(sK157)).
-
-cnf(u2655,axiom,
-    ~x2_e_b0(X0) | ~b(X0)).
-
-cnf(u5407,axiom,
-    ~x3_e_a10(sK163)).
-
-cnf(u5195,axiom,
-    ~x3_s_a10(sK247)).
-
-cnf(u2148,axiom,
-    ~m(X0) | ~x2_s_a8(X0)).
-
-cnf(u5351,axiom,
-    ~x2_e_a6(sK107)).
-
-cnf(u2332,axiom,
-    ~x2_s_a9(X0) | ~x3_e_a10(X0)).
-
-cnf(u1981,axiom,
-    ~x2_e_a11(X0) | ~a3_e_a6(X0)).
-
-cnf(u5261,axiom,
-    ~x2_s_a11(sK164)).
-
-cnf(u2341,axiom,
-    ~tau_a19(X0) | ~random_activity_3(X0)).
-
-cnf(u5209,axiom,
-    ~x2_s_a0(sK6)).
-
-cnf(u2124,axiom,
-    ~x2_e_a11(X0) | ~x2_s_a11(X0)).
-
-cnf(u2162,axiom,
-    ~x2_s_a1(X0) | ~x2_e_a1(X0)).
-
-cnf(u5119,axiom,
-    ~x2_e_a4(sK139)).
-
-cnf(u5566,axiom,
-    ~x2_e_b3(sK185)).
-
-cnf(u2317,axiom,
-    ~tau_a6(X0) | ~c(X0)).
-
-cnf(u5275,axiom,
-    ~x2_s_a8(sK177)).
-
-cnf(u2138,axiom,
-    ~e(X0) | ~a2_e_a5(X0)).
-
-cnf(u5239,axiom,
-    ~a2_s_a5(sK124)).
-
-cnf(u2056,axiom,
-    ~x2_s_a3(X0) | ~x2_e_a3(X0)).
-
-cnf(u2331,axiom,
-    ~x2_s_a9(X0) | ~x3_s_a10(X0)).
-
-cnf(u2004,axiom,
-    ~a2_s_a1(X0) | ~x2_s_a1(X0)).
-
-cnf(u2681,axiom,
-    ~a3_e_b2(X0) | ~l(X0)).
-
-cnf(u5445,axiom,
-    ~l_s_a1(sK42)).
-
-cnf(u5085,axiom,
-    ~x2_s_a14(sK28)).
-
-cnf(u1952,axiom,
-    ~tau_a13(X0) | ~l_s_a6(X0)).
-
-cnf(u2353,axiom,
-    ~tau_a15(X0) | ~l_s_a7(X0)).
-
-cnf(u2644,axiom,
-    ~a2_s_b0(X0) | ~l_s_b0(X0)).
-
-cnf(u5258,axiom,
-    ~a2_e_a5(sK187)).
+    a2_e_a0(sK4)).
 
 cnf(u2657,axiom,
-    ~x2_e_b1(X0) | ~x2_s_b5(X0)).
-
-cnf(u2518,axiom,
-    ~tau_b1(X0) | ~x2_s_b2(X0)).
-
-cnf(u5459,axiom,
-    ~x2_s_b4(sK265)).
-
-cnf(u5280,axiom,
-    ~x2_e_a1(sK32)).
-
-cnf(u5169,axiom,
-    ~x2_s_a7(sK36)).
-
-cnf(u2117,axiom,
-    ~tau_a7(X0) | ~a3_e_a3(X0)).
-
-cnf(u2003,axiom,
-    ~a2_e_a5(X0) | ~a2_e_a4(X0)).
-
-cnf(u2450,axiom,
-    ~tau_b4(X0) | ~a3_e_b2(X0)).
-
-cnf(u2549,axiom,
-    x2_s_b4(sK236)).
-
-cnf(u2680,axiom,
-    ~l_s_b3(X0) | ~a3_e_b2(X0)).
-
-cnf(u2242,axiom,
-    ~x2_e_a6(X0) | ~x2_s_a6(X0)).
-
-cnf(u5420,axiom,
-    ~x2_s_a15(sK23)).
-
-cnf(u2472,axiom,
-    ~a2_s_b0(X0) | ~l_s_b6(X0)).
-
-cnf(u2235,axiom,
-    ~tau_a15(X0) | ~e(X0)).
-
-cnf(u2264,axiom,
-    a3_s_a6(sK137)).
-
-cnf(u5651,axiom,
-    ~x2_e_b3(sK212)).
-
-cnf(u1912,axiom,
-    ~o(X0) | ~d(X0)).
-
-cnf(u5405,axiom,
-    ~x3_s_a10(sK163)).
-
-cnf(u1962,axiom,
-    ~l_s_a3(X0) | ~tau_a5(X0)).
-
-cnf(u2240,axiom,
-    ~random_activity_3(X0) | ~tau_a20(X0)).
-
-cnf(u5349,axiom,
-    ~x2_e_a6(sK125)).
-
-cnf(u2055,axiom,
-    ~tau_a8(X0) | ~x2_s_a6(X0)).
-
-cnf(u5636,axiom,
-    ~l_s_b2(sK212)).
-
-cnf(u5419,axiom,
-    ~a2_s_a0(sK39)).
-
-cnf(u2487,axiom,
-    ~a3_e_b3(X0) | ~h(X0)).
-
-cnf(u5568,axiom,
-    ~x2_e_b3(sK258)).
-
-cnf(u5363,axiom,
-    ~x2_e_a3(sK16)).
-
-cnf(u5348,axiom,
-    ~a2_s_a4(sK170)).
-
-cnf(u2463,axiom,
-    ~tau_b9(X0) | ~x2_e_b6(X0)).
-
-cnf(u5237,axiom,
-    ~x2_s_a11(sK129)).
-
-cnf(u5032,axiom,
-    ~x2_e_a7(sK46)).
-
-cnf(u4995,axiom,
-    ~x2_s_a14(sK5)).
-
-cnf(u5631,axiom,
-    ~x2_s_b2(sK230)).
-
-cnf(u2627,axiom,
-    ~a3_s_b1(X0) | ~x2_s_b3(X0)).
-
-cnf(u5150,axiom,
-    ~a2_e_a4(sK164)).
-
-cnf(u2562,axiom,
-    x2_s_b2(sK244)).
-
-cnf(u5123,axiom,
-    ~a3_s_a3(sK166)).
-
-cnf(u5656,axiom,
-    ~c(sK262)).
-
-cnf(u5346,axiom,
-    ~a2_s_a4(sK37)).
-
-cnf(u5583,axiom,
-    ~d(sK230)).
-
-cnf(u2672,axiom,
-    ~x2_s_b0(X0) | ~b(X0)).
-
-cnf(u5006,axiom,
-    ~x2_s_a13(sK162)).
-
-cnf(u1980,axiom,
-    ~x2_e_a11(X0) | ~a3_s_a6(X0)).
-
-cnf(u2126,axiom,
-    ~e(X0) | ~a2_s_a5(X0)).
-
-cnf(u5368,axiom,
-    ~x2_s_a4(sK29)).
-
-cnf(u5129,axiom,
-    ~x2_s_a3(sK191)).
-
-cnf(u5286,axiom,
-    ~l_s_a5(sK74)).
-
-cnf(u5646,axiom,
-    ~x2_s_b3(sK212)).
-
-cnf(u2263,axiom,
-    ~k(X0) | ~l_s_a10(X0)).
-
-cnf(u5159,axiom,
-    ~x2_e_a13(sK148)).
-
-cnf(u5308,axiom,
-    ~l_s_a8(sK184)).
-
-cnf(u2175,axiom,
-    ~f(X0) | ~x2_e_a3(X0)).
-
-cnf(u5128,axiom,
-    ~x2_s_a3(sK136)).
-
-cnf(u5042,axiom,
-    ~x2_e_a8(sK147)).
-
-cnf(u5013,axiom,
-    ~x2_e_a14(sK96)).
-
-cnf(u1979,axiom,
-    ~x3_e_a10(X0) | ~n(X0)).
-
-cnf(u2645,axiom,
-    ~x2_e_b1(X0) | ~l_s_b0(X0)).
-
-cnf(u2007,axiom,
-    ~a2_s_a1(X0) | ~x2_e_a9(X0)).
-
-cnf(u5265,axiom,
-    ~x2_e_a11(sK170)).
-
-cnf(u5718,axiom,
-    ~l(sK193)).
-
-cnf(u5666,axiom,
-    ~x2_s_b4(sK188)).
-
-cnf(u5295,axiom,
-    ~l_s_a3(sK139)).
-
-cnf(u2682,axiom,
-    ~l_s_b4(X0) | ~a3_e_b2(X0)).
-
-cnf(u5200,axiom,
-    ~l_s_a0(sK91)).
-
-cnf(u2002,axiom,
-    ~a2_e_a4(X0) | ~a2_s_a5(X0)).
-
-cnf(u5574,axiom,
-    ~a2_s_b0(sK197)).
-
-cnf(u2567,axiom,
-    ~a3_e_b1(X0) | ~x2_s_b3(X0)).
-
-cnf(u2008,axiom,
-    ~tau_a12(X0) | ~x2_s_a8(X0)).
-
-cnf(u5697,axiom,
-    ~x2_s_b5(sK224)).
-
-cnf(u2118,axiom,
-    x2_s_a12(sK84)).
-
-cnf(u5596,axiom,
-    ~o(sK271)).
-
-cnf(u5544,axiom,
-    ~x2_s_b7(sK245)).
-
-cnf(u5581,axiom,
-    ~d(sK212)).
-
-cnf(u2255,axiom,
-    ~x2_s_a9(X0) | ~x2_e_a2(X0)).
-
-cnf(u2357,axiom,
-    x2_s_a13(sK165)).
-
-cnf(u2140,axiom,
-    ~a2_e_a5(X0) | ~x2_e_a11(X0)).
-
-cnf(u2009,axiom,
-    ~l_s_a4(X0) | ~tau_a9(X0)).
-
-cnf(u5044,axiom,
-    ~a3_e_a3(sK85)).
-
-cnf(u2050,axiom,
-    ~a3_s_a3(X0) | ~x2_s_a7(X0)).
-
-cnf(u5684,axiom,
-    ~l_s_b0(sK253)).
-
-cnf(u5595,axiom,
-    ~o(sK265)).
-
-cnf(u2362,axiom,
-    ~a2_e_a0(X0) | ~x2_e_a15(X0)).
-
-cnf(u5529,axiom,
-    ~tau_b0(sK224)).
-
-cnf(u5594,axiom,
-    ~o(sK238)).
-
-cnf(u5374,axiom,
-    ~a3_e_a2(sK157)).
-
-cnf(u2637,axiom,
-    ~l_s_b2(X0) | ~tau_b3(X0)).
-
-cnf(u2072,axiom,
-    ~n(X0) | ~x3_s_a10(X0)).
-
-cnf(u5559,axiom,
-    ~a3_e_b1(sK262)).
-
-cnf(u5268,axiom,
-    ~x2_e_a12(sK49)).
-
-cnf(u2048,axiom,
-    ~a3_s_a3(X0) | ~x2_s_a6(X0)).
-
-cnf(u5043,axiom,
-    ~a3_s_a3(sK85)).
-
-cnf(u5326,axiom,
-    ~x2_e_a5(sK166)).
-
-cnf(u5707,axiom,
-    ~l_s_b6(sK276)).
-
-cnf(u5601,axiom,
-    ~x2_s_b1(sK224)).
-
-cnf(u2673,axiom,
-    ~tau_b7(X0) | ~l_s_b5(X0)).
+    ~sP1).
 
 cnf(u2660,axiom,
-    ~x2_e_b7(X0) | ~random_activity_4(X0)).
+    ~random_activity_5(X0)).
 
-cnf(u5171,axiom,
-    ~x2_s_a8(sK36)).
+cnf(u2664,axiom,
+    ~g(sK5)).
 
-cnf(u5376,axiom,
-    ~x2_e_a5(sK29)).
+cnf(u2673,axiom,
+    sP0).
 
-cnf(u2636,axiom,
-    x2_s_b3(sK260)).
-
-cnf(u5054,axiom,
-    ~x2_e_a9(sK128)).
-
-cnf(u2466,axiom,
-    ~tau_b1(X0) | ~f(X0)).
-
-cnf(u5088,axiom,
-    ~x2_s_a14(sK182)).
-
-cnf(u5489,axiom,
-    ~l_s_b6(sK275)).
-
-cnf(u2568,axiom,
-    ~a3_e_b1(X0) | ~x2_e_b3(X0)).
-
-cnf(u2237,axiom,
-    ~random_activity_1(X0) | ~x2_e_a7(X0)).
-
-cnf(u5206,axiom,
-    ~l_s_a7(sK263)).
-
-cnf(u2147,axiom,
-    ~l_s_a6(X0) | ~x2_s_a8(X0)).
-
-cnf(u5694,axiom,
-    ~x2_s_b5(sK245)).
-
-cnf(u5391,axiom,
-    ~l_s_a1(sK268)).
-
-cnf(u5154,axiom,
-    ~l_s_a1(sK47)).
-
-cnf(u2488,axiom,
-    ~x2_s_b6(X0) | ~a3_e_b3(X0)).
-
-cnf(u2451,axiom,
-    ~x2_e_b3(X0) | ~x2_s_b3(X0)).
-
-cnf(u2280,axiom,
-    ~a3_e_a2(X0) | ~x2_e_a3(X0)).
-
-cnf(u5228,axiom,
-    ~x2_e_a9(sK163)).
-
-cnf(u5712,axiom,
-    ~i(sK229)).
-
-cnf(u2464,axiom,
-    ~x2_s_b4(X0) | ~n(X0)).
-
-cnf(u2030,axiom,
-    ~tau_a2(X0) | ~x2_e_a2(X0)).
-
-cnf(u2555,axiom,
-    ~l_s_b5(X0) | ~m(X0)).
-
-cnf(u5725,axiom,
-    ~a3_e_b2(sK215)).
-
-cnf(u2473,axiom,
-    ~x2_e_b5(X0) | ~l_s_b6(X0)).
-
-cnf(u1978,axiom,
-    ~f(X0) | ~x2_s_a3(X0)).
-
-cnf(u2256,axiom,
-    ~x2_s_a2(X0) | ~x2_e_a9(X0)).
-
-cnf(u5550,axiom,
-    ~x2_e_b7(sK257)).
-
-cnf(u2071,axiom,
-    l_s_a9(sK71)).
-
-cnf(u2670,axiom,
-    ~x2_e_b7(X0) | ~i(X0)).
-
-cnf(u5185,axiom,
-    ~a2_e_a1(sK60)).
-
-cnf(u2449,axiom,
-    ~tau_b4(X0) | ~a3_s_b2(X0)).
-
-cnf(u2375,axiom,
-    ~a3_s_a6(X0) | ~x2_s_a13(X0)).
-
-cnf(u5444,axiom,
-    ~l_s_a1(sK7)).
-
-cnf(u2646,axiom,
-    ~a2_s_b0(X0) | ~x2_e_b4(X0)).
-
-cnf(u5215,axiom,
-    ~a2_s_a4(sK108)).
-
-cnf(u5557,axiom,
-    ~a3_e_b1(sK222)).
-
-cnf(u5098,axiom,
-    ~a2_s_a4(sK98)).
-
-cnf(u5069,axiom,
-    ~x2_e_a9(sK116)).
-
-cnf(u1857,axiom,
-    ~a3_e_a3(X0) | ~x2_s_a7(X0)).
-
-cnf(u2643,axiom,
-    l_s_b2(sK262)).
-
-cnf(u5622,axiom,
-    ~random_activity_1(sK216)).
-
-cnf(u5442,axiom,
-    ~x2_e_a1(sK42)).
-
-cnf(u5443,axiom,
-    ~x2_e_a1(sK62)).
-
-cnf(u5722,axiom,
-    ~random_activity_1(sK193)).
-
-cnf(u5516,axiom,
-    ~k(sK194)).
-
-cnf(u5464,axiom,
-    ~x2_s_b3(sK232)).
-
-cnf(u5105,axiom,
-    ~x2_s_a0(sK203)).
-
-cnf(u5382,axiom,
-    ~x2_s_a12(sK81)).
-
-cnf(u2142,axiom,
-    ~h(X0) | ~x2_e_a12(X0)).
-
-cnf(u5629,axiom,
-    ~x2_s_b2(sK212)).
-
-cnf(u5449,axiom,
-    ~x2_e_a9(sK62)).
-
-cnf(u5404,axiom,
-    ~x2_s_a7(sK189)).
-
-cnf(u2279,axiom,
-    ~x2_s_a3(X0) | ~a3_e_a2(X0)).
-
-cnf(u5515,axiom,
-    ~k(sK174)).
-
-cnf(u2063,axiom,
-    ~a2_s_a1(X0) | ~x2_s_a0(X0)).
-
-cnf(u5479,axiom,
-    ~x2_s_b3(sK234)).
-
-cnf(u5389,axiom,
-    ~l_s_a1(sK239)).
-
-cnf(u1867,axiom,
-    a2_s_a0(sK6)).
-
-cnf(u5635,axiom,
-    ~a3_s_b1(sK246)).
-
-cnf(u5333,axiom,
-    ~x2_e_a9(sK105)).
-
-cnf(u2023,axiom,
-    ~l_s_a9(X0) | ~x2_e_a13(X0)).
-
-cnf(u5402,axiom,
-    ~x2_s_a7(sK74)).
-
-cnf(u5403,axiom,
-    ~x2_s_a7(sK178)).
-
-cnf(u5347,axiom,
-    ~a2_s_a4(sK164)).
-
-cnf(u2635,axiom,
-    ~x2_s_b2(X0) | ~f(X0)).
-
-cnf(u5740,axiom,
-    ~l_s_b1(sK222)).
-
-cnf(u5424,axiom,
-    ~x2_e_a15(sK23)).
-
-cnf(u1878,axiom,
-    ~tau_a14(X0) | ~x3_s_a10(X0)).
-
-cnf(u5409,axiom,
-    ~random_activity_4(sK98)).
-
-cnf(u5134,axiom,
-    ~a3_s_a6(sK129)).
-
-cnf(u2583,axiom,
-    ~a3_s_b1(X0) | ~d(X0)).
-
-cnf(u5353,axiom,
-    ~x2_e_a6(sK277)).
-
-cnf(u5008,axiom,
-    ~x2_e_a13(sK122)).
-
-cnf(u5099,axiom,
-    ~a2_e_a4(sK98)).
-
-cnf(u2342,axiom,
-    ~tau_a19(X0) | ~x2_e_a13(X0)).
-
-cnf(u2024,axiom,
-    ~random_activity_3(X0) | ~x2_e_a13(X0)).
-
-cnf(u5640,axiom,
-    ~l_s_b2(sK274)).
-
-cnf(u5330,axiom,
-    ~x2_s_a2(sK114)).
-
-cnf(u2241,axiom,
-    l_s_a1(sK127)).
-
-cnf(u2134,axiom,
-    ~a3_s_a2(X0) | ~x2_s_a2(X0)).
-
-cnf(u5439,axiom,
-    ~a2_e_a1(sK32)).
-
-cnf(u5653,axiom,
-    ~x2_e_b3(sK230)).
-
-cnf(u5352,axiom,
-    ~x2_e_a6(sK179)).
-
-cnf(u5255,axiom,
-    ~a2_e_a5(sK124)).
-
-cnf(u1885,axiom,
-    x2_s_a6(sK9)).
-
-cnf(u5293,axiom,
-    ~x2_e_a3(sK226)).
-
-cnf(u5241,axiom,
-    ~a2_s_a5(sK172)).
-
-cnf(u2271,axiom,
-    ~l(X0) | ~x2_e_a6(X0)).
-
-cnf(u2025,axiom,
-    l_s_a6(sK54)).
-
-cnf(u2066,axiom,
-    ~x2_e_a0(X0) | ~a2_e_a1(X0)).
-
-cnf(u5023,axiom,
-    ~x2_e_a6(sK33)).
-
-cnf(u5110,axiom,
-    ~x2_s_a4(sK221)).
-
-cnf(u5470,axiom,
-    ~x2_e_b4(sK202)).
-
-cnf(u5307,axiom,
-    ~l_s_a8(sK49)).
-
-cnf(u2653,axiom,
-    ~tau_b5(X0) | ~l_s_b3(X0)).
-
-cnf(u5143,axiom,
-    ~a2_e_a4(sK38)).
-
-cnf(u5492,axiom,
-    ~i(sK245)).
-
-cnf(u2363,axiom,
-    ~tau_a0(X0) | ~x2_e_a1(X0)).
-
-cnf(u2064,axiom,
-    ~a2_s_a1(X0) | ~x2_e_a0(X0)).
-
-cnf(u2585,axiom,
-    ~a3_s_b1(X0) | ~o(X0)).
-
-cnf(u2446,axiom,
-    ~x2_s_b4(X0) | ~g(X0)).
-
-cnf(u5018,axiom,
-    ~x2_s_a7(sK171)).
-
-cnf(u5117,axiom,
-    ~x2_e_a4(sK44)).
-
-cnf(u1856,axiom,
-    ~a3_e_a3(X0) | ~x2_e_a6(X0)).
-
-cnf(u2676,axiom,
-    ~tau_b9(X0) | ~x2_s_b6(X0)).
-
-cnf(u5290,axiom,
-    ~x2_e_a3(sK99)).
-
-cnf(u2561,axiom,
-    ~l_s_b3(X0) | ~l(X0)).
-
-cnf(u5650,axiom,
-    ~x2_s_b3(sK274)).
-
-cnf(u5491,axiom,
-    ~i(sK235)).
-
-cnf(u1845,axiom,
-    ~a3_e_a6(X0) | ~x2_e_a13(X0)).
-
-cnf(u5184,axiom,
-    ~x2_s_a0(sK62)).
-
-cnf(u5430,axiom,
-    ~x2_e_a12(sK167)).
-
-cnf(u5025,axiom,
-    ~x2_e_a6(sK117)).
-
-cnf(u1871,axiom,
-    ~k(X0) | ~tau_a21(X0)).
-
-cnf(u2453,axiom,
-    l_s_b1(sK201)).
-
-cnf(u2584,axiom,
-    ~x2_e_b4(X0) | ~d(X0)).
-
-cnf(u2125,axiom,
-    ~l_s_a7(X0) | ~a2_s_a5(X0)).
-
-cnf(u2274,axiom,
-    ~a3_s_a2(X0) | ~x2_s_a4(X0)).
-
-cnf(u2376,axiom,
-    ~a3_s_a6(X0) | ~x2_e_a13(X0)).
-
-cnf(u2467,axiom,
-    ~l_s_b4(X0) | ~tau_b6(X0)).
-
-cnf(u5683,axiom,
-    ~l_s_b0(sK224)).
-
-cnf(u2250,axiom,
-    ~x2_s_a5(X0) | ~x2_e_a5(X0)).
-
-cnf(u2139,axiom,
-    ~a2_e_a5(X0) | ~x2_s_a11(X0)).
-
-cnf(u2296,axiom,
-    ~x2_e_a0(X0) | ~b(X0)).
-
-cnf(u5437,axiom,
-    ~x2_e_a14(sK137)).
-
-cnf(u2489,axiom,
-    ~x2_e_b6(X0) | ~a3_e_b3(X0)).
-
-cnf(u2480,axiom,
-    ~x2_e_b6(X0) | ~random_activity_3(X0)).
-
-cnf(u5028,axiom,
-    ~x2_s_a7(sK46)).
-
-cnf(u1866,axiom,
-    ~x2_e_a5(X0) | ~a3_e_a3(X0)).
-
-cnf(u2272,axiom,
-    ~x2_s_a3(X0) | ~a3_s_a2(X0)).
-
-cnf(u5253,axiom,
-    ~x2_s_a2(sK106)).
-
-cnf(u5668,axiom,
-    ~x2_e_b4(sK212)).
-
-cnf(u2686,axiom,
-    ~tau_b10(X0) | ~x2_s_b7(X0)).
-
-cnf(u5578,axiom,
-    ~l_s_b6(sK194)).
-
-cnf(u2465,axiom,
-    ~l_s_b1(X0) | ~tau_b1(X0)).
-
-cnf(u2391,axiom,
-    ~tau_b3(X0) | ~c(X0)).
-
-cnf(u5267,axiom,
-    ~x2_e_a12(sK12)).
-
-cnf(u5600,axiom,
-    ~x2_s_b6(sK196)).
-
-cnf(u5141,axiom,
-    ~x2_s_a4(sK89)).
-
-cnf(u5027,axiom,
-    ~x2_s_a7(sK33)).
-
-cnf(u5535,axiom,
-    ~e(sK264)).
-
-cnf(u1873,axiom,
-    ~tau_a22(X0) | ~l_s_a10(X0)).
-
-cnf(u2659,axiom,
-    ~x2_e_b1(X0) | ~x2_e_b5(X0)).
-
-cnf(u5182,axiom,
-    ~x2_s_a0(sK7)).
-
-cnf(u2594,axiom,
-    ~x2_e_b6(X0) | ~x2_s_b6(X0)).
-
-cnf(u5585,axiom,
-    ~d(sK274)).
-
-cnf(u5155,axiom,
-    ~x2_e_a9(sK47)).
-
-cnf(u5655,axiom,
-    ~x2_e_b3(sK274)).
-
-cnf(u5688,axiom,
-    ~x2_e_b4(sK275)).
-
-cnf(u5250,axiom,
-    ~x2_s_a2(sK16)).
-
-cnf(u5615,axiom,
-    ~x2_e_b0(sK259)).
-
-cnf(u2576,axiom,
-    ~a3_s_b3(X0) | ~l_s_b6(X0)).
-
-cnf(u2265,axiom,
-    ~i(X0) | ~a2_s_a4(X0)).
-
-cnf(u5038,axiom,
-    ~x2_s_a8(sK147)).
-
-cnf(u5213,axiom,
-    ~a2_s_a0(sK88)).
-
-cnf(u1884,axiom,
-    ~tau_a4(X0) | ~l_s_a2(X0)).
-
-cnf(u2158,axiom,
-    ~random_activity_3(X0) | ~l_s_a9(X0)).
-
-cnf(u5272,axiom,
-    ~x2_s_a8(sK54)).
-
-cnf(u5161,axiom,
-    ~x2_e_a13(sK266)).
-
-cnf(u5190,axiom,
-    ~x2_s_a0(sK97)).
-
-cnf(u5678,axiom,
-    ~x2_e_b4(sK258)).
-
-cnf(u2295,axiom,
-    ~random_activity_2(X0) | ~l_s_a0(X0)).
-
-cnf(u5227,axiom,
-    ~x2_e_a8(sK273)).
-
-cnf(u2052,axiom,
-    ~a3_s_a3(X0) | ~x2_s_a8(X0)).
-
-cnf(u5727,axiom,
-    ~m(sK214)).
-
-cnf(u5212,axiom,
-    ~a2_s_a0(sK62)).
-
-cnf(u5696,axiom,
-    ~x2_s_b5(sK275)).
-
-cnf(u5160,axiom,
-    ~x2_e_a13(sK151)).
-
-cnf(u2677,axiom,
-    ~x2_e_b2(X0) | ~x2_s_b2(X0)).
-
-cnf(u1883,axiom,
-    ~l(X0) | ~tau_a9(X0)).
-
-cnf(u5065,axiom,
-    ~x2_s_a2(sK116)).
-
-cnf(u5709,axiom,
-    ~i(sK276)).
-
-cnf(u5210,axiom,
-    ~a2_s_a0(sK7)).
-
-cnf(u5199,axiom,
-    ~l_s_a0(sK32)).
-
-cnf(u2586,axiom,
-    ~x2_e_b4(X0) | ~o(X0)).
-
-cnf(u1844,axiom,
-    ~a3_e_a6(X0) | ~x2_s_a13(X0)).
-
-cnf(u5606,axiom,
-    ~a3_s_b3(sK183)).
-
-cnf(u2599,axiom,
-    ~tau_b5(X0) | ~l(X0)).
-
-cnf(u5554,axiom,
-    ~m(sK215)).
-
-cnf(u2358,axiom,
-    x2_s_a5(sK166)).
-
-cnf(u5729,axiom,
-    ~a2_s_b0(sK252)).
-
-cnf(u2575,axiom,
-    ~x2_e_b0(X0) | ~a2_s_b0(X0)).
-
-cnf(u2257,axiom,
-    ~x2_e_a2(X0) | ~x2_e_a9(X0)).
-
-cnf(u5628,axiom,
-    ~x2_s_b0(sK278)).
-
-cnf(u5706,axiom,
-    ~random_activity_4(sK229)).
-
-cnf(u5448,axiom,
-    ~x2_e_a9(sK42)).
-
-cnf(u1843,axiom,
-    ~a3_e_a6(X0) | ~x2_e_a12(X0)).
-
-cnf(u5575,axiom,
-    ~a2_s_b0(sK278)).
-
-cnf(u2172,axiom,
-    ~random_activity_4(X0) | ~x2_s_a15(X0)).
-
-cnf(u5613,axiom,
-    ~x2_s_b0(sK259)).
-
-cnf(u2082,axiom,
-    ~x2_s_a1(X0) | ~l_s_a0(X0)).
-
-cnf(u5561,axiom,
-    ~c(sK188)).
-
-cnf(u5626,axiom,
-    ~m(sK232)).
-
-cnf(u2669,axiom,
-    ~x2_e_b7(X0) | ~l_s_b6(X0)).
-
-cnf(u2104,axiom,
-    ~l_s_a6(X0) | ~x2_e_a8(X0)).
-
-cnf(u5463,axiom,
-    ~x2_s_b3(sK216)).
-
-cnf(u1854,axiom,
-    ~x2_e_a7(X0) | ~x2_s_a7(X0)).
-
-cnf(u5300,axiom,
-    ~x2_s_a6(sK107)).
-
-cnf(u2601,axiom,
-    ~tau_b0(X0) | ~random_activity_5(X0)).
-
-cnf(u5386,axiom,
-    ~l_s_a1(sK22)).
-
-cnf(u5084,axiom,
-    ~x2_s_a13(sK266)).
-
-cnf(u5358,axiom,
-    ~a3_s_a2(sK158)).
-
-cnf(u5739,axiom,
-    ~random_activity_3(sK269)).
-
-cnf(u2577,axiom,
-    ~a3_e_b3(X0) | ~l_s_b6(X0)).
-
-cnf(u2564,axiom,
-    ~x2_e_b2(X0) | ~a3_e_b1(X0)).
-
-cnf(u5408,axiom,
-    ~x3_e_a10(sK114)).
-
-cnf(u2484,axiom,
-    ~x2_e_b4(X0) | ~g(X0)).
-
-cnf(u5252,axiom,
-    ~x2_s_a2(sK35)).
-
-cnf(u2668,axiom,
-    ~x2_s_b7(X0) | ~i(X0)).
-
-cnf(u2276,axiom,
-    ~x2_s_a5(X0) | ~a3_s_a2(X0)).
-
-cnf(u2165,axiom,
-    ~tau_a23(X0) | ~x2_s_a15(X0)).
-
-cnf(u5744,axiom,
-    ~random_activity_1(sK223)).
-
-cnf(u2600,axiom,
-    ~x2_e_b1(X0) | ~x2_s_b1(X0)).
-
-cnf(u5393,axiom,
-    ~x2_s_a11(sK167)).
-
-cnf(u5083,axiom,
-    ~x2_s_a13(sK151)).
-
-cnf(u1887,axiom,
-    x2_s_a4(sK10)).
-
-cnf(u5337,axiom,
-    ~x2_e_a9(sK55)).
-
-cnf(u2141,axiom,
-    ~l_s_a8(X0) | ~x2_e_a12(X0)).
-
-cnf(u5238,axiom,
-    ~a2_s_a5(sK146)).
-
-cnf(u2051,axiom,
-    ~a3_s_a3(X0) | ~x2_e_a7(X0)).
-
-cnf(u5588,axiom,
-    ~d(sK271)).
-
-cnf(u2474,axiom,
-    ~a2_s_b0(X0) | ~i(X0)).
-
-cnf(u2392,axiom,
-    ~x2_e_b4(X0) | ~x2_s_b4(X0)).
-
-cnf(u5423,axiom,
-    ~a2_s_a0(sK98)).
-
-cnf(u5573,axiom,
-    ~a2_s_b0(sK251)).
-
-cnf(u2266,axiom,
-    ~a2_s_a4(X0) | ~a2_s_a5(X0)).
-
-cnf(u5367,axiom,
-    ~x2_s_a4(sK16)).
-
-cnf(u5132,axiom,
-    ~n(sK140)).
-
-cnf(u2377,axiom,
-    ~a3_s_a6(X0) | ~x2_s_a14(X0)).
-
-cnf(u1934,axiom,
-    ~x2_e_a15(X0) | ~a2_s_a4(X0)).
-
-cnf(u5094,axiom,
-    ~x2_s_a15(sK88)).
-
-cnf(u1882,axiom,
-    ~tau_a20(X0) | ~l_s_a9(X0)).
-
-cnf(u5007,axiom,
-    ~x2_e_a13(sK96)).
-
-cnf(u5454,axiom,
-    ~l_s_a1(sK41)).
-
-cnf(u2049,axiom,
-    ~a3_s_a3(X0) | ~x2_e_a6(X0)).
-
-cnf(u5138,axiom,
-    ~x2_e_a14(sK30)).
-
-cnf(u2574,axiom,
-    ~x2_s_b0(X0) | ~a2_s_b0(X0)).
-
-cnf(u5217,axiom,
-    ~a2_s_a0(sK138)).
-
-cnf(u2481,axiom,
-    ~x2_s_b1(X0) | ~random_activity_5(X0)).
-
-cnf(u5476,axiom,
-    ~x2_s_b5(sK186)).
-
-cnf(u5587,axiom,
-    ~d(sK265)).
-
-cnf(u2383,axiom,
-    ~x2_e_a15(X0) | ~x2_s_a15(X0)).
-
-cnf(u5297,axiom,
-    ~l_s_a3(sK237)).
-
-cnf(u1847,axiom,
-    ~a3_e_a6(X0) | ~x2_e_a14(X0)).
-
-cnf(u5002,axiom,
-    ~x2_e_a12(sK122)).
-
-cnf(u1889,axiom,
-    ~h(X0) | ~tau_a17(X0)).
-
-cnf(u2675,axiom,
-    x2_s_b6(sK269)).
-
-cnf(u5461,axiom,
-    ~d(sK208)).
-
-cnf(u5657,axiom,
-    ~x2_s_b2(sK201)).
-
-cnf(u2610,axiom,
-    ~a2_e_b0(X0) | ~x2_s_b0(X0)).
-
-cnf(u5526,axiom,
-    ~a3_e_b2(sK220)).
-
-cnf(u5474,axiom,
-    ~random_activity_4(sK276)).
-
-cnf(u5475,axiom,
-    ~random_activity_4(sK173)).
-
-cnf(u5548,axiom,
-    ~x2_e_b7(sK235)).
-
-cnf(u5496,axiom,
-    ~l_s_b0(sK212)).
-
-cnf(u2592,axiom,
-    x2_s_b1(sK252)).
-
-cnf(u1842,axiom,
-    ~a3_e_a6(X0) | ~x2_s_a12(X0)).
-
-cnf(u5009,axiom,
-    ~x2_e_a13(sK162)).
-
-cnf(u2281,axiom,
-    ~a3_e_a2(X0) | ~x2_s_a4(X0)).
-
-cnf(u2174,axiom,
-    ~l_s_a2(X0) | ~x2_e_a3(X0)).
-
-cnf(u5533,axiom,
-    ~e(sK194)).
-
-cnf(u5436,axiom,
-    ~x2_s_a14(sK167)).
-
-cnf(u2068,axiom,
-    ~a2_e_a0(X0) | ~x2_s_a0(X0)).
-
-cnf(u5547,axiom,
-    ~x2_s_b7(sK186)).
-
-cnf(u5383,axiom,
-    ~x2_s_a12(sK12)).
-
-cnf(u2095,axiom,
-    ~a2_s_a0(X0) | ~x2_s_a0(X0)).
-
-cnf(u5667,axiom,
-    ~x2_s_b4(sK258)).
-
-cnf(u5421,axiom,
-    ~x2_s_a15(sK108)).
-
-cnf(u2565,axiom,
-    ~l_s_b2(X0) | ~a3_e_b1(X0)).
-
-cnf(u5365,axiom,
-    ~x2_e_a3(sK35)).
-
-cnf(u5434,axiom,
-    ~x2_e_a13(sK167)).
-
-cnf(u5278,axiom,
-    ~l_s_a9(sK151)).
-
-cnf(u5004,axiom,
-    ~x2_s_a13(sK96)).
-
-cnf(u5095,axiom,
-    ~x2_s_a15(sK138)).
-
-cnf(u5435,axiom,
-    ~x2_s_a14(sK137)).
-
-cnf(u5251,axiom,
-    ~x2_s_a2(sK29)).
-
-cnf(u2667,axiom,
-    ~x2_s_b7(X0) | ~l_s_b6(X0)).
-
-cnf(u5644,axiom,
-    ~c(sK241)).
-
-cnf(u2602,axiom,
-    ~a3_s_b3(X0) | ~h(X0)).
-
-cnf(u2615,axiom,
-    ~l_s_b3(X0) | ~a3_s_b2(X0)).
-
-cnf(u5166,axiom,
-    ~x2_e_a2(sK106)).
-
-cnf(u2254,axiom,
-    ~x2_s_a9(X0) | ~x2_s_a2(X0)).
-
-cnf(u5040,axiom,
-    ~x2_e_a8(sK46)).
-
-cnf(u5003,axiom,
-    ~x2_e_a12(sK162)).
-
-cnf(u5090,axiom,
-    ~d(sK268)).
-
-cnf(u5257,axiom,
-    ~a2_e_a5(sK172)).
-
-cnf(u5724,axiom,
-    ~random_activity_1(sK255)).
-
-cnf(u5672,axiom,
-    ~x2_e_b4(sK274)).
-
-cnf(u2273,axiom,
-    ~a3_s_a2(X0) | ~x2_e_a3(X0)).
-
-cnf(u2591,axiom,
-    x2_s_b0(sK251)).
-
-cnf(u5362,axiom,
-    ~a3_e_a2(sK70)).
-
-cnf(u5287,axiom,
-    ~l_s_a5(sK178)).
-
-cnf(u5197,axiom,
-    ~l_s_a2(sK191)).
-
-cnf(u5685,axiom,
-    ~x2_e_b4(sK235)).
-
-cnf(u5256,axiom,
-    ~a2_e_a5(sK45)).
-
-cnf(u2098,axiom,
-    ~a2_e_a0(X0) | ~a2_s_a4(X0)).
-
-cnf(u5145,axiom,
-    ~a2_e_a4(sK207)).
-
-cnf(u5055,axiom,
-    ~x2_e_a9(sK140)).
-
-cnf(u5014,axiom,
-    ~x2_e_a14(sK122)).
-
-cnf(u5502,axiom,
-    ~random_activity_3(sK183)).
-
-cnf(u5211,axiom,
-    ~a2_s_a0(sK42)).
-
-cnf(u5711,axiom,
-    ~l_s_b6(sK229)).
-
-cnf(u2685,axiom,
-    ~a3_e_b2(X0) | ~m(X0)).
-
-cnf(u5175,axiom,
-    ~x2_e_a3(sK70)).
-
-cnf(u5734,axiom,
-    ~a2_e_b0(sK224)).
-
-cnf(u2096,axiom,
-    ~a2_e_a1(X0) | ~a2_s_a0(X0)).
-
-cnf(u1940,axiom,
-    ~tau_a10(X0) | ~x2_e_a7(X0)).
-
-cnf(u2617,axiom,
-    ~l_s_b4(X0) | ~a3_s_b2(X0)).
-
-cnf(u1990,axiom,
-    ~l_s_a10(X0) | ~x2_e_a14(X0)).
-
-cnf(u5021,axiom,
-    ~x2_s_a6(sK117)).
-
-cnf(u1888,axiom,
-    ~l_s_a8(X0) | ~tau_a17(X0)).
-
-cnf(u5381,axiom,
-    ~b(sK60)).
-
-cnf(u5682,axiom,
-    ~l_s_b0(sK275)).
-
-cnf(u2695,axiom,
-    ~x2_e_b1(X0) | ~a2_e_b0(X0)).
-
-cnf(u2593,axiom,
-    ~x2_s_b5(X0) | ~random_activity_2(X0)).
-
-cnf(u5194,axiom,
-    ~x3_s_a10(sK109)).
-
-cnf(u2454,axiom,
-    x2_s_b5(sK202)).
-
-cnf(u2684,axiom,
-    ~l_s_b5(X0) | ~a3_e_b2(X0)).
-
-cnf(u2246,axiom,
-    ~tau_a0(X0) | ~x2_s_a1(X0)).
-
-cnf(u5216,axiom,
-    ~a2_s_a4(sK97)).
-
-cnf(u2053,axiom,
-    ~a3_s_a3(X0) | ~x2_e_a8(X0)).
-
-cnf(u2476,axiom,
-    ~a3_s_b1(X0) | ~l_s_b0(X0)).
-
-cnf(u1903,axiom,
-    ~l_s_a9(X0) | ~x2_s_a13(X0)).
-
-cnf(u2485,axiom,
-    a3_s_b1(sK212)).
-
-cnf(u5713,axiom,
-    ~b(sK251)).
-
-cnf(u2157,axiom,
-    ~random_activity_5(X0) | ~g(X0)).
-
-cnf(u2616,axiom,
-    ~a3_s_b2(X0) | ~l(X0)).
-
-cnf(u2067,axiom,
-    ~a(X0) | ~a2_e_a0(X0)).
-
-cnf(u2490,axiom,
-    ~a3_e_b3(X0) | ~k(X0)).
-
-cnf(u2282,axiom,
-    ~x2_e_a4(X0) | ~a3_e_a2(X0)).
-
-cnf(u2475,axiom,
-    ~x2_e_b5(X0) | ~i(X0)).
-
-cnf(u2393,axiom,
-    ~l_s_b0(X0) | ~d(X0)).
-
-cnf(u5552,axiom,
-    ~x2_e_b7(sK186)).
-
-cnf(u2065,axiom,
-    ~a2_e_a1(X0) | ~x2_s_a0(X0)).
-
-cnf(u2697,axiom,
-    ~x2_e_b5(X0) | ~random_activity_2(X0)).
-
-cnf(u5610,axiom,
-    ~a(sK213)).
-
-cnf(u5299,axiom,
-    ~x2_s_a6(sK92)).
-
-cnf(u2566,axiom,
-    ~a3_e_b1(X0) | ~c(X0)).
-
-cnf(u5173,axiom,
-    ~l(sK125)).
-
-cnf(u1905,axiom,
-    ~l_s_a10(X0) | ~x2_s_a14(X0)).
-
-cnf(u2563,axiom,
-    ~x2_s_b2(X0) | ~a3_e_b1(X0)).
-
-cnf(u5723,axiom,
-    ~random_activity_1(sK214)).
-
-cnf(u5687,axiom,
-    ~x2_e_b4(sK257)).
-
-cnf(u2696,axiom,
-    ~x2_e_b1(X0) | ~random_activity_5(X0)).
-
-cnf(u2275,axiom,
-    ~x2_e_a4(X0) | ~a3_s_a2(X0)).
-
-cnf(u2608,axiom,
-    ~l_s_b1(X0) | ~tau_b2(X0)).
-
-cnf(u5356,axiom,
-    ~x2_s_a4(sK20)).
-
-cnf(u5245,axiom,
-    ~a2_s_a5(sK123)).
-
-cnf(u2062,axiom,
-    x2_s_a0(sK69)).
-
-cnf(u5222,axiom,
-    ~a2_e_a4(sK97)).
-
-cnf(u5131,axiom,
-    ~n(sK128)).
-
-cnf(u2503,axiom,
-    ~tau_b10(X0) | ~random_activity_4(X0)).
-
-cnf(u5244,axiom,
-    ~a2_s_a5(sK126)).
-
-cnf(u5728,axiom,
-    ~m(sK255)).
-
-cnf(u5572,axiom,
-    ~a(sK275)).
-
-cnf(u5343,axiom,
-    ~a2_s_a4(sK199)).
-
-cnf(u5097,axiom,
-    ~x2_s_a15(sK155)).
-
-cnf(u1943,axiom,
-    l_s_a5(sK26)).
-
-cnf(u5741,axiom,
-    ~l_s_b1(sK246)).
-
-cnf(u5654,axiom,
-    ~x2_e_b3(sK241)).
-
-cnf(u5242,axiom,
-    ~a2_s_a5(sK187)).
-
-cnf(u5570,axiom,
-    ~a(sK245)).
+cnf(u2678,axiom,
+    ~g(X1)).
 
 cnf(u2683,axiom,
-    ~a3_e_b2(X0) | ~random_activity_1(X0)).
+    n(sK6)).
 
-cnf(u5571,axiom,
-    ~a(sK257)).
+cnf(u2690,axiom,
+    ~random_activity_5(sK7)).
 
-cnf(u2618,axiom,
-    ~a3_s_b2(X0) | ~random_activity_1(X0)).
-
-cnf(u5136,axiom,
-    ~a3_e_a6(sK129)).
-
-cnf(u5592,axiom,
-    ~o(sK241)).
-
-cnf(u5510,axiom,
-    ~h(sK200)).
-
-cnf(u2270,axiom,
-    ~l_s_a4(X0) | ~x2_e_a6(X0)).
-
-cnf(u5458,axiom,
-    ~x2_s_b4(sK238)).
-
-cnf(u5633,axiom,
-    ~x2_s_b2(sK274)).
-
-cnf(u5577,axiom,
-    ~l_s_b6(sK174)).
-
-cnf(u2054,axiom,
-    ~l_s_a4(X0) | ~l(X0)).
-
-cnf(u5532,axiom,
-    ~e(sK174)).
-
-cnf(u5738,axiom,
-    ~random_activity_2(sK186)).
-
-cnf(u5480,axiom,
-    ~n(sK236)).
-
-cnf(u5607,axiom,
-    ~a3_s_b3(sK196)).
-
-cnf(u2076,axiom,
-    ~f(X0) | ~l_s_a2(X0)).
-
-cnf(u1945,axiom,
-    l_s_a10(sK28)).
-
-cnf(u5517,axiom,
-    ~k(sK200)).
-
-cnf(u1995,axiom,
-    l_s_a3(sK44)).
-
-cnf(u5465,axiom,
-    ~x2_s_b3(sK193)).
-
-cnf(u5530,axiom,
-    ~tau_b0(sK253)).
-
-cnf(u2090,axiom,
-    ~tau_a6(X0) | ~l_s_a3(X0)).
-
-cnf(u2573,axiom,
-    ~a2_s_b0(X0) | ~a(X0)).
-
-cnf(u5531,axiom,
-    ~e(sK256)).
-
-cnf(u5495,axiom,
-    ~i(sK186)).
-
-cnf(u2698,axiom,
-    ~x2_s_b6(X0) | ~random_activity_3(X0)).
-
-cnf(u5204,axiom,
-    ~l_s_a7(sK172)).
-
-cnf(u5643,axiom,
-    ~c(sK230)).
-
-cnf(u5567,axiom,
-    ~x2_e_b3(sK188)).
-
-cnf(u2006,axiom,
-    ~a2_s_a1(X0) | ~l_s_a1(X0)).
-
-cnf(u5418,axiom,
-    ~a2_s_a0(sK104)).
-
-cnf(u1904,axiom,
-    ~random_activity_3(X0) | ~x2_s_a13(X0)).
-
-cnf(u5262,axiom,
-    ~x2_s_a11(sK170)).
-
-cnf(u5537,axiom,
-    ~i(sK254)).
-
-cnf(u5425,axiom,
-    ~x2_e_a15(sK108)).
-
-cnf(u2609,axiom,
-    ~a2_e_b0(X0) | ~a(X0)).
-
-cnf(u5369,axiom,
-    ~x2_s_a4(sK35)).
-
-cnf(u2492,axiom,
-    ~l_s_b6(X0) | ~e(X0)).
-
-cnf(u2470,axiom,
-    ~x2_e_b4(X0) | ~n(X0)).
-
-cnf(u2388,axiom,
-    ~x2_e_a9(X0) | ~l_s_a1(X0)).
-
-cnf(u5284,axiom,
-    ~x2_s_a15(sK242)).
-
-cnf(u5355,axiom,
-    ~x2_e_a3(sK20)).
-
-cnf(u2262,axiom,
-    ~random_activity_4(X0) | ~tau_a23(X0)).
-
-cnf(u2180,axiom,
-    x2_s_a2(sK105)).
-
-cnf(u2069,axiom,
-    ~a2_e_a0(X0) | ~a2_e_a1(X0)).
-
-cnf(u2402,axiom,
-    ~x2_e_b5(X0) | ~l_s_b0(X0)).
-
-cnf(u2013,axiom,
-    ~tau_a21(X0) | ~x2_e_a14(X0)).
-
-cnf(u5024,axiom,
-    ~x2_e_a6(sK46)).
-
-cnf(u2373,axiom,
-    ~a3_s_a6(X0) | ~x2_s_a12(X0)).
-
-cnf(u2284,axiom,
-    ~a3_e_a2(X0) | ~x2_e_a5(X0)).
-
-cnf(u2173,axiom,
-    ~random_activity_1(X0) | ~l_s_a5(X0)).
-
-cnf(u2083,axiom,
-    ~x2_s_a1(X0) | ~random_activity_2(X0)).
-
-cnf(u5598,axiom,
-    ~random_activity_2(sK209)).
-
-cnf(u2378,axiom,
-    ~a3_s_a6(X0) | ~x2_e_a14(X0)).
-
-cnf(u2477,axiom,
-    ~l_s_b0(X0) | ~x2_e_b4(X0)).
-
-cnf(u2424,axiom,
-    ~x2_s_b7(X0) | ~random_activity_4(X0)).
-
-cnf(u2387,axiom,
-    ~x2_s_a2(X0) | ~l_s_a1(X0)).
-
-cnf(u2298,axiom,
-    ~l_s_a8(X0) | ~x2_s_a12(X0)).
-
-cnf(u5648,axiom,
-    ~x2_s_b3(sK230)).
-
-cnf(u5164,axiom,
-    ~x2_e_a2(sK29)).
-
-cnf(u2105,axiom,
-    ~m(X0) | ~x2_e_a8(X0)).
-
-cnf(u5620,axiom,
-    ~l(sK232)).
-
-cnf(u2400,axiom,
-    ~x2_s_b5(X0) | ~l_s_b0(X0)).
-
-cnf(u2491,axiom,
-    ~x2_e_b2(X0) | ~tau_b1(X0)).
-
-cnf(u5039,axiom,
-    ~x2_e_a8(sK33)).
-
-cnf(u4998,axiom,
-    ~x2_s_a12(sK96)).
-
-cnf(u5486,axiom,
-    ~l_s_b6(sK235)).
-
-cnf(u5170,axiom,
-    ~x2_e_a7(sK36)).
-
-cnf(u5661,axiom,
-    ~x2_s_b4(sK217)).
-
-cnf(u5121,axiom,
-    ~x2_e_a4(sK237)).
-
-cnf(u5605,axiom,
-    ~a3_s_b3(sK269)).
-
-cnf(u5619,axiom,
-    ~l(sK216)).
-
-cnf(u5380,axiom,
-    ~l_s_a0(sK205)).
-
-cnf(u2582,axiom,
-    ~tau_b9(X0) | ~random_activity_3(X0)).
-
-cnf(u2277,axiom,
-    ~a3_s_a2(X0) | ~x2_e_a5(X0)).
-
-cnf(u5151,axiom,
-    ~a2_e_a4(sK170)).
-
-cnf(u1973,axiom,
-    a3_s_a3(sK36)).
-
-cnf(u5034,axiom,
-    ~x2_e_a7(sK147)).
-
-cnf(u5005,axiom,
-    ~x2_s_a13(sK122)).
-
-cnf(u5201,axiom,
-    ~random_activity_2(sK32)).
-
-cnf(u5689,axiom,
-    ~x2_e_b4(sK224)).
-
-cnf(u5558,axiom,
-    ~a3_e_b1(sK246)).
-
-cnf(u1999,axiom,
-    ~x2_e_a4(X0) | ~x2_s_a4(X0)).
-
-cnf(u5378,axiom,
-    ~x2_e_a5(sK106)).
-
-cnf(u5379,axiom,
-    ~l_s_a0(sK43)).
-
-cnf(u5452,axiom,
-    ~l_s_a1(sK72)).
-
-cnf(u5658,axiom,
-    ~f(sK244)).
-
-cnf(u5400,axiom,
-    ~x2_s_a7(sK26)).
-
-cnf(u2267,axiom,
-    ~a2_e_a5(X0) | ~a2_s_a4(X0)).
-
-cnf(u5041,axiom,
-    ~x2_e_a8(sK117)).
-
-cnf(u2185,axiom,
-    ~tau_a0(X0) | ~l_s_a0(X0)).
-
-cnf(u5565,axiom,
-    ~x2_s_b3(sK258)).
-
-cnf(u5385,axiom,
-    ~x2_s_a12(sK184)).
-
-cnf(u2100,axiom,
-    ~a2_e_a0(X0) | ~a2_e_a4(X0)).
-
-cnf(u5451,axiom,
-    ~l_s_a1(sK105)).
-
-cnf(u2519,axiom,
-    ~l_s_b1(X0) | ~f(X0)).
-
-cnf(u2597,axiom,
-    l_s_b6(sK254)).
-
-cnf(u5269,axiom,
-    ~x2_e_a12(sK184)).
-
-cnf(u5064,axiom,
-    ~x2_s_a2(sK22)).
-
-cnf(u2001,axiom,
-    ~i(X0) | ~a2_e_a4(X0)).
-
-cnf(u5036,axiom,
-    ~x2_s_a8(sK46)).
-
-cnf(u4999,axiom,
-    ~x2_s_a12(sK122)).
-
-cnf(u5283,axiom,
-    ~x2_s_a15(sK14)).
-
-cnf(u5676,axiom,
-    ~x2_e_b4(sK185)).
-
-cnf(u5701,axiom,
-    ~x2_e_b5(sK257)).
+cnf(u2701,axiom,
+    l_s_a2(sK8)).
 
 cnf(u2704,axiom,
-    ~l_s_b4(X0) | ~random_activity_1(X0)).
+    ~f(sK8)).
 
-cnf(u5341,axiom,
-    ~l_s_a10(sK182)).
+cnf(u2713,axiom,
+    ~tau_a3(sK9)).
 
-cnf(u2286,axiom,
-    ~tau_a18(X0) | ~l_s_a8(X0)).
+cnf(u2718,axiom,
+    ~tau_a3(X2)).
 
-cnf(u2012,axiom,
-    ~tau_a12(X0) | ~m(X0)).
+cnf(u2728,axiom,
+    l(sK10)).
 
-cnf(u5035,axiom,
-    ~x2_s_a8(sK33)).
+cnf(u2739,axiom,
+    ~tau_a16(X1)).
 
-cnf(u2496,axiom,
-    ~x2_e_b3(X0) | ~a3_s_b2(X0)).
+cnf(u2752,axiom,
+    a2_e_a6(sK13)).
 
-cnf(u5289,axiom,
-    ~x2_e_a3(sK115)).
+cnf(u2760,axiom,
+    random_activity_2(sK14)).
 
-cnf(u5318,axiom,
-    ~x2_e_a7(sK178)).
+cnf(u2764,axiom,
+    ~tau_a11(X0)).
 
-cnf(u2623,axiom,
-    ~a3_s_b1(X0) | ~x2_s_b2(X0)).
+cnf(u2776,axiom,
+    a3_e_a3(sK16)).
 
-cnf(u5266,axiom,
-    ~x2_e_a12(sK81)).
+cnf(u2788,axiom,
+    x2_e_a5(sK17)).
 
-cnf(u2070,axiom,
-    x2_s_a3(sK70)).
+cnf(u2796,axiom,
+    ~tau_a7(X0)).
 
-cnf(u5340,axiom,
-    ~l_s_a10(sK87)).
+cnf(u2804,axiom,
+    a2_e_a5(sK18)).
 
-cnf(u5191,axiom,
-    ~a2_e_a1(sK23)).
+cnf(u2816,axiom,
+    m(sK19)).
 
-cnf(u5288,axiom,
-    ~l_s_a5(sK189)).
+cnf(u2824,axiom,
+    a2_e_a1(sK24)).
 
-cnf(u2207,axiom,
-    ~l(X0) | ~x2_s_a6(X0)).
+cnf(u2838,axiom,
+    ~l_s_a4(sK25)).
 
-cnf(u2092,axiom,
-    ~e(X0) | ~l_s_a7(X0)).
+cnf(u2843,axiom,
+    random_activity_1(sK25)).
 
-cnf(u5074,axiom,
-    ~x2_e_a9(sK152)).
+cnf(u2851,axiom,
+    ~tau_a8(sK26)).
 
-cnf(u1961,axiom,
-    ~tau_a16(X0) | ~x2_s_a11(X0)).
+cnf(u2856,axiom,
+    ~tau_a8(X2)).
 
-cnf(u2011,axiom,
+cnf(u2866,axiom,
+    x2_e_a1(sK27)).
+
+cnf(u2871,axiom,
+    ~tau_a0(X0)).
+
+cnf(u2875,axiom,
+    ~tau_a6(X0)).
+
+cnf(u2894,axiom,
+    a3_e_a2(sK31)).
+
+cnf(u2907,axiom,
+    ~tau_a2(X2)).
+
+cnf(u2917,axiom,
+    a2_e_a0(sK33)).
+
+cnf(u2928,axiom,
+    l_s_a3(sK34)).
+
+cnf(u2931,axiom,
+    ~c(sK34)).
+
+cnf(u2940,axiom,
+    ~tau_a5(sK35)).
+
+cnf(u2945,axiom,
+    ~tau_a5(X2)).
+
+cnf(u2955,axiom,
+    x2_e_a0(sK37)).
+
+cnf(u2959,axiom,
+    ~j(X0)).
+
+cnf(u2972,axiom,
+    e(sK40)).
+
+cnf(u2981,axiom,
+    x2_s_a2(sK41)).
+
+cnf(u2984,axiom,
+    ~x2_e_a9(sK41)).
+
+cnf(u2996,axiom,
+    ~tau_a13(X1)).
+
+cnf(u3009,axiom,
+    a2_e_a4(sK44)).
+
+cnf(u3014,axiom,
+    x2_s_a5(sK45)).
+
+cnf(u3022,axiom,
+    ~x2_s_a4(sK46)).
+
+cnf(u3027,axiom,
+    x2_e_a4(sK46)).
+
+cnf(u3032,axiom,
+    x2_s_a3(sK47)).
+
+cnf(u3044,axiom,
+    ~tau_a1(X1)).
+
+cnf(u3057,axiom,
+    ~tau_a9(X1)).
+
+cnf(u3069,axiom,
+    ~l_s_a1(sK52)).
+
+cnf(u3074,axiom,
+    x2_e_a9(sK52)).
+
+cnf(u3078,axiom,
+    ~x2_s_a1(sK53)).
+
+cnf(u3083,axiom,
+    x2_e_a1(sK53)).
+
+cnf(u3090,axiom,
+    ~x2_s_a12(sK54)).
+
+cnf(u3095,axiom,
+    x2_e_a12(sK54)).
+
+cnf(u3104,axiom,
+    h(sK59)).
+
+cnf(u3109,axiom,
+    k(sK60)).
+
+cnf(u3117,axiom,
+    x2_e_a7(sK62)).
+
+cnf(u3122,axiom,
+    ~tau_a10(X0)).
+
+cnf(u3126,axiom,
+    ~a2_s_a0(sK64)).
+
+cnf(u3131,axiom,
+    a2_e_a0(sK64)).
+
+cnf(u3136,axiom,
+    e(sK66)).
+
+cnf(u3144,axiom,
+    a2_e_a4(sK67)).
+
+cnf(u3155,axiom,
+    ~a2_s_a4(sK68)).
+
+cnf(u3160,axiom,
+    a2_e_a4(sK68)).
+
+cnf(u3174,axiom,
+    x2_e_a3(sK70)).
+
+cnf(u3181,axiom,
+    x2_e_a2(sK72)).
+
+cnf(u3191,axiom,
+    a3_e_a3(sK73)).
+
+cnf(u3202,axiom,
+    ~x3_s_a10(sK75)).
+
+cnf(u3207,axiom,
+    x3_e_a10(sK75)).
+
+cnf(u3212,axiom,
+    ~tau_a14(sK76)).
+
+cnf(u3217,axiom,
+    ~tau_a14(X2)).
+
+cnf(u3227,axiom,
+    a2_e_a5(sK78)).
+
+cnf(u3236,axiom,
+    x3_e_a10(sK79)).
+
+cnf(u3243,axiom,
+    x2_e_a8(sK82)).
+
+cnf(u3248,axiom,
+    ~tau_a12(X0)).
+
+cnf(u3256,axiom,
+    a3_e_a2(sK83)).
+
+cnf(u3265,axiom,
+    a2_e_a1(sK84)).
+
+cnf(u3274,axiom,
+    l_s_a8(sK85)).
+
+cnf(u3282,axiom,
+    ~x2_s_a11(sK86)).
+
+cnf(u3287,axiom,
+    x2_e_a11(sK86)).
+
+cnf(u3302,axiom,
+    x2_s_a8(sK91)).
+
+cnf(u3305,axiom,
+    ~x2_e_a8(sK91)).
+
+cnf(u3310,axiom,
+    ~x2_s_a7(sK92)).
+
+cnf(u3315,axiom,
+    x2_e_a7(sK92)).
+
+cnf(u3320,axiom,
+    x2_s_a6(sK93)).
+
+cnf(u3323,axiom,
+    ~x2_e_a6(sK93)).
+
+cnf(u3329,axiom,
+    c(sK94)).
+
+cnf(u3352,axiom,
+    o(sK100)).
+
+cnf(u3357,axiom,
+    x2_s_a0(sK101)).
+
+cnf(u3365,axiom,
+    ~random_activity_4(X0)).
+
+cnf(u3369,axiom,
+    x2_e_a12(sK102)).
+
+cnf(u3381,axiom,
+    a2_s_a1(sK103)).
+
+cnf(u3391,axiom,
+    x2_e_a11(sK104)).
+
+cnf(u3399,axiom,
+    ~tau_a15(X0)).
+
+cnf(u3404,axiom,
+    x2_s_a2(sK105)).
+
+cnf(u3413,axiom,
+    random_activity_3(sK106)).
+
+cnf(u3418,axiom,
+    b(sK107)).
+
+cnf(u3422,axiom,
+    ~j(sK108)).
+
+cnf(u3433,axiom,
+    x2_s_a9(sK109)).
+
+cnf(u3436,axiom,
+    ~x2_e_a9(sK109)).
+
+cnf(u3451,axiom,
+    a3_e_a3(sK111)).
+
+cnf(u3460,axiom,
+    x2_s_a0(sK113)).
+
+cnf(u3469,axiom,
+    a(sK114)).
+
+cnf(u3477,axiom,
+    a3_e_a2(sK115)).
+
+cnf(u3483,axiom,
+    x2_s_a2(sK116)).
+
+cnf(u3486,axiom,
+    ~x2_e_a9(sK116)).
+
+cnf(u3496,axiom,
+    d(sK117)).
+
+cnf(u3513,axiom,
+    a3_s_a3(sK118)).
+
+cnf(u3531,axiom,
+    x2_e_a4(sK120)).
+
+cnf(u3538,axiom,
+    l_s_a0(sK121)).
+
+cnf(u3561,axiom,
+    x2_s_a2(sK124)).
+
+cnf(u3564,axiom,
+    ~x2_e_a9(sK124)).
+
+cnf(u3574,axiom,
+    a2_e_a6(sK125)).
+
+cnf(u3579,axiom,
+    f(sK126)).
+
+cnf(u3583,axiom,
+    ~l_s_a7(sK128)).
+
+cnf(u3588,axiom,
+    random_activity_3(sK128)).
+
+cnf(u3602,axiom,
+    e(sK131)).
+
+cnf(u3607,axiom,
+    a2_s_a6(sK132)).
+
+cnf(u3618,axiom,
+    x2_e_a9(sK133)).
+
+cnf(u3625,axiom,
+    a2_s_a5(sK134)).
+
+cnf(u3634,axiom,
+    i(sK135)).
+
+cnf(u3639,axiom,
+    random_activity_1(sK136)).
+
+cnf(u3647,axiom,
+    a3_e_a2(sK137)).
+
+cnf(u3661,axiom,
+    tau_a17(sK139)).
+
+cnf(u3668,axiom,
+    l_s_a5(sK140)).
+
+cnf(u3671,axiom,
+    ~m(sK140)).
+
+cnf(u3686,axiom,
+    x2_e_a6(sK144)).
+
+cnf(u3693,axiom,
+    l_s_a6(sK146)).
+
+cnf(u3711,axiom,
+    a3_e_b2(sK148)).
+
+cnf(u3723,axiom,
+    l(sK149)).
+
+cnf(u3730,axiom,
+    ~a3_s_b1(sK150)).
+
+cnf(u3735,axiom,
+    x2_e_b4(sK150)).
+
+cnf(u3742,axiom,
+    ~x2_s_b5(sK151)).
+
+cnf(u3747,axiom,
+    x2_e_b5(sK151)).
+
+cnf(u3756,axiom,
+    f(sK153)).
+
+cnf(u3763,axiom,
+    ~x2_s_b4(sK154)).
+
+cnf(u3768,axiom,
+    x2_e_b4(sK154)).
+
+cnf(u3777,axiom,
+    x2_e_b2(sK155)).
+
+cnf(u3782,axiom,
+    ~tau_b1(X0)).
+
+cnf(u3787,axiom,
+    m(sK156)).
+
+cnf(u3795,axiom,
+    l_s_b0(sK157)).
+
+cnf(u3798,axiom,
+    ~x2_e_b4(sK157)).
+
+cnf(u3811,axiom,
+    ~tau_b2(X1)).
+
+cnf(u3824,axiom,
+    x2_e_b3(sK161)).
+
+cnf(u3832,axiom,
+    ~tau_b4(X0)).
+
+cnf(u3840,axiom,
+    ~tau_b7(X1)).
+
+cnf(u3853,axiom,
+    a3_e_b1(sK167)).
+
+cnf(u3864,axiom,
+    ~x2_s_b6(sK168)).
+
+cnf(u3869,axiom,
+    x2_e_b6(sK168)).
+
+cnf(u3874,axiom,
+    h(sK169)).
+
+cnf(u3879,axiom,
+    k(sK170)).
+
+cnf(u3887,axiom,
+    ~tau_b3(X1)).
+
+cnf(u3896,axiom,
+    ~x2_s_b3(sK173)).
+
+cnf(u3901,axiom,
+    x2_e_b3(sK173)).
+
+cnf(u3905,axiom,
+    ~l_s_b2(sK174)).
+
+cnf(u3910,axiom,
+    c(sK174)).
+
+cnf(u3914,axiom,
+    ~x2_s_b2(sK175)).
+
+cnf(u3919,axiom,
+    x2_e_b2(sK175)).
+
+cnf(u3927,axiom,
+    c(sK176)).
+
+cnf(u3935,axiom,
+    a3_e_b1(sK177)).
+
+cnf(u3946,axiom,
+    ~random_activity_4(sK179)).
+
+cnf(u3952,axiom,
+    tau_b10(sK180)).
+
+cnf(u3962,axiom,
+    a3_e_b2(sK181)).
+
+cnf(u3971,axiom,
+    random_activity_3(sK182)).
+
+cnf(u3980,axiom,
+    ~tau_b9(X2)).
+
+cnf(u3989,axiom,
+    e(sK184)).
+
+cnf(u3993,axiom,
+    ~tau_b6(X0)).
+
+cnf(u4005,axiom,
+    random_activity_1(sK187)).
+
+cnf(u4009,axiom,
+    ~x2_s_b7(sK189)).
+
+cnf(u4014,axiom,
+    x2_e_b7(sK189)).
+
+cnf(u4020,axiom,
+    x2_e_b5(sK190)).
+
+cnf(u4024,axiom,
+    ~tau_b8(X0)).
+
+cnf(u4031,axiom,
+    ~random_activity_5(sK191)).
+
+cnf(u4037,axiom,
+    tau_b0(sK192)).
+
+cnf(u4052,axiom,
+    x2_e_b7(sK194)).
+
+cnf(u4058,axiom,
+    a2_s_b0(sK196)).
+
+cnf(u4067,axiom,
+    l_s_b6(sK197)).
+
+cnf(u4070,axiom,
+    ~e(sK197)).
+
+cnf(u4076,axiom,
+    x2_e_b4(sK198)).
+
+cnf(u4085,axiom,
+    random_activity_2(sK199)).
+
+cnf(u4089,axiom,
+    ~tau_b8(sK200)).
+
+cnf(u4097,axiom,
+    a3_s_b2(sK201)).
+
+cnf(u4115,axiom,
+    l_s_b5(sK203)).
+
+cnf(u4118,axiom,
+    ~l(sK203)).
+
+cnf(u4124,axiom,
+    l_s_b4(sK204)).
+
+cnf(u4127,axiom,
+    ~m(sK204)).
+
+cnf(u4133,axiom,
+    l_s_b3(sK205)).
+
+cnf(u4136,axiom,
+    ~random_activity_1(sK205)).
+
+cnf(u4145,axiom,
+    a3_e_b3(sK208)).
+
+cnf(u4151,axiom,
+    a3_s_b1(sK209)).
+
+cnf(u4154,axiom,
+    ~x2_e_b4(sK209)).
+
+cnf(u4161,axiom,
+    d(sK210)).
+
+cnf(u4175,axiom,
+    e(sK212)).
+
+cnf(u4183,axiom,
+    a3_s_b3(sK213)).
+
+cnf(u4197,axiom,
+    ~tau_b5(X1)).
+
+cnf(u4216,axiom,
+    ~x2_s_b0(sK218)).
+
+cnf(u4221,axiom,
+    x2_e_b0(sK218)).
+
+cnf(u4226,axiom,
+    a(sK219)).
+
+cnf(u4231,axiom,
+    a3_e_b3(sK220)).
+
+cnf(u4236,axiom,
+    a2_e_b0(sK221)).
+
+cnf(u4241,axiom,
+    o(sK222)).
+
+cnf(u4246,axiom,
+    a3_s_b1(sK223)).
+
+cnf(u4249,axiom,
+    ~x2_e_b4(sK223)).
+
+cnf(u4261,axiom,
+    i(sK226)).
+
+cnf(u4267,axiom,
+    a3_e_b3(sK227)).
+
+cnf(u4272,axiom,
+    a2_s_b0(sK230)).
+
+cnf(u4281,axiom,
+    x2_e_b6(sK231)).
+
+cnf(u4290,axiom,
+    b(sK232)).
+
+cnf(u4302,axiom,
+    a3_e_b1(sK234)).
+
+cnf(u4308,axiom,
+    e(sK237)).
+
+cnf(u4314,axiom,
+    l_s_b1(sK240)).
+
+cnf(u4317,axiom,
+    ~f(sK240)).
+
+cnf(u4335,axiom,
+    a2_e_b0(sK243)).
+
+cnf(u4341,axiom,
+    x2_e_b0(sK244)).
+
+cnf(u4347,axiom,
+    a2_s_b0(sK245)).
+
+cnf(u4350,axiom,
+    ~x2_e_b5(sK245)).
+
+cnf(u4356,axiom,
+    x2_e_b1(sK246)).
+
+cnf(u4367,axiom,
+    a3_s_b1(sK248)).
+
+cnf(u4378,axiom,
+    ~x2_s_b1(sK249)).
+
+cnf(u4383,axiom,
+    x2_e_b1(sK249)).
+
+cnf(u4396,axiom,
+    ~g(sK251)).
+
+cnf(u4402,axiom,
+    n(sK252)).
+
+cnf(u4409,axiom,
+    a3_e_b2(sK253)).
+
+cnf(u4417,axiom,
+    ~l_s_b6(sK254)).
+
+cnf(u4422,axiom,
+    i(sK254)).
+
+cnf(u2179,axiom,
     ~tau_a12(X0) | ~l_s_a6(X0)).
 
-cnf(u5406,axiom,
-    ~x3_s_a10(sK114)).
+cnf(u5186,axiom,
+    ~a2_e_b0(sK246)).
 
-cnf(u5243,axiom,
-    ~a2_s_a5(sK263)).
+cnf(u5260,axiom,
+    ~h(sK208)).
 
-cnf(u5743,axiom,
-    ~f(sK246)).
+cnf(u5208,axiom,
+    ~a3_e_b2(sK161)).
 
-cnf(u2106,axiom,
-    ~x2_s_a9(X0) | ~x2_e_a9(X0)).
+cnf(u5149,axiom,
+    ~l_s_b4(sK148)).
 
-cnf(u5428,axiom,
-    ~x2_s_a12(sK167)).
+cnf(u4887,axiom,
+    ~a2_e_a6(sK85)).
 
-cnf(u5698,axiom,
-    ~x2_s_b5(sK253)).
+cnf(u4974,axiom,
+    ~x2_s_a8(sK73)).
 
-cnf(u5081,axiom,
-    ~x2_s_a13(sK71)).
+cnf(u5093,axiom,
+    ~n(sK198)).
 
-cnf(u5360,axiom,
-    ~a3_s_a2(sK157)).
+cnf(u4994,axiom,
+    ~l_s_a0(sK14)).
 
-cnf(u5053,axiom,
-    ~x2_e_a9(sK56)).
+cnf(u2094,axiom,
+    a3_s_a3(sK81)).
 
-cnf(u2382,axiom,
-    ~a2_e_a1(X0) | ~x2_e_a9(X0)).
+cnf(u4787,axiom,
+    ~a2_e_a1(sK53)).
 
-cnf(u5638,axiom,
-    ~l_s_b2(sK230)).
+cnf(u1960,axiom,
+    ~a3_s_a3(X0) | ~x2_s_a5(X0)).
 
-cnf(u5226,axiom,
-    ~x2_e_a8(sK177)).
+cnf(u5126,axiom,
+    ~l_s_b5(sK225)).
 
-cnf(u2612,axiom,
-    a3_s_b3(sK256)).
+cnf(u2010,axiom,
+    ~a3_s_a2(X0) | ~x2_e_a3(X0)).
 
-cnf(u5427,axiom,
-    ~x2_s_a12(sK137)).
+cnf(u5345,axiom,
+    ~i(sK236)).
 
-cnf(u5120,axiom,
-    ~x2_e_a4(sK221)).
+cnf(u5148,axiom,
+    ~random_activity_1(sK253)).
 
-cnf(u5576,axiom,
-    ~l_s_b6(sK256)).
+cnf(u2535,axiom,
+    ~tau_b9(X0) | ~random_activity_3(X0)).
 
-cnf(u5493,axiom,
-    ~i(sK257)).
+cnf(u4882,axiom,
+    ~x2_e_a9(sK75)).
 
-cnf(u2380,axiom,
-    ~a2_e_a1(X0) | ~x2_e_a1(X0)).
+cnf(u4981,axiom,
+    ~x2_s_a4(sK94)).
 
-cnf(u2389,axiom,
-    ~tau_a18(X0) | ~h(X0)).
+cnf(u4739,axiom,
+    ~x2_e_a4(sK137)).
 
-cnf(u2300,axiom,
-    ~d(X0) | ~l_s_a1(X0)).
+cnf(u2613,axiom,
+    ~x2_e_b7(X0) | ~random_activity_4(X0)).
 
-cnf(u2061,axiom,
-    ~random_activity_1(X0) | ~tau_a11(X0)).
+cnf(u2511,axiom,
+    ~tau_b4(X0) | ~a3_e_b2(X0)).
 
-cnf(u2210,axiom,
-    ~x2_e_a12(X0) | ~x2_s_a12(X0)).
+cnf(u5001,axiom,
+    ~a2_s_a4(sK254)).
 
-cnf(u2099,axiom,
-    ~a2_e_a4(X0) | ~a2_s_a0(X0)).
+cnf(u4711,axiom,
+    ~f(sK80)).
 
-cnf(u2394,axiom,
-    ~l_s_b0(X0) | ~o(X0)).
+cnf(u2017,axiom,
+    ~l_s_a5(X0) | ~tau_a11(X0)).
 
-cnf(u2493,axiom,
-    ~tau_b7(X0) | ~m(X0)).
+cnf(u5146,axiom,
+    ~random_activity_1(sK148)).
 
-cnf(u2403,axiom,
-    ~x2_e_b5(X0) | ~x2_e_b4(X0)).
+cnf(u2587,axiom,
+    ~x2_e_b4(X0) | ~d(X0)).
 
-cnf(u5716,axiom,
-    ~x2_s_b7(sK229)).
+cnf(u5135,axiom,
+    ~x2_s_b5(sK246)).
 
-cnf(u2186,axiom,
-    ~tau_a0(X0) | ~random_activity_2(X0)).
+cnf(u5168,axiom,
+    ~f(sK155)).
 
-cnf(u2075,axiom,
-    ~tau_a1(X0) | ~random_activity_2(X0)).
+cnf(u1970,axiom,
+    ~random_activity_4(X0) | ~x2_s_a12(X0)).
 
-cnf(u2232,axiom,
-    l_s_a4(sK125)).
+cnf(u2028,axiom,
+    ~tau_a3(X0) | ~l_s_a2(X0)).
 
-cnf(u5591,axiom,
-    ~o(sK230)).
+cnf(u2512,axiom,
+    ~a3_e_b1(X0) | ~x2_s_b2(X0)).
 
-cnf(u2416,axiom,
-    ~tau_b4(X0) | ~x2_e_b3(X0)).
+cnf(u4752,axiom,
+    ~a2_s_a0(sK96)).
 
-cnf(u2379,axiom,
-    ~x2_s_a1(X0) | ~a2_e_a1(X0)).
+cnf(u2086,axiom,
+    ~x2_e_a8(X0) | ~l(X0)).
 
-cnf(u5456,axiom,
-    ~l_s_a1(sK113)).
+cnf(u4757,axiom,
+    ~a2_e_a0(sK44)).
 
-cnf(u2425,axiom,
-    ~x2_e_b5(X0) | ~x2_s_b5(X0)).
+cnf(u2223,axiom,
+    ~tau_a15(X0) | ~random_activity_3(X0)).
 
-cnf(u5189,axiom,
-    ~x2_s_a0(sK108)).
+cnf(u2108,axiom,
+    ~a2_s_a1(X0) | ~x2_e_a9(X0)).
 
-cnf(u2208,axiom,
-    d(sK116)).
+cnf(u4884,axiom,
+    ~l_s_a8(sK28)).
 
-cnf(u2097,axiom,
-    ~a2_s_a4(X0) | ~a2_s_a0(X0)).
+cnf(u4854,axiom,
+    ~a2_e_a1(sK64)).
 
-cnf(u5075,axiom,
-    ~x2_e_a9(sK268)).
+cnf(u5236,axiom,
+    ~x2_s_b0(sK245)).
 
-cnf(u5514,axiom,
-    ~a3_e_b3(sK196)).
+cnf(u5020,axiom,
+    ~x2_e_a5(sK111)).
 
-cnf(u2622,axiom,
-    ~tau_b8(X0) | ~x2_s_b5(X0)).
+cnf(u4920,axiom,
+    ~a2_e_a5(sK86)).
 
-cnf(u2000,axiom,
-    a2_s_a1(sK47)).
+cnf(u4883,axiom,
+    ~x2_e_a9(sK79)).
 
-cnf(u2401,axiom,
-    ~x2_s_b5(X0) | ~x2_e_b4(X0)).
+cnf(u2038,axiom,
+    ~a2_s_a6(X0) | ~l_s_a8(X0)).
 
-cnf(u2327,axiom,
-    ~random_activity_5(X0) | ~x3_s_a10(X0)).
+cnf(u4806,axiom,
+    ~x2_s_a5(sK81)).
 
-cnf(u2692,axiom,
+cnf(u2398,axiom,
+    ~x2_e_b2(X0) | ~f(X0)).
+
+cnf(u5294,axiom,
+    ~a3_s_b3(sK168)).
+
+cnf(u2420,axiom,
+    ~x2_s_b1(X0) | ~a2_e_b0(X0)).
+
+cnf(u2604,axiom,
+    ~x2_s_b3(X0) | ~tau_b4(X0)).
+
+cnf(u2294,axiom,
+    ~tau_a17(X0) | ~x2_s_a12(X0)).
+
+cnf(u5259,axiom,
+    ~k(sK227)).
+
+cnf(u5325,axiom,
+    ~d(sK162)).
+
+cnf(u2306,axiom,
+    ~i(X0) | ~a2_e_a4(X0)).
+
+cnf(u2045,axiom,
+    ~x2_s_a1(X0) | ~tau_a0(X0)).
+
+cnf(u4928,axiom,
+    ~x2_s_a0(sK107)).
+
+cnf(u5019,axiom,
+    ~x2_e_a5(sK73)).
+
+cnf(u5273,axiom,
+    ~x2_e_b2(sK177)).
+
+cnf(u5174,axiom,
+    ~x2_e_b5(sK189)).
+
+cnf(u2077,axiom,
+    ~x2_e_a12(X0) | ~a2_s_a4(X0)).
+
+cnf(u2226,axiom,
+    ~a2_e_a5(X0) | ~a2_s_a4(X0)).
+
+cnf(u5339,axiom,
+    ~a2_s_b0(sK207)).
+
+cnf(u2381,axiom,
+    ~a3_e_b2(X0) | ~m(X0)).
+
+cnf(u2328,axiom,
+    ~a2_e_b0(X0) | ~x2_s_b0(X0)).
+
+cnf(u2419,axiom,
     ~x2_s_b1(X0) | ~a2_s_b0(X0)).
 
-cnf(u5203,axiom,
-    ~l_s_a7(sK45)).
+cnf(u2091,axiom,
+    ~a2_e_a5(X0) | ~l_s_a8(X0)).
 
-cnf(u2598,axiom,
+cnf(u2120,axiom,
+    ~tau_a2(X0) | ~x2_s_a2(X0)).
+
+cnf(u1870,axiom,
+    ~a3_e_a2(X0) | ~x2_s_a5(X0)).
+
+cnf(u4901,axiom,
+    ~h(sK125)).
+
+cnf(u4943,axiom,
+    ~o(sK63)).
+
+cnf(u5030,axiom,
+    ~x2_s_a8(sK81)).
+
+cnf(u2224,axiom,
+    ~i(X0) | ~a2_s_a4(X0)).
+
+cnf(u4772,axiom,
+    ~x2_e_a9(sK210)).
+
+cnf(u5153,axiom,
+    ~m(sK181)).
+
+cnf(u2016,axiom,
+    ~x2_e_a2(X0) | ~tau_a2(X0)).
+
+cnf(u2417,axiom,
+    ~x2_s_b3(X0) | ~a3_e_b2(X0)).
+
+cnf(u2343,axiom,
+    ~x2_e_b1(X0) | ~x2_e_b4(X0)).
+
+cnf(u5183,axiom,
+    ~a2_e_b0(sK239)).
+
+cnf(u2500,axiom,
+    ~a3_s_b1(X0) | ~x2_s_b4(X0)).
+
+cnf(u1877,axiom,
+    ~x2_e_a5(X0) | ~x2_s_a5(X0)).
+
+cnf(u5344,axiom,
+    ~i(sK230)).
+
+cnf(u4938,axiom,
+    ~x2_e_a11(sK71)).
+
+cnf(u5233,axiom,
+    ~x2_s_b0(sK196)).
+
+cnf(u2181,axiom,
+    ~g(X0) | ~x3_s_a10(X0)).
+
+cnf(u2514,axiom,
+    ~l_s_b2(X0) | ~a3_e_b1(X0)).
+
+cnf(u2031,axiom,
+    ~random_activity_2(X0) | ~tau_a0(X0)).
+
+cnf(u2285,axiom,
+    l_s_a6(sK142)).
+
+cnf(u2195,axiom,
+    ~a2_s_a5(X0) | ~x2_s_a11(X0)).
+
+cnf(u2536,axiom,
+    ~x2_e_b5(X0) | ~random_activity_2(X0)).
+
+cnf(u2521,axiom,
+    ~l_s_b1(X0) | ~f(X0)).
+
+cnf(u5060,axiom,
+    ~x2_s_a12(sK139)).
+
+cnf(u2299,axiom,
+    ~tau_a9(X0) | ~l_s_a4(X0)).
+
+cnf(u4945,axiom,
+    ~a2_e_a0(sK20)).
+
+cnf(u2110,axiom,
+    ~x2_s_a11(X0) | ~x2_e_a11(X0)).
+
+cnf(u4732,axiom,
+    ~x2_s_a4(sK31)).
+
+cnf(u4782,axiom,
+    ~a2_s_a6(sK170)).
+
+cnf(u4802,axiom,
+    ~x2_s_a9(sK75)).
+
+cnf(u2026,axiom,
+    l_s_a1(sK63)).
+
+cnf(u5016,axiom,
+    ~x2_e_a5(sK81)).
+
+cnf(u2119,axiom,
+    l_s_a3(sK90)).
+
+cnf(u5301,axiom,
+    ~n(sK228)).
+
+cnf(u2527,axiom,
+    ~tau_b9(X0) | ~x2_s_b6(X0)).
+
+cnf(u5096,axiom,
+    ~x2_s_b0(sK221)).
+
+cnf(u5059,axiom,
+    ~a3_e_a2(sK72)).
+
+cnf(u1863,axiom,
+    ~x2_e_a1(X0) | ~tau_a0(X0)).
+
+cnf(u2033,axiom,
+    l_s_a8(sK65)).
+
+cnf(u5214,axiom,
+    ~e(sK208)).
+
+cnf(u5031,axiom,
+    ~x2_s_a8(sK118)).
+
+cnf(u5187,axiom,
+    ~a2_e_b0(sK249)).
+
+cnf(u2603,axiom,
+    ~x2_s_b2(X0) | ~f(X0)).
+
+cnf(u4849,axiom,
+    ~a2_e_a0(sK219)).
+
+cnf(u1846,axiom,
+    ~x2_s_a3(X0) | ~l_s_a2(X0)).
+
+cnf(u5111,axiom,
+    ~l_s_b0(sK249)).
+
+cnf(u5070,axiom,
+    ~a2_e_a4(sK18)).
+
+cnf(u4976,axiom,
+    ~x2_e_a8(sK16)).
+
+cnf(u2044,axiom,
+    ~l_s_a2(X0) | ~tau_a4(X0)).
+
+cnf(u4939,axiom,
+    ~x2_e_a8(sK89)).
+
+cnf(u5350,axiom,
+    ~b(sK218)).
+
+cnf(u2102,axiom,
+    ~b(X0) | ~x2_s_a0(X0)).
+
+cnf(u5223,axiom,
+    ~o(sK157)).
+
+cnf(u5192,axiom,
+    ~random_activity_3(sK186)).
+
+cnf(u5133,axiom,
+    ~x2_s_b5(sK236)).
+
+cnf(u5106,axiom,
+    ~l_s_b0(sK196)).
+
+cnf(u5077,axiom,
+    ~x2_s_b0(sK244)).
+
+cnf(u2239,axiom,
+    ~a2_s_a0(X0) | ~a2_e_a1(X0)).
+
+cnf(u1865,axiom,
+    ~x2_e_a6(X0) | ~random_activity_1(X0)).
+
+cnf(u4991,axiom,
+    ~l_s_a8(sK134)).
+
+cnf(u4807,axiom,
+    ~x2_s_a5(sK118)).
+
+cnf(u5147,axiom,
+    ~random_activity_1(sK181)).
+
+cnf(u5329,axiom,
+    ~d(sK150)).
+
+cnf(u5359,axiom,
+    ~x2_e_b7(sK207)).
+
+cnf(u5264,axiom,
+    ~x2_s_b6(sK220)).
+
+cnf(u5113,axiom,
+    ~x2_e_b4(sK230)).
+
+cnf(u4986,axiom,
+    ~x2_s_a11(sK56)).
+
+cnf(u1876,axiom,
+    ~x2_e_a3(X0) | ~x2_s_a3(X0)).
+
+cnf(u4957,axiom,
+    ~l(sK91)).
+
+cnf(u1926,axiom,
+    ~x2_e_a11(X0) | ~tau_a15(X0)).
+
+cnf(u4728,axiom,
+    ~x2_e_a3(sK31)).
+
+cnf(u2414,axiom,
+    l_s_b2(sK188)).
+
+cnf(u2308,axiom,
+    ~a2_e_a5(X0) | ~a2_e_a4(X0)).
+
+cnf(u5152,axiom,
+    ~m(sK148)).
+
+cnf(u5108,axiom,
+    ~l_s_b0(sK236)).
+
+cnf(u2228,axiom,
+    ~x2_s_a1(X0) | ~x2_e_a1(X0)).
+
+cnf(u4731,axiom,
+    ~x2_e_a3(sK137)).
+
+cnf(u2412,axiom,
+    ~x2_e_b2(X0) | ~tau_b1(X0)).
+
+cnf(u4865,axiom,
+    ~x2_e_a4(sK174)).
+
+cnf(u1933,axiom,
+    ~x3_e_a10(X0) | ~x3_s_a10(X0)).
+
+cnf(u4767,axiom,
+    ~x2_s_a2(sK117)).
+
+cnf(u2421,axiom,
+    ~x2_e_b1(X0) | ~a2_s_b0(X0)).
+
+cnf(u4809,axiom,
+    ~x2_s_a5(sK73)).
+
+cnf(u2114,axiom,
+    ~l_s_a1(X0) | ~d(X0)).
+
+cnf(u2093,axiom,
+    l_s_a2(sK80)).
+
+cnf(u4736,axiom,
+    ~x2_e_a4(sK31)).
+
+cnf(u2426,axiom,
+    ~tau_b10(X0) | ~random_activity_4(X0)).
+
+cnf(u2397,axiom,
+    ~l_s_b1(X0) | ~x2_e_b2(X0)).
+
+cnf(u2307,axiom,
+    ~a2_s_a5(X0) | ~a2_e_a4(X0)).
+
+cnf(u2107,axiom,
+    ~a2_s_a1(X0) | ~l_s_a1(X0)).
+
+cnf(u2136,axiom,
+    x2_s_a0(sK95)).
+
+cnf(u5332,axiom,
+    ~o(sK162)).
+
+cnf(u2411,axiom,
+    x2_s_b6(sK186)).
+
+cnf(u4868,axiom,
+    ~x2_e_a3(sK127)).
+
+cnf(u2329,axiom,
+    ~a2_e_b0(X0) | ~x2_e_b0(X0)).
+
+cnf(u4861,axiom,
+    ~l_s_a8(sK237)).
+
+cnf(u5221,axiom,
+    ~d(sK157)).
+
+cnf(u5107,axiom,
+    ~l_s_b0(sK230)).
+
+cnf(u2032,axiom,
+    ~tau_a1(X0) | ~random_activity_2(X0)).
+
+cnf(u2359,axiom,
+    ~a2_s_b0(X0) | ~x2_s_b5(X0)).
+
+cnf(u5235,axiom,
+    ~x2_s_b0(sK236)).
+
+cnf(u2516,axiom,
+    ~x2_s_b3(X0) | ~a3_e_b1(X0)).
+
+cnf(u2335,axiom,
+    ~x2_e_b5(X0) | ~x2_e_b4(X0)).
+
+cnf(u4904,axiom,
+    ~random_activity_1(sK61)).
+
+cnf(u4867,axiom,
+    ~x2_s_a3(sK127)).
+
+cnf(u4769,axiom,
+    ~x2_s_a2(sK229)).
+
+cnf(u2197,axiom,
+    ~a2_s_a5(X0) | ~l_s_a8(X0)).
+
+cnf(u5118,axiom,
+    ~l_s_b3(sK225)).
+
+cnf(u2530,axiom,
     ~tau_b8(X0) | ~x2_e_b5(X0)).
 
-cnf(u5536,axiom,
-    ~f(sK201)).
+cnf(u4746,axiom,
+    ~x2_e_a5(sK115)).
 
-cnf(u1861,axiom,
-    a2_s_a5(sK4)).
+cnf(u2501,axiom,
+    ~a3_e_b1(X0) | ~x2_s_b4(X0)).
 
-cnf(u2293,axiom,
-    ~tau_a7(X0) | ~x2_s_a5(X0)).
+cnf(u5270,axiom,
+    ~x2_s_b2(sK177)).
 
-cnf(u5086,axiom,
-    ~x2_s_a14(sK30)).
+cnf(u2506,axiom,
+    ~a3_e_b3(X0) | ~k(X0)).
 
-cnf(u2498,axiom,
-    l_s_b5(sK215)).
+cnf(u2515,axiom,
+    ~a3_e_b1(X0) | ~c(X0)).
 
-cnf(u5521,axiom,
+cnf(u5292,axiom,
+    ~h(sK213)).
+
+cnf(u4919,axiom,
+    ~a2_e_a5(sK71)).
+
+cnf(u5240,axiom,
+    ~x2_e_b0(sK245)).
+
+cnf(u5181,axiom,
+    ~random_activity_2(sK166)).
+
+cnf(u5158,axiom,
+    ~l(sK148)).
+
+cnf(u5026,axiom,
+    ~x2_e_a6(sK118)).
+
+cnf(u4997,axiom,
+    ~random_activity_3(sK71)).
+
+cnf(u1864,axiom,
+    ~x2_e_a6(X0) | ~l_s_a4(X0)).
+
+cnf(u2537,axiom,
+    ~a3_s_b3(X0) | ~k(X0)).
+
+cnf(u2135,axiom,
+    ~x2_s_a7(X0) | ~m(X0)).
+
+cnf(u2513,axiom,
+    ~a3_e_b1(X0) | ~x2_e_b2(X0)).
+
+cnf(u5180,axiom,
+    ~a3_e_b2(sK178)).
+
+cnf(u4885,axiom,
+    ~l_s_a8(sK132)).
+
+cnf(u4771,axiom,
+    ~x2_e_a9(sK117)).
+
+cnf(u5279,axiom,
+    ~a3_e_b1(sK178)).
+
+cnf(u5033,axiom,
+    ~x2_e_a8(sK118)).
+
+cnf(u2543,axiom,
+    x2_s_b4(sK228)).
+
+cnf(u1879,axiom,
+    ~a2_s_a4(X0) | ~a2_s_a0(X0)).
+
+cnf(u5167,axiom,
+    ~x2_e_b2(sK240)).
+
+cnf(u4921,axiom,
+    ~a2_e_a5(sK104)).
+
+cnf(u2206,axiom,
+    ~x2_s_a11(X0) | ~l_s_a7(X0)).
+
+cnf(u4828,axiom,
+    ~x2_s_a0(sK84)).
+
+cnf(u1932,axiom,
+    ~x2_e_a0(X0) | ~x2_s_a0(X0)).
+
+cnf(u2544,axiom,
+    d(sK229)).
+
+cnf(u4784,axiom,
+    ~h(sK132)).
+
+cnf(u2225,axiom,
+    ~a2_s_a5(X0) | ~a2_s_a4(X0)).
+
+cnf(u4789,axiom,
+    ~a2_e_a1(sK52)).
+
+cnf(u2127,axiom,
+    ~x2_e_a12(X0) | ~a2_s_a0(X0)).
+
+cnf(u1881,axiom,
+    ~a2_e_a4(X0) | ~a2_s_a0(X0)).
+
+cnf(u4916,axiom,
+    ~l(sK82)).
+
+cnf(u1931,axiom,
+    ~x2_e_a7(X0) | ~m(X0)).
+
+cnf(u4915,axiom,
+    ~l_s_a6(sK82)).
+
+cnf(u5052,axiom,
+    ~a3_e_a2(sK124)).
+
+cnf(u4794,axiom,
+    ~l_s_a5(sK92)).
+
+cnf(u5072,axiom,
+    ~b(sK235)).
+
+cnf(u2324,axiom,
+    l_s_b3(sK152)).
+
+cnf(u5220,axiom,
+    ~d(sK163)).
+
+cnf(u2198,axiom,
+    ~a2_s_a5(X0) | ~e(X0)).
+
+cnf(u5291,axiom,
+    ~h(sK206)).
+
+cnf(u5357,axiom,
+    ~x2_s_b7(sK197)).
+
+cnf(u4926,axiom,
+    ~l_s_a2(sK70)).
+
+cnf(u5051,axiom,
+    ~a3_e_a2(sK116)).
+
+cnf(u2309,axiom,
+    ~x2_s_b0(X0) | ~b(X0)).
+
+cnf(u5305,axiom,
+    ~x2_s_b2(sK162)).
+
+cnf(u2109,axiom,
+    ~random_activity_5(X0) | ~n(X0)).
+
+cnf(u2130,axiom,
+    ~o(X0) | ~d(X0)).
+
+cnf(u2360,axiom,
+    ~x2_e_b1(X0) | ~x2_s_b5(X0)).
+
+cnf(u5207,axiom,
+    ~a3_s_b2(sK173)).
+
+cnf(u1902,axiom,
+    ~o(X0) | ~x2_s_a2(X0)).
+
+cnf(u4975,axiom,
+    ~x2_s_a8(sK111)).
+
+cnf(u4934,axiom,
+    ~l_s_a1(sK55)).
+
+cnf(u2128,axiom,
+    ~x2_e_a12(X0) | ~a2_e_a0(X0)).
+
+cnf(u5082,axiom,
+    ~l_s_b0(sK162)).
+
+cnf(u2510,axiom,
+    ~tau_b4(X0) | ~a3_s_b2(X0)).
+
+cnf(u2321,axiom,
+    ~x2_e_b2(X0) | ~x2_s_b2(X0)).
+
+cnf(u4824,axiom,
+    ~x2_s_a0(sK103)).
+
+cnf(u5354,axiom,
+    ~f(sK242)).
+
+cnf(u2351,axiom,
+    ~a3_s_b2(X0) | ~l(X0)).
+
+cnf(u1909,axiom,
+    ~a2_s_a6(X0) | ~h(X0)).
+
+cnf(u2532,axiom,
+    a3_s_b2(sK225)).
+
+cnf(u5248,axiom,
+    ~x2_e_b4(sK162)).
+
+cnf(u4970,axiom,
+    ~a3_e_a3(sK22)).
+
+cnf(u5137,axiom,
+    ~x2_e_b5(sK196)).
+
+cnf(u4827,axiom,
+    ~x2_s_a0(sK24)).
+
+cnf(u5089,axiom,
+    ~x2_s_b2(sK155)).
+
+cnf(u2508,axiom,
+    ~a3_e_b3(X0) | ~x2_s_b6(X0)).
+
+cnf(u2517,axiom,
+    ~x2_e_b3(X0) | ~a3_e_b1(X0)).
+
+cnf(u2227,axiom,
+    a3_s_a2(sK127)).
+
+cnf(u2522,axiom,
+    ~x2_s_b3(X0) | ~x2_e_b3(X0)).
+
+cnf(u2440,axiom,
+    ~tau_b0(X0) | ~x2_s_b1(X0)).
+
+cnf(u4977,axiom,
+    ~x2_e_a8(sK73)).
+
+cnf(u2121,axiom,
+    ~j(X0) | ~x2_s_a0(X0)).
+
+cnf(u4751,axiom,
+    ~x2_s_a5(sK17)).
+
+cnf(u5317,axiom,
+    ~a3_s_b1(sK161)).
+
+cnf(u5092,axiom,
+    ~n(sK154)).
+
+cnf(u2507,axiom,
+    ~a3_e_b3(X0) | ~h(X0)).
+
+cnf(u1880,axiom,
+    ~a2_s_a4(X0) | ~a2_e_a0(X0)).
+
+cnf(u1930,axiom,
+    ~x2_e_a7(X0) | ~l_s_a5(X0)).
+
+cnf(u4834,axiom,
+    ~x2_s_a9(sK105)).
+
+cnf(u5048,axiom,
+    ~a3_e_a2(sK41)).
+
+cnf(u5331,axiom,
+    ~d(sK198)).
+
+cnf(u5316,axiom,
+    ~a3_s_b1(sK178)).
+
+cnf(u5246,axiom,
+    ~x2_s_b4(sK177)).
+
+cnf(u5205,axiom,
     ~e(sK254)).
 
+cnf(u5091,axiom,
+    ~n(sK150)).
+
+cnf(u5000,axiom,
+    ~a2_s_a4(sK226)).
+
+cnf(u1989,axiom,
+    ~tau_a8(X0) | ~l_s_a4(X0)).
+
+cnf(u1937,axiom,
+    ~x3_e_a10(X0) | ~x2_s_a9(X0)).
+
+cnf(u4722,axiom,
+    ~l_s_a4(sK144)).
+
+cnf(u2559,axiom,
+    a2_s_b0(sK236)).
+
+cnf(u1895,axiom,
+    x2_s_a12(sK20)).
+
+cnf(u4758,axiom,
+    ~a2_e_a0(sK67)).
+
+cnf(u4972,axiom,
+    ~a3_e_a3(sK92)).
+
+cnf(u4935,axiom,
+    ~l_s_a1(sK103)).
+
+cnf(u5314,axiom,
+    ~c(sK223)).
+
+cnf(u4753,axiom,
+    ~a2_e_a0(sK96)).
+
+cnf(u5277,axiom,
+    ~c(sK177)).
+
+cnf(u5015,axiom,
+    ~random_activity_3(sK104)).
+
+cnf(u5102,axiom,
+    ~l_s_b0(sK151)).
+
+cnf(u4971,axiom,
+    ~a3_e_a3(sK62)).
+
+cnf(u4880,axiom,
+    ~random_activity_3(sK36)).
+
+cnf(u2222,axiom,
+    ~l_s_a7(X0) | ~tau_a15(X0)).
+
+cnf(u2432,axiom,
+    ~x2_e_b7(X0) | ~x2_s_b7(X0)).
+
+cnf(u5336,axiom,
+    ~o(sK150)).
+
+cnf(u5225,axiom,
+    ~a3_s_b3(sK197)).
+
+cnf(u5254,axiom,
+    ~x2_e_b4(sK167)).
+
+cnf(u2113,axiom,
+    ~x2_s_a8(X0) | ~x2_e_a8(X0)).
+
+cnf(u5202,axiom,
+    ~i(sK197)).
+
+cnf(u5276,axiom,
+    ~c(sK167)).
+
+cnf(u5127,axiom,
+    ~l_s_b5(sK201)).
+
+cnf(u5224,axiom,
+    ~a3_s_b3(sK207)).
+
+cnf(u5165,axiom,
+    ~x2_s_b7(sK180)).
+
+cnf(u5109,axiom,
+    ~l_s_b0(sK245)).
+
+cnf(u5010,axiom,
+    ~a2_s_a0(sK219)).
+
+cnf(u1897,axiom,
+    x2_s_a7(sK22)).
+
+cnf(u4982,axiom,
+    ~x2_s_a4(sK174)).
+
+cnf(u4839,axiom,
+    ~x2_e_a9(sK58)).
+
+cnf(u4724,axiom,
+    ~x2_s_a3(sK31)).
+
+cnf(u5179,axiom,
+    ~a3_s_b2(sK178)).
+
+cnf(u5361,axiom,
+    ~i(sK189)).
+
+cnf(u5296,axiom,
+    ~e(sK207)).
+
+cnf(u5274,axiom,
+    ~x2_e_b2(sK234)).
+
+cnf(u5263,axiom,
+    ~x2_s_b6(sK208)).
+
+cnf(u5017,axiom,
+    ~x2_e_a5(sK118)).
+
+cnf(u4989,axiom,
+    ~x2_e_a11(sK134)).
+
+cnf(u1908,axiom,
+    ~k(X0) | ~a2_s_a6(X0)).
+
+cnf(u4727,axiom,
+    ~x2_s_a3(sK137)).
+
+cnf(u1958,axiom,
+    ~tau_a8(X0) | ~x2_s_a6(X0)).
+
+cnf(u2318,axiom,
+    ~l_s_b0(X0) | ~x2_e_b4(X0)).
+
+cnf(u4747,axiom,
+    ~x2_e_a5(sK137)).
+
+cnf(u2422,axiom,
+    ~x2_e_b1(X0) | ~a2_e_b0(X0)).
+
+cnf(u2340,axiom,
+    ~a2_s_b0(X0) | ~l_s_b0(X0)).
+
+cnf(u2132,axiom,
+    ~x2_s_a8(X0) | ~l_s_a6(X0)).
+
+cnf(u1907,axiom,
+    ~tau_a7(X0) | ~x2_e_a5(X0)).
+
+cnf(u2316,axiom,
+    ~tau_b1(X0) | ~x2_s_b2(X0)).
+
+cnf(u4897,axiom,
+    ~random_activity_2(sK57)).
+
+cnf(u4799,axiom,
+    ~x3_s_a10(sK79)).
+
+cnf(u4734,axiom,
+    ~x2_s_a4(sK115)).
+
+cnf(u2236,axiom,
+    l_s_a5(sK130)).
+
+cnf(u5012,axiom,
+    ~a2_e_a1(sK145)).
+
+cnf(u4768,axiom,
+    ~x2_s_a2(sK210)).
+
+cnf(u2429,axiom,
+    ~x2_s_b6(X0) | ~random_activity_3(X0)).
+
+cnf(u1991,axiom,
+    ~x2_e_a3(X0) | ~tau_a3(X0)).
+
+cnf(u5342,axiom,
+    ~x2_e_b5(sK197)).
+
+cnf(u2168,axiom,
+    ~x2_e_a7(X0) | ~a3_e_a3(X0)).
+
+cnf(u2352,axiom,
+    l_s_b5(sK158)).
+
+cnf(u2315,axiom,
+    ~l_s_b4(X0) | ~m(X0)).
+
+cnf(u4900,axiom,
+    ~h(sK13)).
+
+cnf(u2361,axiom,
+    ~a2_s_b0(X0) | ~x2_e_b5(X0)).
+
+cnf(u5125,axiom,
+    ~m(sK201)).
+
+cnf(u5011,axiom,
+    ~x2_s_a0(sK145)).
+
+cnf(u2526,axiom,
+    ~tau_b8(X0) | ~random_activity_2(X0)).
+
+cnf(u1936,axiom,
+    ~x2_s_a9(X0) | ~x3_s_a10(X0)).
+
+cnf(u5139,axiom,
+    ~x2_e_b5(sK236)).
+
+cnf(u2548,axiom,
+    ~x2_e_b7(X0) | ~tau_b10(X0)).
+
+cnf(u2502,axiom,
+    ~a3_s_b1(X0) | ~x2_e_b4(X0)).
+
+cnf(u2367,axiom,
+    x2_s_b5(sK166)).
+
+cnf(u4899,axiom,
+    ~a2_e_a6(sK170)).
+
+cnf(u2229,axiom,
+    ~x3_e_a10(X0) | ~n(X0)).
+
+cnf(u2524,axiom,
+    ~tau_b5(X0) | ~l_s_b3(X0)).
+
+cnf(u2434,axiom,
+    ~x2_e_b6(X0) | ~x2_s_b6(X0)).
+
+cnf(u2205,axiom,
+    ~random_activity_2(X0) | ~l_s_a0(X0)).
+
+cnf(u2115,axiom,
+    ~l_s_a1(X0) | ~o(X0)).
+
+cnf(u5122,axiom,
+    ~l_s_b4(sK225)).
+
+cnf(u2538,axiom,
+    ~a3_s_b3(X0) | ~h(X0)).
+
+cnf(u2509,axiom,
+    ~a3_e_b3(X0) | ~x2_e_b6(X0)).
+
+cnf(u5144,axiom,
+    ~a3_e_b2(sK152)).
+
+cnf(u5071,axiom,
+    ~a2_e_a4(sK78)).
+
+cnf(u4910,axiom,
+    ~a2_e_a4(sK54)).
+
+cnf(u4930,axiom,
+    ~x2_s_a1(sK55)).
+
+cnf(u2137,axiom,
+    a2_s_a4(sK96)).
+
+cnf(u1998,axiom,
+    ~a(X0) | ~a2_e_a0(X0)).
+
+cnf(u5029,axiom,
+    ~a3_s_a3(sK92)).
+
+cnf(u1896,axiom,
+    l_s_a4(sK21)).
+
+cnf(u2441,axiom,
+    ~l_s_b6(X0) | ~i(X0)).
+
+cnf(u2167,axiom,
+    ~x2_s_a7(X0) | ~a3_e_a3(X0)).
+
+cnf(u5281,axiom,
+    ~a3_e_b1(sK173)).
+
+cnf(u2471,axiom,
+    ~l_s_b0(X0) | ~o(X0)).
+
+cnf(u4917,axiom,
+    ~x2_s_a2(sK63)).
+
+cnf(u5311,axiom,
+    ~a3_s_b1(sK188)).
+
+cnf(u4937,axiom,
+    ~x2_e_a9(sK103)).
+
+cnf(u2005,axiom,
+    ~random_activity_5(X0) | ~g(X0)).
+
+cnf(u2447,axiom,
+    l_s_b4(sK195)).
+
+cnf(u5066,axiom,
+    ~a2_e_a4(sK226)).
+
+cnf(u4808,axiom,
+    ~x2_s_a5(sK16)).
+
+cnf(u5073,axiom,
+    ~x2_s_b4(sK150)).
+
+cnf(u1906,axiom,
+    ~tau_a13(X0) | ~l_s_a6(X0)).
+
+cnf(u2238,axiom,
+    ~a2_s_a0(X0) | ~x2_s_a0(X0)).
+
+cnf(u4860,axiom,
+    ~l_s_a8(sK212)).
+
+cnf(u2129,axiom,
+    ~x2_e_a4(X0) | ~x2_s_a4(X0)).
+
+cnf(u1913,axiom,
+    ~x2_e_a1(X0) | ~a2_e_a1(X0)).
+
+cnf(u4818,axiom,
+    ~a2_e_a6(sK66)).
+
+cnf(u5068,axiom,
+    ~a2_e_a4(sK56)).
+
+cnf(u5315,axiom,
+    ~c(sK248)).
+
+cnf(u4729,axiom,
+    ~x2_e_a3(sK83)).
+
+cnf(u5172,axiom,
+    ~a2_s_b0(sK189)).
+
+cnf(u2334,axiom,
+    ~x2_e_b5(X0) | ~l_s_b0(X0)).
+
+cnf(u4742,axiom,
+    ~x2_s_a5(sK115)).
+
+cnf(u4956,axiom,
+    ~l(sK89)).
+
+cnf(u5230,axiom,
+    ~a(sK230)).
+
+cnf(u1986,axiom,
+    ~tau_a5(X0) | ~x2_s_a4(X0)).
+
+cnf(u5104,axiom,
+    ~x2_e_b4(sK151)).
+
+cnf(u5067,axiom,
+    ~a2_e_a4(sK254)).
+
+cnf(u2310,axiom,
+    ~x2_e_b4(X0) | ~x2_s_b4(X0)).
+
+cnf(u1992,axiom,
+    ~x2_s_a2(X0) | ~x2_s_a9(X0)).
+
+cnf(u5124,axiom,
+    ~m(sK225)).
+
+cnf(u5351,axiom,
+    ~b(sK244)).
+
+cnf(u5195,axiom,
+    ~random_activity_1(sK152)).
+
+cnf(u5261,axiom,
+    ~h(sK220)).
+
+cnf(u2341,axiom,
+    ~x2_e_b1(X0) | ~l_s_b0(X0)).
+
+cnf(u2332,axiom,
+    ~x2_s_b5(X0) | ~l_s_b0(X0)).
+
+cnf(u1981,axiom,
+    ~a2_s_a1(X0) | ~x2_s_a0(X0)).
+
+cnf(u4864,axiom,
+    ~x2_e_a4(sK94)).
+
+cnf(u4955,axiom,
+    ~l_s_a6(sK91)).
+
+cnf(u1993,axiom,
+    ~x2_e_a2(X0) | ~x2_s_a9(X0)).
+
+cnf(u5209,axiom,
+    ~a3_e_b2(sK173)).
+
+cnf(u5119,axiom,
+    ~l_s_b3(sK201)).
+
+cnf(u2346,axiom,
+    ~a3_s_b2(X0) | ~l_s_b3(X0)).
+
+cnf(u2317,axiom,
+    ~a3_s_b1(X0) | ~l_s_b0(X0)).
+
+cnf(u4820,axiom,
+    ~a2_e_a6(sK184)).
+
+cnf(u5275,axiom,
+    ~a3_e_b1(sK188)).
+
+cnf(u5239,axiom,
+    ~x2_e_b0(sK236)).
+
+cnf(u4723,axiom,
+    ~random_activity_1(sK144)).
+
+cnf(u5114,axiom,
+    ~x2_e_b4(sK236)).
+
+cnf(u4966,axiom,
+    ~a3_e_a3(sK93)).
+
+cnf(u4823,axiom,
+    ~x2_s_a0(sK55)).
+
+cnf(u2004,axiom,
+    a2_s_a1(sK55)).
+
+cnf(u2542,axiom,
+    ~l_s_b6(X0) | ~e(X0)).
+
+cnf(u5085,axiom,
+    ~l_s_b0(sK248)).
+
+cnf(u2353,axiom,
+    ~x2_s_b7(X0) | ~random_activity_4(X0)).
+
+cnf(u1952,axiom,
+    l_s_a7(sK36)).
+
+cnf(u4856,axiom,
+    ~l_s_a8(sK40)).
+
+cnf(u5258,axiom,
+    ~k(sK220)).
+
+cnf(u5280,axiom,
+    ~a3_e_b1(sK161)).
+
+cnf(u5169,axiom,
+    ~f(sK175)).
+
+cnf(u4859,axiom,
+    ~l_s_a8(sK184)).
+
+cnf(u2549,axiom,
+    ~x2_s_b4(X0) | ~n(X0)).
+
+cnf(u2540,axiom,
+    ~x2_e_b6(X0) | ~a3_s_b3(X0)).
+
+cnf(u4993,axiom,
+    ~e(sK134)).
+
+cnf(u2450,axiom,
+    ~a3_s_b3(X0) | ~e(X0)).
+
+cnf(u1967,axiom,
+    ~tau_a7(X0) | ~a3_e_a3(X0)).
+
+cnf(u2242,axiom,
+    ~a3_s_a3(X0) | ~x2_e_a5(X0)).
+
+cnf(u2525,axiom,
+    ~x2_s_b1(X0) | ~x2_e_b1(X0)).
+
+cnf(u2472,axiom,
+    l_s_b6(sK207)).
+
+cnf(u2539,axiom,
+    ~x2_s_b6(X0) | ~a3_s_b3(X0)).
+
+cnf(u4996,axiom,
+    ~l_s_a7(sK71)).
+
+cnf(u2153,axiom,
+    ~x2_e_a12(X0) | ~x2_s_a12(X0)).
+
+cnf(u4881,axiom,
+    ~x2_e_a9(sK74)).
+
+cnf(u4783,axiom,
+    ~h(sK28)).
+
+cnf(u4825,axiom,
+    ~x2_e_a0(sK55)).
+
+cnf(u2014,axiom,
+    ~a3_s_a2(X0) | ~x2_e_a5(X0)).
+
+cnf(u4718,axiom,
+    ~f(sK39)).
+
+cnf(u1912,axiom,
+    ~x2_s_a1(X0) | ~a2_e_a1(X0)).
+
+cnf(u2240,axiom,
+    ~l_s_a7(X0) | ~x2_e_a11(X0)).
+
+cnf(u1962,axiom,
+    ~b(X0) | ~x2_e_a0(X0)).
+
+cnf(u4738,axiom,
+    ~x2_e_a4(sK115)).
+
+cnf(u4952,axiom,
+    ~d(sK100)).
+
+cnf(u2433,axiom,
+    ~l_s_b3(X0) | ~random_activity_1(X0)).
+
+cnf(u2487,axiom,
+    ~a2_s_b0(X0) | ~a(X0)).
+
+cnf(u5348,axiom,
+    ~i(sK190)).
+
+cnf(u5237,axiom,
+    ~x2_e_b0(sK196)).
+
+cnf(u5032,axiom,
+    ~x2_e_a8(sK81)).
+
+cnf(u4995,axiom,
+    ~l_s_a0(sK199)).
+
+cnf(u4790,axiom,
+    ~a2_e_a1(sK133)).
+
+cnf(u1969,axiom,
+    ~e(X0) | ~a2_e_a6(X0)).
+
+cnf(u5150,axiom,
+    ~l_s_b4(sK181)).
+
+cnf(u5123,axiom,
+    ~l_s_b4(sK201)).
+
+cnf(u5346,axiom,
+    ~i(sK245)).
+
+cnf(u4785,axiom,
+    ~a2_e_a1(sK57)).
+
+cnf(u5047,axiom,
+    ~x2_s_a2(sK127)).
+
+cnf(u5006,axiom,
+    ~x2_e_a1(sK57)).
+
+cnf(u5309,axiom,
+    ~a3_s_b1(sK155)).
+
+cnf(u2126,axiom,
+    ~x2_s_a12(X0) | ~a2_e_a0(X0)).
+
+cnf(u5129,axiom,
+    ~l(sK201)).
+
+cnf(u4819,axiom,
+    ~a2_e_a6(sK131)).
+
+cnf(u5286,axiom,
+    ~x2_e_b1(sK239)).
+
+cnf(u2145,axiom,
+    ~tau_a7(X0) | ~x2_s_a5(X0)).
+
+cnf(u5234,axiom,
+    ~x2_s_b0(sK230)).
+
+cnf(u2263,axiom,
+    ~l(X0) | ~l_s_a6(X0)).
+
+cnf(u5159,axiom,
+    ~l(sK181)).
+
+cnf(u5308,axiom,
+    ~x2_s_b2(sK248)).
+
+cnf(u5128,axiom,
+    ~l(sK225)).
+
+cnf(u5042,axiom,
+    ~l_s_a6(sK149)).
+
+cnf(u2175,axiom,
+    ~tau_a5(X0) | ~c(X0)).
+
+cnf(u5013,axiom,
+    ~x2_e_a11(sK36)).
+
+cnf(u4927,axiom,
+    ~f(sK70)).
+
+cnf(u4886,axiom,
+    ~a2_e_a6(sK65)).
+
+cnf(u4743,axiom,
+    ~x2_s_a5(sK137)).
+
+cnf(u2007,axiom,
+    ~c(X0) | ~x2_e_a4(X0)).
+
+cnf(u5265,axiom,
+    ~x2_s_b6(sK227)).
+
+cnf(u5306,axiom,
+    ~x2_s_b2(sK209)).
+
+cnf(u5295,axiom,
+    ~a3_s_b3(sK231)).
+
+cnf(u5049,axiom,
+    ~a3_e_a2(sK58)).
+
+cnf(u5200,axiom,
+    ~x2_s_b1(sK192)).
+
+cnf(u2350,axiom,
+    ~a3_s_b2(X0) | ~l_s_b5(X0)).
+
+cnf(u4922,axiom,
+    ~l_s_a8(sK18)).
+
+cnf(u4893,axiom,
+    ~l_s_a4(sK187)).
+
+cnf(u2567,axiom,
+    ~x2_s_b3(X0) | ~a3_s_b1(X0)).
+
+cnf(u2326,axiom,
+    ~x2_e_b4(X0) | ~n(X0)).
+
+cnf(u2008,axiom,
+    ~tau_a8(X0) | ~x2_e_a6(X0)).
+
+cnf(u2118,axiom,
+    x2_s_a8(sK89)).
+
+cnf(u4973,axiom,
+    ~x2_s_a8(sK16)).
+
+cnf(u2348,axiom,
+    ~a3_s_b2(X0) | ~l_s_b4(X0)).
+
+cnf(u1869,axiom,
+    ~a3_e_a2(X0) | ~x2_e_a4(X0)).
+
+cnf(u4745,axiom,
+    ~x2_e_a5(sK83)).
+
+cnf(u2009,axiom,
+    ~a3_s_a2(X0) | ~x2_s_a3(X0)).
+
+cnf(u5044,axiom,
+    ~tau_a17(sK102)).
+
+cnf(u2050,axiom,
+    ~random_activity_1(X0) | ~l_s_a4(X0)).
+
+cnf(u2362,axiom,
+    ~x2_e_b1(X0) | ~x2_e_b5(X0)).
+
+cnf(u2333,axiom,
+    ~x2_s_b5(X0) | ~x2_e_b4(X0)).
+
+cnf(u2154,axiom,
+    ~tau_a13(X0) | ~l(X0)).
+
+cnf(u2072,axiom,
+    ~j(X0) | ~x2_e_a0(X0)).
+
+cnf(u2347,axiom,
+    ~a3_s_b2(X0) | ~random_activity_1(X0)).
+
+cnf(u5268,axiom,
+    ~x2_e_b6(sK227)).
+
+cnf(u4797,axiom,
+    ~x2_s_a0(sK37)).
+
+cnf(u5157,axiom,
+    ~l_s_b5(sK253)).
+
+cnf(u5043,axiom,
+    ~tau_a17(sK54)).
+
+cnf(u2569,axiom,
+    x2_s_b7(sK238)).
+
+cnf(u1968,axiom,
+    ~a2_s_a6(X0) | ~e(X0)).
+
+cnf(u2558,axiom,
+    x2_s_b0(sK235)).
+
+cnf(u5326,axiom,
+    ~d(sK209)).
+
+cnf(u5171,axiom,
+    ~x2_e_b5(sK238)).
+
+cnf(u2452,axiom,
+    ~x2_e_b4(X0) | ~g(X0)).
+
+cnf(u4967,axiom,
+    ~x2_e_a6(sK16)).
+
+cnf(u2244,axiom,
+    ~b(X0) | ~j(X0)).
+
+cnf(u2133,axiom,
+    ~x2_s_a8(X0) | ~l(X0)).
+
+cnf(u2019,axiom,
+    x2_s_a2(sK58)).
+
+cnf(u2556,axiom,
+    ~x2_s_b1(X0) | ~random_activity_5(X0)).
+
+cnf(u1983,axiom,
+    ~a2_e_a1(X0) | ~x2_s_a0(X0)).
+
+cnf(u5206,axiom,
+    ~a3_s_b2(sK161)).
+
+cnf(u2568,axiom,
+    ~x2_e_b3(X0) | ~a3_s_b1(X0)).
+
+cnf(u2237,axiom,
+    ~a(X0) | ~a2_s_a0(X0)).
+
+cnf(u2258,axiom,
+    ~l_s_a5(X0) | ~m(X0)).
+
+cnf(u2442,axiom,
+    ~i(X0) | ~e(X0)).
+
+cnf(u5154,axiom,
+    ~m(sK253)).
+
+cnf(u2488,axiom,
+    ~a2_s_b0(X0) | ~x2_s_b0(X0)).
+
+cnf(u2451,axiom,
+    ~a3_e_b3(X0) | ~e(X0)).
+
+cnf(u5335,axiom,
+    ~o(sK248)).
+
+cnf(u5228,axiom,
+    ~l_s_b6(sK227)).
+
+cnf(u5176,axiom,
+    ~c(sK188)).
+
+cnf(u4962,axiom,
+    ~l_s_a3(sK94)).
+
+cnf(u2169,axiom,
+    ~a3_e_a3(X0) | ~x2_s_a8(X0)).
+
+cnf(u2030,axiom,
+    ~l_s_a0(X0) | ~tau_a0(X0)).
+
+cnf(u4933,axiom,
+    ~x2_e_a1(sK103)).
+
+cnf(u5103,axiom,
+    ~l_s_b0(sK190)).
+
+cnf(u5062,axiom,
+    ~x2_e_a1(sK121)).
+
+cnf(u2071,axiom,
+    l_s_a0(sK77)).
+
+cnf(u5185,axiom,
+    ~a2_s_b0(sK249)).
+
+cnf(u2449,axiom,
+    ~x2_e_b6(X0) | ~random_activity_3(X0)).
+
+cnf(u5215,axiom,
+    ~e(sK220)).
+
+cnf(u4969,axiom,
+    ~x2_e_a6(sK111)).
+
+cnf(u5098,axiom,
+    ~x2_e_b0(sK221)).
+
+cnf(u5069,axiom,
+    ~a2_e_a4(sK134)).
+
+cnf(u4840,axiom,
+    ~x2_e_a9(sK105)).
+
+cnf(u2560,axiom,
+    ~tau_b8(X0) | ~x2_s_b5(X0)).
+
+cnf(u5105,axiom,
+    ~x2_e_b4(sK190)).
+
+cnf(u2249,axiom,
+    ~x2_s_a6(X0) | ~a3_s_a3(X0)).
+
+cnf(u4837,axiom,
+    ~x2_s_a9(sK72)).
+
+cnf(u2142,axiom,
+    ~tau_a10(X0) | ~m(X0)).
+
+cnf(u1868,axiom,
+    ~a3_e_a2(X0) | ~x2_s_a4(X0)).
+
+cnf(u4764,axiom,
+    ~x2_e_a9(sK23)).
+
+cnf(u4725,axiom,
+    ~x2_s_a3(sK83)).
+
+cnf(u2063,axiom,
+    ~x2_s_a6(X0) | ~l_s_a4(X0)).
+
+cnf(u1867,axiom,
+    ~a3_e_a2(X0) | ~x2_e_a3(X0)).
+
+cnf(u4850,axiom,
+    ~x2_s_a0(sK4)).
+
+cnf(u5333,axiom,
+    ~o(sK209)).
+
+cnf(u5100,axiom,
+    ~l_s_b0(sK166)).
+
+cnf(u5063,axiom,
+    ~x2_e_a1(sK14)).
+
+cnf(u5347,axiom,
+    ~i(sK151)).
+
+cnf(u2570,axiom,
+    ~x2_e_b3(X0) | ~tau_b4(X0)).
+
+cnf(u5134,axiom,
+    ~x2_s_b5(sK245)).
+
+cnf(u4774,axiom,
+    ~x2_s_a2(sK100)).
+
+cnf(u4988,axiom,
+    ~x2_e_a11(sK56)).
+
+cnf(u2583,axiom,
+    ~tau_b0(X0) | ~x2_e_b1(X0)).
+
+cnf(u2018,axiom,
+    x2_s_a1(sK57)).
+
+cnf(u4730,axiom,
+    ~x2_e_a3(sK115)).
+
+cnf(u5008,axiom,
+    ~n(sK79)).
+
+cnf(u5099,axiom,
+    ~x2_e_b0(sK243)).
+
+cnf(u5058,axiom,
+    ~a3_s_a2(sK72)).
+
+cnf(u5353,axiom,
+    ~x2_s_b2(sK240)).
+
+cnf(u2342,axiom,
+    ~a2_s_b0(X0) | ~x2_e_b4(X0)).
+
+cnf(u5352,axiom,
+    ~x2_s_b2(sK211)).
+
+cnf(u5330,axiom,
+    ~d(sK154)).
+
+cnf(u5156,axiom,
+    ~l_s_b5(sK181)).
+
+cnf(u2241,axiom,
+    ~x2_e_a11(X0) | ~random_activity_3(X0)).
+
+cnf(u2134,axiom,
+    ~x2_s_a7(X0) | ~l_s_a5(X0)).
+
+cnf(u5293,axiom,
+    ~a3_s_b3(sK186)).
+
+cnf(u5255,axiom,
+    ~x2_e_b4(sK177)).
+
+cnf(u5241,axiom,
+    ~x2_s_b4(sK162)).
+
+cnf(u2364,axiom,
+    l_s_b0(sK163)).
+
+cnf(u1885,axiom,
+    ~x2_e_a8(X0) | ~tau_a12(X0)).
+
+cnf(u4896,axiom,
+    ~l_s_a0(sK57)).
+
+cnf(u4987,axiom,
+    ~x2_s_a11(sK134)).
+
+cnf(u2271,axiom,
+    ~x2_s_a2(X0) | ~a3_e_a2(X0)).
+
+cnf(u5110,axiom,
+    ~l_s_b0(sK246)).
+
+cnf(u5023,axiom,
+    ~a3_s_a3(sK61)).
+
+cnf(u2349,axiom,
+    ~a3_s_b2(X0) | ~m(X0)).
+
+cnf(u4852,axiom,
+    ~x2_s_a0(sK33)).
+
+cnf(u5307,axiom,
+    ~x2_s_b2(sK223)).
+
+cnf(u2170,axiom,
+    ~a3_e_a3(X0) | ~x2_e_a8(X0)).
+
+cnf(u5143,axiom,
+    ~x2_e_b5(sK249)).
+
+cnf(u2088,axiom,
+    ~l_s_a1(X0) | ~x2_e_a9(X0)).
+
+cnf(u2363,axiom,
+    a3_s_b1(sK162)).
+
+cnf(u4911,axiom,
+    ~a2_e_a4(sK102)).
+
+cnf(u4870,axiom,
+    ~x2_e_a4(sK127)).
+
+cnf(u4855,axiom,
+    ~a2_e_a1(sK33)).
+
+cnf(u2064,axiom,
+    ~x2_s_a6(X0) | ~random_activity_1(X0)).
+
+cnf(u2036,axiom,
+    ~x3_e_a10(X0) | ~x2_e_a9(X0)).
+
+cnf(u5018,axiom,
+    ~x2_e_a5(sK16)).
+
+cnf(u5117,axiom,
+    ~x2_e_b4(sK249)).
+
+cnf(u2446,axiom,
+    ~x2_e_b3(X0) | ~a3_e_b2(X0)).
+
+cnf(u5290,axiom,
+    ~k(sK213)).
+
+cnf(u1845,axiom,
+    ~x2_e_a9(X0) | ~tau_a14(X0)).
+
+cnf(u5184,axiom,
+    ~a2_s_b0(sK246)).
+
+cnf(u4906,axiom,
+    ~a2_s_a4(sK20)).
+
+cnf(u2260,axiom,
+    ~n(X0) | ~x3_s_a10(X0)).
+
+cnf(u2035,axiom,
+    ~x3_s_a10(X0) | ~x2_e_a9(X0)).
+
+cnf(u5025,axiom,
+    ~x2_e_a6(sK81)).
+
+cnf(u1871,axiom,
+    ~a3_e_a2(X0) | ~x2_e_a5(X0)).
+
+cnf(u4862,axiom,
+    ~x2_e_a4(sK90)).
+
+cnf(u2125,axiom,
+    ~x2_s_a12(X0) | ~a2_s_a0(X0)).
+
+cnf(u2557,axiom,
+    ~x2_e_b0(X0) | ~j(X0)).
+
+cnf(u2250,axiom,
+    ~a3_s_a3(X0) | ~x2_e_a6(X0)).
+
+cnf(u2489,axiom,
+    ~a2_s_b0(X0) | ~x2_e_b0(X0)).
+
+cnf(u2296,axiom,
+    ~l_s_a0(X0) | ~x2_e_a1(X0)).
+
+cnf(u4857,axiom,
+    ~l_s_a8(sK66)).
+
+cnf(u5028,axiom,
+    ~a3_s_a3(sK62)).
+
+cnf(u2272,axiom,
+    ~x2_e_a2(X0) | ~x2_s_a2(X0)).
+
+cnf(u1866,axiom,
+    ~a3_e_a2(X0) | ~x2_s_a3(X0)).
+
+cnf(u4770,axiom,
+    ~x2_e_a9(sK112)).
+
+cnf(u4984,axiom,
+    ~x2_s_a7(sK62)).
+
+cnf(u2087,axiom,
+    ~l_s_a1(X0) | ~x2_s_a2(X0)).
+
+cnf(u5267,axiom,
+    ~x2_e_b6(sK220)).
+
+cnf(u4781,axiom,
+    ~a2_s_a6(sK60)).
+
+cnf(u2495,axiom,
+    ~tau_b6(X0) | ~l_s_b4(X0)).
+
+cnf(u4936,axiom,
+    ~x2_e_a9(sK55)).
+
+cnf(u5027,axiom,
+    ~a3_s_a3(sK22)).
+
+cnf(u4801,axiom,
+    ~x3_s_a10(sK109)).
+
+cnf(u1873,axiom,
+    ~x2_s_a9(X0) | ~tau_a14(X0)).
+
+cnf(u4908,axiom,
+    ~a2_s_a4(sK54)).
+
+cnf(u5182,axiom,
+    ~a2_s_b0(sK239)).
+
+cnf(u2594,axiom,
+    ~x2_e_b5(X0) | ~i(X0)).
+
+cnf(u5155,axiom,
+    ~l_s_b5(sK148)).
+
+cnf(u2243,axiom,
+    ~a3_e_a3(X0) | ~x2_e_a5(X0)).
+
+cnf(u4951,axiom,
+    ~x2_s_a4(sK120)).
+
+cnf(u5324,axiom,
+    ~x2_e_b1(sK192)).
+
+cnf(u5213,axiom,
+    ~e(sK213)).
+
+cnf(u4907,axiom,
+    ~a2_e_a4(sK20)).
+
+cnf(u5272,axiom,
+    ~x2_e_b2(sK167)).
+
+cnf(u5161,axiom,
+    ~l(sK158)).
+
+cnf(u4851,axiom,
+    ~x2_s_a0(sK64)).
+
+cnf(u5227,axiom,
+    ~l_s_b6(sK220)).
+
+cnf(u2295,axiom,
+    ~tau_a4(X0) | ~f(X0)).
+
+cnf(u2052,axiom,
+    x2_s_a11(sK71)).
+
+cnf(u5212,axiom,
+    ~e(sK206)).
+
+cnf(u4946,axiom,
+    ~a2_s_a0(sK54)).
+
+cnf(u5160,axiom,
+    ~l(sK253)).
+
+cnf(u4803,axiom,
+    ~x2_s_a9(sK79)).
+
+cnf(u4918,axiom,
+    ~x2_e_a9(sK63)).
+
+cnf(u5065,axiom,
+    ~a2_e_a4(sK135)).
+
+cnf(u4775,axiom,
+    ~x2_s_a2(sK222)).
+
+cnf(u2039,axiom,
+    ~l_s_a8(X0) | ~a2_e_a6(X0)).
+
+cnf(u5210,axiom,
+    ~random_activity_3(sK168)).
+
+cnf(u5232,axiom,
+    ~a(sK245)).
+
+cnf(u5199,axiom,
+    ~x2_s_b6(sK231)).
+
+cnf(u2586,axiom,
+    ~a3_s_b1(X0) | ~d(X0)).
+
+cnf(u4953,axiom,
+    ~d(sK222)).
+
+cnf(u1894,axiom,
+    ~tau_a6(X0) | ~l_s_a3(X0)).
+
+cnf(u4925,axiom,
+    ~e(sK78)).
+
+cnf(u2034,axiom,
+    ~l_s_a7(X0) | ~random_activity_3(X0)).
+
+cnf(u4816,axiom,
+    ~e(sK132)).
+
+cnf(u2575,axiom,
+    ~tau_b2(X0) | ~f(X0)).
+
+cnf(u2287,axiom,
+    ~g(X0) | ~n(X0)).
+
+cnf(u4821,axiom,
+    ~a2_e_a6(sK212)).
+
+cnf(u1901,axiom,
+    ~d(X0) | ~x2_e_a9(X0)).
+
+cnf(u4735,axiom,
+    ~x2_s_a4(sK137)).
+
+cnf(u4777,axiom,
+    ~x2_e_a9(sK222)).
+
+cnf(u4948,axiom,
+    ~a2_e_a0(sK54)).
+
+cnf(u2082,axiom,
+    ~x3_s_a10(X0) | ~tau_a14(X0)).
+
+cnf(u5300,axiom,
+    ~tau_b10(sK194)).
+
+cnf(u4947,axiom,
+    ~a2_s_a0(sK102)).
+
+cnf(u2601,axiom,
+    ~x2_e_b0(X0) | ~b(X0)).
+
+cnf(u5084,axiom,
+    ~l_s_b0(sK223)).
+
+cnf(u5358,axiom,
+    ~i(sK238)).
+
+cnf(u4826,axiom,
+    ~x2_e_a0(sK103)).
+
+cnf(u2564,axiom,
+    ~x2_e_b2(X0) | ~a3_s_b1(X0)).
+
+cnf(u5323,axiom,
+    ~x2_s_b5(sK190)).
+
+cnf(u2165,axiom,
+    ~x2_s_a6(X0) | ~a3_e_a3(X0)).
+
+cnf(u4871,axiom,
+    ~x2_s_a5(sK127)).
+
+cnf(u4958,axiom,
+    ~l_s_a5(sK22)).
+
+cnf(u5083,axiom,
+    ~l_s_b0(sK209)).
+
+cnf(u4992,axiom,
+    ~e(sK56)).
+
+cnf(u2469,axiom,
+    a3_s_b3(sK206)).
+
+cnf(u5337,axiom,
+    ~o(sK154)).
+
+cnf(u2252,axiom,
+    ~x2_e_a7(X0) | ~a3_s_a3(X0)).
+
+cnf(u2141,axiom,
+    ~tau_a10(X0) | ~l_s_a5(X0)).
+
+cnf(u5238,axiom,
+    ~x2_e_b0(sK230)).
+
+cnf(u2051,axiom,
+    ~x3_e_a10(X0) | ~g(X0)).
+
+cnf(u2445,axiom,
+    ~x2_e_b3(X0) | ~a3_s_b2(X0)).
+
+cnf(u5132,axiom,
+    ~x2_s_b5(sK230)).
+
+cnf(u2155,axiom,
+    ~c(X0) | ~l_s_a3(X0)).
+
+cnf(u2184,axiom,
+    ~l_s_a3(X0) | ~x2_s_a4(X0)).
+
+cnf(u4866,axiom,
+    ~x2_e_a4(sK176)).
+
+cnf(u1934,axiom,
+    ~tau_a9(X0) | ~random_activity_1(X0)).
+
+cnf(u4965,axiom,
+    ~a3_e_a3(sK61)).
+
+cnf(u5094,axiom,
+    ~a(sK221)).
+
+cnf(u5007,axiom,
+    ~n(sK75)).
+
+cnf(u1882,axiom,
+    ~a2_e_a4(X0) | ~a2_e_a0(X0)).
+
+cnf(u5138,axiom,
+    ~x2_e_b5(sK230)).
+
+cnf(u4836,axiom,
+    ~x2_s_a9(sK124)).
+
+cnf(u2574,axiom,
+    ~x2_e_b5(X0) | ~x2_s_b5(X0)).
+
+cnf(u5247,axiom,
+    ~x2_s_b4(sK234)).
+
+cnf(u2383,axiom,
+    ~a3_e_b2(X0) | ~l(X0)).
+
+cnf(u1847,axiom,
+    ~x2_s_a3(X0) | ~f(X0)).
+
+cnf(u5002,axiom,
+    ~a2_s_a4(sK56)).
+
+cnf(u5101,axiom,
+    ~x2_e_b4(sK166)).
+
+cnf(u4744,axiom,
+    ~x2_e_a5(sK31)).
+
+cnf(u2610,axiom,
+    ~x2_e_b7(X0) | ~i(X0)).
+
+cnf(u4716,axiom,
+    ~l_s_a2(sK39)).
+
+cnf(u2259,axiom,
+    ~x2_s_a8(X0) | ~tau_a12(X0)).
+
+cnf(u2592,axiom,
+    ~l_s_b6(X0) | ~x2_e_b5(X0)).
+
+cnf(u5009,axiom,
+    ~a2_s_a0(sK114)).
+
+cnf(u2174,axiom,
+    ~tau_a5(X0) | ~l_s_a3(X0)).
+
+cnf(u4741,axiom,
+    ~x2_s_a5(sK83)).
+
+cnf(u1842,axiom,
+    ~l_s_a2(X0) | ~f(X0)).
+
+cnf(u4846,axiom,
+    ~x2_e_a9(sK72)).
+
+cnf(u1900,axiom,
+    ~d(X0) | ~x2_s_a2(X0)).
+
+cnf(u4796,axiom,
+    ~m(sK92)).
+
+cnf(u2095,axiom,
+    ~x2_e_a3(X0) | ~l_s_a2(X0)).
+
+cnf(u1899,axiom,
+    ~x2_s_a9(X0) | ~x2_e_a9(X0)).
+
+cnf(u2565,axiom,
+    ~l_s_b2(X0) | ~a3_s_b1(X0)).
+
+cnf(u4754,axiom,
+    ~a2_s_a0(sK44)).
+
+cnf(u1927,axiom,
+    a2_s_a6(sK28)).
+
+cnf(u5278,axiom,
+    ~c(sK234)).
+
+cnf(u5004,axiom,
+    ~a2_s_a4(sK18)).
+
+cnf(u5095,axiom,
+    ~a(sK243)).
+
+cnf(u5251,axiom,
+    ~x2_e_b4(sK248)).
+
+cnf(u2602,axiom,
+    ~l_s_b1(X0) | ~x2_s_b2(X0)).
+
+cnf(u5166,axiom,
+    ~x2_e_b2(sK211)).
+
+cnf(u4892,axiom,
+    ~l_s_a4(sK136)).
+
+cnf(u2615,axiom,
+    ~x2_e_b1(X0) | ~random_activity_5(X0)).
+
+cnf(u1922,axiom,
+    ~random_activity_5(X0) | ~x3_s_a10(X0)).
+
+cnf(u5040,axiom,
+    ~x3_s_a10(sK252)).
+
+cnf(u5003,axiom,
+    ~a2_s_a4(sK134)).
+
+cnf(u2254,axiom,
+    ~a3_s_a3(X0) | ~x2_e_a8(X0)).
+
+cnf(u5257,axiom,
+    ~k(sK208)).
+
+cnf(u1928,axiom,
+    ~tau_a1(X0) | ~l_s_a0(X0)).
+
+cnf(u5362,axiom,
+    ~i(sK194)).
+
+cnf(u2591,axiom,
+    ~l_s_b6(X0) | ~a2_s_b0(X0)).
+
+cnf(u2166,axiom,
+    ~a3_e_a3(X0) | ~x2_e_a6(X0)).
+
+cnf(u5287,axiom,
+    ~random_activity_2(sK151)).
+
+cnf(u5256,axiom,
+    ~x2_e_b4(sK234)).
+
+cnf(u2060,axiom,
+    ~k(X0) | ~a2_e_a6(X0)).
+
+cnf(u1929,axiom,
+    x2_s_a4(sK29)).
+
+cnf(u5145,axiom,
+    ~a3_e_b2(sK205)).
+
+cnf(u5014,axiom,
+    ~random_activity_3(sK86)).
+
+cnf(u4756,axiom,
+    ~a2_s_a0(sK68)).
+
+cnf(u5211,axiom,
+    ~random_activity_3(sK231)).
+
+cnf(u5175,axiom,
+    ~x2_e_b5(sK194)).
+
+cnf(u2617,axiom,
+    ~tau_b9(X0) | ~x2_e_b6(X0)).
+
+cnf(u2096,axiom,
+    ~x2_e_a3(X0) | ~f(X0)).
+
+cnf(u4759,axiom,
+    ~a2_e_a0(sK68)).
+
+cnf(u5050,axiom,
+    ~a3_e_a2(sK105)).
+
+cnf(u1990,axiom,
+    ~tau_a8(X0) | ~random_activity_1(X0)).
+
+cnf(u5328,axiom,
+    ~d(sK248)).
+
+cnf(u5194,axiom,
+    ~x2_s_b7(sK194)).
+
+cnf(u2593,axiom,
+    ~a2_s_b0(X0) | ~i(X0)).
+
+cnf(u5216,axiom,
+    ~e(sK227)).
+
+cnf(u2485,axiom,
+    ~l_s_b6(X0) | ~a3_s_b3(X0)).
+
+cnf(u2292,axiom,
+    ~x2_e_a2(X0) | ~a3_e_a2(X0)).
+
+cnf(u2053,axiom,
+    ~x2_s_a1(X0) | ~l_s_a0(X0)).
+
+cnf(u4795,axiom,
+    ~m(sK62)).
+
+cnf(u2476,axiom,
+    ~tau_b7(X0) | ~l(X0)).
+
+cnf(u4929,axiom,
+    ~x2_s_a0(sK232)).
+
+cnf(u1997,axiom,
+    ~tau_a17(X0) | ~random_activity_4(X0)).
+
+cnf(u2268,axiom,
+    ~x3_e_a10(X0) | ~random_activity_5(X0)).
+
+cnf(u1903,axiom,
+    ~o(X0) | ~x2_e_a9(X0)).
+
+cnf(u4766,axiom,
+    ~x2_s_a2(sK112)).
+
+cnf(u4800,axiom,
+    ~x3_s_a10(sK23)).
+
+cnf(u2490,axiom,
+    l_s_b1(sK211)).
+
+cnf(u2171,axiom,
+    ~tau_a3(X0) | ~x2_s_a3(X0)).
+
+cnf(u2089,axiom,
+    ~x2_s_a11(X0) | ~a2_e_a5(X0)).
+
+cnf(u4719,axiom,
+    ~f(sK47)).
+
+cnf(u4761,axiom,
+    ~x2_e_a6(sK61)).
+
+cnf(u2475,axiom,
+    ~tau_b3(X0) | ~c(X0)).
+
+cnf(u4932,axiom,
+    ~x2_e_a1(sK55)).
+
+cnf(u1898,axiom,
+    ~x2_s_a6(X0) | ~x2_e_a6(X0)).
+
+cnf(u2176,axiom,
+    d(sK112)).
+
+cnf(u5285,axiom,
+    ~x2_e_b3(sK178)).
+
+cnf(u2423,axiom,
+    ~x2_s_b4(X0) | ~g(X0)).
+
+cnf(u5299,axiom,
+    ~tau_b10(sK189)).
+
+cnf(u2566,axiom,
+    ~a3_s_b1(X0) | ~c(X0)).
+
+cnf(u5173,axiom,
+    ~a2_s_b0(sK194)).
+
+cnf(u2399,axiom,
+    ~x2_s_b7(X0) | ~a2_s_b0(X0)).
+
+cnf(u4968,axiom,
+    ~x2_e_a6(sK73)).
+
+cnf(u4931,axiom,
+    ~x2_s_a1(sK103)).
+
+cnf(u4833,axiom,
+    ~x2_s_a9(sK58)).
+
+cnf(u4726,axiom,
+    ~x2_s_a3(sK115)).
+
+cnf(u1905,axiom,
+    x2_s_a9(sK23)).
+
+cnf(u2563,axiom,
+    ~a3_s_b1(X0) | ~x2_s_b2(X0)).
+
+cnf(u4810,axiom,
+    ~x2_s_a5(sK111)).
+
+cnf(u5334,axiom,
+    ~o(sK223)).
+
+cnf(u5282,axiom,
+    ~f(sK211)).
+
+cnf(u5356,axiom,
+    ~x2_s_b7(sK207)).
+
+cnf(u2608,axiom,
+    ~x2_s_b7(X0) | ~i(X0)).
+
+cnf(u4983,axiom,
+    ~x2_s_a4(sK176)).
+
+cnf(u2251,axiom,
+    ~x2_s_a7(X0) | ~a3_s_a3(X0)).
+
+cnf(u4942,axiom,
+    ~d(sK63)).
+
+cnf(u5245,axiom,
+    ~x2_s_b4(sK167)).
+
+cnf(u2297,axiom,
+    ~random_activity_2(X0) | ~x2_e_a1(X0)).
+
+cnf(u2062,axiom,
+    x3_s_a10(sK74)).
+
+cnf(u5061,axiom,
+    ~x2_e_a1(sK77)).
+
+cnf(u4755,axiom,
+    ~a2_s_a0(sK67)).
+
+cnf(u5222,axiom,
+    ~o(sK163)).
+
+cnf(u5131,axiom,
+    ~x2_s_b5(sK196)).
+
+cnf(u2084,axiom,
+    ~tau_a5(X0) | ~x2_e_a4(X0)).
+
+cnf(u5313,axiom,
+    ~c(sK209)).
+
+cnf(u5244,axiom,
+    ~x2_s_b4(sK248)).
+
+cnf(u2503,axiom,
+    ~a3_e_b1(X0) | ~x2_e_b4(X0)).
+
+cnf(u4978,axiom,
+    ~x2_e_a8(sK111)).
+
+cnf(u4949,axiom,
+    ~a2_e_a0(sK102)).
+
+cnf(u4835,axiom,
+    ~x2_s_a9(sK116)).
+
+cnf(u1915,axiom,
+    ~x2_e_a9(X0) | ~a2_e_a1(X0)).
+
+cnf(u5343,axiom,
+    ~i(sK196)).
+
+cnf(u5097,axiom,
+    ~x2_s_b0(sK243)).
+
+cnf(u1985,axiom,
+    ~x2_s_a11(X0) | ~tau_a15(X0)).
+
+cnf(u5242,axiom,
+    ~x2_s_b4(sK209)).
+
+cnf(u4812,axiom,
+    ~x2_e_a0(sK232)).
+
+cnf(u5231,axiom,
+    ~a(sK236)).
+
+cnf(u4902,axiom,
+    ~l_s_a4(sK61)).
+
+cnf(u5136,axiom,
+    ~x2_s_b5(sK249)).
+
+cnf(u1938,axiom,
+    ~l_s_a7(X0) | ~tau_a16(X0)).
+
+cnf(u1996,axiom,
+    ~tau_a10(X0) | ~x2_e_a7(X0)).
+
+cnf(u2270,axiom,
+    ~a3_s_a2(X0) | ~x2_s_a2(X0)).
+
+cnf(u4848,axiom,
+    ~a2_e_a0(sK114)).
+
+cnf(u2607,axiom,
+    ~l_s_b6(X0) | ~x2_s_b7(X0)).
+
+cnf(u2054,axiom,
+    ~x2_s_a1(X0) | ~random_activity_2(X0)).
+
+cnf(u4909,axiom,
+    ~a2_s_a4(sK102)).
+
+cnf(u4853,axiom,
+    ~a2_e_a1(sK4)).
+
+cnf(u2076,axiom,
+    ~x2_s_a12(X0) | ~a2_e_a4(X0)).
+
+cnf(u4980,axiom,
+    ~x2_s_a4(sK34)).
+
+cnf(u1995,axiom,
+    ~x2_e_a2(X0) | ~x2_e_a9(X0)).
+
+cnf(u4822,axiom,
+    ~a2_e_a6(sK237)).
+
+cnf(u2090,axiom,
+    ~x2_e_a11(X0) | ~a2_e_a5(X0)).
+
+cnf(u2573,axiom,
+    ~tau_b0(X0) | ~random_activity_5(X0)).
+
+cnf(u4733,axiom,
+    ~x2_s_a4(sK83)).
+
+cnf(u5204,axiom,
+    ~e(sK226)).
+
+cnf(u1956,axiom,
+    ~tau_a2(X0) | ~a3_e_a2(X0)).
+
+cnf(u4979,axiom,
+    ~x2_s_a4(sK90)).
+
+cnf(u2006,axiom,
+    ~l_s_a3(X0) | ~x2_e_a4(X0)).
+
+cnf(u5116,axiom,
+    ~x2_e_b4(sK246)).
+
+cnf(u1904,axiom,
+    ~c(X0) | ~tau_a6(X0)).
+
+cnf(u5262,axiom,
+    ~h(sK227)).
+
+cnf(u4858,axiom,
+    ~l_s_a8(sK131)).
+
+cnf(u2609,axiom,
+    ~l_s_b6(X0) | ~x2_e_b7(X0)).
+
+cnf(u2470,axiom,
+    ~l_s_b0(X0) | ~d(X0)).
+
+cnf(u2388,axiom,
+    ~x2_s_b0(X0) | ~j(X0)).
+
+cnf(u2572,axiom,
+    ~tau_b2(X0) | ~l_s_b1(X0)).
+
+cnf(u5115,axiom,
+    ~x2_e_b4(sK245)).
+
+cnf(u2402,axiom,
+    ~x2_e_b7(X0) | ~x2_e_b5(X0)).
+
+cnf(u2180,axiom,
+    ~tau_a12(X0) | ~l(X0)).
+
+cnf(u4903,axiom,
+    ~l_s_a4(sK93)).
+
+cnf(u1955,axiom,
+    ~a3_s_a2(X0) | ~tau_a2(X0)).
+
+cnf(u4990,axiom,
+    ~l_s_a8(sK56)).
+
+cnf(u2013,axiom,
+    ~a3_s_a2(X0) | ~x2_s_a5(X0)).
+
+cnf(u5024,axiom,
+    ~a3_s_a3(sK93)).
+
+cnf(u2284,axiom,
+    ~m(X0) | ~tau_a11(X0)).
+
+cnf(u5142,axiom,
+    ~x2_e_b5(sK246)).
+
+cnf(u2083,axiom,
+    ~x3_e_a10(X0) | ~tau_a14(X0)).
+
+cnf(u2378,axiom,
+    ~l_s_b3(X0) | ~a3_e_b2(X0)).
+
+cnf(u5271,axiom,
+    ~x2_s_b2(sK234)).
+
+cnf(u2424,axiom,
+    ~l_s_b1(X0) | ~tau_b1(X0)).
+
+cnf(u2387,axiom,
+    ~l_s_b5(X0) | ~l(X0)).
+
+cnf(u2298,axiom,
+    ~tau_a16(X0) | ~random_activity_3(X0)).
+
+cnf(u2400,axiom,
+    ~x2_s_b7(X0) | ~x2_e_b5(X0)).
+
+cnf(u4898,axiom,
+    ~a2_e_a6(sK60)).
+
+cnf(u2105,axiom,
+    ~a2_s_a1(X0) | ~x2_s_a1(X0)).
+
+cnf(u1966,axiom,
+    ~a3_s_a3(X0) | ~tau_a7(X0)).
+
+cnf(u4869,axiom,
+    ~x2_s_a4(sK127)).
+
+cnf(u5039,axiom,
+    ~x3_s_a10(sK6)).
+
+cnf(u1914,axiom,
+    ~l_s_a1(X0) | ~a2_e_a1(X0)).
+
+cnf(u5170,axiom,
+    ~a2_s_b0(sK238)).
+
+cnf(u4740,axiom,
+    ~x2_s_a5(sK31)).
+
+cnf(u5121,axiom,
+    ~random_activity_1(sK201)).
+
+cnf(u1984,axiom,
+    ~x2_e_a0(X0) | ~a2_e_a1(X0)).
+
+cnf(u2311,axiom,
+    ~x2_e_b0(X0) | ~x2_s_b0(X0)).
+
+cnf(u5151,axiom,
+    ~l_s_b4(sK253)).
+
+cnf(u2582,axiom,
+    x2_s_b2(sK242)).
+
+cnf(u2415,axiom,
+    ~tau_b5(X0) | ~random_activity_1(X0)).
+
+cnf(u4905,axiom,
+    ~random_activity_1(sK93)).
+
+cnf(u5312,axiom,
+    ~c(sK162)).
+
+cnf(u5201,axiom,
+    ~i(sK207)).
+
+cnf(u5034,axiom,
+    ~m(sK130)).
+
+cnf(u5005,axiom,
+    ~a2_s_a4(sK78)).
+
+cnf(u2277,axiom,
+    ~x2_e_a12(X0) | ~random_activity_4(X0)).
+
+cnf(u4776,axiom,
+    ~x2_e_a9(sK100)).
+
+cnf(u1999,axiom,
+    ~a2_e_a0(X0) | ~x2_s_a0(X0)).
+
+cnf(u2253,axiom,
+    ~a3_s_a3(X0) | ~x2_s_a8(X0)).
+
+cnf(u2291,axiom,
+    ~x2_e_a2(X0) | ~a3_s_a2(X0)).
+
+cnf(u5041,axiom,
+    ~l_s_a6(sK10)).
+
+cnf(u2267,axiom,
+    ~x2_e_a12(X0) | ~tau_a17(X0)).
+
+cnf(u4773,axiom,
+    ~x2_e_a9(sK229)).
+
+cnf(u2185,axiom,
+    ~c(X0) | ~x2_s_a4(X0)).
+
+cnf(u4815,axiom,
+    ~e(sK28)).
+
+cnf(u2078,axiom,
+    ~x2_e_a12(X0) | ~a2_e_a4(X0)).
+
+cnf(u4750,axiom,
+    ~x2_s_a3(sK70)).
+
+cnf(u1994,axiom,
+    ~x2_s_a2(X0) | ~x2_e_a9(X0)).
+
+cnf(u5112,axiom,
+    ~x2_e_b4(sK196)).
+
+cnf(u5269,axiom,
+    ~x2_s_b2(sK167)).
+
+cnf(u5064,axiom,
+    ~x2_e_a1(sK199)).
+
+cnf(u4786,axiom,
+    ~a2_e_a1(sK27)).
+
+cnf(u1959,axiom,
+    x2_s_a3(sK39)).
+
+cnf(u2001,axiom,
+    ~e(X0) | ~l_s_a8(X0)).
+
+cnf(u5310,axiom,
+    ~a3_s_b1(sK175)).
+
+cnf(u4999,axiom,
+    ~a2_s_a4(sK135)).
+
+cnf(u2571,axiom,
+    x2_s_b1(sK239)).
+
+cnf(u4817,axiom,
+    ~a2_e_a6(sK40)).
+
+cnf(u5079,axiom,
+    ~m(sK195)).
+
+cnf(u4924,axiom,
+    ~e(sK18)).
+
+cnf(u5341,axiom,
+    ~x2_e_b5(sK207)).
+
+cnf(u4944,axiom,
+    ~a2_s_a0(sK20)).
+
+cnf(u2012,axiom,
+    ~a3_s_a2(X0) | ~x2_e_a4(X0)).
+
+cnf(u2286,axiom,
+    x2_s_a5(sK143)).
+
+cnf(u5289,axiom,
+    ~k(sK206)).
+
+cnf(u5318,axiom,
+    ~a3_s_b1(sK173)).
+
+cnf(u5266,axiom,
+    ~x2_e_b6(sK208)).
+
+cnf(u5340,axiom,
+    ~a2_s_b0(sK197)).
+
+cnf(u5288,axiom,
+    ~random_activity_2(sK190)).
+
+cnf(u5229,axiom,
+    ~a(sK196)).
+
+cnf(u2207,axiom,
+    ~x2_s_a11(X0) | ~random_activity_3(X0)).
+
+cnf(u4923,axiom,
+    ~l_s_a8(sK78)).
+
+cnf(u2092,axiom,
+    ~a2_e_a5(X0) | ~e(X0)).
+
+cnf(u1961,axiom,
+    ~a3_e_a3(X0) | ~x2_s_a5(X0)).
+
+cnf(u4959,axiom,
+    ~m(sK22)).
+
+cnf(u2011,axiom,
+    ~a3_s_a2(X0) | ~x2_s_a4(X0)).
+
+cnf(u4788,axiom,
+    ~a2_e_a1(sK63)).
+
+cnf(u5243,axiom,
+    ~x2_s_b4(sK223)).
+
+cnf(u2106,axiom,
+    ~a2_s_a1(X0) | ~x2_e_a1(X0)).
+
+cnf(u2589,axiom,
+    ~x2_e_b4(X0) | ~o(X0)).
+
+cnf(u5338,axiom,
+    ~o(sK198)).
+
+cnf(u5327,axiom,
+    ~d(sK223)).
+
+cnf(u5360,axiom,
+    ~x2_e_b7(sK197)).
+
+cnf(u5053,axiom,
+    ~x2_s_a2(sK72)).
+
+cnf(u4954,axiom,
+    ~l_s_a6(sK89)).
+
+cnf(u2022,axiom,
+    x2_s_a6(sK61)).
+
+cnf(u2382,axiom,
+    ~a3_e_b2(X0) | ~l_s_b5(X0)).
+
+cnf(u4811,axiom,
+    ~x2_e_a0(sK107)).
+
+cnf(u5226,axiom,
+    ~l_s_b6(sK208)).
+
+cnf(u2486,axiom,
+    ~a3_e_b3(X0) | ~l_s_b6(X0)).
+
+cnf(u2404,axiom,
+    ~tau_b6(X0) | ~m(X0)).
+
+cnf(u2588,axiom,
+    ~a3_s_b1(X0) | ~o(X0)).
+
+cnf(u5120,axiom,
+    ~random_activity_1(sK225)).
+
+cnf(u2418,axiom,
+    ~x2_s_b5(X0) | ~random_activity_2(X0)).
+
+cnf(u2380,axiom,
+    ~a3_e_b2(X0) | ~l_s_b4(X0)).
+
+cnf(u2196,axiom,
+    ~a2_s_a5(X0) | ~x2_e_a11(X0)).
+
+cnf(u2085,axiom,
+    ~x2_e_a8(X0) | ~l_s_a6(X0)).
+
+cnf(u4961,axiom,
+    ~x2_s_a12(sK102)).
+
+cnf(u2029,axiom,
+    ~tau_a3(X0) | ~f(X0)).
+
+cnf(u4863,axiom,
+    ~x2_e_a4(sK34)).
+
+cnf(u2389,axiom,
+    x2_s_b3(sK178)).
+
+cnf(u2061,axiom,
+    ~a2_e_a6(X0) | ~h(X0)).
+
+cnf(u4832,axiom,
+    ~x2_s_a9(sK41)).
+
+cnf(u2394,axiom,
+    ~tau_b10(X0) | ~x2_s_b7(X0)).
+
+cnf(u2312,axiom,
+    ~tau_b7(X0) | ~l_s_b5(X0)).
+
+cnf(u2403,axiom,
+    ~l_s_b2(X0) | ~c(X0)).
+
+cnf(u2186,axiom,
+    ~x2_e_a7(X0) | ~x2_s_a7(X0)).
+
+cnf(u2075,axiom,
+    ~x2_s_a12(X0) | ~a2_s_a4(X0)).
+
+cnf(u2416,axiom,
+    ~x2_s_b3(X0) | ~a3_s_b2(X0)).
+
+cnf(u4793,axiom,
+    ~l_s_a5(sK62)).
+
+cnf(u1982,axiom,
+    ~a2_s_a1(X0) | ~x2_e_a0(X0)).
+
+cnf(u2379,axiom,
+    ~a3_e_b2(X0) | ~random_activity_1(X0)).
+
+cnf(u4964,axiom,
+    ~l_s_a3(sK176)).
+
+cnf(u2425,axiom,
+    ~tau_b1(X0) | ~f(X0)).
+
+cnf(u4829,axiom,
+    ~a2_e_a1(sK37)).
+
+cnf(u5075,axiom,
+    ~x2_s_b4(sK198)).
+
+cnf(u2000,axiom,
+    ~a2_e_a0(X0) | ~a2_e_a1(X0)).
+
+cnf(u2401,axiom,
+    ~x2_e_b7(X0) | ~a2_s_b0(X0)).
+
+cnf(u2327,axiom,
+    ~a2_e_b0(X0) | ~a(X0)).
+
+cnf(u5203,axiom,
+    ~e(sK135)).
+
+cnf(u2595,axiom,
+    ~l_s_b2(X0) | ~tau_b3(X0)).
+
+cnf(u4717,axiom,
+    ~l_s_a2(sK47)).
+
+cnf(u4872,axiom,
+    ~x2_e_a5(sK127)).
+
+cnf(u4963,axiom,
+    ~l_s_a3(sK174)).
+
+cnf(u4737,axiom,
+    ~x2_e_a4(sK83)).
+
+cnf(u2293,axiom,
+    a2_s_a0(sK145)).
+
+cnf(u5086,axiom,
+    ~x2_e_b4(sK163)).
+
+cnf(u2015,axiom,
+    a2_s_a5(sK56)).
+
 cnf(u2269,axiom,
-    ~tau_a17(X0) | ~x2_s_a12(X0)).
+    ~tau_a10(X0) | ~x2_s_a7(X0)).
 
 % # SZS output end Saturation.
 % ------------------------------
@@ -4033,8 +3595,8 @@ cnf(u2269,axiom,
 % Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
 % Termination reason: Satisfiable
 
-% Memory used [KB]: 3466
-% Time elapsed: 0.021 s
+% Memory used [KB]: 3144
+% Time elapsed: 0.020 s
 % ------------------------------
 % ------------------------------
 

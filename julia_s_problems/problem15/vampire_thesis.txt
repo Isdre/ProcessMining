@@ -2,15 +2,15 @@
 % Refutation found. Thanks to Tanya!
 % SZS status ContradictoryAxioms for tptp_thesis
 % SZS output start Proof for tptp_thesis
-12. ! [X0] : ~((repair_complex(X0) | l_s(X0)) & (test_repair(X0) | l_s(X0))) [input]
-43. ? [X0] : l_s(X0) [input]
-77. ! [X0] : ((~repair_complex(X0) & ~l_s(X0)) | (~test_repair(X0) & ~l_s(X0))) [ennf transformation 12]
-160. ? [X0] : l_s(X0) => l_s(sK24) [choice axiom]
-161. l_s(sK24) [skolemisation 43,160]
-181. ~l_s(X0) | ~l_s(X0) [cnf transformation 77]
-246. l_s(sK24) [cnf transformation 161]
-252. ~l_s(X0) [duplicate literal removal 181]
-392. $false [subsumption resolution 246,252]
+7. ! [X0] : ~((repair_simple(X0) | l_s(X0)) & (test_repair(X0) | l_s(X0))) [input]
+39. ? [X0] : l_s(X0) [input]
+78. ! [X0] : ((~repair_simple(X0) & ~l_s(X0)) | (~test_repair(X0) & ~l_s(X0))) [ennf transformation 7]
+165. ? [X0] : l_s(X0) => l_s(sK22) [choice axiom]
+166. l_s(sK22) [skolemisation 39,165]
+195. ~l_s(X0) | ~l_s(X0) [cnf transformation 78]
+250. l_s(sK22) [cnf transformation 166]
+290. ~l_s(X0) [duplicate literal removal 195]
+395. $false [subsumption resolution 250,290]
 % SZS output end Proof for tptp_thesis
 % ------------------------------
 % Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
@@ -18,7 +18,7 @@
 % Termination reason: Refutation
 
 % Memory used [KB]: 499
-% Time elapsed: 0.002 s
+% Time elapsed: 0.001 s
 % ------------------------------
 % ------------------------------
 

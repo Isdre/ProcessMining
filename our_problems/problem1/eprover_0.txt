@@ -1,0 +1,518 @@
+# Initializing proof state
+# Scanning for AC axioms
+#
+#cnf(i_0_66, plain, (register_request(esk29_0))).
+#
+#cnf(i_0_33, plain, (l_s_0(esk13_0))).
+#
+#cnf(i_0_18, plain, (a2_s_0(esk8_0))).
+#
+#cnf(i_0_4, plain, (~l_s_0(X1)|~register_request(X1))).
+#
+#cnf(i_0_7, plain, (x2_s_1(esk4_0))).
+#
+#cnf(i_0_40, plain, (x2_s_0(esk19_0))).
+#
+#cnf(i_0_12, plain, (x2_e_0(esk5_0)|~examine_thoroughly(X1))).
+#
+#cnf(i_0_68, plain, (~register_request(esk13_0))).
+#
+#cnf(i_0_13, plain, (x2_e_0(esk5_0)|~examine_casually(X1))).
+#
+#cnf(i_0_48, plain, (a2_e_0(esk23_0)|~x2_e_0(X1))).
+#
+#cnf(i_0_64, plain, (a2_e_0(esk28_0)|~check_ticket(X1))).
+#
+#cnf(i_0_3, plain, (~decide(X1)|~register_request(X1))).
+#
+#cnf(i_0_54, plain, (x2_e_1(esk24_0)|~reject_request(X1))).
+#
+#cnf(i_0_53, plain, (x2_e_1(esk24_0)|~pay_compensation(X1))).
+#
+#cnf(i_0_59, plain, (decide(esk25_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_32, plain, (~x2_s_1(X1)|~register_request(X1))).
+#
+#cnf(i_0_58, plain, (decide(esk25_0)|~a2_e_0(X1))).
+#
+#cnf(i_0_49, plain, (a2_e_0(esk23_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_35, plain, (check_ticket(esk14_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_70, plain, (~register_request(esk4_0))).
+#
+#cnf(i_0_72, plain, (a2_e_0(esk28_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_6, plain, (a2_e_0(esk3_0)|a2_s_0(esk3_0))).
+#
+#cnf(i_0_42, plain, (reinitiate_request(esk20_0)|~reinitiate_request(X1)|~decide(X2))).
+#
+#cnf(i_0_31, plain, (~x2_e_1(X1)|~register_request(X1))).
+#
+#cnf(i_0_44, plain, (reinitiate_request(esk20_0)|~reinitiate_request(X1)|~a2_s_0(X2))).
+#
+#cnf(i_0_75, plain, (reinitiate_request(esk20_0)|~reinitiate_request(X1))).
+##
+#cnf(i_0_55, plain, (~decide(X1)|~l_s_0(X1))).
+#
+#cnf(i_0_60, plain, (examine_thoroughly(esk27_0)|~x2_s_0(X2)|~examine_thoroughly(X1))).
+##
+#cnf(i_0_26, plain, (reject_request(esk9_0)|~x2_s_1(X2)|~reject_request(X1))).
+#
+#cnf(i_0_56, plain, (~a2_s_0(X1)|~l_s_0(X1))).
+##
+#cnf(i_0_23, plain, (pay_compensation(esk10_0)|~x2_s_1(X2)|~pay_compensation(X1))).
+##
+#cnf(i_0_83, plain, (~l_s_0(esk8_0))).
+#
+#cnf(i_0_63, plain, (examine_casually(esk26_0)|~examine_casually(X1)|~x2_s_0(X2))).
+##
+#cnf(i_0_1, plain, (decide(esk2_0)|l_s_0(esk1_0)|~register_request(X1))).
+#
+#cnf(i_0_22, plain, (~x2_s_1(X1)|~l_s_0(X1))).
+#
+#cnf(i_0_88, plain, (l_s_0(esk1_0)|~l_s_0(esk2_0)|~register_request(X1))).
+#
+#cnf(i_0_89, plain, (l_s_0(esk1_0)|~register_request(esk2_0)|~register_request(X1))).
+#
+#cnf(i_0_27, plain, (a2_s_0(esk11_0)|decide(esk12_0)|~reinitiate_request(X1))).
+#
+#cnf(i_0_90, plain, (~l_s_0(esk4_0))).
+#
+#cnf(i_0_92, plain, (a2_s_0(esk11_0)|~reinitiate_request(X1)|~l_s_0(esk12_0))).
+#
+#cnf(i_0_93, plain, (a2_s_0(esk11_0)|~reinitiate_request(X1)|~register_request(esk12_0))).
+#
+#cnf(i_0_39, plain, (a2_s_0(esk17_0)|decide(esk18_0)|~l_s_0(X1))).
+#
+#cnf(i_0_14, plain, (~reinitiate_request(X1)|~l_s_0(X1))).
+#
+#cnf(i_0_96, plain, (a2_s_0(esk17_0)|~l_s_0(esk18_0)|~l_s_0(X1))).
+#
+#cnf(i_0_97, plain, (a2_s_0(esk17_0)|~l_s_0(X1)|~register_request(esk18_0))).
+#
+#cnf(i_0_62, plain, (examine_casually(esk26_0)|examine_thoroughly(esk27_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_98, plain, (~reinitiate_request(esk13_0))).
+#
+#cnf(i_0_34, plain, (x2_s_0(esk15_0)|x2_e_0(esk16_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_25, plain, (pay_compensation(esk10_0)|reject_request(esk9_0)|~x2_s_1(X1))).
+#
+#cnf(i_0_17, plain, (x2_e_1(esk7_0)|x2_s_1(esk6_0)|~l_s_0(X1))).
+#
+#cnf(i_0_21, plain, (~x2_e_1(X1)|~l_s_0(X1))).
+#
+#cnf(i_0_107, plain, (x2_s_1(esk6_0)|~l_s_0(X1)|~register_request(esk7_0))).
+#
+#cnf(i_0_108, plain, (x2_s_1(esk6_0)|~l_s_0(esk7_0)|~l_s_0(X1))).
+#
+#cnf(i_0_16, plain, (x2_e_1(esk7_0)|x2_s_1(esk6_0)|~decide(X1))).
+#
+#cnf(i_0_46, plain, (~a2_s_0(X1)|~decide(X1))).
+#
+#cnf(i_0_113, plain, (x2_s_1(esk6_0)|~decide(X1)|~l_s_0(esk7_0))).
+#
+#cnf(i_0_114, plain, (x2_s_1(esk6_0)|~decide(X1)|~register_request(esk7_0))).
+#
+#cnf(i_0_121, plain, (x2_s_1(esk6_0)|~a2_e_0(X1)|~l_s_0(esk7_0))).
+#
+#cnf(i_0_45, plain, (~a2_e_0(X1)|~decide(X1))).
+#
+#cnf(i_0_126, plain, (x2_s_1(esk6_0)|~a2_e_0(X1)|~register_request(esk7_0))).
+#
+#cnf(i_0_131, plain, (x2_s_1(esk6_0)|~x2_s_0(X1)|~l_s_0(esk7_0))).
+#
+#cnf(i_0_141, plain, (x2_s_1(esk6_0)|~l_s_0(esk7_0))).
+#
+#cnf(i_0_20, plain, (~x2_s_1(X1)|~decide(X1))).
+#
+#cnf(i_0_139, plain, (x2_s_1(esk6_0)|~x2_s_0(X1)|~register_request(esk7_0))).
+#
+#cnf(i_0_149, plain, (x2_s_1(esk6_0)|~register_request(esk7_0))).
+#
+#cnf(i_0_119, plain, (l_s_0(esk1_0)|~a2_s_0(esk2_0)|~register_request(X1))).
+#
+#cnf(i_0_36, plain, (~reinitiate_request(X1)|~decide(X1))).
+#
+#cnf(i_0_135, plain, (a2_s_0(esk17_0)|~a2_e_0(esk18_0)|~l_s_0(X1))).
+#
+#cnf(i_0_136, plain, (a2_s_0(esk11_0)|~reinitiate_request(X1)|~a2_e_0(esk12_0))).
+#
+#cnf(i_0_137, plain, (l_s_0(esk1_0)|~a2_e_0(esk2_0)|~register_request(X1))).
+#
+#cnf(i_0_19, plain, (~x2_e_1(X1)|~decide(X1))).
+#
+#cnf(i_0_146, plain, (a2_s_0(esk17_0)|~x2_s_1(esk18_0)|~l_s_0(X1))).
+#
+#cnf(i_0_147, plain, (a2_s_0(esk11_0)|~reinitiate_request(X1)|~x2_s_1(esk12_0))).
+#
+#cnf(i_0_148, plain, (l_s_0(esk1_0)|~x2_s_1(esk2_0)|~register_request(X1))).
+#
+#cnf(i_0_2, plain, (~x2_e_0(X1)|~examine_thoroughly(X1))).
+#
+#cnf(i_0_157, plain, (x2_s_1(esk6_0)|~decide(esk7_0)|~decide(X1))).
+#
+#cnf(i_0_158, plain, (x2_s_1(esk6_0)|~decide(esk7_0)|~l_s_0(X1))).
+#
+#cnf(i_0_117, plain, (a2_s_0(esk17_0)|~a2_s_0(esk18_0)|~l_s_0(X1))).
+#
+#cnf(i_0_57, plain, (~x2_s_0(X1)|~examine_thoroughly(X1))).
+#
+#cnf(i_0_118, plain, (a2_s_0(esk11_0)|~reinitiate_request(X1)|~a2_s_0(esk12_0))).
+#
+#cnf(i_0_154, plain, (a2_s_0(esk17_0)|~reinitiate_request(esk18_0)|~l_s_0(X1))).
+#
+#cnf(i_0_155, plain, (a2_s_0(esk11_0)|~reinitiate_request(esk12_0)|~reinitiate_request(X1))).
+#
+#cnf(i_0_29, plain, (~examine_casually(X1)|~examine_thoroughly(X1))).
+##
+#cnf(i_0_156, plain, (l_s_0(esk1_0)|~reinitiate_request(esk2_0)|~register_request(X1))).
+#
+#cnf(i_0_102, plain, (x2_e_0(esk5_0)|examine_thoroughly(esk27_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_50, plain, (~a2_s_0(X1)|~x2_e_0(X1))).
+#
+#cnf(i_0_171, plain, (x2_e_0(esk5_0)|~x2_s_0(X1))).
+##
+#cnf(i_0_173, plain, (x2_s_0(esk15_0)|~a2_s_0(esk16_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_8, plain, (~a2_e_0(X1)|~x2_e_0(X1))).
+#
+#cnf(i_0_176, plain, (x2_s_0(esk15_0)|~a2_e_0(esk16_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_104, plain, (x2_s_0(esk15_0)|a2_e_0(esk23_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_106, plain, (x2_e_1(esk24_0)|reject_request(esk9_0)|~x2_s_1(X1))).
+#
+#cnf(i_0_67, plain, (~x2_s_0(X1)|~x2_e_0(X1))).
+#
+#cnf(i_0_179, plain, (x2_e_1(esk24_0)|~x2_s_1(X1))).
+#
+#cnf(i_0_180, plain, (x2_s_0(esk15_0)|~x2_s_0(esk16_0)|~a2_s_0(X1))).
+##
+#cnf(i_0_28, plain, (~examine_casually(X1)|~x2_e_0(X1))).
+#
+#cnf(i_0_186, plain, (examine_thoroughly(esk27_0)|~x2_s_0(X1)|~x2_e_0(esk26_0))).
+###
+#cnf(i_0_5, plain, (~pay_compensation(X1)|~reject_request(X1))).
+####
+#cnf(i_0_15, plain, (~x2_s_1(X1)|~reject_request(X1))).
+##
+#cnf(i_0_41, plain, (a2_s_0(esk21_0)|decide(esk22_0)|~reinitiate_request(X1)|~decide(X2))).
+#
+#cnf(i_0_195, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~x2_s_1(esk22_0)|~decide(X2))).
+#
+#cnf(i_0_47, plain, (~x2_e_1(X1)|~reject_request(X1))).
+#
+#cnf(i_0_196, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~decide(X2)|~l_s_0(esk22_0))).
+#
+#cnf(i_0_197, plain, (a2_s_0(esk21_0)|~reinitiate_request(esk22_0)|~reinitiate_request(X1)|~decide(X2))).
+#
+#cnf(i_0_198, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~a2_s_0(esk22_0)|~decide(X2))).
+#
+#cnf(i_0_11, plain, (~x2_s_1(X1)|~pay_compensation(X1))).
+#
+#cnf(i_0_228, plain, (reject_request(esk9_0)|~x2_s_1(esk10_0)|~x2_s_1(X1))).
+##
+#cnf(i_0_199, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~a2_e_0(esk22_0)|~decide(X2))).
+#
+#cnf(i_0_38, plain, (~x2_e_1(X1)|~pay_compensation(X1))).
+#
+#cnf(i_0_240, plain, (reject_request(esk9_0)|~x2_e_1(esk10_0)|~x2_s_1(X1))).
+##
+#cnf(i_0_200, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~decide(X2)|~register_request(esk22_0))).
+#
+#cnf(i_0_52, plain, (~check_ticket(X1)|~a2_s_0(X1))).
+#
+#cnf(i_0_203, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~x2_s_1(esk22_0)|~a2_e_0(X2))).
+#
+#cnf(i_0_210, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~a2_e_0(X2)|~l_s_0(esk22_0))).
+#
+#cnf(i_0_216, plain, (a2_s_0(esk21_0)|~reinitiate_request(esk22_0)|~reinitiate_request(X1)|~a2_e_0(X2))).
+#
+#cnf(i_0_51, plain, (~x2_s_0(X1)|~a2_s_0(X1))).
+#
+#cnf(i_0_222, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~a2_e_0(X2)|~a2_s_0(esk22_0))).
+#
+#cnf(i_0_246, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~a2_e_0(X2)|~register_request(esk22_0))).
+#
+#cnf(i_0_253, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~x2_s_0(X2)|~x2_s_1(esk22_0))).
+#
+#cnf(i_0_264, plain, (~a2_s_0(esk19_0))).
+#
+#cnf(i_0_275, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~x2_s_1(esk22_0))).
+#
+#cnf(i_0_257, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~x2_s_0(X2)|~l_s_0(esk22_0))).
+#
+#cnf(i_0_278, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~l_s_0(esk22_0))).
+#
+#cnf(i_0_37, plain, (~reinitiate_request(X1)|~a2_s_0(X1))).
+#
+#cnf(i_0_261, plain, (a2_s_0(esk21_0)|~reinitiate_request(esk22_0)|~reinitiate_request(X1)|~x2_s_0(X2))).
+#
+#cnf(i_0_292, plain, (a2_s_0(esk21_0)|~reinitiate_request(esk22_0)|~reinitiate_request(X1))).
+#
+#cnf(i_0_268, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~x2_s_0(X2)|~a2_s_0(esk22_0))).
+#
+#cnf(i_0_291, plain, (~reinitiate_request(esk8_0))).
+#
+#cnf(i_0_297, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~a2_s_0(esk22_0))).
+#
+#cnf(i_0_272, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~x2_s_0(X2)|~register_request(esk22_0))).
+#
+#cnf(i_0_302, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~register_request(esk22_0))).
+#
+#cnf(i_0_10, plain, (~check_ticket(X1)|~a2_e_0(X1))).
+#
+#cnf(i_0_233, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~a2_e_0(esk22_0)|~a2_s_0(X2))).
+#
+#cnf(i_0_234, plain, (a2_s_0(esk21_0)|~reinitiate_request(X1)|~a2_e_0(esk22_0)|~a2_e_0(X2))).
+##
+#cnf(i_0_9, plain, (~x2_s_0(X1)|~a2_e_0(X1))).
+#
+#cnf(i_0_311, plain, (a2_s_0(esk3_0)|~x2_s_0(esk3_0))).
+#
+#cnf(i_0_310, plain, (x2_s_0(esk15_0)|~x2_s_0(esk23_0)|~a2_s_0(X1))).
+##
+#cnf(i_0_30, plain, (~x2_e_1(X1)|~x2_s_1(X1))).
+#
+#cnf(i_0_314, plain, (x2_s_1(esk6_0)|~x2_s_1(esk7_0)|~decide(X1))).
+#
+#cnf(i_0_317, plain, (x2_s_1(esk6_0)|~x2_s_1(esk7_0)|~a2_e_0(X1))).
+#
+#cnf(i_0_323, plain, (x2_s_1(esk6_0)|~x2_s_0(X1)|~x2_s_1(esk7_0))).
+#
+#cnf(i_0_65, plain, (~examine_casually(X1)|~x2_s_0(X1))).
+#
+#cnf(i_0_326, plain, (x2_s_1(esk6_0)|~x2_s_1(esk7_0))).
+##
+#cnf(i_0_331, plain, (examine_thoroughly(esk27_0)|~x2_s_0(esk26_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_69, plain, (~a2_s_0(X1)|~register_request(esk25_0))).
+###
+#cnf(i_0_43, plain, (a2_s_0(esk21_0)|decide(esk22_0)|~reinitiate_request(X1)|~a2_s_0(X2))).
+#
+#cnf(i_0_348, plain, (~register_request(esk25_0))).
+########
+#cnf(i_0_77, plain, (~a2_s_0(X1)|~l_s_0(esk25_0))).
+####
+#cnf(i_0_370, plain, (~l_s_0(esk25_0))).
+######
+#cnf(i_0_236, plain, (a2_s_0(esk21_0)|a2_s_0(esk17_0)|~reinitiate_request(X1)|~a2_e_0(esk22_0)|~l_s_0(X2))).
+#
+#cnf(i_0_237, plain, (a2_s_0(esk21_0)|a2_s_0(esk11_0)|~reinitiate_request(X1)|~reinitiate_request(X2)|~a2_e_0(esk22_0))).
+#
+#cnf(i_0_116, plain, (~a2_e_0(X1)|~a2_s_0(esk25_0))).
+#
+#cnf(i_0_374, plain, (a2_s_0(esk3_0)|~a2_s_0(esk25_0))).
+#
+#cnf(i_0_373, plain, (x2_s_0(esk15_0)|~a2_s_0(esk25_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_238, plain, (a2_s_0(esk21_0)|l_s_0(esk1_0)|~reinitiate_request(X1)|~a2_e_0(esk22_0)|~register_request(X2))).
+#
+#cnf(i_0_145, plain, (~x2_s_1(esk25_0)|~a2_e_0(X1))).
+#
+#cnf(i_0_379, plain, (a2_s_0(esk3_0)|~x2_s_1(esk25_0))).
+#
+#cnf(i_0_378, plain, (x2_s_0(esk15_0)|~x2_s_1(esk25_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_357, plain, (x2_s_1(esk6_0)|a2_s_0(esk21_0)|~reinitiate_request(X1)|~a2_s_0(X2)|~decide(esk7_0))).
+#
+#cnf(i_0_152, plain, (~reinitiate_request(esk25_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_393, plain, (~reinitiate_request(esk25_0))).
+##
+#cnf(i_0_175, plain, (~x2_s_0(X1)|~a2_s_0(esk5_0))).
+#
+#cnf(i_0_394, plain, (~a2_s_0(esk5_0))).
+#
+#cnf(i_0_183, plain, (~x2_s_1(X1)|~l_s_0(esk24_0))).
+#
+#cnf(i_0_402, plain, (~l_s_0(esk24_0))).
+#
+#cnf(i_0_184, plain, (~x2_s_1(X1)|~register_request(esk24_0))).
+#
+#cnf(i_0_405, plain, (~register_request(esk24_0))).
+#
+#cnf(i_0_372, plain, (~x2_s_0(X1)|~a2_s_0(esk25_0))).
+#
+#cnf(i_0_406, plain, (~a2_s_0(esk25_0))).
+#
+#cnf(i_0_377, plain, (~x2_s_0(X1)|~x2_s_1(esk25_0))).
+#
+#cnf(i_0_412, plain, (~x2_s_1(esk25_0))).
+##
+#cnf(i_0_133, plain, (~a2_e_0(esk25_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_134, plain, (~a2_e_0(esk25_0)|~a2_e_0(X1))).
+###
+#cnf(i_0_177, plain, (~x2_s_0(X1)|~a2_e_0(esk5_0))).
+#
+#cnf(i_0_181, plain, (~x2_s_0(esk5_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_182, plain, (~x2_s_1(X1)|~decide(esk24_0))).
+#
+#cnf(i_0_251, plain, (~a2_s_0(esk14_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_307, plain, (~a2_e_0(esk14_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_308, plain, (~x2_s_0(esk28_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_309, plain, (~x2_s_0(esk23_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_313, plain, (~x2_s_1(esk24_0)|~x2_s_1(X1))).
+##
+#cnf(i_0_418, plain, (~x2_s_0(X1)|~a2_e_0(esk25_0))).
+#
+#cnf(i_0_437, plain, (~x2_s_0(esk23_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_142, plain, (~l_s_0(esk7_0)|~register_request(esk6_0))).
+#
+#cnf(i_0_143, plain, (~l_s_0(esk6_0)|~l_s_0(esk7_0))).
+#
+#cnf(i_0_150, plain, (~register_request(esk6_0)|~register_request(esk7_0))).
+#
+#cnf(i_0_151, plain, (~l_s_0(esk6_0)|~register_request(esk7_0))).
+#
+#cnf(i_0_438, plain, (~x2_s_1(esk24_0)|~l_s_0(esk7_0))).
+#
+#cnf(i_0_439, plain, (~x2_s_1(esk24_0)|~register_request(esk7_0))).
+#
+#cnf(i_0_61, plain, (~examine_casually(X1)|~x2_s_0(X3)|~examine_thoroughly(X2))).
+#
+#cnf(i_0_24, plain, (~x2_s_1(X3)|~pay_compensation(X2)|~reject_request(X1))).
+###
+#cnf(i_0_159, plain, (~x2_s_0(X1)|~x2_e_0(esk27_0)|~examine_thoroughly(X2))).
+#
+#cnf(i_0_161, plain, (~x2_s_0(esk27_0)|~x2_s_0(X1)|~examine_thoroughly(X2))).
+##
+#cnf(i_0_185, plain, (~examine_casually(X1)|~x2_s_0(X2)|~x2_e_0(esk26_0))).
+###
+#cnf(i_0_193, plain, (~x2_s_1(esk9_0)|~x2_s_1(X1)|~reject_request(X2))).
+#
+#cnf(i_0_208, plain, (~x2_e_1(esk9_0)|~x2_s_1(X1)|~reject_request(X2))).
+#
+#cnf(i_0_227, plain, (~x2_s_1(esk10_0)|~x2_s_1(X1)|~pay_compensation(X2))).
+#
+#cnf(i_0_239, plain, (~x2_e_1(esk10_0)|~x2_s_1(X1)|~pay_compensation(X2))).
+###
+#cnf(i_0_330, plain, (~examine_casually(X1)|~x2_s_0(esk26_0)|~x2_s_0(X2))).
+#
+#cnf(i_0_168, plain, (~reinitiate_request(esk1_0)|~reinitiate_request(esk2_0)|~register_request(X1))).
+##
+#cnf(i_0_464, plain, (~reinitiate_request(esk1_0)|~reinitiate_request(esk2_0))).
+#
+#cnf(i_0_284, plain, (~reinitiate_request(esk17_0)|~l_s_0(X1)|~register_request(esk18_0))).
+#
+#cnf(i_0_465, plain, (~reinitiate_request(esk17_0)|~register_request(esk18_0))).
+#
+#cnf(i_0_286, plain, (~reinitiate_request(esk17_0)|~reinitiate_request(esk18_0)|~l_s_0(X1))).
+#
+#cnf(i_0_468, plain, (~reinitiate_request(esk17_0)|~reinitiate_request(esk18_0))).
+#
+#cnf(i_0_91, plain, (~register_request(esk1_0)|~register_request(esk2_0)|~register_request(X1))).
+#
+#cnf(i_0_94, plain, (~reinitiate_request(X1)|~l_s_0(esk11_0)|~l_s_0(esk12_0))).
+#
+#cnf(i_0_95, plain, (~reinitiate_request(X1)|~l_s_0(esk11_0)|~register_request(esk12_0))).
+#
+#cnf(i_0_99, plain, (~reinitiate_request(esk1_0)|~register_request(esk2_0)|~register_request(X1))).
+#
+#cnf(i_0_100, plain, (~l_s_0(esk17_0)|~l_s_0(esk18_0)|~l_s_0(X1))).
+#
+#cnf(i_0_101, plain, (~l_s_0(esk17_0)|~l_s_0(X1)|~register_request(esk18_0))).
+#
+#cnf(i_0_160, plain, (~a2_s_0(esk18_0)|~l_s_0(esk17_0)|~l_s_0(X1))).
+#
+#cnf(i_0_162, plain, (~reinitiate_request(X1)|~a2_s_0(esk12_0)|~l_s_0(esk11_0))).
+#
+#cnf(i_0_163, plain, (~reinitiate_request(esk18_0)|~l_s_0(esk17_0)|~l_s_0(X1))).
+#
+#cnf(i_0_164, plain, (~reinitiate_request(esk12_0)|~reinitiate_request(X1)|~l_s_0(esk11_0))).
+#
+#cnf(i_0_167, plain, (~reinitiate_request(esk2_0)|~register_request(esk1_0)|~register_request(X1))).
+#
+#cnf(i_0_188, plain, (~x2_s_0(esk27_0)|~x2_s_0(X1)|~x2_e_0(esk26_0))).
+#
+#cnf(i_0_190, plain, (~x2_s_0(X1)|~x2_e_0(esk27_0)|~x2_e_0(esk26_0))).
+#
+#cnf(i_0_230, plain, (~x2_s_1(esk9_0)|~x2_s_1(esk10_0)|~x2_s_1(X1))).
+#
+#cnf(i_0_231, plain, (~x2_e_1(esk9_0)|~x2_s_1(esk10_0)|~x2_s_1(X1))).
+#
+#cnf(i_0_242, plain, (~x2_e_1(esk10_0)|~x2_s_1(esk9_0)|~x2_s_1(X1))).
+#
+#cnf(i_0_243, plain, (~x2_e_1(esk9_0)|~x2_e_1(esk10_0)|~x2_s_1(X1))).
+#
+#cnf(i_0_265, plain, (~a2_s_0(esk15_0)|~a2_s_0(esk16_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_266, plain, (~x2_s_0(esk16_0)|~a2_s_0(esk15_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_281, plain, (~reinitiate_request(X1)|~l_s_0(esk21_0)|~l_s_0(esk22_0))).
+#
+#cnf(i_0_282, plain, (~reinitiate_request(esk21_0)|~reinitiate_request(X1)|~l_s_0(esk22_0))).
+#
+#cnf(i_0_283, plain, (~reinitiate_request(esk17_0)|~l_s_0(esk18_0)|~l_s_0(X1))).
+#
+#cnf(i_0_285, plain, (~reinitiate_request(esk17_0)|~a2_s_0(esk18_0)|~l_s_0(X1))).
+#
+#cnf(i_0_287, plain, (~reinitiate_request(esk11_0)|~reinitiate_request(X1)|~l_s_0(esk12_0))).
+#
+#cnf(i_0_288, plain, (~reinitiate_request(esk11_0)|~reinitiate_request(X1)|~register_request(esk12_0))).
+#
+#cnf(i_0_289, plain, (~reinitiate_request(esk11_0)|~reinitiate_request(X1)|~a2_s_0(esk12_0))).
+#
+#cnf(i_0_290, plain, (~reinitiate_request(esk11_0)|~reinitiate_request(esk12_0)|~reinitiate_request(X1))).
+#
+#cnf(i_0_295, plain, (~reinitiate_request(esk21_0)|~reinitiate_request(esk22_0)|~reinitiate_request(X1))).
+#
+#cnf(i_0_296, plain, (~reinitiate_request(esk22_0)|~reinitiate_request(X1)|~l_s_0(esk21_0))).
+#
+#cnf(i_0_300, plain, (~reinitiate_request(esk21_0)|~reinitiate_request(X1)|~a2_s_0(esk22_0))).
+#
+#cnf(i_0_301, plain, (~reinitiate_request(X1)|~a2_s_0(esk22_0)|~l_s_0(esk21_0))).
+#
+#cnf(i_0_305, plain, (~reinitiate_request(esk21_0)|~reinitiate_request(X1)|~register_request(esk22_0))).
+#
+#cnf(i_0_306, plain, (~reinitiate_request(X1)|~l_s_0(esk21_0)|~register_request(esk22_0))).
+#
+#cnf(i_0_333, plain, (~x2_s_0(esk27_0)|~x2_s_0(esk26_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_335, plain, (~x2_s_0(esk26_0)|~x2_s_0(X1)|~x2_e_0(esk27_0))).
+#
+#cnf(i_0_420, plain, (~x2_s_0(esk5_0)|~a2_s_0(esk16_0)|~a2_s_0(X1))).
+##
+#cnf(i_0_423, plain, (~reinitiate_request(X1)|~a2_s_0(esk14_0)|~l_s_0(esk22_0))).
+#
+#cnf(i_0_424, plain, (~reinitiate_request(esk22_0)|~reinitiate_request(X1)|~a2_s_0(esk14_0))).
+##
+#cnf(i_0_426, plain, (~reinitiate_request(X1)|~a2_s_0(esk14_0)|~register_request(esk22_0))).
+#
+#cnf(i_0_427, plain, (~a2_s_0(esk14_0)|~l_s_0(esk18_0)|~l_s_0(X1))).
+#
+#cnf(i_0_428, plain, (~a2_s_0(esk14_0)|~l_s_0(X1)|~register_request(esk18_0))).
+##
+#cnf(i_0_430, plain, (~reinitiate_request(esk18_0)|~a2_s_0(esk14_0)|~l_s_0(X1))).
+#
+#cnf(i_0_431, plain, (~reinitiate_request(X1)|~a2_s_0(esk14_0)|~l_s_0(esk12_0))).
+#
+#cnf(i_0_432, plain, (~reinitiate_request(X1)|~a2_s_0(esk14_0)|~register_request(esk12_0))).
+##
+#cnf(i_0_434, plain, (~reinitiate_request(esk12_0)|~reinitiate_request(X1)|~a2_s_0(esk14_0))).
+####
+#cnf(i_0_471, plain, (~x2_s_1(esk9_0)|~x2_s_1(esk10_0)|~l_s_0(esk7_0))).
+#
+#cnf(i_0_472, plain, (~x2_s_1(esk9_0)|~x2_s_1(esk10_0)|~register_request(esk7_0))).
+###################
+#cnf(i_0_473, plain, (~reinitiate_request(X1)|~a2_s_0(esk15_0)|~a2_s_0(esk16_0)|~l_s_0(esk22_0))).
+#
+#cnf(i_0_474, plain, (~reinitiate_request(esk22_0)|~reinitiate_request(X1)|~a2_s_0(esk15_0)|~a2_s_0(esk16_0))).
+##
+#cnf(i_0_476, plain, (~reinitiate_request(X1)|~a2_s_0(esk15_0)|~a2_s_0(esk16_0)|~register_request(esk22_0))).
+#
+#cnf(i_0_478, plain, (~x2_s_0(esk27_0)|~x2_s_0(esk26_0)|~a2_s_0(esk16_0)|~a2_s_0(X1))).
+#
+# No proof found!
+# SZS status Satisfiable
+

@@ -2,48 +2,49 @@
 % Refutation found. Thanks to Tanya!
 % SZS status Theorem for tptp_thesis
 % SZS output start Proof for tptp_thesis
-9. ? [X0] : x2_s_1(X0) [input]
-37. ! [X1] : (x2_s_1(X1) => ((? [X4] : reject_request(X4) & ~? [X3] : pay_compensation(X3)) | (~? [X2] : reject_request(X2) & ? [X0] : pay_compensation(X0)))) [input]
+6. ? [X1] : x2_s_1(X1) [input]
+15. ! [X0] : (x2_s_1(X0) => ((? [X4] : pay_compensation(X4) & ~? [X3] : reject_request(X3)) | (~? [X2] : pay_compensation(X2) & ? [X1] : reject_request(X1)))) [input]
 41. ! [X5] : ~(pay_compensation(X5) & reject_request(X5)) [input]
 42. ~! [X5] : ~(pay_compensation(X5) & reject_request(X5)) [negated conjecture 41]
-54. ! [X0] : (x2_s_1(X0) => ((? [X1] : reject_request(X1) & ~? [X2] : pay_compensation(X2)) | (~? [X3] : reject_request(X3) & ? [X4] : pay_compensation(X4)))) [rectify 37]
-56. ~! [X0] : ~(pay_compensation(X0) & reject_request(X0)) [rectify 42]
-90. ! [X0] : (((? [X1] : reject_request(X1) & ! [X2] : ~pay_compensation(X2)) | (! [X3] : ~reject_request(X3) & ? [X4] : pay_compensation(X4))) | ~x2_s_1(X0)) [ennf transformation 54]
-91. ! [X0] : ((? [X1] : reject_request(X1) & ! [X2] : ~pay_compensation(X2)) | (! [X3] : ~reject_request(X3) & ? [X4] : pay_compensation(X4)) | ~x2_s_1(X0)) [flattening 90]
-94. ? [X0] : (pay_compensation(X0) & reject_request(X0)) [ennf transformation 56]
-101. ? [X0] : x2_s_1(X0) => x2_s_1(sK3) [choice axiom]
-102. x2_s_1(sK3) [skolemisation 9,101]
-130. ? [X1] : reject_request(X1) => reject_request(sK19) [choice axiom]
-131. ? [X4] : pay_compensation(X4) => pay_compensation(sK20) [choice axiom]
-132. ! [X0] : ((reject_request(sK19) & ! [X2] : ~pay_compensation(X2)) | (! [X3] : ~reject_request(X3) & pay_compensation(sK20)) | ~x2_s_1(X0)) [skolemisation 91,131,130]
-137. ? [X0] : (pay_compensation(X0) & reject_request(X0)) => (pay_compensation(sK23) & reject_request(sK23)) [choice axiom]
-138. pay_compensation(sK23) & reject_request(sK23) [skolemisation 94,137]
-150. x2_s_1(sK3) [cnf transformation 102]
-199. ~pay_compensation(X2) | ~reject_request(X3) | ~x2_s_1(X0) [cnf transformation 132]
-206. reject_request(sK23) [cnf transformation 138]
-207. pay_compensation(sK23) [cnf transformation 138]
-353. 34 <=> ! [X0] : ~x2_s_1(X0) [avatar definition]
-354. ~x2_s_1(X0) <- (34) [avatar component clause 353]
-356. 35 <=> ! [X3] : ~reject_request(X3) [avatar definition]
-357. ~reject_request(X3) <- (35) [avatar component clause 356]
-369. 38 <=> ! [X2] : ~pay_compensation(X2) [avatar definition]
-370. ~pay_compensation(X2) <- (38) [avatar component clause 369]
-371. 34 | 35 | 38 [avatar split clause 199,369,356,353]
-401. $false <- (34) [resolution 354,150]
-402. ~34 [avatar contradiction clause 401]
-407. $false <- (35) [resolution 357,206]
-408. ~35 [avatar contradiction clause 407]
-409. $false <- (38) [resolution 370,207]
-410. ~38 [avatar contradiction clause 409]
-411. $false [avatar sat refutation 371,402,408,410]
+47. ? [X0] : x2_s_1(X0) [rectify 6]
+54. ! [X0] : (x2_s_1(X0) => ((? [X1] : pay_compensation(X1) & ~? [X2] : reject_request(X2)) | (~? [X3] : pay_compensation(X3) & ? [X4] : reject_request(X4)))) [rectify 15]
+74. ~! [X0] : ~(pay_compensation(X0) & reject_request(X0)) [rectify 42]
+86. ! [X0] : (((? [X1] : pay_compensation(X1) & ! [X2] : ~reject_request(X2)) | (! [X3] : ~pay_compensation(X3) & ? [X4] : reject_request(X4))) | ~x2_s_1(X0)) [ennf transformation 54]
+87. ! [X0] : ((? [X1] : pay_compensation(X1) & ! [X2] : ~reject_request(X2)) | (! [X3] : ~pay_compensation(X3) & ? [X4] : reject_request(X4)) | ~x2_s_1(X0)) [flattening 86]
+112. ? [X0] : (pay_compensation(X0) & reject_request(X0)) [ennf transformation 74]
+117. ? [X0] : x2_s_1(X0) => x2_s_1(sK2) [choice axiom]
+118. x2_s_1(sK2) [skolemisation 47,117]
+125. ? [X1] : pay_compensation(X1) => pay_compensation(sK6) [choice axiom]
+126. ? [X4] : reject_request(X4) => reject_request(sK7) [choice axiom]
+127. ! [X0] : ((pay_compensation(sK6) & ! [X2] : ~reject_request(X2)) | (! [X3] : ~pay_compensation(X3) & reject_request(sK7)) | ~x2_s_1(X0)) [skolemisation 87,126,125]
+155. ? [X0] : (pay_compensation(X0) & reject_request(X0)) => (pay_compensation(sK23) & reject_request(sK23)) [choice axiom]
+156. pay_compensation(sK23) & reject_request(sK23) [skolemisation 112,155]
+163. x2_s_1(sK2) [cnf transformation 118]
+180. ~reject_request(X2) | ~pay_compensation(X3) | ~x2_s_1(X0) [cnf transformation 127]
+224. reject_request(sK23) [cnf transformation 156]
+225. pay_compensation(sK23) [cnf transformation 156]
+276. 13 <=> ! [X0] : ~x2_s_1(X0) [avatar definition]
+277. ~x2_s_1(X0) <- (13) [avatar component clause 276]
+279. 14 <=> ! [X3] : ~pay_compensation(X3) [avatar definition]
+280. ~pay_compensation(X3) <- (14) [avatar component clause 279]
+292. 17 <=> ! [X2] : ~reject_request(X2) [avatar definition]
+293. ~reject_request(X2) <- (17) [avatar component clause 292]
+294. 13 | 14 | 17 [avatar split clause 180,292,279,276]
+419. $false <- (13) [resolution 277,163]
+420. ~13 [avatar contradiction clause 419]
+421. $false <- (17) [resolution 293,224]
+422. ~17 [avatar contradiction clause 421]
+423. $false <- (14) [resolution 280,225]
+424. ~14 [avatar contradiction clause 423]
+425. $false [avatar sat refutation 294,420,422,424]
 % SZS output end Proof for tptp_thesis
 % ------------------------------
 % Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
 % Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
 % Termination reason: Refutation
 
-% Memory used [KB]: 518
-% Time elapsed: 0.001 s
+% Memory used [KB]: 519
+% Time elapsed: 0.004 s
 % ------------------------------
 % ------------------------------
 

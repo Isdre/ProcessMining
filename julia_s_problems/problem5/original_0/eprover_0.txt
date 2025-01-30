@@ -1,0 +1,14 @@
+# Initializing proof state
+# Scanning for AC axioms
+#
+#cnf(i_0_99, plain, (l_s(esk41_0))).
+#
+#cnf(i_0_24, plain, (a2_s(esk12_0))).
+#
+#cnf(i_0_4, plain, (x2_s(esk1_0))).
+#
+#cnf(i_0_112, plain, (~a2_s(X1))).
+
+# Proof found!
+# SZS status Unsatisfiable
+

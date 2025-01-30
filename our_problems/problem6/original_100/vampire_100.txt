@@ -1,0 +1,70 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for tptp_100
+% SZS output start Proof for tptp_100
+8. ? [X1] : l_s_b1(X1) [input]
+21. ! [X0] : (x3_s_b0(X0) => ((? [X9] : (repair_complex(X9) | l_s_b2(X9)) & ~? [X8] : (repair_simple(X8) | l_s_b1(X8)) & ~? [X7] : (test_repair(X7) | l_s_b0(X7))) | (~? [X6] : (repair_complex(X6) | l_s_b2(X6)) & ? [X5] : (repair_simple(X5) | l_s_b1(X5)) & ~? [X4] : (test_repair(X4) | l_s_b0(X4))) | (~? [X3] : (repair_complex(X3) | l_s_b2(X3)) & ~? [X2] : (repair_simple(X2) | l_s_b1(X2)) & ? [X1] : (test_repair(X1) | l_s_b0(X1))))) [input]
+38. ? [X1] : l_s_b0(X1) [input]
+45. ? [X1] : x3_s_b0(X1) [input]
+60. ? [X0] : l_s_b1(X0) [rectify 8]
+69. ! [X0] : (x3_s_b0(X0) => ((? [X1] : (repair_complex(X1) | l_s_b2(X1)) & ~? [X2] : (repair_simple(X2) | l_s_b1(X2)) & ~? [X3] : (test_repair(X3) | l_s_b0(X3))) | (~? [X4] : (repair_complex(X4) | l_s_b2(X4)) & ? [X5] : (repair_simple(X5) | l_s_b1(X5)) & ~? [X6] : (test_repair(X6) | l_s_b0(X6))) | (~? [X7] : (repair_complex(X7) | l_s_b2(X7)) & ~? [X8] : (repair_simple(X8) | l_s_b1(X8)) & ? [X9] : (test_repair(X9) | l_s_b0(X9))))) [rectify 21]
+85. ? [X0] : l_s_b0(X0) [rectify 38]
+89. ? [X0] : x3_s_b0(X0) [rectify 45]
+115. ! [X0] : (((? [X1] : (repair_complex(X1) | l_s_b2(X1)) & ! [X2] : (~repair_simple(X2) & ~l_s_b1(X2)) & ! [X3] : (~test_repair(X3) & ~l_s_b0(X3))) | (! [X4] : (~repair_complex(X4) & ~l_s_b2(X4)) & ? [X5] : (repair_simple(X5) | l_s_b1(X5)) & ! [X6] : (~test_repair(X6) & ~l_s_b0(X6))) | (! [X7] : (~repair_complex(X7) & ~l_s_b2(X7)) & ! [X8] : (~repair_simple(X8) & ~l_s_b1(X8)) & ? [X9] : (test_repair(X9) | l_s_b0(X9)))) | ~x3_s_b0(X0)) [ennf transformation 69]
+116. ! [X0] : ((? [X1] : (repair_complex(X1) | l_s_b2(X1)) & ! [X2] : (~repair_simple(X2) & ~l_s_b1(X2)) & ! [X3] : (~test_repair(X3) & ~l_s_b0(X3))) | (! [X4] : (~repair_complex(X4) & ~l_s_b2(X4)) & ? [X5] : (repair_simple(X5) | l_s_b1(X5)) & ! [X6] : (~test_repair(X6) & ~l_s_b0(X6))) | (! [X7] : (~repair_complex(X7) & ~l_s_b2(X7)) & ! [X8] : (~repair_simple(X8) & ~l_s_b1(X8)) & ? [X9] : (test_repair(X9) | l_s_b0(X9))) | ~x3_s_b0(X0)) [flattening 115]
+151. (! [X7] : (~repair_complex(X7) & ~l_s_b2(X7)) & ! [X8] : (~repair_simple(X8) & ~l_s_b1(X8)) & ? [X9] : (test_repair(X9) | l_s_b0(X9))) | ~sP0 [predicate definition introduction]
+152. (! [X4] : (~repair_complex(X4) & ~l_s_b2(X4)) & ? [X5] : (repair_simple(X5) | l_s_b1(X5)) & ! [X6] : (~test_repair(X6) & ~l_s_b0(X6))) | ~sP1 [predicate definition introduction]
+153. ! [X0] : ((? [X1] : (repair_complex(X1) | l_s_b2(X1)) & ! [X2] : (~repair_simple(X2) & ~l_s_b1(X2)) & ! [X3] : (~test_repair(X3) & ~l_s_b0(X3))) | sP1 | sP0 | ~x3_s_b0(X0)) [definition folding 116,152,151]
+160. ? [X0] : l_s_b1(X0) => l_s_b1(sK5) [choice axiom]
+161. l_s_b1(sK5) [skolemisation 60,160]
+177. (! [X4] : (~repair_complex(X4) & ~l_s_b2(X4)) & ? [X5] : (repair_simple(X5) | l_s_b1(X5)) & ! [X6] : (~test_repair(X6) & ~l_s_b0(X6))) | ~sP1 [nnf transformation 152]
+178. (! [X0] : (~repair_complex(X0) & ~l_s_b2(X0)) & ? [X1] : (repair_simple(X1) | l_s_b1(X1)) & ! [X2] : (~test_repair(X2) & ~l_s_b0(X2))) | ~sP1 [rectify 177]
+179. ? [X1] : (repair_simple(X1) | l_s_b1(X1)) => (repair_simple(sK14) | l_s_b1(sK14)) [choice axiom]
+180. (! [X0] : (~repair_complex(X0) & ~l_s_b2(X0)) & (repair_simple(sK14) | l_s_b1(sK14)) & ! [X2] : (~test_repair(X2) & ~l_s_b0(X2))) | ~sP1 [skolemisation 178,179]
+181. (! [X7] : (~repair_complex(X7) & ~l_s_b2(X7)) & ! [X8] : (~repair_simple(X8) & ~l_s_b1(X8)) & ? [X9] : (test_repair(X9) | l_s_b0(X9))) | ~sP0 [nnf transformation 151]
+182. (! [X0] : (~repair_complex(X0) & ~l_s_b2(X0)) & ! [X1] : (~repair_simple(X1) & ~l_s_b1(X1)) & ? [X2] : (test_repair(X2) | l_s_b0(X2))) | ~sP0 [rectify 181]
+183. ? [X2] : (test_repair(X2) | l_s_b0(X2)) => (test_repair(sK15) | l_s_b0(sK15)) [choice axiom]
+184. (! [X0] : (~repair_complex(X0) & ~l_s_b2(X0)) & ! [X1] : (~repair_simple(X1) & ~l_s_b1(X1)) & (test_repair(sK15) | l_s_b0(sK15))) | ~sP0 [skolemisation 182,183]
+185. ? [X1] : (repair_complex(X1) | l_s_b2(X1)) => (repair_complex(sK16) | l_s_b2(sK16)) [choice axiom]
+186. ! [X0] : (((repair_complex(sK16) | l_s_b2(sK16)) & ! [X2] : (~repair_simple(X2) & ~l_s_b1(X2)) & ! [X3] : (~test_repair(X3) & ~l_s_b0(X3))) | sP1 | sP0 | ~x3_s_b0(X0)) [skolemisation 153,185]
+197. ? [X0] : l_s_b0(X0) => l_s_b0(sK23) [choice axiom]
+198. l_s_b0(sK23) [skolemisation 85,197]
+205. ? [X0] : x3_s_b0(X0) => x3_s_b0(sK27) [choice axiom]
+206. x3_s_b0(sK27) [skolemisation 89,205]
+227. l_s_b1(sK5) [cnf transformation 161]
+249. ~l_s_b0(X2) | ~sP1 [cnf transformation 180]
+255. ~l_s_b1(X1) | ~sP0 [cnf transformation 184]
+259. ~l_s_b0(X3) | sP1 | sP0 | ~x3_s_b0(X0) [cnf transformation 186]
+291. l_s_b0(sK23) [cnf transformation 198]
+299. x3_s_b0(sK27) [cnf transformation 206]
+374. 15 <=> ! [X0] : ~l_s_b1(X0) [avatar definition]
+375. ~l_s_b1(X0) <- (15) [avatar component clause 374]
+382. 17 <=> ! [X0] : ~l_s_b0(X0) [avatar definition]
+383. ~l_s_b0(X0) <- (17) [avatar component clause 382]
+413. 24 <=> sP1 [avatar definition]
+428. ~24 | 17 [avatar split clause 249,382,413]
+430. 27 <=> sP0 [avatar definition]
+436. ~27 | 15 [avatar split clause 255,374,430]
+447. 30 <=> ! [X0] : ~x3_s_b0(X0) [avatar definition]
+448. ~x3_s_b0(X0) <- (30) [avatar component clause 447]
+461. 30 | 27 | 24 | 17 [avatar split clause 259,382,413,430,447]
+551. $false <- (15) [resolution 375,227]
+552. ~15 [avatar contradiction clause 551]
+555. $false <- (17) [resolution 383,291]
+556. ~17 [avatar contradiction clause 555]
+563. $false <- (30) [resolution 448,299]
+564. ~30 [avatar contradiction clause 563]
+565. $false [avatar sat refutation 428,436,461,552,556,564]
+% SZS output end Proof for tptp_100
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 588
+% Time elapsed: 0.004 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

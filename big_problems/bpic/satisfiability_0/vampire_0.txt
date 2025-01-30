@@ -1,0 +1,62 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for tptp_0
+% SZS output start Proof for tptp_0
+220. ? [X1] : x2_s_17(X1) [input]
+234. ! [X0] : (x2_s_17(X0) => ((? [X4] : (a4_e_6(X4) | a4_s_6(X4)) & ~? [X3] : (x2_e_22(X3) | x2_s_18(X3))) | (~? [X2] : (a4_e_6(X2) | a4_s_6(X2)) & ? [X1] : (x2_e_22(X1) | x2_s_18(X1))))) [input]
+311. ? [X1] : a4_s_6(X1) [input]
+361. ? [X1] : x2_s_18(X1) [input]
+545. ? [X0] : x2_s_17(X0) [rectify 220]
+558. ! [X0] : (x2_s_17(X0) => ((? [X1] : (a4_e_6(X1) | a4_s_6(X1)) & ~? [X2] : (x2_e_22(X2) | x2_s_18(X2))) | (~? [X3] : (a4_e_6(X3) | a4_s_6(X3)) & ? [X4] : (x2_e_22(X4) | x2_s_18(X4))))) [rectify 234]
+617. ? [X0] : a4_s_6(X0) [rectify 311]
+656. ? [X0] : x2_s_18(X0) [rectify 361]
+884. ! [X0] : (((? [X1] : (a4_e_6(X1) | a4_s_6(X1)) & ! [X2] : (~x2_e_22(X2) & ~x2_s_18(X2))) | (! [X3] : (~a4_e_6(X3) & ~a4_s_6(X3)) & ? [X4] : (x2_e_22(X4) | x2_s_18(X4)))) | ~x2_s_17(X0)) [ennf transformation 558]
+885. ! [X0] : ((? [X1] : (a4_e_6(X1) | a4_s_6(X1)) & ! [X2] : (~x2_e_22(X2) & ~x2_s_18(X2))) | (! [X3] : (~a4_e_6(X3) & ~a4_s_6(X3)) & ? [X4] : (x2_e_22(X4) | x2_s_18(X4))) | ~x2_s_17(X0)) [flattening 884]
+1005. (! [X3] : (~a4_e_6(X3) & ~a4_s_6(X3)) & ? [X4] : (x2_e_22(X4) | x2_s_18(X4))) | ~sP2 [predicate definition introduction]
+1006. ! [X0] : ((? [X1] : (a4_e_6(X1) | a4_s_6(X1)) & ! [X2] : (~x2_e_22(X2) & ~x2_s_18(X2))) | sP2 | ~x2_s_17(X0)) [definition folding 885,1005]
+1212. ? [X0] : x2_s_17(X0) => x2_s_17(sK117) [choice axiom]
+1213. x2_s_17(sK117) [skolemisation 545,1212]
+1230. (! [X3] : (~a4_e_6(X3) & ~a4_s_6(X3)) & ? [X4] : (x2_e_22(X4) | x2_s_18(X4))) | ~sP2 [nnf transformation 1005]
+1231. (! [X0] : (~a4_e_6(X0) & ~a4_s_6(X0)) & ? [X1] : (x2_e_22(X1) | x2_s_18(X1))) | ~sP2 [rectify 1230]
+1232. ? [X1] : (x2_e_22(X1) | x2_s_18(X1)) => (x2_e_22(sK127) | x2_s_18(sK127)) [choice axiom]
+1233. (! [X0] : (~a4_e_6(X0) & ~a4_s_6(X0)) & (x2_e_22(sK127) | x2_s_18(sK127))) | ~sP2 [skolemisation 1231,1232]
+1234. ? [X1] : (a4_e_6(X1) | a4_s_6(X1)) => (a4_e_6(sK128) | a4_s_6(sK128)) [choice axiom]
+1235. ! [X0] : (((a4_e_6(sK128) | a4_s_6(sK128)) & ! [X2] : (~x2_e_22(X2) & ~x2_s_18(X2))) | sP2 | ~x2_s_17(X0)) [skolemisation 1006,1234]
+1316. ? [X0] : a4_s_6(X0) => a4_s_6(sK172) [choice axiom]
+1317. a4_s_6(sK172) [skolemisation 617,1316]
+1367. ? [X0] : x2_s_18(X0) => x2_s_18(sK200) [choice axiom]
+1368. x2_s_18(sK200) [skolemisation 656,1367]
+1797. x2_s_17(sK117) [cnf transformation 1213]
+1824. ~a4_s_6(X0) | ~sP2 [cnf transformation 1233]
+1826. ~x2_s_18(X2) | sP2 | ~x2_s_17(X0) [cnf transformation 1235]
+1968. a4_s_6(sK172) [cnf transformation 1317]
+2057. x2_s_18(sK200) [cnf transformation 1368]
+2570. 121 <=> ! [X0] : ~a4_s_6(X0) [avatar definition]
+2571. ~a4_s_6(X0) <- (121) [avatar component clause 2570]
+2756. 162 <=> ! [X0] : ~x2_s_18(X0) [avatar definition]
+2757. ~x2_s_18(X0) <- (162) [avatar component clause 2756]
+2824. 178 <=> ! [X3] : ~x2_s_17(X3) [avatar definition]
+2825. ~x2_s_17(X3) <- (178) [avatar component clause 2824]
+3098. 236 <=> sP2 [avatar definition]
+3105. ~236 | 121 [avatar split clause 1824,2570,3098]
+3128. 178 | 236 | 162 [avatar split clause 1826,2756,3098,2824]
+3772. $false <- (121) [resolution 2571,1968]
+3773. ~121 [avatar contradiction clause 3772]
+3806. $false <- (162) [resolution 2757,2057]
+3807. ~162 [avatar contradiction clause 3806]
+3812. $false <- (178) [resolution 2825,1797]
+3813. ~178 [avatar contradiction clause 3812]
+3814. $false [avatar sat refutation 3105,3128,3773,3807,3813]
+% SZS output end Proof for tptp_0
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 1903
+% Time elapsed: 0.009 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

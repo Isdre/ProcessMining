@@ -2,54 +2,54 @@
 % Refutation found. Thanks to Tanya!
 % SZS status Theorem for tptp_thesis
 % SZS output start Proof for tptp_thesis
-5. ! [X1] : (x2_s_1(X1) => ((? [X4] : repair_complex(X4) & ~? [X3] : repair_simple(X3)) | (~? [X2] : repair_complex(X2) & ? [X0] : repair_simple(X0)))) [input]
-14. ? [X0] : x2_s_1(X0) [input]
+5. ? [X0] : x2_s_1(X0) [input]
+42. ! [X1] : (x2_s_1(X1) => ((? [X4] : repair_complex(X4) & ~? [X3] : repair_simple(X3)) | (~? [X2] : repair_complex(X2) & ? [X0] : repair_simple(X0)))) [input]
 50. ! [X5] : (register(X5) => ? [X6] : (repair_complex(X6) | repair_simple(X6))) [input]
 51. ~! [X5] : (register(X5) => ? [X6] : (repair_complex(X6) | repair_simple(X6))) [negated conjecture 50]
-55. ! [X0] : (x2_s_1(X0) => ((? [X1] : repair_complex(X1) & ~? [X2] : repair_simple(X2)) | (~? [X3] : repair_complex(X3) & ? [X4] : repair_simple(X4)))) [rectify 5]
+65. ! [X0] : (x2_s_1(X0) => ((? [X1] : repair_complex(X1) & ~? [X2] : repair_simple(X2)) | (~? [X3] : repair_complex(X3) & ? [X4] : repair_simple(X4)))) [rectify 42]
 67. ~! [X0] : (register(X0) => ? [X1] : (repair_complex(X1) | repair_simple(X1))) [rectify 51]
-71. ! [X0] : (((? [X1] : repair_complex(X1) & ! [X2] : ~repair_simple(X2)) | (! [X3] : ~repair_complex(X3) & ? [X4] : repair_simple(X4))) | ~x2_s_1(X0)) [ennf transformation 55]
-72. ! [X0] : ((? [X1] : repair_complex(X1) & ! [X2] : ~repair_simple(X2)) | (! [X3] : ~repair_complex(X3) & ? [X4] : repair_simple(X4)) | ~x2_s_1(X0)) [flattening 71]
+105. ! [X0] : (((? [X1] : repair_complex(X1) & ! [X2] : ~repair_simple(X2)) | (! [X3] : ~repair_complex(X3) & ? [X4] : repair_simple(X4))) | ~x2_s_1(X0)) [ennf transformation 65]
+106. ! [X0] : ((? [X1] : repair_complex(X1) & ! [X2] : ~repair_simple(X2)) | (! [X3] : ~repair_complex(X3) & ? [X4] : repair_simple(X4)) | ~x2_s_1(X0)) [flattening 105]
 114. ? [X0] : (! [X1] : (~repair_complex(X1) & ~repair_simple(X1)) & register(X0)) [ennf transformation 67]
-123. ? [X1] : repair_complex(X1) => repair_complex(sK4) [choice axiom]
-124. ? [X4] : repair_simple(X4) => repair_simple(sK5) [choice axiom]
-125. ! [X0] : ((repair_complex(sK4) & ! [X2] : ~repair_simple(X2)) | (! [X3] : ~repair_complex(X3) & repair_simple(sK5)) | ~x2_s_1(X0)) [skolemisation 72,124,123]
-135. ? [X0] : x2_s_1(X0) => x2_s_1(sK11) [choice axiom]
-136. x2_s_1(sK11) [skolemisation 14,135]
+118. ? [X0] : x2_s_1(X0) => x2_s_1(sK2) [choice axiom]
+119. x2_s_1(sK2) [skolemisation 5,118]
+156. ? [X1] : repair_complex(X1) => repair_complex(sK22) [choice axiom]
+157. ? [X4] : repair_simple(X4) => repair_simple(sK23) [choice axiom]
+158. ! [X0] : ((repair_complex(sK22) & ! [X2] : ~repair_simple(X2)) | (! [X3] : ~repair_complex(X3) & repair_simple(sK23)) | ~x2_s_1(X0)) [skolemisation 106,157,156]
 161. ? [X0] : (! [X1] : (~repair_complex(X1) & ~repair_simple(X1)) & register(X0)) => (! [X1] : (~repair_complex(X1) & ~repair_simple(X1)) & register(sK25)) [choice axiom]
 162. ! [X1] : (~repair_complex(X1) & ~repair_simple(X1)) & register(sK25) [skolemisation 114,161]
-170. repair_complex(sK4) | repair_simple(sK5) | ~x2_s_1(X0) [cnf transformation 125]
-185. x2_s_1(sK11) [cnf transformation 136]
+170. x2_s_1(sK2) [cnf transformation 119]
+224. repair_complex(sK22) | repair_simple(sK23) | ~x2_s_1(X0) [cnf transformation 158]
 242. ~repair_simple(X1) [cnf transformation 162]
 243. ~repair_complex(X1) [cnf transformation 162]
-277. 9 <=> ! [X0] : ~x2_s_1(X0) [avatar definition]
-278. ~x2_s_1(X0) <- (9) [avatar component clause 277]
-280. 10 <=> ! [X3] : ~repair_complex(X3) [avatar definition]
-281. ~repair_complex(X3) <- (10) [avatar component clause 280]
-283. 11 <=> repair_complex(sK4) [avatar definition]
-285. repair_complex(sK4) <- (11) [avatar component clause 283]
-288. 12 <=> repair_simple(sK5) [avatar definition]
-290. repair_simple(sK5) <- (12) [avatar component clause 288]
-291. 9 | 12 | 11 [avatar split clause 170,283,288,277]
-293. 13 <=> ! [X2] : ~repair_simple(X2) [avatar definition]
-294. ~repair_simple(X2) <- (13) [avatar component clause 293]
-432. 10 [avatar split clause 243,280]
-433. 13 [avatar split clause 242,293]
-442. $false <- (10, 11) [subsumption resolution 285,281]
-443. ~10 | ~11 [avatar contradiction clause 442]
-444. $false <- (9) [resolution 278,185]
-445. ~9 [avatar contradiction clause 444]
-446. $false <- (12, 13) [subsumption resolution 290,294]
-447. ~12 | ~13 [avatar contradiction clause 446]
-448. $false [avatar sat refutation 291,432,433,443,445,447]
+363. 29 <=> ! [X0] : ~repair_complex(X0) [avatar definition]
+364. ~repair_complex(X0) <- (29) [avatar component clause 363]
+371. 31 <=> ! [X0] : ~repair_simple(X0) [avatar definition]
+372. ~repair_simple(X0) <- (31) [avatar component clause 371]
+393. 36 <=> ! [X0] : ~x2_s_1(X0) [avatar definition]
+394. ~x2_s_1(X0) <- (36) [avatar component clause 393]
+412. 40 <=> repair_complex(sK22) [avatar definition]
+414. repair_complex(sK22) <- (40) [avatar component clause 412]
+417. 41 <=> repair_simple(sK23) [avatar definition]
+419. repair_simple(sK23) <- (41) [avatar component clause 417]
+420. 36 | 41 | 40 [avatar split clause 224,412,417,393]
+432. 29 [avatar split clause 243,363]
+433. 31 [avatar split clause 242,371]
+462. $false <- (36) [resolution 394,170]
+463. ~36 [avatar contradiction clause 462]
+464. $false <- (31, 41) [subsumption resolution 419,372]
+465. ~31 | ~41 [avatar contradiction clause 464]
+466. $false <- (29, 40) [subsumption resolution 414,364]
+467. ~29 | ~40 [avatar contradiction clause 466]
+468. $false [avatar sat refutation 420,432,433,463,465,467]
 % SZS output end Proof for tptp_thesis
 % ------------------------------
 % Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
 % Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
 % Termination reason: Refutation
 
-% Memory used [KB]: 522
-% Time elapsed: 0.001 s
+% Memory used [KB]: 531
+% Time elapsed: 0.002 s
 % ------------------------------
 % ------------------------------
 

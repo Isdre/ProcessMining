@@ -1,0 +1,1 @@
+Seq3(1]register_request, Loop(2]l_s_0, Seq2(3]And2(4]a2_s_0, check_ticket, Xor2(5]x2_s_0, examine_casually, examine_thoroughly, x2_e_0[5), a2_e_0[4), decide[3), reinitiate_request[2), Xor2(2]x2_s_1, reject_request, pay_compensation, x2_e_1[2)[1)

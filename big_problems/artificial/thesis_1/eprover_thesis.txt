@@ -1,989 +1,1341 @@
 # Initializing proof state
 # Scanning for AC axioms
 #
-#cnf(i_0_1, plain, (x2_s_3(esk1_0))).
+#cnf(i_0_185, plain, (l_s_2(esk72_0))).
 #
-#cnf(i_0_197, plain, (d(esk77_0))).
+#cnf(i_0_2, plain, (x2_s_5(esk1_0))).
 #
-#cnf(i_0_246, plain, (a3_s_1(esk96_0))).
+#cnf(i_0_142, plain, (a3_s_2(esk54_0))).
 #
-#cnf(i_0_125, plain, (~a3_s_1(X1)|~x2_s_3(X1))).
+#cnf(i_0_1, plain, (~c(X1)|~l_s_2(X1))).
 #
-#cnf(i_0_4, plain, (l_s_5(esk4_0))).
+#cnf(i_0_262, plain, (l_s_5(esk108_0))).
 #
-#cnf(i_0_284, plain, (l_s_2(esk109_0))).
+#cnf(i_0_188, plain, (l_s_6(esk75_0))).
 #
-#cnf(i_0_308, plain, (l_s_1(esk126_0))).
+#cnf(i_0_197, plain, (x2_s_3(esk84_0))).
 #
-#cnf(i_0_320, plain, (~x2_s_3(esk96_0))).
+#cnf(i_0_35, plain, (~a3_s_1(X1)|~l_s_2(X1))).
 #
-#cnf(i_0_147, plain, (x2_s_2(esk62_0))).
+#cnf(i_0_257, plain, (a3_s_1(esk107_0))).
 #
-#cnf(i_0_271, plain, (a3_s_2(esk100_0))).
+#cnf(i_0_264, plain, (x2_s_2(esk109_0))).
 #
-#cnf(i_0_159, plain, (l_s_0(esk70_0))).
+#cnf(i_0_21, plain, (l_s_4(esk12_0))).
 #
-#cnf(i_0_191, plain, (~a3_e_1(X1)|~x2_s_3(X1))).
+#cnf(i_0_320, plain, (~l_s_2(esk107_0))).
 #
-#cnf(i_0_144, plain, (l_s_6(esk61_0))).
+#cnf(i_0_95, plain, (l_s_1(esk31_0))).
 #
-#cnf(i_0_43, plain, (a3_s_3(esk24_0))).
+#cnf(i_0_61, plain, (x2_s_0(esk22_0))).
 #
-#cnf(i_0_20, plain, (x2_s_1(esk11_0))).
+#cnf(i_0_246, plain, (x2_s_6(esk100_0))).
 #
-#cnf(i_0_77, plain, (~tau_4(X1)|~x2_s_3(X1))).
+#cnf(i_0_58, plain, (~tau_3(X1)|~l_s_2(X1))).
 #
-#cnf(i_0_224, plain, (x2_s_4(esk88_0))).
+#cnf(i_0_242, plain, (d(esk98_0))).
 #
-#cnf(i_0_318, negated_conjecture, (g(esk129_0))).
+#cnf(i_0_272, plain, (a2_s_0(esk115_0))).
+#
+#cnf(i_0_253, plain, (x2_s_1(esk105_0))).
+#
+#cnf(i_0_204, plain, (~a3_e_1(X1)|~l_s_2(X1))).
+#
+#cnf(i_0_167, plain, (a3_s_3(esk62_0))).
+#
+#cnf(i_0_171, plain, (l_s_3(esk66_0))).
+#
+#cnf(i_0_143, plain, (x2_s_4(esk55_0))).
+#
+#cnf(i_0_34, plain, (~a3_s_1(X1)|~c(X1))).
 #
 #cnf(i_0_319, negated_conjecture, (n(esk129_0))).
 #
-#cnf(i_0_71, plain, (~a3_s_2(X1)|~x2_s_3(X1))).
+#cnf(i_0_98, plain, (x2_s_7(esk33_0))).
 #
-#cnf(i_0_74, plain, (x2_s_5(esk34_0))).
+#cnf(i_0_131, plain, (l_s_0(esk49_0))).
 #
-#cnf(i_0_76, plain, (l_s_3(esk35_0))).
+#cnf(i_0_24, plain, (~tau_3(X1)|~c(X1))).
 #
-#cnf(i_0_152, plain, (l_s_4(esk69_0))).
+#cnf(i_0_318, negated_conjecture, (g(esk129_0))).
 #
-#cnf(i_0_321, plain, (~x2_s_3(esk100_0))).
+#cnf(i_0_292, plain, (c(esk121_0)|~tau_3(X1))).
 #
-#cnf(i_0_134, plain, (x2_s_6(esk58_0))).
+#cnf(i_0_69, plain, (a3_e_3(esk25_0)|~x2_e_6(X1))).
 #
-#cnf(i_0_211, plain, (x2_s_7(esk81_0))).
+#cnf(i_0_203, plain, (~a3_e_1(X1)|~c(X1))).
 #
-#cnf(i_0_91, plain, (x2_s_0(esk46_0))).
+#cnf(i_0_245, plain, (a3_e_3(esk99_0)|~h(X1))).
 #
-#cnf(i_0_70, plain, (~a3_e_2(X1)|~x2_s_3(X1))).
+#cnf(i_0_90, plain, (a3_e_2(esk28_0)|~random_activity_1(X1))).
 #
-#cnf(i_0_132, plain, (a2_s_0(esk57_0))).
+#cnf(i_0_114, plain, (a3_e_2(esk40_0)|~m(X1))).
 #
-#cnf(i_0_83, plain, (l(esk40_0)|~tau_5(X1))).
+#cnf(i_0_207, plain, (~tau_8(X1)|~x2_s_5(X1))).
 #
-#cnf(i_0_25, plain, (c(esk15_0)|~tau_3(X1))).
+#cnf(i_0_161, plain, (a3_e_2(esk59_0)|~l(X1))).
 #
-#cnf(i_0_136, plain, (~x2_e_3(X1)|~x2_s_3(X1))).
+#cnf(i_0_6, plain, (x2_e_3(esk3_0)|~tau_4(X1))).
 #
-#cnf(i_0_7, plain, (a3_e_1(esk7_0)|~c(X1))).
+#cnf(i_0_130, plain, (l(esk48_0)|~tau_7(X1))).
 #
-#cnf(i_0_219, plain, (a3_e_1(esk85_0)|~x2_e_2(X1))).
+#cnf(i_0_226, plain, (~random_activity_2(X1)|~x2_s_5(X1))).
 #
-#cnf(i_0_238, plain, (a3_e_1(esk94_0)|~x2_e_3(X1))).
+#cnf(i_0_189, plain, (e(esk76_0)|~a3_e_3(X1))).
 #
-#cnf(i_0_42, plain, (~o(X1)|~d(X1))).
+#cnf(i_0_195, plain, (x2_e_1(esk83_0)|~random_activity_5(X1))).
 #
-#cnf(i_0_206, plain, (x2_e_2(esk78_0)|~tau_1(X1))).
+#cnf(i_0_196, plain, (x2_e_1(esk83_0)|~tau_0(X1))).
 #
-#cnf(i_0_204, plain, (x2_e_2(esk78_0)|~f(X1))).
+#cnf(i_0_321, plain, (~random_activity_2(esk1_0))).
 #
-#cnf(i_0_276, plain, (f(esk105_0)|~tau_2(X1))).
+#cnf(i_0_254, plain, (x2_e_2(esk106_0)|~f(X1))).
 #
-#cnf(i_0_259, plain, (~a3_s_1(X1)|~d(X1))).
+#cnf(i_0_256, plain, (x2_e_2(esk106_0)|~tau_1(X1))).
 #
-#cnf(i_0_23, plain, (a3_e_2(esk14_0)|~m(X1))).
+#cnf(i_0_122, plain, (f(esk46_0)|~tau_2(X1))).
 #
-#cnf(i_0_108, plain, (a3_e_2(esk52_0)|~random_activity_1(X1))).
+#cnf(i_0_209, plain, (~x2_e_1(X1)|~x2_s_5(X1))).
 #
-#cnf(i_0_15, plain, (x2_e_3(esk8_0)|~tau_4(X1))).
+#cnf(i_0_213, plain, (x2_e_7(esk87_0)|~tau_10(X1))).
 #
-#cnf(i_0_322, plain, (~d(esk96_0))).
+#cnf(i_0_212, plain, (x2_e_7(esk87_0)|~random_activity_4(X1))).
 #
-#cnf(i_0_13, plain, (x2_e_3(esk8_0)|~a3_e_2(X1))).
+#cnf(i_0_27, plain, (x2_e_0(esk13_0)|~j(X1))).
 #
-#cnf(i_0_245, plain, (a3_e_3(esk95_0)|~h(X1))).
+#cnf(i_0_108, plain, (~x2_e_4(X1)|~x2_s_5(X1))).
 #
-#cnf(i_0_250, plain, (a3_e_3(esk97_0)|~x2_e_6(X1))).
+#cnf(i_0_26, plain, (x2_e_0(esk13_0)|~b(X1))).
 #
-#cnf(i_0_257, plain, (~x2_e_4(X1)|~d(X1))).
+#cnf(i_0_65, plain, (a2_e_0(esk24_0)|~x2_e_0(X1))).
 #
-#cnf(i_0_303, plain, (a3_e_3(esk119_0)|~k(X1))).
+#cnf(i_0_279, plain, (a2_e_0(esk118_0)|~a(X1))).
 #
-#cnf(i_0_122, plain, (e(esk55_0)|~a3_e_3(X1))).
+#cnf(i_0_211, plain, (~a2_s_0(X1)|~x2_s_5(X1))).
 #
-#cnf(i_0_143, plain, (m(esk60_0)|~tau_7(X1))).
+#cnf(i_0_227, plain, (random_activity_1(esk91_0)|~tau_5(X1))).
 #
-#cnf(i_0_161, plain, (~l_s_0(X1)|~d(X1))).
+#cnf(i_0_117, plain, (m(esk43_0)|~tau_6(X1))).
 #
-#cnf(i_0_223, plain, (random_activity_1(esk87_0)|~tau_6(X1))).
+#cnf(i_0_165, plain, (x2_e_6(esk61_0)|~random_activity_3(X1))).
 #
-#cnf(i_0_142, plain, (x2_e_5(esk59_0)|~tau_8(X1))).
+#cnf(i_0_322, plain, (~x2_s_5(esk115_0))).
 #
-#cnf(i_0_141, plain, (x2_e_5(esk59_0)|~random_activity_2(X1))).
+#cnf(i_0_166, plain, (x2_e_6(esk61_0)|~tau_9(X1))).
 #
-#cnf(i_0_323, plain, (~d(esk70_0))).
+#cnf(i_0_164, plain, (x2_e_5(esk60_0)|~tau_8(X1))).
 #
-#cnf(i_0_289, plain, (x2_e_1(esk111_0)|~tau_0(X1))).
+#cnf(i_0_93, plain, (a3_e_1(esk30_0)|~x2_e_2(X1))).
 #
-#cnf(i_0_288, plain, (x2_e_1(esk111_0)|~random_activity_5(X1))).
+#cnf(i_0_68, plain, (~x2_e_5(X1)|~x2_s_5(X1))).
 #
-#cnf(i_0_73, plain, (x2_e_7(esk33_0)|~tau_10(X1))).
+#cnf(i_0_96, plain, (a3_e_1(esk32_0)|~c(X1))).
 #
-#cnf(i_0_258, plain, (~a3_s_1(X1)|~o(X1))).
+#cnf(i_0_314, plain, (a3_e_1(esk128_0)|~x2_e_3(X1))).
 #
-#cnf(i_0_72, plain, (x2_e_7(esk33_0)|~random_activity_4(X1))).
+#cnf(i_0_235, plain, (c(esk93_0)|~l_s_2(X1))).
 #
-#cnf(i_0_130, plain, (x2_e_6(esk56_0)|~random_activity_3(X1))).
+#cnf(i_0_110, plain, (~l_s_0(X1)|~x2_s_5(X1))).
 #
-#cnf(i_0_131, plain, (x2_e_6(esk56_0)|~tau_9(X1))).
+#cnf(i_0_57, plain, (k(esk16_0)|~a3_s_3(X1))).
 #
-#cnf(i_0_256, plain, (~x2_e_4(X1)|~o(X1))).
+#cnf(i_0_3, plain, (a3_e_3(esk2_0)|~k(X1))).
 #
-#cnf(i_0_118, plain, (x2_e_0(esk54_0)|~j(X1))).
+#cnf(i_0_328, plain, (e(esk76_0)|~k(X1))).
 #
-#cnf(i_0_117, plain, (x2_e_0(esk54_0)|~b(X1))).
+#cnf(i_0_327, plain, (~x2_s_5(esk49_0))).
 #
-#cnf(i_0_81, plain, (a2_e_0(esk39_0)|~x2_e_0(X1))).
+#cnf(i_0_70, plain, (a3_e_3(esk25_0)|~x2_s_6(X1))).
 #
-#cnf(i_0_160, plain, (~l_s_0(X1)|~o(X1))).
+#cnf(i_0_91, plain, (a3_e_2(esk28_0)|~l_s_3(X1))).
 #
-#cnf(i_0_283, plain, (a2_e_0(esk108_0)|~a(X1))).
+#cnf(i_0_115, plain, (a3_e_2(esk40_0)|~l_s_4(X1))).
 #
-#cnf(i_0_286, plain, (i(esk110_0)|~l_s_6(X1))).
+#cnf(i_0_302, plain, (~a3_e_3(X1)|~k(X1))).
 #
-#cnf(i_0_324, plain, (i(esk110_0))).
+#cnf(i_0_162, plain, (a3_e_2(esk59_0)|~l_s_5(X1))).
 #
-#cnf(i_0_115, plain, (~x2_e_4(X1)|~a3_s_1(X1))).
+#cnf(i_0_5, plain, (x2_e_3(esk3_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_4, plain, (x2_e_3(esk3_0)|~a3_e_2(X1))).
+#
+#cnf(i_0_89, plain, (~a3_s_3(X1)|~k(X1))).
+#
+#cnf(i_0_334, plain, (a3_e_1(esk128_0)|~a3_e_2(X1))).
+#
+#cnf(i_0_126, plain, (l(esk47_0)|~l_s_5(X1))).
+#
+#cnf(i_0_106, plain, (e(esk37_0)|~l_s_6(X1))).
+#
+#cnf(i_0_47, plain, (~l_s_6(X1)|~a3_e_3(X1))).
+#
+#cnf(i_0_190, plain, (e(esk76_0)|~a3_s_3(X1))).
+#
+#cnf(i_0_173, plain, (i(esk67_0)|~l_s_6(X1))).
+#
+#cnf(i_0_172, plain, (i(esk67_0)|~e(X1))).
+#
+#cnf(i_0_145, plain, (~e(X1)|~a3_e_3(X1))).
+#
+#cnf(i_0_255, plain, (x2_e_2(esk106_0)|~l_s_1(X1))).
+#
+#cnf(i_0_141, plain, (f(esk53_0)|~l_s_1(X1))).
+#
+#cnf(i_0_304, plain, (a(esk122_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_300, plain, (~x2_s_6(X1)|~a3_e_3(X1))).
+#
+#cnf(i_0_66, plain, (a2_e_0(esk24_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_148, plain, (x2_e_4(esk56_0)|~n(X1))).
+#
+#cnf(i_0_147, plain, (x2_e_4(esk56_0)|~g(X1))).
+#
+#cnf(i_0_301, plain, (~h(X1)|~a3_e_3(X1))).
+#
+#cnf(i_0_228, plain, (o(esk92_0)|~d(X1))).
+#
+#cnf(i_0_271, plain, (random_activity_1(esk114_0)|~l_s_3(X1))).
+#
+#cnf(i_0_62, plain, (m(esk23_0)|~l_s_4(X1))).
+#
+#cnf(i_0_299, plain, (~x2_e_6(X1)|~a3_e_3(X1))).
+#
+#cnf(i_0_56, plain, (h(esk17_0)|~a3_s_3(X1))).
+#
+#cnf(i_0_163, plain, (x2_e_5(esk60_0)|~random_activity_2(X1))).
+#
+#cnf(i_0_94, plain, (a3_e_1(esk30_0)|~x2_s_2(X1))).
+#
+#cnf(i_0_285, plain, (~a3_s_2(X1)|~tau_4(X1))).
+#
+#cnf(i_0_97, plain, (a3_e_1(esk32_0)|~l_s_2(X1))).
+#
+#cnf(i_0_315, plain, (a3_e_1(esk128_0)|~x2_s_3(X1))).
 ##
-#cnf(i_0_274, plain, (o(esk103_0)|~d(X1))).
-#
-#cnf(i_0_33, plain, (x2_e_4(esk19_0)|~g(X1))).
-#
-#cnf(i_0_127, plain, (~l_s_2(X1)|~a3_s_1(X1))).
-#
-#cnf(i_0_32, plain, (x2_e_4(esk19_0)|~n(X1))).
-#
-#cnf(i_0_45, plain, (l(esk25_0)|~l_s_3(X1))).
-#
-#cnf(i_0_64, plain, (c(esk30_0)|~l_s_2(X1))).
-#
-#cnf(i_0_331, plain, (~a3_s_1(esk109_0))).
-#
-#cnf(i_0_8, plain, (a3_e_1(esk7_0)|~l_s_2(X1))).
-#
-#cnf(i_0_220, plain, (a3_e_1(esk85_0)|~x2_s_2(X1))).
-#
-#cnf(i_0_239, plain, (a3_e_1(esk94_0)|~x2_s_3(X1))).
-#
-#cnf(i_0_126, plain, (~c(X1)|~a3_s_1(X1))).
-#
-#cnf(i_0_205, plain, (x2_e_2(esk78_0)|~l_s_1(X1))).
-#
-#cnf(i_0_80, plain, (f(esk38_0)|~l_s_1(X1))).
-#
-#cnf(i_0_24, plain, (a3_e_2(esk14_0)|~l_s_5(X1))).
-#
-#cnf(i_0_128, plain, (~x2_e_2(X1)|~a3_s_1(X1))).
-#
-#cnf(i_0_109, plain, (a3_e_2(esk52_0)|~l_s_4(X1))).
-#
-#cnf(i_0_253, plain, (a3_e_2(esk98_0)|~l(X1))).
-#
-#cnf(i_0_254, plain, (a3_e_2(esk98_0)|~l_s_3(X1))).
-#
-#cnf(i_0_129, plain, (~x2_s_2(X1)|~a3_s_1(X1))).
-#
-#cnf(i_0_14, plain, (x2_e_3(esk8_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_251, plain, (a3_e_3(esk97_0)|~x2_s_6(X1))).
-#
-#cnf(i_0_123, plain, (e(esk55_0)|~a3_s_3(X1))).
-#
-#cnf(i_0_351, plain, (~a3_s_1(esk62_0))).
-#
-#cnf(i_0_221, plain, (e(esk86_0)|~l_s_6(X1))).
-#
-#cnf(i_0_189, plain, (m(esk76_0)|~l_s_5(X1))).
-#
-#cnf(i_0_275, plain, (random_activity_1(esk104_0)|~l_s_4(X1))).
-#
-#cnf(i_0_124, plain, (~x2_e_3(X1)|~a3_s_1(X1))).
-#
-#cnf(i_0_82, plain, (a2_e_0(esk39_0)|~x2_s_0(X1))).
-#
-#cnf(i_0_88, plain, (h(esk41_0)|~a3_s_3(X1))).
-#
-#cnf(i_0_86, plain, (k(esk44_0)|~a3_s_3(X1))).
-#
-#cnf(i_0_214, plain, (~l_s_0(X1)|~a3_s_1(X1))).
-#
-#cnf(i_0_95, plain, (a(esk49_0)|~a2_s_0(X1))).
+#cnf(i_0_284, plain, (~a3_e_2(X1)|~tau_4(X1))).
 ##
-#cnf(i_0_340, plain, (a3_e_1(esk85_0)|~l_s_1(X1))).
+#cnf(i_0_330, plain, (e(esk76_0)|~x2_s_6(X1))).
 #
-#cnf(i_0_360, plain, (~a3_s_1(esk70_0))).
+#cnf(i_0_333, plain, (a3_e_1(esk128_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_127, plain, (~x2_e_3(X1)|~tau_4(X1))).
+#
+#cnf(i_0_336, plain, (a3_e_1(esk128_0)|~l_s_5(X1))).
+#
+#cnf(i_0_337, plain, (a3_e_1(esk128_0)|~l_s_4(X1))).
+#
+#cnf(i_0_338, plain, (a3_e_1(esk128_0)|~l_s_3(X1))).
+#
+#cnf(i_0_194, plain, (~x2_s_3(X1)|~tau_4(X1))).
 ##
-#cnf(i_0_343, plain, (x2_e_3(esk8_0)|~l_s_5(X1))).
-#
-#cnf(i_0_346, plain, (x2_e_3(esk8_0)|~l_s_4(X1))).
-#
-#cnf(i_0_116, plain, (~x2_s_4(X1)|~a3_s_1(X1))).
-#
-#cnf(i_0_348, plain, (x2_e_3(esk8_0)|~l(X1))).
-#
-#cnf(i_0_370, plain, (a3_e_1(esk94_0)|~l(X1))).
-#
-#cnf(i_0_350, plain, (x2_e_3(esk8_0)|~l_s_3(X1))).
-#
-#cnf(i_0_369, plain, (~a3_s_1(esk88_0))).
-#
-#cnf(i_0_352, plain, (a3_e_1(esk94_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_354, plain, (e(esk55_0)|~x2_s_6(X1))).
+#cnf(i_0_344, plain, (a3_e_1(esk30_0)|~l_s_1(X1))).
 ##
-#cnf(i_0_113, plain, (~a3_e_1(X1)|~x2_e_4(X1))).
-##
-#cnf(i_0_358, plain, (a3_e_3(esk95_0)|~a3_s_3(X1))).
+#cnf(i_0_13, plain, (~x2_e_3(X1)|~a3_s_2(X1))).
 #
-#cnf(i_0_359, plain, (a3_e_3(esk119_0)|~a3_s_3(X1))).
-#
-#cnf(i_0_213, plain, (~l_s_0(X1)|~x2_e_4(X1))).
-#
-#cnf(i_0_361, plain, (a2_e_0(esk108_0)|~a2_s_0(X1))).
-#
-#cnf(i_0_363, plain, (a3_e_1(esk94_0)|~l_s_5(X1))).
-#
-#cnf(i_0_366, plain, (a3_e_1(esk94_0)|~l_s_4(X1))).
-#
-#cnf(i_0_26, plain, (~x2_s_4(X1)|~x2_e_4(X1))).
-#
-#cnf(i_0_373, plain, (a3_e_1(esk94_0)|~l_s_3(X1))).
+#cnf(i_0_346, plain, (a2_e_0(esk118_0)|~a2_s_0(X1))).
 ###
-#cnf(i_0_89, plain, (~g(X1)|~x2_e_4(X1))).
+#cnf(i_0_294, plain, (~l_s_5(X1)|~a3_s_2(X1))).
+#
+#cnf(i_0_353, plain, (a3_e_3(esk99_0)|~a3_s_3(X1))).
 ##
-#cnf(i_0_212, plain, (a3_e_1(esk82_0)|a3_s_1(esk82_0))).
+#cnf(i_0_168, plain, (e(esk63_0)|l_s_6(esk63_0))).
 #
-#cnf(i_0_391, plain, (a3_s_1(esk82_0)|~x2_s_3(esk82_0))).
+#cnf(i_0_366, plain, (~a3_s_2(esk108_0))).
 #
-#cnf(i_0_392, plain, (~x2_s_3(esk82_0))).
+#cnf(i_0_236, plain, (a2_s_0(esk94_0)|x2_e_1(esk94_0))).
 #
-#cnf(i_0_296, plain, (e(esk116_0)|l_s_6(esk116_0))).
+#cnf(i_0_372, plain, (a2_s_0(esk94_0)|~x2_s_5(esk94_0))).
 #
-#cnf(i_0_90, plain, (a2_s_0(esk45_0)|x2_e_5(esk45_0))).
+#cnf(i_0_135, plain, (a3_e_1(esk52_0)|a3_s_1(esk52_0))).
 #
-#cnf(i_0_264, plain, (a2_s_0(esk99_0)|x2_e_1(esk99_0))).
+#cnf(i_0_373, plain, (~x2_s_5(esk94_0))).
 #
-#cnf(i_0_121, plain, (~n(X1)|~x2_e_4(X1))).
+#cnf(i_0_374, plain, (a3_s_1(esk52_0)|~l_s_2(esk52_0))).
 #
-#cnf(i_0_110, plain, (a2_s_0(esk53_0)|a2_e_0(esk53_0))).
+#cnf(i_0_92, plain, (a2_s_0(esk29_0)|a2_e_0(esk29_0))).
 #
-#cnf(i_0_5, plain, (l(esk6_0)|~tau_5(X1)|~l(X2))).
+#cnf(i_0_241, plain, (x2_e_5(esk97_0)|a2_s_0(esk97_0))).
 #
-#cnf(i_0_281, plain, (c(esk107_0)|~tau_3(X1)|~c(X2))).
+#cnf(i_0_375, plain, (~l_s_2(esk52_0))).
 #
-#cnf(i_0_261, plain, (~x2_s_5(X1)|~x2_e_4(X1))).
+#cnf(i_0_376, plain, (a2_s_0(esk97_0)|~x2_s_5(esk97_0))).
 #
-#cnf(i_0_78, plain, (f(esk37_0)|~tau_2(X1)|~f(X2))).
+#cnf(i_0_59, plain, (c(esk21_0)|~tau_3(X1)|~c(X2))).
 #
-#cnf(i_0_28, plain, (e(esk18_0)|~e(X2)|~a3_e_3(X1))).
+#cnf(i_0_133, plain, (l(esk51_0)|~tau_7(X1)|~l(X2))).
 #
-#cnf(i_0_21, plain, (m(esk13_0)|~tau_7(X1)|~m(X2))).
+#cnf(i_0_377, plain, (~x2_s_5(esk97_0))).
 #
-#cnf(i_0_260, plain, (~x2_e_5(X1)|~x2_e_4(X1))).
+#cnf(i_0_8, plain, (random_activity_2(esk5_0)|~random_activity_2(X1)|~x2_s_5(X2))).
 #
-#cnf(i_0_290, plain, (random_activity_1(esk113_0)|~tau_6(X1)|~random_activity_1(X2))).
-#
-#cnf(i_0_6, plain, (tau_5(esk5_0)|~tau_5(X1)|~l(X2))).
+#cnf(i_0_378, plain, (random_activity_2(esk5_0)|~random_activity_2(X1))).
 ##
-#cnf(i_0_184, plain, (~x2_e_1(X1)|~x2_e_4(X1))).
+#cnf(i_0_293, plain, (~l(X1)|~a3_s_2(X1))).
 #
-#cnf(i_0_230, plain, (tau_1(esk89_0)|~x2_s_2(X2)|~tau_1(X1))).
-##
-#cnf(i_0_180, plain, (tau_4(esk73_0)|~tau_4(X1)|~x2_s_3(X2))).
+#cnf(i_0_307, plain, (e(esk127_0)|~e(X2)|~a3_e_3(X1))).
 #
-#cnf(i_0_186, plain, (~a2_s_0(X1)|~x2_e_4(X1))).
-##
-#cnf(i_0_29, plain, (e(esk18_0)|~e(X2)|~a3_s_3(X1))).
+#cnf(i_0_269, plain, (f(esk113_0)|~tau_2(X1)|~f(X2))).
 #
-#cnf(i_0_22, plain, (tau_7(esk12_0)|~tau_7(X1)|~m(X2))).
+#cnf(i_0_199, plain, (random_activity_1(esk86_0)|~tau_5(X1)|~random_activity_1(X2))).
 #
-#cnf(i_0_48, plain, (~a3_s_2(X1)|~l_s_5(X1))).
-##
-#cnf(i_0_282, plain, (tau_3(esk106_0)|~tau_3(X1)|~c(X2))).
-##
-#cnf(i_0_419, plain, (~l_s_5(esk100_0))).
+#cnf(i_0_224, plain, (~x2_s_3(X1)|~a3_s_2(X1))).
 #
-#cnf(i_0_210, plain, (g(esk79_0)|~g(X1)|~x2_s_4(X2))).
+#cnf(i_0_277, plain, (m(esk117_0)|~tau_6(X1)|~m(X2))).
 #
-#cnf(i_0_207, plain, (n(esk80_0)|~n(X1)|~x2_s_4(X2))).
+#cnf(i_0_383, plain, (e(esk127_0)|~e(X1)|~k(X2))).
 #
-#cnf(i_0_37, plain, (tau_8(esk20_0)|~tau_8(X1)|~x2_s_5(X2))).
+#cnf(i_0_221, plain, (tau_4(esk88_0)|~x2_s_3(X2)|~tau_4(X1))).
 #
-#cnf(i_0_102, plain, (~a3_e_2(X1)|~l_s_5(X1))).
+#cnf(i_0_384, plain, (~a3_s_2(esk84_0))).
 ##
-#cnf(i_0_34, plain, (random_activity_2(esk21_0)|~random_activity_2(X1)|~x2_s_5(X2))).
+#cnf(i_0_11, plain, (tau_8(esk4_0)|~tau_8(X1)|~x2_s_5(X2))).
 ##
-#cnf(i_0_100, plain, (~m(X1)|~l_s_5(X1))).
+#cnf(i_0_296, plain, (~l_s_4(X1)|~a3_s_2(X1))).
 #
-#cnf(i_0_41, plain, (tau_0(esk22_0)|~tau_0(X1)|~x2_s_1(X2))).
-##
-#cnf(i_0_38, plain, (random_activity_5(esk23_0)|~random_activity_5(X1)|~x2_s_1(X2))).
+#cnf(i_0_308, plain, (e(esk127_0)|~a3_s_3(X1)|~e(X2))).
 #
-#cnf(i_0_309, plain, (~tau_7(X1)|~l_s_5(X1))).
+#cnf(i_0_118, plain, (random_activity_5(esk45_0)|~x2_s_1(X2)|~random_activity_5(X1))).
 ##
-#cnf(i_0_79, plain, (tau_2(esk36_0)|~tau_2(X1)|~f(X2))).
-##
-#cnf(i_0_249, plain, (~tau_5(X1)|~l(X1))).
+#cnf(i_0_395, plain, (~a3_s_2(esk12_0))).
 #
-#cnf(i_0_165, plain, (j(esk71_0)|~x2_s_0(X2)|~j(X1))).
+#cnf(i_0_60, plain, (tau_3(esk20_0)|~tau_3(X1)|~c(X2))).
 ##
-#cnf(i_0_162, plain, (b(esk72_0)|~x2_s_0(X2)|~b(X1))).
+#cnf(i_0_252, plain, (tau_10(esk103_0)|~x2_s_7(X2)|~tau_10(X1))).
 #
-#cnf(i_0_51, plain, (~a3_s_2(X1)|~l(X1))).
+#cnf(i_0_298, plain, (~l_s_3(X1)|~a3_s_2(X1))).
 ##
-#cnf(i_0_310, plain, (random_activity_3(esk128_0)|~random_activity_3(X1)|~x2_s_6(X2))).
+#cnf(i_0_268, plain, (j(esk110_0)|~x2_s_0(X2)|~j(X1))).
 ##
-#cnf(i_0_105, plain, (~a3_e_2(X1)|~l(X1))).
+#cnf(i_0_406, plain, (~a3_s_2(esk66_0))).
 #
-#cnf(i_0_301, plain, (tau_10(esk117_0)|~tau_10(X1)|~x2_s_7(X2))).
+#cnf(i_0_265, plain, (b(esk111_0)|~x2_s_0(X2)|~b(X1))).
 ##
-#cnf(i_0_298, plain, (random_activity_4(esk118_0)|~random_activity_4(X1)|~x2_s_7(X2))).
+#cnf(i_0_134, plain, (tau_7(esk50_0)|~tau_7(X1)|~l(X2))).
 #
-#cnf(i_0_112, plain, (~l_s_3(X1)|~l(X1))).
+#cnf(i_0_297, plain, (~random_activity_1(X1)|~a3_s_2(X1))).
 ##
-#cnf(i_0_313, plain, (tau_9(esk127_0)|~tau_9(X1)|~x2_s_6(X2))).
+#cnf(i_0_78, plain, (random_activity_3(esk27_0)|~random_activity_3(X1)|~x2_s_6(X2))).
 ##
-#cnf(i_0_61, plain, (~l_s_3(X1)|~tau_5(X1))).
+#cnf(i_0_295, plain, (~m(X1)|~a3_s_2(X1))).
 #
-#cnf(i_0_291, plain, (tau_6(esk112_0)|~tau_6(X1)|~random_activity_1(X2))).
+#cnf(i_0_81, plain, (tau_9(esk26_0)|~tau_9(X1)|~x2_s_6(X2))).
+##
+#cnf(i_0_121, plain, (tau_0(esk44_0)|~x2_s_1(X2)|~tau_0(X1))).
+#
+#cnf(i_0_12, plain, (~x2_e_3(X1)|~a3_e_2(X1))).
+##
+#cnf(i_0_156, plain, (n(esk57_0)|~n(X1)|~x2_s_4(X2))).
+#
+#cnf(i_0_278, plain, (tau_6(esk116_0)|~tau_6(X1)|~m(X2))).
+#
+#cnf(i_0_50, plain, (~l_s_5(X1)|~a3_e_2(X1))).
+##
+#cnf(i_0_200, plain, (tau_5(esk85_0)|~tau_5(X1)|~random_activity_1(X2))).
+##
+#cnf(i_0_49, plain, (~l(X1)|~a3_e_2(X1))).
+#
+#cnf(i_0_249, plain, (random_activity_4(esk104_0)|~random_activity_4(X1)|~x2_s_7(X2))).
+##
+#cnf(i_0_105, plain, (tau_1(esk34_0)|~tau_1(X1)|~x2_s_2(X2))).
+#
+#cnf(i_0_223, plain, (~x2_s_3(X1)|~a3_e_2(X1))).
+##
+#cnf(i_0_270, plain, (tau_2(esk112_0)|~tau_2(X1)|~f(X2))).
+##
+#cnf(i_0_52, plain, (~l_s_4(X1)|~a3_e_2(X1))).
+#
+#cnf(i_0_153, plain, (g(esk58_0)|~g(X1)|~x2_s_4(X2))).
+##
+#cnf(i_0_382, plain, (e(esk127_0)|~x2_s_6(X2)|~e(X1))).
+#
+#cnf(i_0_54, plain, (~l_s_3(X1)|~a3_e_2(X1))).
+##
+#cnf(i_0_289, plain, (x2_e_5(esk120_0)|x2_s_5(esk119_0)|~x2_e_4(X1))).
+#
+#cnf(i_0_45, plain, (x2_s_1(esk14_0)|x2_e_1(esk15_0)|~a2_e_0(X1))).
+#
+#cnf(i_0_53, plain, (~random_activity_1(X1)|~a3_e_2(X1))).
+#
+#cnf(i_0_239, plain, (x2_e_4(esk96_0)|a3_s_1(esk95_0)|~o(X1))).
+#
+#cnf(i_0_19, plain, (c(esk9_0)|l_s_2(esk8_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_464, plain, (l_s_2(esk8_0)|~a3_s_1(X1)|~l_s_2(esk9_0))).
+#
+#cnf(i_0_51, plain, (~m(X1)|~a3_e_2(X1))).
+#
+#cnf(i_0_466, plain, (l_s_2(esk8_0)|~l_s_2(esk9_0))).
+#
+#cnf(i_0_463, plain, (l_s_2(esk8_0)|~a3_s_1(esk9_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_465, plain, (l_s_2(esk8_0)|~a3_e_1(esk9_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_16, plain, (~x2_s_3(X1)|~x2_e_3(X1))).
+#
+#cnf(i_0_290, plain, (x2_e_5(esk120_0)|x2_s_5(esk119_0)|~l_s_0(X1))).
+#
+#cnf(i_0_470, plain, (x2_s_5(esk119_0)|~l_s_0(X1)|~x2_s_5(esk120_0))).
+#
+#cnf(i_0_471, plain, (x2_s_5(esk119_0)|~x2_s_5(esk120_0))).
+#
+#cnf(i_0_32, plain, (~a3_s_1(X1)|~x2_e_3(X1))).
+#
+#cnf(i_0_18, plain, (x2_s_3(esk10_0)|x2_e_3(esk11_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_474, plain, (x2_s_3(esk10_0)|~a3_s_1(X1)|~a3_s_2(esk11_0))).
+#
+#cnf(i_0_479, plain, (x2_s_3(esk10_0)|~a3_s_2(esk11_0))).
+#
+#cnf(i_0_201, plain, (~a3_e_1(X1)|~x2_e_3(X1))).
+#
+#cnf(i_0_478, plain, (x2_s_3(esk10_0)|~a3_s_1(X1)|~x2_s_3(esk11_0))).
+#
+#cnf(i_0_484, plain, (x2_s_3(esk10_0)|~x2_s_3(esk11_0))).
+#
+#cnf(i_0_475, plain, (x2_s_3(esk10_0)|~a3_s_1(X1)|~a3_e_2(esk11_0))).
+#
+#cnf(i_0_7, plain, (~l(X1)|~l_s_5(X1))).
+#
+#cnf(i_0_476, plain, (x2_s_3(esk10_0)|~a3_s_1(esk11_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_481, plain, (x2_s_3(esk10_0)|~a3_e_1(esk11_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_191, plain, (l(esk82_0)|l_s_5(esk81_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_28, plain, (~tau_7(X1)|~l_s_5(X1))).
+#
+#cnf(i_0_487, plain, (l_s_5(esk81_0)|~a3_e_2(esk82_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_490, plain, (l_s_5(esk81_0)|~l_s_5(esk82_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_488, plain, (l_s_5(esk81_0)|~a3_s_2(esk82_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_174, plain, (~tau_7(X1)|~l(X1))).
+#
+#cnf(i_0_10, plain, (random_activity_2(esk5_0)|tau_8(esk4_0)|~x2_s_5(X1))).
+#
+#cnf(i_0_495, plain, (random_activity_2(esk5_0)|~x2_s_5(esk4_0)|~x2_s_5(X1))).
+#
+#cnf(i_0_187, plain, (i(esk74_0)|l_s_6(esk73_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_139, plain, (~random_activity_2(X1)|~tau_8(X1))).
+##
+#cnf(i_0_186, plain, (i(esk74_0)|l_s_6(esk73_0)|~x2_e_5(X1))).
+#
+#cnf(i_0_120, plain, (tau_0(esk44_0)|random_activity_5(esk45_0)|~x2_s_1(X1))).
+#
+#cnf(i_0_263, plain, (~x2_e_5(X1)|~tau_8(X1))).
+#
+#cnf(i_0_502, plain, (random_activity_2(esk5_0)|~x2_e_5(esk4_0)|~x2_s_5(X1))).
+#
+#cnf(i_0_46, plain, (x2_s_1(esk14_0)|x2_e_1(esk15_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_503, plain, (x2_s_1(esk14_0)|~a2_s_0(X1)|~x2_s_5(esk15_0))).
+#
+#cnf(i_0_71, plain, (~x2_e_5(X1)|~random_activity_2(X1))).
+#
+#cnf(i_0_505, plain, (a2_s_0(esk97_0)|~random_activity_2(esk97_0))).
+#
+#cnf(i_0_504, plain, (x2_s_5(esk119_0)|~l_s_0(X1)|~random_activity_2(esk120_0))).
+#
+#cnf(i_0_508, plain, (x2_s_5(esk119_0)|~random_activity_2(esk120_0))).
+#
+#cnf(i_0_198, plain, (~e(X1)|~l_s_6(X1))).
+#
+#cnf(i_0_116, plain, (x2_e_4(esk42_0)|a3_s_1(esk41_0)|~l_s_0(X1))).
+#
+#cnf(i_0_516, plain, (a3_s_1(esk41_0)|~l_s_0(X1)|~x2_s_5(esk42_0))).
+#
+#cnf(i_0_518, plain, (a3_s_1(esk41_0)|~x2_s_5(esk42_0))).
+#
+#cnf(i_0_15, plain, (~i(X1)|~l_s_6(X1))).
+#
+#cnf(i_0_522, plain, (l_s_6(esk73_0)|~x2_e_5(X1)|~l_s_6(esk74_0))).
+#
+#cnf(i_0_523, plain, (l_s_6(esk73_0)|~a2_s_0(X1)|~l_s_6(esk74_0))).
+#
+#cnf(i_0_529, plain, (l_s_6(esk73_0)|~l_s_6(esk74_0))).
+#
+#cnf(i_0_275, plain, (~x2_e_7(X1)|~l_s_6(X1))).
+#
+#cnf(i_0_240, plain, (x2_e_4(esk96_0)|a3_s_1(esk95_0)|~d(X1))).
+#
+#cnf(i_0_531, plain, (a3_s_1(esk95_0)|~d(X1)|~x2_s_5(esk96_0))).
+#
+#cnf(i_0_533, plain, (a3_s_1(esk95_0)|~x2_s_5(esk96_0))).
+#
+#cnf(i_0_160, plain, (~a2_s_0(X1)|~l_s_6(X1))).
+#
+#cnf(i_0_20, plain, (x2_e_2(esk7_0)|x2_s_2(esk6_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_192, plain, (m(esk80_0)|l_s_4(esk79_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_540, plain, (l_s_4(esk79_0)|~a3_e_2(esk80_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_537, plain, (~l_s_6(esk115_0))).
+#
+#cnf(i_0_542, plain, (l_s_4(esk79_0)|~a3_s_2(esk80_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_251, plain, (random_activity_4(esk104_0)|tau_10(esk103_0)|~x2_s_7(X1))).
+#
+#cnf(i_0_170, plain, (x2_s_7(esk64_0)|x2_e_7(esk65_0)|~l_s_6(X1))).
+#
+#cnf(i_0_48, plain, (~a3_s_3(X1)|~l_s_6(X1))).
+#
+#cnf(i_0_546, plain, (x2_s_7(esk64_0)|~l_s_6(esk65_0)|~l_s_6(X1))).
+#
+#cnf(i_0_169, plain, (x2_s_7(esk64_0)|x2_e_7(esk65_0)|~i(X1))).
+#
+#cnf(i_0_548, plain, (x2_s_7(esk64_0)|~i(X1)|~l_s_6(esk65_0))).
+#
+#cnf(i_0_547, plain, (~l_s_6(esk62_0))).
+#
+#cnf(i_0_551, plain, (x2_s_7(esk64_0)|~e(X1)|~l_s_6(esk65_0))).
+##
+#cnf(i_0_555, plain, (x2_s_7(esk64_0)|~a3_s_3(X1)|~l_s_6(esk65_0))).
+#
+#cnf(i_0_276, plain, (~x2_s_7(X1)|~l_s_6(X1))).
+#
+#cnf(i_0_556, plain, (x2_s_7(esk64_0)|~x2_s_6(X1)|~l_s_6(esk65_0))).
+##
+#cnf(i_0_267, plain, (b(esk111_0)|j(esk110_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_561, plain, (~l_s_6(esk33_0))).
+#
+#cnf(i_0_303, plain, (x2_s_0(esk123_0)|x2_e_0(esk124_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_55, plain, (x2_e_6(esk19_0)|x2_s_6(esk18_0)|~a3_s_3(X1))).
+#
+#cnf(i_0_567, plain, (x2_s_6(esk18_0)|~a3_s_3(X1)|~a3_e_3(esk19_0))).
+#
+#cnf(i_0_158, plain, (~x2_e_5(X1)|~l_s_6(X1))).
+#
+#cnf(i_0_569, plain, (a2_s_0(esk97_0)|~l_s_6(esk97_0))).
+#
+#cnf(i_0_568, plain, (x2_s_5(esk119_0)|~l_s_0(X1)|~l_s_6(esk120_0))).
+#
+#cnf(i_0_573, plain, (x2_s_5(esk119_0)|~l_s_6(esk120_0))).
+#
+#cnf(i_0_572, plain, (~l_s_6(esk97_0))).
+#
+#cnf(i_0_80, plain, (tau_9(esk26_0)|random_activity_3(esk27_0)|~x2_s_6(X1))).
+#
+#cnf(i_0_112, plain, (l_s_0(esk38_0)|x2_e_4(esk39_0)|~x2_e_1(X1))).
+#
+#cnf(i_0_576, plain, (l_s_0(esk38_0)|~x2_e_1(X1)|~x2_s_5(esk39_0))).
+#
+#cnf(i_0_14, plain, (~i(X1)|~e(X1))).
+#
+#cnf(i_0_580, plain, (l_s_6(esk73_0)|~x2_e_5(X1)|~e(esk74_0))).
+#
+#cnf(i_0_581, plain, (l_s_6(esk73_0)|~a2_s_0(X1)|~e(esk74_0))).
+#
+#cnf(i_0_586, plain, (l_s_6(esk73_0)|~e(esk74_0)|~random_activity_2(X1))).
+#
+#cnf(i_0_146, plain, (~a3_s_3(X1)|~e(X1))).
+#
+#cnf(i_0_591, plain, (l_s_6(esk63_0)|~a3_s_3(esk63_0))).
+#
+#cnf(i_0_113, plain, (l_s_0(esk38_0)|x2_e_4(esk39_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_593, plain, (l_s_0(esk38_0)|~a2_s_0(X1)|~x2_s_5(esk39_0))).
+#
+#cnf(i_0_273, plain, (~x2_e_7(X1)|~i(X1))).
+#
+#cnf(i_0_596, plain, (x2_s_7(esk64_0)|~i(esk65_0)|~i(X1))).
+#
+#cnf(i_0_597, plain, (x2_s_7(esk64_0)|~i(esk65_0)|~l_s_6(X1))).
+#
+#cnf(i_0_248, plain, (x2_s_4(esk101_0)|x2_e_4(esk102_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_159, plain, (~a2_s_0(X1)|~i(X1))).
+#
+#cnf(i_0_600, plain, (l_s_6(esk73_0)|~x2_e_5(X1)|~a2_s_0(esk74_0))).
+#
+#cnf(i_0_601, plain, (l_s_6(esk73_0)|~a2_s_0(esk74_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_606, plain, (l_s_6(esk73_0)|~a2_s_0(esk74_0)|~random_activity_2(X1))).
+#
+#cnf(i_0_274, plain, (~x2_s_7(X1)|~i(X1))).
+#
+#cnf(i_0_607, plain, (l_s_6(esk73_0)|~x2_e_5(X1)|~x2_s_7(esk74_0))).
+#
+#cnf(i_0_608, plain, (l_s_6(esk73_0)|~x2_s_7(esk74_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_613, plain, (l_s_6(esk73_0)|~x2_s_7(esk74_0)|~random_activity_2(X1))).
+#
+#cnf(i_0_157, plain, (~x2_e_5(X1)|~i(X1))).
+#
+#cnf(i_0_614, plain, (l_s_6(esk73_0)|~x2_e_5(esk74_0)|~x2_e_5(X1))).
+#
+#cnf(i_0_615, plain, (l_s_6(esk73_0)|~x2_e_5(esk74_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_598, plain, (x2_s_4(esk101_0)|~a3_s_1(X1)|~x2_s_5(esk102_0))).
+#
+#cnf(i_0_33, plain, (~a3_s_1(X1)|~x2_s_3(X1))).
+#
+#cnf(i_0_247, plain, (x2_s_4(esk101_0)|x2_e_4(esk102_0)|~a3_e_1(X1))).
+#
+#cnf(i_0_621, plain, (x2_s_4(esk101_0)|~a3_e_1(X1)|~x2_s_5(esk102_0))).
+#
+#cnf(i_0_623, plain, (x2_s_4(esk101_0)|~l_s_5(X1)|~x2_s_5(esk102_0))).
+#
+#cnf(i_0_618, plain, (~x2_s_3(esk107_0))).
+#
+#cnf(i_0_624, plain, (x2_s_4(esk101_0)|~l_s_3(X1)|~x2_s_5(esk102_0))).
+#
+#cnf(i_0_625, plain, (x2_s_4(esk101_0)|~l_s_4(X1)|~x2_s_5(esk102_0))).
+#
+#cnf(i_0_626, plain, (x2_s_4(esk101_0)|~a3_s_2(X1)|~x2_s_5(esk102_0))).
+#
+#cnf(i_0_202, plain, (~a3_e_1(X1)|~x2_s_3(X1))).
+#
+#cnf(i_0_637, plain, (a3_s_1(esk52_0)|~x2_s_3(esk52_0))).
+#
+#cnf(i_0_627, plain, (x2_s_4(esk101_0)|~x2_s_3(X1)|~x2_s_5(esk102_0))).
+#
+#cnf(i_0_629, plain, (x2_s_4(esk101_0)|~x2_s_5(esk102_0)|~l_s_2(X1))).
+#
+#cnf(i_0_641, plain, (~x2_s_3(esk52_0))).
+#
+#cnf(i_0_630, plain, (x2_s_4(esk101_0)|~l_s_1(X1)|~x2_s_5(esk102_0))).
+#
+#cnf(i_0_631, plain, (x2_s_4(esk101_0)|~x2_s_2(X1)|~x2_s_5(esk102_0))).
+#
+#cnf(i_0_193, plain, (random_activity_1(esk78_0)|l_s_3(esk77_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_17, plain, (~x2_e_1(X1)|~random_activity_5(X1))).
+#
+#cnf(i_0_645, plain, (l_s_3(esk77_0)|~a3_e_2(esk78_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_644, plain, (l_s_3(esk77_0)|~a3_s_2(esk78_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_155, plain, (g(esk58_0)|n(esk57_0)|~x2_s_4(X1))).
+#
+#cnf(i_0_175, plain, (~tau_0(X1)|~random_activity_5(X1))).
+##
+#cnf(i_0_455, plain, (x2_e_5(esk120_0)|x2_s_5(esk119_0)|~g(X1))).
+##
+#cnf(i_0_184, plain, (~x2_s_1(X1)|~random_activity_5(X1))).
 ###
-#cnf(i_0_27, plain, (~c(X1)|~l_s_2(X1))).
+#cnf(i_0_456, plain, (x2_e_5(esk120_0)|x2_s_5(esk119_0)|~n(X1))).
 #
-#cnf(i_0_399, plain, (e(esk18_0)|~x2_s_6(X2)|~e(X1))).
+#cnf(i_0_229, plain, (~a2_e_0(X1)|~x2_e_1(X1))).
+#
+#cnf(i_0_665, plain, (a2_s_0(esk29_0)|~x2_e_1(esk29_0))).
+###
+#cnf(i_0_258, plain, (~x2_e_4(X1)|~x2_e_1(X1))).
 ##
-#cnf(i_0_294, plain, (i(esk115_0)|l_s_6(esk114_0)|~x2_e_5(X1))).
+#cnf(i_0_667, plain, (x2_s_4(esk101_0)|~a3_e_1(X1)|~x2_e_1(esk102_0))).
 #
-#cnf(i_0_193, plain, (~a3_e_1(X1)|~l_s_2(X1))).
+#cnf(i_0_668, plain, (x2_s_4(esk101_0)|~a3_s_1(X1)|~x2_e_1(esk102_0))).
 #
-#cnf(i_0_477, plain, (a3_s_1(esk82_0)|~l_s_2(esk82_0))).
+#cnf(i_0_44, plain, (~tau_0(X1)|~x2_e_1(X1))).
 #
-#cnf(i_0_295, plain, (i(esk115_0)|l_s_6(esk114_0)|~a2_s_0(X1))).
+#cnf(i_0_669, plain, (a3_s_1(esk95_0)|~d(X1)|~x2_e_1(esk96_0))).
 #
-#cnf(i_0_479, plain, (i(esk115_0)|l_s_6(esk114_0))).
+#cnf(i_0_672, plain, (a3_s_1(esk41_0)|~l_s_0(X1)|~x2_e_1(esk42_0))).
 #
-#cnf(i_0_237, plain, (~tau_3(X1)|~l_s_2(X1))).
+#cnf(i_0_673, plain, (l_s_0(esk38_0)|~x2_e_1(esk39_0)|~x2_e_1(X1))).
 #
-#cnf(i_0_217, plain, (x2_e_1(esk84_0)|x2_s_1(esk83_0)|~a2_e_0(X1))).
+#cnf(i_0_231, plain, (~a2_s_0(X1)|~x2_e_1(X1))).
 #
-#cnf(i_0_66, plain, (x2_e_5(esk32_0)|x2_s_5(esk31_0)|~x2_e_4(X1))).
+#cnf(i_0_674, plain, (l_s_0(esk38_0)|~a2_s_0(X1)|~x2_e_1(esk39_0))).
 #
-#cnf(i_0_305, plain, (x2_e_3(esk125_0)|x2_s_3(esk124_0)|~a3_s_1(X1))).
+#cnf(i_0_675, plain, (x2_s_4(esk101_0)|~x2_e_1(esk102_0)|~l_s_5(X1))).
 #
-#cnf(i_0_192, plain, (~a3_e_1(X1)|~c(X1))).
+#cnf(i_0_676, plain, (x2_s_4(esk101_0)|~l_s_3(X1)|~x2_e_1(esk102_0))).
 #
-#cnf(i_0_487, plain, (x2_s_3(esk124_0)|~a3_s_1(X1)|~x2_s_3(esk125_0))).
+#cnf(i_0_286, plain, (~x2_s_1(X1)|~x2_e_1(X1))).
 #
-#cnf(i_0_490, plain, (x2_s_3(esk124_0)|~x2_s_3(esk125_0))).
+#cnf(i_0_688, plain, (a2_s_0(esk94_0)|~x2_s_1(esk94_0))).
 #
-#cnf(i_0_488, plain, (x2_s_3(esk124_0)|~a3_s_1(esk125_0)|~a3_s_1(X1))).
+#cnf(i_0_677, plain, (x2_s_4(esk101_0)|~l_s_4(X1)|~x2_e_1(esk102_0))).
 #
-#cnf(i_0_255, plain, (~tau_3(X1)|~c(X1))).
+#cnf(i_0_678, plain, (x2_s_4(esk101_0)|~x2_e_1(esk102_0)|~a3_s_2(X1))).
 #
-#cnf(i_0_3, plain, (x2_e_4(esk3_0)|a3_s_1(esk2_0)|~d(X1))).
+#cnf(i_0_208, plain, (~x2_e_5(X1)|~x2_e_1(X1))).
 #
-#cnf(i_0_492, plain, (a3_s_1(esk2_0)|~x2_s_4(esk3_0)|~d(X1))).
+#cnf(i_0_693, plain, (a2_s_0(esk97_0)|~x2_e_1(esk97_0))).
 #
-#cnf(i_0_494, plain, (a3_s_1(esk2_0)|~o(esk3_0)|~d(X1))).
+#cnf(i_0_679, plain, (x2_s_4(esk101_0)|~x2_e_1(esk102_0)|~x2_s_3(X1))).
 #
-#cnf(i_0_194, plain, (~x2_e_2(X1)|~a3_e_1(X1))).
+#cnf(i_0_681, plain, (x2_s_4(esk101_0)|~x2_e_1(esk102_0)|~l_s_2(X1))).
 #
-#cnf(i_0_496, plain, (a3_s_1(esk2_0)|~x2_e_5(esk3_0)|~d(X1))).
+#cnf(i_0_259, plain, (~l_s_0(X1)|~x2_e_1(X1))).
 #
-#cnf(i_0_497, plain, (a3_s_1(esk2_0)|~a3_e_1(esk3_0)|~d(X1))).
+#cnf(i_0_695, plain, (a2_s_0(esk94_0)|~l_s_0(esk94_0))).
 #
-#cnf(i_0_498, plain, (a3_s_1(esk2_0)|~x2_e_1(esk3_0)|~d(X1))).
+#cnf(i_0_682, plain, (x2_s_4(esk101_0)|~l_s_1(X1)|~x2_e_1(esk102_0))).
 #
-#cnf(i_0_195, plain, (~x2_s_2(X1)|~a3_e_1(X1))).
+#cnf(i_0_683, plain, (x2_s_4(esk101_0)|~x2_s_2(X1)|~x2_e_1(esk102_0))).
 #
-#cnf(i_0_513, plain, (a3_s_1(esk82_0)|~x2_s_2(esk82_0))).
+#cnf(i_0_37, plain, (~x2_s_2(X1)|~a3_s_1(X1))).
 #
-#cnf(i_0_499, plain, (a3_s_1(esk2_0)|~a3_s_1(esk3_0)|~d(X1))).
+#cnf(i_0_690, plain, (x2_s_5(esk119_0)|~l_s_0(X1)|~x2_e_1(esk120_0))).
 #
-#cnf(i_0_500, plain, (a3_s_1(esk2_0)|~l_s_0(esk3_0)|~d(X1))).
+#cnf(i_0_691, plain, (x2_s_5(esk119_0)|~g(X1)|~x2_e_1(esk120_0))).
 #
-#cnf(i_0_190, plain, (~x2_e_3(X1)|~a3_e_1(X1))).
+#cnf(i_0_692, plain, (x2_s_5(esk119_0)|~n(X1)|~x2_e_1(esk120_0))).
 #
-#cnf(i_0_501, plain, (a3_s_1(esk2_0)|~g(esk3_0)|~d(X1))).
+#cnf(i_0_697, plain, (~a3_s_1(esk109_0))).
 #
-#cnf(i_0_502, plain, (a3_s_1(esk2_0)|~a2_s_0(esk3_0)|~d(X1))).
+#cnf(i_0_696, plain, (x2_s_1(esk14_0)|~l_s_0(esk15_0)|~a2_s_0(X1))).
 #
-#cnf(i_0_503, plain, (a3_s_1(esk2_0)|~x2_s_5(esk3_0)|~d(X1))).
+#cnf(i_0_684, plain, (random_activity_5(esk45_0)|~x2_s_1(X1)|~x2_e_1(esk44_0))).
 #
-#cnf(i_0_114, plain, (~x2_s_4(X1)|~a3_e_1(X1))).
+#cnf(i_0_699, plain, (x2_e_1(esk83_0)|~x2_s_1(X1)|~x2_e_1(esk44_0))).
 #
-#cnf(i_0_528, plain, (a3_s_1(esk82_0)|~x2_s_4(esk82_0))).
+#cnf(i_0_36, plain, (~x2_e_2(X1)|~a3_s_1(X1))).
 #
-#cnf(i_0_504, plain, (a3_s_1(esk2_0)|~n(esk3_0)|~d(X1))).
+#cnf(i_0_687, plain, (x2_s_1(esk14_0)|~a2_s_0(esk15_0)|~a2_s_0(X1))).
 #
-#cnf(i_0_515, plain, (x2_s_3(esk124_0)|~a3_e_1(esk125_0)|~a3_s_1(X1))).
+#cnf(i_0_689, plain, (x2_s_1(esk14_0)|~x2_s_1(esk15_0)|~a2_s_0(X1))).
 #
-#cnf(i_0_9, plain, (~x2_e_2(X1)|~tau_1(X1))).
+#cnf(i_0_703, plain, (x2_s_2(esk6_0)|~a3_s_1(esk7_0)|~a3_s_1(X1))).
 #
-#cnf(i_0_493, plain, (a3_s_1(esk2_0)|~d(esk3_0)|~d(X1))).
+#cnf(i_0_75, plain, (~x2_e_4(X1)|~a3_s_1(X1))).
 #
-#cnf(i_0_2, plain, (x2_e_4(esk3_0)|a3_s_1(esk2_0)|~o(X1))).
+#cnf(i_0_705, plain, (x2_s_4(esk101_0)|~a3_e_1(X1)|~a3_s_1(esk102_0))).
 #
-#cnf(i_0_534, plain, (a3_s_1(esk2_0)|~x2_s_4(esk3_0)|~o(X1))).
+#cnf(i_0_707, plain, (a3_s_1(esk95_0)|~d(X1)|~a3_s_1(esk96_0))).
 #
-#cnf(i_0_293, plain, (~l_s_1(X1)|~tau_1(X1))).
+#cnf(i_0_722, plain, (a3_s_1(esk95_0)|~a3_s_1(esk96_0))).
 #
-#cnf(i_0_535, plain, (a3_s_1(esk2_0)|~o(X1)|~d(esk3_0))).
+#cnf(i_0_42, plain, (~d(X1)|~a3_s_1(X1))).
 #
-#cnf(i_0_538, plain, (a3_s_1(esk2_0)|~x2_e_5(esk3_0)|~o(X1))).
+#cnf(i_0_710, plain, (a3_s_1(esk41_0)|~l_s_0(X1)|~a3_s_1(esk42_0))).
 #
-#cnf(i_0_539, plain, (a3_s_1(esk2_0)|~a3_e_1(esk3_0)|~o(X1))).
+#cnf(i_0_724, plain, (a3_s_1(esk41_0)|~a3_s_1(esk42_0))).
 #
-#cnf(i_0_292, plain, (~f(X1)|~tau_1(X1))).
+#cnf(i_0_711, plain, (l_s_0(esk38_0)|~a3_s_1(esk39_0)|~x2_e_1(X1))).
 #
-#cnf(i_0_540, plain, (a3_s_1(esk2_0)|~x2_e_1(esk3_0)|~o(X1))).
+#cnf(i_0_723, plain, (~a3_s_1(esk98_0))).
 #
-#cnf(i_0_541, plain, (a3_s_1(esk2_0)|~a3_s_1(esk3_0)|~o(X1))).
+#cnf(i_0_706, plain, (x2_s_4(esk101_0)|~a3_s_1(esk102_0)|~a3_s_1(X1))).
 #
-#cnf(i_0_542, plain, (a3_s_1(esk2_0)|~l_s_0(esk3_0)|~o(X1))).
+#cnf(i_0_712, plain, (l_s_0(esk38_0)|~a2_s_0(X1)|~a3_s_1(esk39_0))).
 #
-#cnf(i_0_12, plain, (~x2_s_2(X1)|~tau_1(X1))).
+#cnf(i_0_713, plain, (x2_s_4(esk101_0)|~a3_s_1(esk102_0)|~l_s_5(X1))).
 #
-#cnf(i_0_543, plain, (a3_s_1(esk2_0)|~g(esk3_0)|~o(X1))).
+#cnf(i_0_41, plain, (~o(X1)|~a3_s_1(X1))).
 #
-#cnf(i_0_544, plain, (a3_s_1(esk2_0)|~a2_s_0(esk3_0)|~o(X1))).
+#cnf(i_0_714, plain, (x2_s_4(esk101_0)|~l_s_3(X1)|~a3_s_1(esk102_0))).
 #
-#cnf(i_0_545, plain, (a3_s_1(esk2_0)|~x2_s_5(esk3_0)|~o(X1))).
+#cnf(i_0_715, plain, (x2_s_4(esk101_0)|~l_s_4(X1)|~a3_s_1(esk102_0))).
 #
-#cnf(i_0_11, plain, (~l_s_1(X1)|~x2_e_2(X1))).
+#cnf(i_0_716, plain, (x2_s_4(esk101_0)|~a3_s_1(esk102_0)|~a3_s_2(X1))).
 #
-#cnf(i_0_546, plain, (a3_s_1(esk2_0)|~n(esk3_0)|~o(X1))).
+#cnf(i_0_76, plain, (~x2_s_4(X1)|~a3_s_1(X1))).
 #
-#cnf(i_0_536, plain, (a3_s_1(esk2_0)|~o(esk3_0)|~o(X1))).
+#cnf(i_0_717, plain, (x2_s_4(esk101_0)|~a3_s_1(esk102_0)|~x2_s_3(X1))).
+#
+#cnf(i_0_719, plain, (x2_s_4(esk101_0)|~a3_s_1(esk102_0)|~l_s_2(X1))).
+#
+#cnf(i_0_720, plain, (x2_s_4(esk101_0)|~l_s_1(X1)|~a3_s_1(esk102_0))).
+#
+#cnf(i_0_744, plain, (~a3_s_1(esk55_0))).
+#
+#cnf(i_0_721, plain, (x2_s_4(esk101_0)|~x2_s_2(X1)|~a3_s_1(esk102_0))).
 ##
-#cnf(i_0_10, plain, (~f(X1)|~x2_e_2(X1))).
+#cnf(i_0_459, plain, (x2_s_1(esk14_0)|x2_e_1(esk15_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_137, plain, (~l_s_0(X1)|~a3_s_1(X1))).
+#
+#cnf(i_0_751, plain, (x2_s_1(esk14_0)|~l_s_0(esk15_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_749, plain, (x2_s_1(esk14_0)|~x2_s_1(esk15_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_750, plain, (x2_s_1(esk14_0)|~x2_s_0(X1)|~x2_s_5(esk15_0))).
+#
+#cnf(i_0_755, plain, (~a3_s_1(esk49_0))).
+#
+#cnf(i_0_752, plain, (x2_s_1(esk14_0)|~a2_s_0(esk15_0)|~x2_s_0(X1))).
+##
+#cnf(i_0_462, plain, (a3_e_1(esk32_0)|l_s_2(esk8_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_225, plain, (~x2_e_2(X1)|~x2_s_2(X1))).
+#
+#cnf(i_0_758, plain, (l_s_2(esk8_0)|~a3_s_1(X1)|~x2_s_3(esk32_0))).
+#
+#cnf(i_0_765, plain, (l_s_2(esk8_0)|~x2_s_3(esk32_0))).
+#
+#cnf(i_0_759, plain, (l_s_2(esk8_0)|~a3_s_1(X1)|~l_s_2(esk32_0))).
+#
+#cnf(i_0_283, plain, (~l_s_1(X1)|~x2_s_2(X1))).
+#
+#cnf(i_0_768, plain, (l_s_2(esk8_0)|~l_s_2(esk32_0))).
+#
+#cnf(i_0_764, plain, (x2_s_2(esk6_0)|~x2_s_2(esk7_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_477, plain, (a3_e_1(esk128_0)|x2_s_3(esk10_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_771, plain, (~x2_s_2(esk31_0))).
+#
+#cnf(i_0_772, plain, (x2_s_3(esk10_0)|~a3_s_1(X1)|~x2_s_3(esk128_0))).
+#
+#cnf(i_0_777, plain, (x2_s_3(esk10_0)|~x2_s_3(esk128_0))).
+#
+#cnf(i_0_773, plain, (x2_s_3(esk10_0)|~a3_s_1(X1)|~l_s_2(esk128_0))).
+#
+#cnf(i_0_282, plain, (~f(X1)|~x2_s_2(X1))).
+#
+#cnf(i_0_781, plain, (x2_s_3(esk10_0)|~l_s_2(esk128_0))).
+#
+#cnf(i_0_489, plain, (l_s_5(esk81_0)|a3_e_2(esk59_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_786, plain, (l_s_5(esk81_0)|~x2_s_3(esk59_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_206, plain, (~a3_e_1(X1)|~x2_s_2(X1))).
+#
+#cnf(i_0_797, plain, (a3_s_1(esk52_0)|~x2_s_2(esk52_0))).
+#
+#cnf(i_0_789, plain, (l_s_5(esk81_0)|~l_s_4(esk59_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_790, plain, (l_s_5(esk81_0)|~l_s_3(esk59_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_138, plain, (~tau_1(X1)|~x2_s_2(X1))).
+#
+#cnf(i_0_796, plain, (x2_s_3(esk10_0)|~x2_s_2(esk128_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_799, plain, (l_s_2(esk8_0)|~x2_s_2(esk32_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_787, plain, (l_s_5(esk81_0)|~l_s_5(esk59_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_23, plain, (~l_s_1(X1)|~x2_e_2(X1))).
+#
+#cnf(i_0_805, plain, (x2_s_2(esk6_0)|~l_s_1(esk7_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_496, plain, (x2_e_5(esk60_0)|random_activity_2(esk5_0)|~x2_s_5(X1))).
+##
+#cnf(i_0_22, plain, (~f(X1)|~x2_e_2(X1))).
+#
+#cnf(i_0_806, plain, (random_activity_2(esk5_0)|~x2_s_5(esk60_0)|~x2_s_5(X1))).
+#
+#cnf(i_0_807, plain, (random_activity_2(esk5_0)|~x2_e_1(esk60_0)|~x2_s_5(X1))).
+#
+#cnf(i_0_808, plain, (random_activity_2(esk5_0)|~l_s_6(esk60_0)|~x2_s_5(X1))).
+#
+#cnf(i_0_205, plain, (~a3_e_1(X1)|~x2_e_2(X1))).
+#
+#cnf(i_0_816, plain, (x2_s_2(esk6_0)|~a3_e_1(esk7_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_499, plain, (x2_e_1(esk83_0)|random_activity_5(esk45_0)|~x2_s_1(X1))).
+#
+#cnf(i_0_818, plain, (x2_e_1(esk83_0)|~x2_s_1(X1))).
+#
+#cnf(i_0_305, plain, (~tau_1(X1)|~x2_e_2(X1))).
+#
+#cnf(i_0_825, plain, (l_s_0(esk38_0)|~x2_s_1(X1)|~x2_s_5(esk39_0))).
+#
+#cnf(i_0_826, plain, (l_s_0(esk38_0)|~x2_s_1(X1)|~a3_s_1(esk39_0))).
+#
+#cnf(i_0_539, plain, (a3_e_1(esk30_0)|x2_s_2(esk6_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_243, plain, (~m(X1)|~l_s_4(X1))).
+#
+#cnf(i_0_838, plain, (l_s_4(esk79_0)|~l_s_4(esk80_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_832, plain, (x2_s_2(esk6_0)|~a3_s_1(X1)|~x2_s_3(esk30_0))).
+#
+#cnf(i_0_833, plain, (x2_s_2(esk6_0)|~a3_s_1(X1)|~l_s_2(esk30_0))).
+#
+#cnf(i_0_237, plain, (~tau_6(X1)|~l_s_4(X1))).
+#
+#cnf(i_0_834, plain, (x2_s_2(esk6_0)|~x2_s_2(esk30_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_541, plain, (l_s_4(esk79_0)|a3_e_2(esk40_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_848, plain, (l_s_4(esk79_0)|~l_s_3(esk40_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_111, plain, (~f(X1)|~l_s_1(X1))).
+#
+#cnf(i_0_844, plain, (l_s_4(esk79_0)|~x2_s_3(esk40_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_845, plain, (l_s_4(esk79_0)|~l_s_5(esk40_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_847, plain, (l_s_4(esk79_0)|~l_s_4(esk40_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_288, plain, (~tau_1(X1)|~l_s_1(X1))).
+#
+#cnf(i_0_544, plain, (x2_e_7(esk87_0)|tau_10(esk103_0)|~x2_s_7(X1))).
+#
+#cnf(i_0_854, plain, (x2_e_7(esk87_0)|~x2_s_7(X1))).
+#
+#cnf(i_0_564, plain, (x2_e_0(esk13_0)|j(esk110_0)|~x2_s_0(X1))).
+#
+#cnf(i_0_291, plain, (~tau_2(X1)|~l_s_1(X1))).
+#
+#cnf(i_0_859, plain, (x2_e_0(esk13_0)|~x2_s_0(X1))).
+##
+#cnf(i_0_565, plain, (a2_e_0(esk24_0)|x2_s_0(esk123_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_287, plain, (~tau_1(X1)|~f(X1))).
+#
+#cnf(i_0_863, plain, (x2_s_0(esk123_0)|~a2_s_0(X1)|~x2_e_1(esk24_0))).
+#
+#cnf(i_0_566, plain, (x2_s_6(esk18_0)|a3_e_3(esk25_0)|~a3_s_3(X1))).
+#
+#cnf(i_0_867, plain, (x2_s_6(esk18_0)|~a3_s_3(X1)|~x2_s_6(esk25_0))).
+#
+#cnf(i_0_234, plain, (~tau_2(X1)|~f(X1))).
+#
+#cnf(i_0_871, plain, (x2_s_6(esk18_0)|~x2_s_6(esk25_0))).
+#
+#cnf(i_0_868, plain, (x2_s_6(esk18_0)|~a3_s_3(X1)|~l_s_6(esk25_0))).
+#
+#cnf(i_0_873, plain, (x2_s_6(esk18_0)|~l_s_6(esk25_0))).
+#
+#cnf(i_0_25, plain, (~x2_e_7(X1)|~tau_10(X1))).
+#
+#cnf(i_0_865, plain, (x2_s_6(esk18_0)|~a3_s_3(X1)|~k(esk25_0))).
+#
+#cnf(i_0_866, plain, (x2_s_6(esk18_0)|~a3_s_3(X1)|~e(esk25_0))).
+#
+#cnf(i_0_575, plain, (x2_e_6(esk61_0)|random_activity_3(esk27_0)|~x2_s_6(X1))).
+#
+#cnf(i_0_233, plain, (~x2_s_7(X1)|~tau_10(X1))).
+#
+#cnf(i_0_876, plain, (x2_e_6(esk61_0)|~x2_s_6(X1))).
+##
+#cnf(i_0_643, plain, (l_s_3(esk77_0)|a3_e_2(esk28_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_312, plain, (~random_activity_4(X1)|~tau_10(X1))).
+##
+#cnf(i_0_880, plain, (l_s_3(esk77_0)|~x2_s_3(esk28_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_881, plain, (l_s_3(esk77_0)|~l_s_5(esk28_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_151, plain, (~a2_s_0(X1)|~x2_e_7(X1))).
+#
+#cnf(i_0_890, plain, (x2_s_7(esk64_0)|~a2_s_0(esk65_0)|~i(X1))).
+#
+#cnf(i_0_894, plain, (x2_s_7(esk64_0)|~a2_s_0(esk65_0)|~e(X1))).
+#
+#cnf(i_0_883, plain, (l_s_3(esk77_0)|~l_s_4(esk28_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_64, plain, (~x2_s_7(X1)|~x2_e_7(X1))).
+#
+#cnf(i_0_904, plain, (x2_s_7(esk64_0)|~x2_s_7(esk65_0)|~i(X1))).
+#
+#cnf(i_0_908, plain, (x2_s_7(esk64_0)|~x2_s_7(esk65_0)|~e(X1))).
+#
+#cnf(i_0_884, plain, (l_s_3(esk77_0)|~l_s_3(esk28_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_149, plain, (~x2_e_5(X1)|~x2_e_7(X1))).
+#
+#cnf(i_0_918, plain, (x2_s_7(esk64_0)|~x2_e_5(esk65_0)|~i(X1))).
+#
+#cnf(i_0_919, plain, (x2_s_7(esk64_0)|~x2_e_5(esk65_0)|~l_s_6(X1))).
+#
+#cnf(i_0_922, plain, (x2_s_7(esk64_0)|~x2_e_5(esk65_0)|~e(X1))).
+#
+#cnf(i_0_99, plain, (~random_activity_4(X1)|~x2_e_7(X1))).
+##
+#cnf(i_0_891, plain, (x2_s_7(esk64_0)|~a2_s_0(esk65_0)|~l_s_6(X1))).
+##
+#cnf(i_0_281, plain, (~b(X1)|~j(X1))).
+##
+#cnf(i_0_898, plain, (x2_s_7(esk64_0)|~a3_s_3(X1)|~a2_s_0(esk65_0))).
+#
+#cnf(i_0_899, plain, (x2_s_7(esk64_0)|~a2_s_0(esk65_0)|~x2_s_6(X1))).
+#
+#cnf(i_0_280, plain, (~x2_e_0(X1)|~j(X1))).
+##
+#cnf(i_0_905, plain, (x2_s_7(esk64_0)|~x2_s_7(esk65_0)|~l_s_6(X1))).
+##
+#cnf(i_0_316, plain, (~x2_s_0(X1)|~j(X1))).
+#
+#cnf(i_0_912, plain, (x2_s_7(esk64_0)|~x2_s_7(esk65_0)|~a3_s_3(X1))).
+#
+#cnf(i_0_913, plain, (x2_s_7(esk64_0)|~x2_s_7(esk65_0)|~x2_s_6(X1))).
+##
+#cnf(i_0_244, plain, (~x2_e_0(X1)|~b(X1))).
+#
+#cnf(i_0_925, plain, (tau_10(esk103_0)|~x2_s_7(X1)|~x2_e_7(esk104_0))).
+##
+#cnf(i_0_936, plain, (j(esk110_0)|~x2_s_0(X1)|~x2_e_0(esk111_0))).
+#
+#cnf(i_0_311, plain, (~x2_s_0(X1)|~b(X1))).
+##
+#cnf(i_0_946, plain, (j(esk110_0)|~x2_s_0(esk111_0)|~x2_s_0(X1))).
+##
+#cnf(i_0_317, plain, (~x2_s_0(X1)|~x2_e_0(X1))).
+#
+#cnf(i_0_952, plain, (x2_s_0(esk123_0)|~a2_s_0(X1)|~x2_s_0(esk124_0))).
+#
+#cnf(i_0_954, plain, (x2_s_0(esk123_0)|~x2_s_0(esk124_0))).
+##
+#cnf(i_0_29, plain, (~a2_e_0(X1)|~x2_e_0(X1))).
+#
+#cnf(i_0_956, plain, (x2_s_0(esk123_0)|~a2_s_0(X1)|~a2_e_0(esk124_0))).
+###
+#cnf(i_0_123, plain, (~a2_s_0(X1)|~x2_e_0(X1))).
+#
+#cnf(i_0_958, plain, (x2_s_0(esk123_0)|~a2_s_0(esk124_0)|~a2_s_0(X1))).
+##
+#cnf(i_0_520, plain, (l_s_2(esk8_0)|~a3_s_1(esk9_0)|~x2_s_5(esk42_0))).
+#
+#cnf(i_0_31, plain, (~a2_e_0(X1)|~a(X1))).
+#
+#cnf(i_0_521, plain, (x2_s_3(esk10_0)|~a3_s_1(esk11_0)|~x2_s_5(esk42_0))).
+#
+#cnf(i_0_535, plain, (l_s_2(esk8_0)|~a3_s_1(esk9_0)|~x2_s_5(esk96_0))).
+#
+#cnf(i_0_536, plain, (x2_s_3(esk10_0)|~a3_s_1(esk11_0)|~x2_s_5(esk96_0))).
+#
+#cnf(i_0_125, plain, (~a2_s_0(X1)|~a(X1))).
+##
+#cnf(i_0_585, plain, (a2_s_0(esk97_0)|l_s_6(esk73_0)|~e(esk74_0))).
+#
+#cnf(i_0_605, plain, (a2_s_0(esk97_0)|l_s_6(esk73_0)|~a2_s_0(esk74_0))).
+#
+#cnf(i_0_30, plain, (~a2_e_0(X1)|~x2_s_0(X1))).
+#
+#cnf(i_0_963, plain, (a2_s_0(esk29_0)|~x2_s_0(esk29_0))).
+#
+#cnf(i_0_965, plain, (x2_s_0(esk123_0)|~a2_s_0(X1)|~x2_s_0(esk24_0))).
+#
+#cnf(i_0_968, plain, (x2_s_0(esk123_0)|~x2_s_0(esk24_0))).
+#
+#cnf(i_0_124, plain, (~a2_s_0(X1)|~x2_s_0(X1))).
+#
+#cnf(i_0_612, plain, (a2_s_0(esk97_0)|l_s_6(esk73_0)|~x2_s_7(esk74_0))).
+#
+#cnf(i_0_680, plain, (x2_s_4(esk101_0)|a3_s_1(esk52_0)|~x2_e_1(esk102_0))).
+#
+#cnf(i_0_557, plain, (x2_s_7(esk64_0)|l_s_6(esk63_0)|~l_s_6(esk65_0))).
+#
+#cnf(i_0_971, plain, (~x2_s_0(esk115_0))).
+#
+#cnf(i_0_974, plain, (l_s_6(esk63_0)|~l_s_6(esk64_0)|~l_s_6(esk65_0))).
+#
+#cnf(i_0_578, plain, (l_s_0(esk38_0)|a2_s_0(esk94_0)|~x2_s_5(esk39_0))).
+#
+#cnf(i_0_975, plain, (a2_s_0(esk94_0)|~a3_s_1(esk38_0)|~x2_s_5(esk39_0))).
+#
+#cnf(i_0_973, plain, (~x2_s_0(esk29_0))).
+#
+#cnf(i_0_976, plain, (a2_s_0(esk94_0)|~x2_s_5(esk38_0)|~x2_s_5(esk39_0))).
+#
+#cnf(i_0_628, plain, (x2_s_4(esk101_0)|a3_s_1(esk52_0)|~x2_s_5(esk102_0))).
+#
+#cnf(i_0_983, plain, (a3_s_1(esk52_0)|~a3_s_1(esk101_0)|~x2_s_5(esk102_0))).
+#
+#cnf(i_0_230, plain, (~x2_s_1(X1)|~a2_e_0(X1))).
+#
+#cnf(i_0_985, plain, (a2_s_0(esk29_0)|~x2_s_1(esk29_0))).
+#
+#cnf(i_0_987, plain, (x2_s_0(esk123_0)|~x2_s_1(esk24_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_718, plain, (x2_s_4(esk101_0)|a3_s_1(esk52_0)|~a3_s_1(esk102_0))).
+#
+#cnf(i_0_38, plain, (~random_activity_3(X1)|~x2_s_6(X1))).
+#
+#cnf(i_0_988, plain, (a3_s_1(esk52_0)|~a3_s_1(esk101_0)|~a3_s_1(esk102_0))).
+#
+#cnf(i_0_726, plain, (l_s_0(esk38_0)|a2_s_0(esk94_0)|~a3_s_1(esk39_0))).
+#
+#cnf(i_0_990, plain, (a2_s_0(esk94_0)|~a3_s_1(esk38_0)|~a3_s_1(esk39_0))).
+#
+#cnf(i_0_43, plain, (~tau_9(X1)|~x2_s_6(X1))).
+#
+#cnf(i_0_996, plain, (random_activity_3(esk27_0)|~x2_s_6(esk26_0)|~x2_s_6(X1))).
+##
+#cnf(i_0_991, plain, (a2_s_0(esk94_0)|~a3_s_1(esk39_0)|~x2_s_5(esk38_0))).
+#
+#cnf(i_0_87, plain, (~a3_s_3(X1)|~x2_s_6(X1))).
+#
+#cnf(i_0_900, plain, (x2_s_7(esk64_0)|l_s_6(esk63_0)|~a2_s_0(esk65_0))).
+#
+#cnf(i_0_1004, plain, (l_s_6(esk63_0)|~a2_s_0(esk65_0)|~l_s_6(esk64_0))).
+#
+#cnf(i_0_914, plain, (x2_s_7(esk64_0)|l_s_6(esk63_0)|~x2_s_7(esk65_0))).
+#
+#cnf(i_0_1003, plain, (~x2_s_6(esk62_0))).
+#
+#cnf(i_0_1005, plain, (l_s_6(esk63_0)|~x2_s_7(esk65_0)|~l_s_6(esk64_0))).
+#
+#cnf(i_0_458, plain, (x2_s_1(esk14_0)|a2_s_0(esk29_0)|x2_e_1(esk15_0))).
+#
+#cnf(i_0_1008, plain, (x2_s_1(esk14_0)|a2_s_0(esk29_0)|~l_s_0(esk15_0))).
+#
+#cnf(i_0_67, plain, (~x2_e_6(X1)|~x2_s_6(X1))).
+#
+#cnf(i_0_1013, plain, (x2_s_6(esk18_0)|~a3_s_3(X1)|~x2_s_6(esk19_0))).
+#
+#cnf(i_0_1014, plain, (x2_s_6(esk18_0)|~x2_s_6(esk19_0))).
+#
+#cnf(i_0_1006, plain, (x2_s_1(esk14_0)|a2_s_0(esk29_0)|~x2_s_1(esk15_0))).
+#
+#cnf(i_0_313, plain, (~tau_9(X1)|~random_activity_3(X1))).
+##
+#cnf(i_0_1007, plain, (x2_s_1(esk14_0)|a2_s_0(esk29_0)|~x2_s_5(esk15_0))).
+#
+#cnf(i_0_1009, plain, (x2_s_1(esk14_0)|a2_s_0(esk29_0)|~a2_s_0(esk15_0))).
+#
+#cnf(i_0_72, plain, (~x2_e_6(X1)|~random_activity_3(X1))).
 ####
-#cnf(i_0_270, plain, (~x2_s_2(X1)|~x2_e_2(X1))).
-####
-#cnf(i_0_287, plain, (~f(X1)|~l_s_1(X1))).
-####
-#cnf(i_0_155, plain, (~x2_s_2(X1)|~l_s_1(X1))).
+#cnf(i_0_40, plain, (~d(X1)|~x2_e_4(X1))).
+#
+#cnf(i_0_1019, plain, (x2_s_4(esk101_0)|~a3_e_1(X1)|~d(esk102_0))).
+#
+#cnf(i_0_1024, plain, (a3_s_1(esk41_0)|~l_s_0(X1)|~d(esk42_0))).
+#
+#cnf(i_0_1039, plain, (a3_s_1(esk41_0)|~d(esk42_0))).
+#
+#cnf(i_0_39, plain, (~o(X1)|~x2_e_4(X1))).
+#
+#cnf(i_0_1025, plain, (l_s_0(esk38_0)|~d(esk39_0)|~x2_e_1(X1))).
+#
+#cnf(i_0_1021, plain, (a3_s_1(esk95_0)|~d(esk96_0)|~d(X1))).
+#
+#cnf(i_0_1020, plain, (x2_s_4(esk101_0)|~d(esk102_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_260, plain, (~a2_s_0(X1)|~x2_e_4(X1))).
+#
+#cnf(i_0_1053, plain, (x2_s_4(esk101_0)|~a3_e_1(X1)|~a2_s_0(esk102_0))).
+#
+#cnf(i_0_1058, plain, (a3_s_1(esk41_0)|~l_s_0(X1)|~a2_s_0(esk42_0))).
+#
+#cnf(i_0_1073, plain, (a3_s_1(esk41_0)|~a2_s_0(esk42_0))).
+#
+#cnf(i_0_85, plain, (~x2_s_4(X1)|~x2_e_4(X1))).
+#
+#cnf(i_0_1059, plain, (l_s_0(esk38_0)|~a2_s_0(esk39_0)|~x2_e_1(X1))).
+#
+#cnf(i_0_1080, plain, (x2_s_4(esk101_0)|~a3_e_1(X1)|~x2_s_4(esk102_0))).
+#
+#cnf(i_0_1085, plain, (a3_s_1(esk41_0)|~l_s_0(X1)|~x2_s_4(esk42_0))).
+#
+#cnf(i_0_83, plain, (~n(X1)|~x2_e_4(X1))).
+#
+#cnf(i_0_1105, plain, (a3_s_1(esk41_0)|~x2_s_4(esk42_0))).
+#
+#cnf(i_0_1086, plain, (l_s_0(esk38_0)|~x2_s_4(esk39_0)|~x2_e_1(X1))).
+#
+#cnf(i_0_1112, plain, (x2_s_4(esk101_0)|~a3_e_1(X1)|~n(esk102_0))).
+#
+#cnf(i_0_107, plain, (~x2_e_5(X1)|~x2_e_4(X1))).
+#
+#cnf(i_0_1117, plain, (a3_s_1(esk41_0)|~l_s_0(X1)|~n(esk42_0))).
+#
+#cnf(i_0_1145, plain, (a3_s_1(esk41_0)|~n(esk42_0))).
+#
+#cnf(i_0_1118, plain, (l_s_0(esk38_0)|~n(esk39_0)|~x2_e_1(X1))).
+#
+#cnf(i_0_73, plain, (~a3_e_1(X1)|~x2_e_4(X1))).
+#
+#cnf(i_0_1055, plain, (a3_s_1(esk95_0)|~a2_s_0(esk96_0)|~d(X1))).
+#
+#cnf(i_0_1082, plain, (a3_s_1(esk95_0)|~x2_s_4(esk96_0)|~d(X1))).
+#
+#cnf(i_0_1113, plain, (x2_s_4(esk101_0)|~n(esk102_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_136, plain, (~l_s_0(X1)|~x2_e_4(X1))).
+#
+#cnf(i_0_1165, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0)|~a3_e_1(X1))).
+#
+#cnf(i_0_1171, plain, (l_s_0(esk38_0)|~l_s_0(esk39_0)|~x2_e_1(X1))).
+#
+#cnf(i_0_1114, plain, (a3_s_1(esk95_0)|~n(esk96_0)|~d(X1))).
+#
+#cnf(i_0_238, plain, (~g(X1)|~x2_e_4(X1))).
+#
+#cnf(i_0_1190, plain, (x2_s_4(esk101_0)|~g(esk102_0)|~a3_e_1(X1))).
+#
+#cnf(i_0_1196, plain, (l_s_0(esk38_0)|~g(esk39_0)|~x2_e_1(X1))).
+#
+#cnf(i_0_1125, plain, (x2_s_4(esk101_0)|~n(esk102_0)|~l_s_5(X1))).
+#
+#cnf(i_0_222, plain, (~o(X1)|~d(X1))).
+#
+#cnf(i_0_1126, plain, (x2_s_4(esk101_0)|~n(esk102_0)|~l_s_3(X1))).
+#
+#cnf(i_0_1127, plain, (x2_s_4(esk101_0)|~n(esk102_0)|~l_s_4(X1))).
+#
+#cnf(i_0_1128, plain, (x2_s_4(esk101_0)|~n(esk102_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_129, plain, (~l_s_0(X1)|~d(X1))).
+#
+#cnf(i_0_1129, plain, (x2_s_4(esk101_0)|~n(esk102_0)|~x2_s_3(X1))).
+#
+#cnf(i_0_1132, plain, (x2_s_4(esk101_0)|~n(esk102_0)|~l_s_2(X1))).
+#
+#cnf(i_0_1134, plain, (x2_s_4(esk101_0)|~n(esk102_0)|~l_s_1(X1))).
+#
+#cnf(i_0_1216, plain, (~d(esk49_0))).
+#
+#cnf(i_0_1135, plain, (x2_s_4(esk101_0)|~n(esk102_0)|~x2_s_2(X1))).
+#
+#cnf(i_0_1137, plain, (x2_s_4(esk101_0)|~a3_e_1(X1)|~x2_e_5(esk102_0))).
+#
+#cnf(i_0_1138, plain, (x2_s_4(esk101_0)|~x2_e_5(esk102_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_128, plain, (~l_s_0(X1)|~o(X1))).
+#
+#cnf(i_0_1139, plain, (a3_s_1(esk95_0)|~x2_e_5(esk96_0)|~d(X1))).
+#
+#cnf(i_0_1142, plain, (a3_s_1(esk41_0)|~l_s_0(X1)|~x2_e_5(esk42_0))).
+#
+#cnf(i_0_1143, plain, (l_s_0(esk38_0)|~x2_e_5(esk39_0)|~x2_e_1(X1))).
+#
+#cnf(i_0_132, plain, (~x2_e_6(X1)|~tau_9(X1))).
+#
+#cnf(i_0_1144, plain, (l_s_0(esk38_0)|~x2_e_5(esk39_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_1157, plain, (x2_s_4(esk101_0)|~a3_e_1(esk102_0)|~a3_e_1(X1))).
+#
+#cnf(i_0_1158, plain, (x2_s_4(esk101_0)|~a3_e_1(esk102_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_77, plain, (~x2_s_1(X1)|~tau_0(X1))).
+#
+#cnf(i_0_1159, plain, (a3_s_1(esk95_0)|~a3_e_1(esk96_0)|~d(X1))).
+#
+#cnf(i_0_1162, plain, (a3_s_1(esk41_0)|~l_s_0(X1)|~a3_e_1(esk42_0))).
+#
+#cnf(i_0_1163, plain, (l_s_0(esk38_0)|~a3_e_1(esk39_0)|~x2_e_1(X1))).
+#
+#cnf(i_0_232, plain, (~x2_s_1(X1)|~a2_s_0(X1))).
+#
+#cnf(i_0_1164, plain, (l_s_0(esk38_0)|~a3_e_1(esk39_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_1166, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_1167, plain, (a3_s_1(esk95_0)|~l_s_0(esk96_0)|~d(X1))).
+#
+#cnf(i_0_1228, plain, (~a2_s_0(esk105_0))).
+#
+#cnf(i_0_1170, plain, (a3_s_1(esk41_0)|~l_s_0(esk42_0)|~l_s_0(X1))).
+#
+#cnf(i_0_1173, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0)|~l_s_5(X1))).
+#
+#cnf(i_0_1174, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0)|~l_s_3(X1))).
+#
+#cnf(i_0_152, plain, (~x2_s_7(X1)|~a2_s_0(X1))).
+#
+#cnf(i_0_1175, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0)|~l_s_4(X1))).
+#
+#cnf(i_0_1176, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_1177, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0)|~x2_s_3(X1))).
+#
+#cnf(i_0_1256, plain, (~a2_s_0(esk33_0))).
+#
+#cnf(i_0_1180, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0)|~l_s_2(X1))).
+#
+#cnf(i_0_1182, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0)|~l_s_1(X1))).
+#
+#cnf(i_0_1183, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0)|~x2_s_2(X1))).
+#
+#cnf(i_0_210, plain, (~x2_e_5(X1)|~a2_s_0(X1))).
+#
+#cnf(i_0_1257, plain, (x2_s_5(esk119_0)|~l_s_0(X1)|~a2_s_0(esk120_0))).
+#
+#cnf(i_0_1263, plain, (x2_s_5(esk119_0)|~a2_s_0(esk120_0))).
 ##
-#cnf(i_0_16, plain, (x2_e_4(esk10_0)|a3_s_1(esk9_0)|~l_s_0(X1))).
-#
-#cnf(i_0_567, plain, (a3_s_1(esk9_0)|~l_s_0(X1)|~d(esk10_0))).
-#
-#cnf(i_0_565, plain, (~l_s_1(esk62_0))).
-#
-#cnf(i_0_579, plain, (a3_s_1(esk9_0)|~d(esk10_0))).
-#
-#cnf(i_0_573, plain, (a3_s_1(esk9_0)|~l_s_0(X1)|~a3_s_1(esk10_0))).
-#
-#cnf(i_0_583, plain, (a3_s_1(esk9_0)|~a3_s_1(esk10_0))).
-#
-#cnf(i_0_222, plain, (~tau_2(X1)|~l_s_1(X1))).
-#
-#cnf(i_0_566, plain, (a3_s_1(esk9_0)|~x2_s_4(esk10_0)|~l_s_0(X1))).
-#
-#cnf(i_0_568, plain, (a3_s_1(esk9_0)|~l_s_0(X1)|~o(esk10_0))).
-#
-#cnf(i_0_570, plain, (a3_s_1(esk9_0)|~x2_e_5(esk10_0)|~l_s_0(X1))).
-#
-#cnf(i_0_154, plain, (~x2_s_2(X1)|~f(X1))).
-#
-#cnf(i_0_571, plain, (a3_s_1(esk9_0)|~l_s_0(X1)|~a3_e_1(esk10_0))).
-#
-#cnf(i_0_572, plain, (a3_s_1(esk9_0)|~x2_e_1(esk10_0)|~l_s_0(X1))).
-#
-#cnf(i_0_574, plain, (a3_s_1(esk9_0)|~l_s_0(esk10_0)|~l_s_0(X1))).
-#
-#cnf(i_0_44, plain, (~tau_2(X1)|~f(X1))).
-#
-#cnf(i_0_575, plain, (a3_s_1(esk9_0)|~g(esk10_0)|~l_s_0(X1))).
-#
-#cnf(i_0_576, plain, (a3_s_1(esk9_0)|~a2_s_0(esk10_0)|~l_s_0(X1))).
-#
-#cnf(i_0_577, plain, (a3_s_1(esk9_0)|~x2_s_5(esk10_0)|~l_s_0(X1))).
-#
-#cnf(i_0_203, plain, (~a3_s_2(X1)|~tau_4(X1))).
-#
-#cnf(i_0_578, plain, (a3_s_1(esk9_0)|~n(esk10_0)|~l_s_0(X1))).
-#
-#cnf(i_0_92, plain, (l_s_0(esk47_0)|x2_e_4(esk48_0)|~x2_e_1(X1))).
-#
-#cnf(i_0_588, plain, (l_s_0(esk47_0)|~x2_e_1(X1)|~x2_s_4(esk48_0))).
-#
-#cnf(i_0_202, plain, (~a3_e_2(X1)|~tau_4(X1))).
-#
-#cnf(i_0_589, plain, (l_s_0(esk47_0)|~x2_e_1(X1)|~d(esk48_0))).
-#
-#cnf(i_0_592, plain, (l_s_0(esk47_0)|~x2_e_1(X1)|~x2_e_5(esk48_0))).
-#
-#cnf(i_0_593, plain, (l_s_0(esk47_0)|~x2_e_1(X1)|~a3_e_1(esk48_0))).
-#
-#cnf(i_0_215, plain, (~x2_e_3(X1)|~tau_4(X1))).
-#
-#cnf(i_0_595, plain, (l_s_0(esk47_0)|~x2_e_1(X1)|~a3_s_1(esk48_0))).
-#
-#cnf(i_0_596, plain, (l_s_0(esk47_0)|~x2_e_1(X1)|~l_s_0(esk48_0))).
-#
-#cnf(i_0_597, plain, (l_s_0(esk47_0)|~x2_e_1(X1)|~g(esk48_0))).
-#
-#cnf(i_0_200, plain, (~x2_e_3(X1)|~a3_s_2(X1))).
-#
-#cnf(i_0_598, plain, (l_s_0(esk47_0)|~a2_s_0(esk48_0)|~x2_e_1(X1))).
-#
-#cnf(i_0_599, plain, (l_s_0(esk47_0)|~x2_e_1(X1)|~x2_s_5(esk48_0))).
-#
-#cnf(i_0_600, plain, (l_s_0(esk47_0)|~x2_e_1(X1)|~n(esk48_0))).
-#
-#cnf(i_0_47, plain, (~m(X1)|~a3_s_2(X1))).
-#
-#cnf(i_0_590, plain, (l_s_0(esk47_0)|~x2_e_1(X1)|~o(esk48_0))).
-#
-#cnf(i_0_594, plain, (l_s_0(esk47_0)|~x2_e_1(esk48_0)|~x2_e_1(X1))).
-#
-#cnf(i_0_610, plain, (x2_s_3(esk124_0)|~a3_s_2(esk125_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_52, plain, (~l_s_3(X1)|~a3_s_2(X1))).
-#
-#cnf(i_0_93, plain, (l_s_0(esk47_0)|x2_e_4(esk48_0)|~a2_s_0(X1))).
-#
-#cnf(i_0_621, plain, (l_s_0(esk47_0)|~a2_s_0(X1)|~x2_s_4(esk48_0))).
-#
-#cnf(i_0_634, plain, (l_s_0(esk47_0)|~x2_s_4(esk48_0))).
-#
-#cnf(i_0_620, plain, (~a3_s_2(esk35_0))).
-#
-#cnf(i_0_622, plain, (l_s_0(esk47_0)|~a2_s_0(X1)|~d(esk48_0))).
-#
-#cnf(i_0_635, plain, (l_s_0(esk47_0)|~d(esk48_0))).
-#
-#cnf(i_0_628, plain, (l_s_0(esk47_0)|~a2_s_0(X1)|~a3_s_1(esk48_0))).
-#
-#cnf(i_0_50, plain, (~l_s_4(X1)|~a3_s_2(X1))).
-#
-#cnf(i_0_639, plain, (l_s_0(esk47_0)|~a3_s_1(esk48_0))).
-#
-#cnf(i_0_629, plain, (l_s_0(esk47_0)|~a2_s_0(X1)|~l_s_0(esk48_0))).
-#
-#cnf(i_0_644, plain, (l_s_0(esk47_0)|~l_s_0(esk48_0))).
-#
-#cnf(i_0_640, plain, (~a3_s_2(esk69_0))).
-#
-#cnf(i_0_630, plain, (l_s_0(esk47_0)|~a2_s_0(X1)|~g(esk48_0))).
-#
-#cnf(i_0_648, plain, (l_s_0(esk47_0)|~g(esk48_0))).
-#
-#cnf(i_0_632, plain, (l_s_0(esk47_0)|~a2_s_0(X1)|~x2_s_5(esk48_0))).
-#
-#cnf(i_0_49, plain, (~random_activity_1(X1)|~a3_s_2(X1))).
-#
-#cnf(i_0_649, plain, (l_s_0(esk47_0)|~x2_s_5(esk48_0))).
-#
-#cnf(i_0_633, plain, (l_s_0(esk47_0)|~a2_s_0(X1)|~n(esk48_0))).
-#
-#cnf(i_0_651, plain, (l_s_0(esk47_0)|~n(esk48_0))).
-#
-#cnf(i_0_199, plain, (~x2_e_3(X1)|~a3_e_2(X1))).
-#
-#cnf(i_0_623, plain, (l_s_0(esk47_0)|~a2_s_0(X1)|~o(esk48_0))).
-#
-#cnf(i_0_625, plain, (l_s_0(esk47_0)|~a2_s_0(X1)|~x2_e_5(esk48_0))).
-#
-#cnf(i_0_626, plain, (l_s_0(esk47_0)|~a2_s_0(X1)|~a3_e_1(esk48_0))).
-#
-#cnf(i_0_101, plain, (~m(X1)|~a3_e_2(X1))).
-#
-#cnf(i_0_627, plain, (l_s_0(esk47_0)|~a2_s_0(X1)|~x2_e_1(esk48_0))).
-#
-#cnf(i_0_631, plain, (l_s_0(esk47_0)|~a2_s_0(esk48_0)|~a2_s_0(X1))).
-#
-#cnf(i_0_273, plain, (x2_s_4(esk101_0)|x2_e_4(esk102_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_106, plain, (~l_s_3(X1)|~a3_e_2(X1))).
-#
-#cnf(i_0_659, plain, (x2_s_4(esk101_0)|~a3_s_1(X1)|~o(esk102_0))).
-#
-#cnf(i_0_661, plain, (x2_s_4(esk101_0)|~x2_e_5(esk102_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_662, plain, (x2_s_4(esk101_0)|~a3_e_1(esk102_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_104, plain, (~l_s_4(X1)|~a3_e_2(X1))).
-#
-#cnf(i_0_663, plain, (x2_s_4(esk101_0)|~x2_e_1(esk102_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_666, plain, (x2_s_4(esk101_0)|~g(esk102_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_667, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_103, plain, (~random_activity_1(X1)|~a3_e_2(X1))).
-#
-#cnf(i_0_668, plain, (x2_s_4(esk101_0)|~x2_s_5(esk102_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_669, plain, (x2_s_4(esk101_0)|~n(esk102_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_657, plain, (x2_s_4(esk101_0)|~x2_s_4(esk102_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_263, plain, (~x2_s_5(X1)|~l_s_0(X1))).
-#
-#cnf(i_0_658, plain, (x2_s_4(esk101_0)|~a3_s_1(X1)|~d(esk102_0))).
-#
-#cnf(i_0_664, plain, (x2_s_4(esk101_0)|~a3_s_1(esk102_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_665, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_680, plain, (~l_s_0(esk34_0))).
-#
-#cnf(i_0_272, plain, (x2_s_4(esk101_0)|x2_e_4(esk102_0)|~a3_e_1(X1))).
-#
-#cnf(i_0_684, plain, (x2_s_4(esk101_0)|~x2_s_4(esk102_0)|~a3_e_1(X1))).
-#
-#cnf(i_0_685, plain, (x2_s_4(esk101_0)|~a3_e_1(X1)|~d(esk102_0))).
-#
-#cnf(i_0_262, plain, (~x2_e_5(X1)|~l_s_0(X1))).
-#
-#cnf(i_0_715, plain, (a2_s_0(esk45_0)|~l_s_0(esk45_0))).
-#
-#cnf(i_0_691, plain, (x2_s_4(esk101_0)|~a3_e_1(X1)|~a3_s_1(esk102_0))).
-#
-#cnf(i_0_692, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0)|~a3_e_1(X1))).
-#
-#cnf(i_0_185, plain, (~x2_e_1(X1)|~l_s_0(X1))).
-#
-#cnf(i_0_734, plain, (a2_s_0(esk99_0)|~l_s_0(esk99_0))).
-#
-#cnf(i_0_693, plain, (x2_s_4(esk101_0)|~g(esk102_0)|~a3_e_1(X1))).
-#
-#cnf(i_0_694, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~a3_e_1(X1))).
-#
-#cnf(i_0_187, plain, (~a2_s_0(X1)|~l_s_0(X1))).
-#
-#cnf(i_0_695, plain, (x2_s_4(esk101_0)|~x2_s_5(esk102_0)|~a3_e_1(X1))).
-#
-#cnf(i_0_696, plain, (x2_s_4(esk101_0)|~n(esk102_0)|~a3_e_1(X1))).
-#
-#cnf(i_0_700, plain, (x2_s_4(esk101_0)|~l_s_4(X1)|~x2_s_4(esk102_0))).
-#
-#cnf(i_0_753, plain, (~l_s_0(esk99_0))).
-#
-#cnf(i_0_774, plain, (x2_s_4(esk101_0)|~x2_s_4(esk102_0))).
-#
-#cnf(i_0_709, plain, (x2_s_4(esk101_0)|~l_s_4(X1)|~d(esk102_0))).
-#
-#cnf(i_0_776, plain, (x2_s_4(esk101_0)|~d(esk102_0))).
-#
-#cnf(i_0_754, plain, (~l_s_0(esk57_0))).
-#
-#cnf(i_0_719, plain, (x2_s_4(esk101_0)|~l_s_4(X1)|~a3_s_1(esk102_0))).
-#
-#cnf(i_0_778, plain, (x2_s_4(esk101_0)|~a3_s_1(esk102_0))).
-#
-#cnf(i_0_728, plain, (x2_s_4(esk101_0)|~l_s_4(X1)|~l_s_0(esk102_0))).
-#
-#cnf(i_0_755, plain, (~l_s_0(esk45_0))).
-#
-#cnf(i_0_780, plain, (x2_s_4(esk101_0)|~l_s_0(esk102_0))).
-#
-#cnf(i_0_738, plain, (x2_s_4(esk101_0)|~l_s_4(X1)|~g(esk102_0))).
-#
-#cnf(i_0_782, plain, (x2_s_4(esk101_0)|~g(esk102_0))).
-#
-#cnf(i_0_18, plain, (~a3_s_3(X1)|~l_s_6(X1))).
-#
-#cnf(i_0_759, plain, (x2_s_4(esk101_0)|~l_s_4(X1)|~x2_s_5(esk102_0))).
-#
-#cnf(i_0_784, plain, (x2_s_4(esk101_0)|~x2_s_5(esk102_0))).
-#
-#cnf(i_0_768, plain, (x2_s_4(esk101_0)|~l_s_4(X1)|~n(esk102_0))).
-#
-#cnf(i_0_783, plain, (~l_s_6(esk24_0))).
-#
-#cnf(i_0_785, plain, (x2_s_4(esk101_0)|~n(esk102_0))).
-#
-#cnf(i_0_686, plain, (x2_s_4(esk101_0)|~a3_e_1(X1)|~o(esk102_0))).
-#
-#cnf(i_0_688, plain, (x2_s_4(esk101_0)|~x2_e_5(esk102_0)|~a3_e_1(X1))).
-#
-#cnf(i_0_17, plain, (~a3_e_3(X1)|~l_s_6(X1))).
-#
-#cnf(i_0_689, plain, (x2_s_4(esk101_0)|~a3_e_1(esk102_0)|~a3_e_1(X1))).
-#
-#cnf(i_0_690, plain, (x2_s_4(esk101_0)|~x2_e_1(esk102_0)|~a3_e_1(X1))).
-#
-#cnf(i_0_744, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~x2_s_3(X1))).
-#
-#cnf(i_0_19, plain, (~e(X1)|~l_s_6(X1))).
-#
-#cnf(i_0_745, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~l_s_5(X1))).
-#
-#cnf(i_0_746, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_747, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~l_s_4(X1))).
-#
-#cnf(i_0_267, plain, (~x2_e_5(X1)|~l_s_6(X1))).
-#
-#cnf(i_0_795, plain, (a2_s_0(esk45_0)|~l_s_6(esk45_0))).
-#
-#cnf(i_0_748, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~l_s_3(X1))).
-#
-#cnf(i_0_749, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~l_s_1(X1))).
-#
-#cnf(i_0_170, plain, (~x2_s_7(X1)|~l_s_6(X1))).
-#
-#cnf(i_0_750, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~x2_s_2(X1))).
-#
-#cnf(i_0_752, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~l_s_2(X1))).
-#
-#cnf(i_0_149, plain, (m(esk68_0)|l_s_5(esk67_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_797, plain, (~l_s_6(esk81_0))).
-#
-#cnf(i_0_801, plain, (l_s_5(esk67_0)|~a3_s_2(X1)|~l_s_5(esk68_0))).
-#
-#cnf(i_0_802, plain, (l_s_5(esk67_0)|~l_s_5(esk68_0))).
-#
-#cnf(i_0_799, plain, (l_s_5(esk67_0)|~a3_s_2(esk68_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_169, plain, (~x2_e_7(X1)|~l_s_6(X1))).
-#
-#cnf(i_0_800, plain, (l_s_5(esk67_0)|~a3_e_2(esk68_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_151, plain, (l_s_3(esk63_0)|l(esk64_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_803, plain, (l_s_3(esk63_0)|~l_s_3(esk64_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_269, plain, (~a2_s_0(X1)|~l_s_6(X1))).
-#
-#cnf(i_0_804, plain, (l_s_3(esk63_0)|~a3_s_2(esk64_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_306, plain, (c(esk123_0)|l_s_2(esk122_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_811, plain, (l_s_2(esk122_0)|~a3_e_1(esk123_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_807, plain, (~l_s_6(esk57_0))).
-#
-#cnf(i_0_813, plain, (l_s_2(esk122_0)|~l_s_2(esk123_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_812, plain, (l_s_2(esk122_0)|~a3_s_1(esk123_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_307, plain, (x2_s_2(esk120_0)|x2_e_2(esk121_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_808, plain, (~l_s_6(esk45_0))).
-#
-#cnf(i_0_816, plain, (x2_s_2(esk120_0)|~a3_e_1(esk121_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_815, plain, (x2_s_2(esk120_0)|~l_s_1(esk121_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_817, plain, (x2_s_2(esk120_0)|~a3_s_1(esk121_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_236, plain, (~i(X1)|~l_s_6(X1))).
-#
-#cnf(i_0_824, plain, (i(esk115_0)|~i(esk114_0))).
-#
-#cnf(i_0_818, plain, (x2_s_2(esk120_0)|~x2_s_2(esk121_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_218, plain, (x2_e_1(esk84_0)|x2_s_1(esk83_0)|~a2_s_0(X1))).
-#
-#cnf(i_0_825, plain, (~i(esk61_0))).
-#
-#cnf(i_0_828, plain, (x2_s_1(esk83_0)|~a2_s_0(X1)|~l_s_0(esk84_0))).
-#
-#cnf(i_0_833, plain, (x2_s_1(esk83_0)|~l_s_0(esk84_0))).
-#
-#cnf(i_0_209, plain, (n(esk80_0)|g(esk79_0)|~x2_s_4(X1))).
-#
-#cnf(i_0_63, plain, (~e(X1)|~a3_s_3(X1))).
-#
-#cnf(i_0_835, plain, (l_s_6(esk116_0)|~a3_s_3(esk116_0))).
-#
-#cnf(i_0_67, plain, (x2_e_5(esk32_0)|x2_s_5(esk31_0)|~l_s_0(X1))).
-#
-#cnf(i_0_841, plain, (x2_s_5(esk31_0)|~l_s_6(esk32_0)|~l_s_0(X1))).
-#
-#cnf(i_0_279, plain, (~x2_s_6(X1)|~a3_s_3(X1))).
-#
-#cnf(i_0_842, plain, (x2_s_5(esk31_0)|~l_s_0(esk32_0)|~l_s_0(X1))).
-#
-#cnf(i_0_36, plain, (random_activity_2(esk21_0)|tau_8(esk20_0)|~x2_s_5(X1))).
-#
-#cnf(i_0_40, plain, (random_activity_5(esk23_0)|tau_0(esk22_0)|~x2_s_1(X1))).
-#
-#cnf(i_0_844, plain, (~a3_s_3(esk58_0))).
-#
-#cnf(i_0_164, plain, (b(esk72_0)|j(esk71_0)|~x2_s_0(X1))).
-#
-#cnf(i_0_150, plain, (random_activity_1(esk66_0)|l_s_4(esk65_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_852, plain, (l_s_4(esk65_0)|~a3_e_2(esk66_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_278, plain, (~x2_e_6(X1)|~a3_s_3(X1))).
-#
-#cnf(i_0_853, plain, (l_s_4(esk65_0)|~a3_s_2(esk66_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_87, plain, (x2_e_6(esk43_0)|x2_s_6(esk42_0)|~a3_s_3(X1))).
-#
-#cnf(i_0_856, plain, (x2_s_6(esk42_0)|~a3_s_3(esk43_0)|~a3_s_3(X1))).
-#
-#cnf(i_0_280, plain, (~h(X1)|~a3_s_3(X1))).
-#
-#cnf(i_0_312, plain, (tau_9(esk127_0)|random_activity_3(esk128_0)|~x2_s_6(X1))).
-#
-#cnf(i_0_234, plain, (x2_e_7(esk93_0)|x2_s_7(esk92_0)|~l_s_6(X1))).
-#
-#cnf(i_0_862, plain, (x2_s_7(esk92_0)|~l_s_6(esk93_0)|~l_s_6(X1))).
-#
-#cnf(i_0_277, plain, (~k(X1)|~a3_s_3(X1))).
-#
-#cnf(i_0_233, plain, (x2_e_7(esk93_0)|x2_s_7(esk92_0)|~i(X1))).
-#
-#cnf(i_0_865, plain, (x2_s_7(esk92_0)|~i(X1)|~l_s_6(esk93_0))).
-#
-#cnf(i_0_300, plain, (random_activity_4(esk118_0)|tau_10(esk117_0)|~x2_s_7(X1))).
-#
-#cnf(i_0_62, plain, (~e(X1)|~a3_e_3(X1))).
-#
-#cnf(i_0_94, plain, (x2_e_0(esk51_0)|x2_s_0(esk50_0)|~a2_s_0(X1))).
+#cnf(i_0_261, plain, (~l_s_0(X1)|~a2_s_0(X1))).
 ##
-#cnf(i_0_483, plain, (x2_e_1(esk84_0)|x2_s_1(esk83_0)|~x2_s_0(X1))).
+#cnf(i_0_1191, plain, (x2_s_4(esk101_0)|~g(esk102_0)|~a3_s_1(X1))).
 #
-#cnf(i_0_243, plain, (~x2_s_6(X1)|~a3_e_3(X1))).
+#cnf(i_0_1192, plain, (a3_s_1(esk95_0)|~g(esk96_0)|~d(X1))).
+#
+#cnf(i_0_1270, plain, (~a2_s_0(esk49_0))).
+#
+#cnf(i_0_1195, plain, (a3_s_1(esk41_0)|~g(esk42_0)|~l_s_0(X1))).
+#
+#cnf(i_0_1197, plain, (l_s_0(esk38_0)|~g(esk39_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_1198, plain, (x2_s_4(esk101_0)|~g(esk102_0)|~l_s_5(X1))).
+#
+#cnf(i_0_88, plain, (~h(X1)|~a3_s_3(X1))).
+#
+#cnf(i_0_1199, plain, (x2_s_4(esk101_0)|~g(esk102_0)|~l_s_3(X1))).
+#
+#cnf(i_0_1200, plain, (x2_s_4(esk101_0)|~g(esk102_0)|~l_s_4(X1))).
+#
+#cnf(i_0_1201, plain, (x2_s_4(esk101_0)|~g(esk102_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_86, plain, (~x2_e_6(X1)|~a3_s_3(X1))).
+#
+#cnf(i_0_1202, plain, (x2_s_4(esk101_0)|~g(esk102_0)|~x2_s_3(X1))).
+#
+#cnf(i_0_1205, plain, (x2_s_4(esk101_0)|~g(esk102_0)|~l_s_2(X1))).
+#
+#cnf(i_0_1207, plain, (x2_s_4(esk101_0)|~g(esk102_0)|~l_s_1(X1))).
+#
+#cnf(i_0_140, plain, (~random_activity_1(X1)|~l_s_3(X1))).
+#
+#cnf(i_0_1208, plain, (x2_s_4(esk101_0)|~g(esk102_0)|~x2_s_2(X1))).
+#
+#cnf(i_0_1211, plain, (l_s_0(esk38_0)|~g(esk39_0)|~x2_s_1(X1))).
+#
+#cnf(i_0_1262, plain, (random_activity_2(esk5_0)|~a2_s_0(esk60_0)|~x2_s_5(X1))).
+#
+#cnf(i_0_84, plain, (~tau_5(X1)|~l_s_3(X1))).
+#
+#cnf(i_0_1279, plain, (x2_s_6(esk18_0)|~a3_s_3(esk19_0)|~a3_s_3(X1))).
+#
+#cnf(i_0_1281, plain, (l_s_3(esk77_0)|~l_s_3(esk78_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_1026, plain, (l_s_0(esk38_0)|~a2_s_0(X1)|~d(esk39_0))).
+#
+#cnf(i_0_215, plain, (~tau_5(X1)|~random_activity_1(X1))).
+#
+#cnf(i_0_1027, plain, (x2_s_4(esk101_0)|~d(esk102_0)|~l_s_5(X1))).
+#
+#cnf(i_0_1028, plain, (x2_s_4(esk101_0)|~l_s_3(X1)|~d(esk102_0))).
+#
+#cnf(i_0_1029, plain, (x2_s_4(esk101_0)|~d(esk102_0)|~l_s_4(X1))).
+#
+#cnf(i_0_82, plain, (~tau_6(X1)|~m(X1))).
+#
+#cnf(i_0_1030, plain, (x2_s_4(esk101_0)|~d(esk102_0)|~a3_s_2(X1))).
+#
+#cnf(i_0_1031, plain, (x2_s_4(esk101_0)|~d(esk102_0)|~x2_s_3(X1))).
+#
+#cnf(i_0_1034, plain, (x2_s_4(esk101_0)|~d(esk102_0)|~l_s_2(X1))).
+#
+#cnf(i_0_63, plain, (~n(X1)|~x2_s_4(X1))).
+#
+#cnf(i_0_1036, plain, (x2_s_4(esk101_0)|~d(esk102_0)|~l_s_1(X1))).
+#
+#cnf(i_0_1037, plain, (x2_s_4(esk101_0)|~d(esk102_0)|~x2_s_2(X1))).
+#
+#cnf(i_0_1048, plain, (l_s_0(esk38_0)|~x2_s_1(X1)|~d(esk39_0))).
+#
+#cnf(i_0_1296, negated_conjecture, (~x2_s_4(esk129_0))).
+#
+#cnf(i_0_1054, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_1060, plain, (l_s_0(esk38_0)|~a2_s_0(esk39_0)|~a2_s_0(X1))).
+#
+#cnf(i_0_1061, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~l_s_5(X1))).
+#
+#cnf(i_0_74, plain, (~a3_e_1(X1)|~x2_s_4(X1))).
+#
+#cnf(i_0_1318, plain, (a3_s_1(esk52_0)|~x2_s_4(esk52_0))).
+#
+#cnf(i_0_1317, plain, (x2_s_3(esk10_0)|~x2_s_4(esk128_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_1320, plain, (l_s_2(esk8_0)|~x2_s_4(esk32_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_144, plain, (~g(X1)|~x2_s_4(X1))).
+#
+#cnf(i_0_1323, plain, (x2_s_2(esk6_0)|~x2_s_4(esk30_0)|~a3_s_1(X1))).
+#
+#cnf(i_0_1062, plain, (x2_s_4(esk101_0)|~l_s_3(X1)|~a2_s_0(esk102_0))).
+#
+#cnf(i_0_1063, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~l_s_4(X1))).
 ##
-#cnf(i_0_484, plain, (x2_e_5(esk32_0)|x2_s_5(esk31_0)|~n(X1))).
+#cnf(i_0_1064, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~a3_s_2(X1))).
 #
-#cnf(i_0_881, plain, (x2_s_5(esk31_0)|~n(X1)|~l_s_6(esk32_0))).
+#cnf(i_0_1065, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~x2_s_3(X1))).
 #
-#cnf(i_0_242, plain, (~x2_e_6(X1)|~a3_e_3(X1))).
+#cnf(i_0_1068, plain, (x2_s_4(esk101_0)|~a2_s_0(esk102_0)|~l_s_2(X1))).
 #
-#cnf(i_0_884, plain, (x2_s_6(esk42_0)|~a3_e_3(esk43_0)|~a3_s_3(X1))).
-#
-#cnf(i_0_882, plain, (x2_s_5(esk31_0)|~n(X1)|~l_s_0(esk32_0))).
-#
-#cnf(i_0_485, plain, (x2_e_5(esk32_0)|x2_s_5(esk31_0)|~g(X1))).
-#
-#cnf(i_0_244, plain, (~h(X1)|~a3_e_3(X1))).
-#
-#cnf(i_0_886, plain, (x2_s_5(esk31_0)|~g(X1)|~l_s_6(esk32_0))).
-#
-#cnf(i_0_887, plain, (x2_s_5(esk31_0)|~g(X1)|~l_s_0(esk32_0))).
-#
-#cnf(i_0_486, plain, (a3_e_1(esk94_0)|x2_s_3(esk124_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_241, plain, (~k(X1)|~a3_e_3(X1))).
-#
-#cnf(i_0_894, plain, (x2_s_3(esk124_0)|~a3_s_1(X1)|~x2_s_3(esk94_0))).
-#
-#cnf(i_0_897, plain, (x2_s_3(esk124_0)|~x2_s_3(esk94_0))).
-#
-#cnf(i_0_891, plain, (x2_s_3(esk124_0)|~l_s_2(esk94_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_235, plain, (~i(X1)|~e(X1))).
-#
-#cnf(i_0_900, plain, (l_s_6(esk116_0)|~i(esk116_0))).
-#
-#cnf(i_0_892, plain, (x2_s_3(esk124_0)|~x2_s_4(esk94_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_893, plain, (x2_s_3(esk124_0)|~x2_s_2(esk94_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_906, plain, (~i(esk116_0))).
-#
-#cnf(i_0_798, plain, (a3_e_2(esk14_0)|l_s_5(esk67_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_907, plain, (l_s_5(esk67_0)|~a3_s_2(X1)|~x2_s_3(esk14_0))).
-#
-#cnf(i_0_914, plain, (l_s_5(esk67_0)|~x2_s_3(esk14_0))).
-#
-#cnf(i_0_84, plain, (~tau_0(X1)|~x2_s_1(X1))).
-#
-#cnf(i_0_913, plain, (l_s_5(esk67_0)|~a3_s_2(X1)|~l_s_5(esk14_0))).
-#
-#cnf(i_0_916, plain, (l_s_5(esk67_0)|~l_s_5(esk14_0))).
-#
-#cnf(i_0_908, plain, (l_s_5(esk67_0)|~a3_s_2(X1)|~l(esk14_0))).
-#
-#cnf(i_0_196, plain, (~random_activity_5(X1)|~x2_s_1(X1))).
-#
-#cnf(i_0_910, plain, (l_s_5(esk67_0)|~l_s_4(esk14_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_911, plain, (l_s_5(esk67_0)|~x2_e_3(esk14_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_912, plain, (l_s_5(esk67_0)|~l_s_3(esk14_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_145, plain, (~x2_e_1(X1)|~x2_s_1(X1))).
-#
-#cnf(i_0_919, plain, (a2_s_0(esk99_0)|~x2_s_1(esk99_0))).
-#
-#cnf(i_0_920, plain, (x2_s_1(esk83_0)|~a2_s_0(X1)|~x2_s_1(esk84_0))).
-#
-#cnf(i_0_925, plain, (x2_s_1(esk83_0)|~x2_s_1(esk84_0))).
-#
-#cnf(i_0_315, plain, (~a2_e_0(X1)|~x2_s_1(X1))).
-#
-#cnf(i_0_927, plain, (a2_s_0(esk53_0)|~x2_s_1(esk53_0))).
-##
-#cnf(i_0_917, plain, (tau_0(esk22_0)|~x2_s_1(esk23_0)|~x2_s_1(X1))).
-#
-#cnf(i_0_317, plain, (~a2_s_0(X1)|~x2_s_1(X1))).
-#
-#cnf(i_0_931, plain, (x2_e_1(esk111_0)|~x2_s_1(esk23_0)|~x2_s_1(X1))).
-##
-#cnf(i_0_810, plain, (a3_e_1(esk7_0)|l_s_2(esk122_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_934, plain, (~x2_s_1(esk99_0))).
-#
-#cnf(i_0_943, plain, (l_s_2(esk122_0)|~x2_s_4(esk7_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_944, plain, (l_s_2(esk122_0)|~x2_s_2(esk7_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_942, plain, (l_s_2(esk122_0)|~l_s_2(esk7_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_935, plain, (~x2_s_1(esk57_0))).
-#
-#cnf(i_0_945, plain, (l_s_2(esk122_0)|~a3_s_1(X1)|~x2_s_3(esk7_0))).
-#
-#cnf(i_0_819, plain, (x2_s_2(esk120_0)|a3_e_1(esk85_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_950, plain, (x2_s_2(esk120_0)|~x2_s_4(esk85_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_936, plain, (~x2_s_1(esk53_0))).
-#
-#cnf(i_0_949, plain, (x2_s_2(esk120_0)|~l_s_2(esk85_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_951, plain, (x2_s_2(esk120_0)|~x2_s_2(esk85_0)|~a3_s_1(X1))).
-#
-#cnf(i_0_952, plain, (x2_s_2(esk120_0)|~a3_s_1(X1)|~x2_s_3(esk85_0))).
-#
-#cnf(i_0_182, plain, (~tau_7(X1)|~m(X1))).
-#
-#cnf(i_0_847, plain, (x2_e_5(esk59_0)|tau_8(esk20_0)|~x2_s_5(X1))).
-#
-#cnf(i_0_962, plain, (x2_e_5(esk59_0)|~x2_s_5(X1))).
-#
-#cnf(i_0_848, plain, (x2_e_1(esk111_0)|tau_0(esk22_0)|~x2_s_1(X1))).
-#
-#cnf(i_0_166, plain, (~g(X1)|~x2_s_4(X1))).
-#
-#cnf(i_0_965, plain, (x2_e_1(esk111_0)|~x2_s_1(X1))).
-#
-#cnf(i_0_972, plain, (l_s_0(esk47_0)|~x2_e_5(esk48_0)|~x2_s_1(X1))).
-#
-#cnf(i_0_973, plain, (l_s_0(esk47_0)|~x2_s_1(X1)|~a3_e_1(esk48_0))).
-#
-#cnf(i_0_968, negated_conjecture, (~x2_s_4(esk129_0))).
-#
-#cnf(i_0_974, plain, (l_s_0(esk47_0)|~a2_s_0(esk48_0)|~x2_s_1(X1))).
-#
-#cnf(i_0_850, plain, (x2_e_0(esk54_0)|j(esk71_0)|~x2_s_0(X1))).
-#
-#cnf(i_0_975, plain, (x2_e_0(esk54_0)|~x2_s_0(X1))).
-#
-#cnf(i_0_146, plain, (~n(X1)|~x2_s_4(X1))).
-##
-#cnf(i_0_980, plain, (g(esk79_0)|~x2_s_4(esk80_0)|~x2_s_4(X1))).
-#
-#cnf(i_0_854, plain, (l_s_4(esk65_0)|a3_e_2(esk52_0)|~a3_s_2(X1))).
-##
-#cnf(i_0_984, plain, (l_s_4(esk65_0)|~a3_s_2(X1)|~l(esk52_0))).
-#
-#cnf(i_0_987, plain, (l_s_4(esk65_0)|~x2_e_3(esk52_0)|~a3_s_2(X1))).
-#
-#cnf(i_0_983, plain, (l_s_4(esk65_0)|~a3_s_2(X1)|~x2_s_3(esk52_0))).
-#
-#cnf(i_0_265, plain, (~n(X1)|~g(X1))).
+#cnf(i_0_306, plain, (~g(X1)|~n(X1))).
 
 # Proof found!
 # SZS status Theorem

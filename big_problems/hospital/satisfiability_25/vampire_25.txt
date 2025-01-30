@@ -1,0 +1,62 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for tptp_25
+% SZS output start Proof for tptp_25
+1. ! [X0] : (x2_s_1(X0) => ((? [X4] : (set_status(X4) | l_s_13(X4)) & ~? [X3] : (code_ok(X3) | x2_s_2(X3))) | (~? [X2] : (set_status(X2) | l_s_13(X2)) & ? [X1] : (code_ok(X1) | x2_s_2(X1))))) [input]
+103. ? [X1] : l_s_13(X1) [input]
+207. ? [X1] : x2_s_1(X1) [input]
+212. ? [X1] : x2_s_2(X1) [input]
+252. ! [X0] : (x2_s_1(X0) => ((? [X1] : (set_status(X1) | l_s_13(X1)) & ~? [X2] : (code_ok(X2) | x2_s_2(X2))) | (~? [X3] : (set_status(X3) | l_s_13(X3)) & ? [X4] : (code_ok(X4) | x2_s_2(X4))))) [rectify 1]
+333. ? [X0] : l_s_13(X0) [rectify 103]
+412. ? [X0] : x2_s_1(X0) [rectify 207]
+416. ? [X0] : x2_s_2(X0) [rectify 212]
+446. ! [X0] : (((? [X1] : (set_status(X1) | l_s_13(X1)) & ! [X2] : (~code_ok(X2) & ~x2_s_2(X2))) | (! [X3] : (~set_status(X3) & ~l_s_13(X3)) & ? [X4] : (code_ok(X4) | x2_s_2(X4)))) | ~x2_s_1(X0)) [ennf transformation 252]
+447. ! [X0] : ((? [X1] : (set_status(X1) | l_s_13(X1)) & ! [X2] : (~code_ok(X2) & ~x2_s_2(X2))) | (! [X3] : (~set_status(X3) & ~l_s_13(X3)) & ? [X4] : (code_ok(X4) | x2_s_2(X4))) | ~x2_s_1(X0)) [flattening 446]
+686. (! [X3] : (~set_status(X3) & ~l_s_13(X3)) & ? [X4] : (code_ok(X4) | x2_s_2(X4))) | ~sP0 [predicate definition introduction]
+687. ! [X0] : ((? [X1] : (set_status(X1) | l_s_13(X1)) & ! [X2] : (~code_ok(X2) & ~x2_s_2(X2))) | sP0 | ~x2_s_1(X0)) [definition folding 447,686]
+695. (! [X3] : (~set_status(X3) & ~l_s_13(X3)) & ? [X4] : (code_ok(X4) | x2_s_2(X4))) | ~sP0 [nnf transformation 686]
+696. (! [X0] : (~set_status(X0) & ~l_s_13(X0)) & ? [X1] : (code_ok(X1) | x2_s_2(X1))) | ~sP0 [rectify 695]
+697. ? [X1] : (code_ok(X1) | x2_s_2(X1)) => (code_ok(sK5) | x2_s_2(sK5)) [choice axiom]
+698. (! [X0] : (~set_status(X0) & ~l_s_13(X0)) & (code_ok(sK5) | x2_s_2(sK5))) | ~sP0 [skolemisation 696,697]
+699. ? [X1] : (set_status(X1) | l_s_13(X1)) => (set_status(sK6) | l_s_13(sK6)) [choice axiom]
+700. ! [X0] : (((set_status(sK6) | l_s_13(sK6)) & ! [X2] : (~code_ok(X2) & ~x2_s_2(X2))) | sP0 | ~x2_s_1(X0)) [skolemisation 687,699]
+797. ? [X0] : l_s_13(X0) => l_s_13(sK58) [choice axiom]
+798. l_s_13(sK58) [skolemisation 333,797]
+928. ? [X0] : x2_s_1(X0) => x2_s_1(sK129) [choice axiom]
+929. x2_s_1(sK129) [skolemisation 412,928]
+936. ? [X0] : x2_s_2(X0) => x2_s_2(sK133) [choice axiom]
+937. x2_s_2(sK133) [skolemisation 416,936]
+987. ~l_s_13(X0) | ~sP0 [cnf transformation 698]
+989. ~x2_s_2(X2) | sP0 | ~x2_s_1(X0) [cnf transformation 700]
+1182. l_s_13(sK58) [cnf transformation 798]
+1369. x2_s_1(sK129) [cnf transformation 929]
+1375. x2_s_2(sK133) [cnf transformation 937]
+1447. 1 <=> sP0 [avatar definition]
+1455. 3 <=> ! [X0] : ~l_s_13(X0) [avatar definition]
+1456. ~l_s_13(X0) <- (3) [avatar component clause 1455]
+1457. ~1 | 3 [avatar split clause 987,1455,1447]
+1468. 6 <=> ! [X0] : ~x2_s_1(X0) [avatar definition]
+1469. ~x2_s_1(X0) <- (6) [avatar component clause 1468]
+1484. 10 <=> ! [X2] : ~x2_s_2(X2) [avatar definition]
+1485. ~x2_s_2(X2) <- (10) [avatar component clause 1484]
+1486. 6 | 1 | 10 [avatar split clause 989,1484,1447,1468]
+2572. $false <- (3) [resolution 1456,1182]
+2573. ~3 [avatar contradiction clause 2572]
+2600. $false <- (6) [resolution 1469,1369]
+2601. ~6 [avatar contradiction clause 2600]
+2602. $false <- (10) [resolution 1485,1375]
+2603. ~10 [avatar contradiction clause 2602]
+2604. $false [avatar sat refutation 1457,1486,2573,2601,2603]
+% SZS output end Proof for tptp_25
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 1369
+% Time elapsed: 0.011 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

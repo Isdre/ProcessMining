@@ -1,0 +1,864 @@
+# Initializing proof state
+# Scanning for AC axioms
+#
+#cnf(i_0_13, plain, (a2_s(esk9_0))).
+#
+#cnf(i_0_3, plain, (x2_s(esk1_0))).
+#
+#cnf(i_0_4, plain, (register(esk2_0))).
+#
+#cnf(i_0_2, plain, (~a2_s(X1)|~analyze_defect(X1))).
+#
+#cnf(i_0_63, plain, (l_s(esk25_0))).
+#
+#cnf(i_0_61, plain, (a2_e(esk24_0)|~test_repair(X1))).
+#
+#cnf(i_0_8, plain, (x2_e(esk4_0)|~repair_simple(X1))).
+#
+#cnf(i_0_1, plain, (~a2_e(X1)|~analyze_defect(X1))).
+#
+#cnf(i_0_7, plain, (x2_e(esk4_0)|~repair_complex(X1))).
+#
+#cnf(i_0_73, plain, (x2_e(esk30_0)|~inform_user(X1))).
+#
+#cnf(i_0_74, plain, (x2_e(esk30_0)|~tau(X1))).
+#
+#cnf(i_0_9, plain, (~register(X1)|~analyze_defect(X1))).
+#
+#cnf(i_0_60, plain, (analyze_defect(esk23_0)|~register(X1))).
+#
+#cnf(i_0_62, plain, (a2_e(esk24_0)|~l_s(X1))).
+#
+#cnf(i_0_65, plain, (a2_e(esk26_0)|~x2_s(X1))).
+#
+#cnf(i_0_69, plain, (~archive_repair(X1)|~analyze_defect(X1))).
+#
+#cnf(i_0_64, plain, (a2_e(esk26_0)|~x2_e(X1))).
+#
+#cnf(i_0_6, plain, (archive_repair(esk3_0)|~a2_s(X1))).
+#
+#cnf(i_0_5, plain, (archive_repair(esk3_0)|~a2_e(X1))).
+#
+#cnf(i_0_37, plain, (~end(X1)|~analyze_defect(X1))).
+#
+#cnf(i_0_35, plain, (test_repair(esk16_0)|~x2_e(X1))).
+#
+#cnf(i_0_36, plain, (test_repair(esk16_0)|~l_s(X1))).
+#
+#cnf(i_0_33, plain, (end(esk15_0)|~archive_repair(X1))).
+#
+#cnf(i_0_41, plain, (~x2_s(X1)|~a2_s(X1))).
+#
+#cnf(i_0_84, plain, (a2_e(esk24_0)|~x2_e(X1))).
+##
+#cnf(i_0_68, plain, (l_s(esk29_0)|x2_e(esk29_0))).
+#
+#cnf(i_0_87, plain, (~a2_s(esk1_0))).
+#
+#cnf(i_0_22, plain, (restart_repair(esk12_0)|~restart_repair(X1)|~x2_s(X2))).
+#
+#cnf(i_0_89, plain, (restart_repair(esk12_0)|~restart_repair(X1))).
+##
+#cnf(i_0_26, plain, (~register(X1)|~a2_s(X1))).
+##
+#cnf(i_0_52, plain, (repair_simple(esk19_0)|~repair_simple(X1)|~x2_s(X2))).
+##
+#cnf(i_0_91, plain, (~a2_s(esk2_0))).
+#
+#cnf(i_0_49, plain, (repair_complex(esk20_0)|~repair_complex(X1)|~x2_s(X2))).
+##
+#cnf(i_0_54, plain, (inform_user(esk22_0)|~inform_user(X1)|~x2_s(X2))).
+#
+#cnf(i_0_47, plain, (~archive_repair(X1)|~a2_s(X1))).
+##
+#cnf(i_0_57, plain, (tau(esk21_0)|~tau(X1)|~x2_s(X2))).
+##
+#cnf(i_0_40, plain, (~x2_e(X1)|~a2_s(X1))).
+#
+#cnf(i_0_102, plain, (l_s(esk29_0)|~a2_s(esk29_0))).
+#
+#cnf(i_0_16, plain, (a2_e(esk11_0)|a2_s(esk10_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_103, plain, (a2_s(esk10_0)|~analyze_defect(esk11_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_39, plain, (~l_s(X1)|~a2_s(X1))).
+#
+#cnf(i_0_11, plain, (x2_e(esk6_0)|x2_s(esk5_0)|~a2_s(X1))).
+#
+#cnf(i_0_106, plain, (x2_s(esk5_0)|~a2_s(esk6_0)|~a2_s(X1))).
+#
+#cnf(i_0_48, plain, (x2_e(esk18_0)|x2_s(esk17_0)|~l_s(X1))).
+#
+#cnf(i_0_104, plain, (~a2_s(esk29_0))).
+#
+#cnf(i_0_108, plain, (x2_s(esk17_0)|~l_s(X1)|~a2_s(esk18_0))).
+#
+#cnf(i_0_109, plain, (x2_s(esk17_0)|~a2_s(esk18_0))).
+#
+#cnf(i_0_66, plain, (x2_e(esk28_0)|x2_s(esk27_0)|~restart_repair(X1))).
+#
+#cnf(i_0_105, plain, (~a2_s(esk25_0))).
+#
+#cnf(i_0_111, plain, (x2_s(esk27_0)|~restart_repair(X1)|~a2_s(esk28_0))).
+#
+#cnf(i_0_51, plain, (repair_complex(esk20_0)|repair_simple(esk19_0)|~x2_s(X1))).
+#
+#cnf(i_0_10, plain, (test_repair(esk8_0)|l_s(esk7_0)|~a2_s(X1))).
+#
+#cnf(i_0_38, plain, (~test_repair(X1)|~a2_s(X1))).
+#
+#cnf(i_0_118, plain, (l_s(esk7_0)|~a2_s(esk8_0)|~a2_s(X1))).
+#
+#cnf(i_0_56, plain, (tau(esk21_0)|inform_user(esk22_0)|~x2_s(X1))).
+#
+#cnf(i_0_113, plain, (x2_e(esk4_0)|repair_simple(esk19_0)|~x2_s(X1))).
+#
+#cnf(i_0_24, plain, (~end(X1)|~a2_s(X1))).
+#
+#cnf(i_0_122, plain, (x2_e(esk4_0)|~x2_s(X1))).
+#
+#cnf(i_0_115, plain, (l_s(esk7_0)|a2_e(esk24_0)|~a2_s(X1))).
+#
+#cnf(i_0_126, plain, (l_s(esk7_0)|~a2_s(X1)|~analyze_defect(esk24_0))).
+#
+#cnf(i_0_32, plain, (~x2_s(X1)|~a2_e(X1))).
+#
+#cnf(i_0_132, plain, (a2_s(esk10_0)|~x2_s(esk11_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_133, plain, (a2_s(esk10_0)|~register(X1)|~x2_s(esk11_0))).
+#
+#cnf(i_0_134, plain, (a2_s(esk10_0)|~x2_s(esk11_0))).
+#
+#cnf(i_0_25, plain, (~register(X1)|~a2_e(X1))).
+#
+#cnf(i_0_140, plain, (a2_s(esk10_0)|~register(esk11_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_141, plain, (a2_s(esk10_0)|~register(esk11_0)|~register(X1))).
+#
+#cnf(i_0_131, plain, (l_s(esk7_0)|~x2_s(esk24_0)|~a2_s(X1))).
+#
+#cnf(i_0_46, plain, (~archive_repair(X1)|~a2_e(X1))).
+#
+#cnf(i_0_139, plain, (l_s(esk7_0)|~register(esk24_0)|~a2_s(X1))).
+#
+#cnf(i_0_120, plain, (inform_user(esk22_0)|x2_e(esk30_0)|~x2_s(X1))).
+#
+#cnf(i_0_146, plain, (x2_e(esk30_0)|~x2_s(X1))).
+#
+#cnf(i_0_31, plain, (~x2_e(X1)|~a2_e(X1))).
+#
+#cnf(i_0_154, plain, (a2_s(esk10_0)|~x2_e(esk11_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_153, plain, (l_s(esk7_0)|~x2_e(esk24_0)|~a2_s(X1))).
+#
+#cnf(i_0_155, plain, (a2_s(esk10_0)|~x2_e(esk11_0)|~register(X1))).
+#
+#cnf(i_0_30, plain, (~l_s(X1)|~a2_e(X1))).
+#
+#cnf(i_0_161, plain, (a2_s(esk10_0)|~l_s(esk11_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_162, plain, (a2_s(esk10_0)|~l_s(esk11_0)|~register(X1))).
+#
+#cnf(i_0_160, plain, (l_s(esk7_0)|~l_s(esk24_0)|~a2_s(X1))).
+#
+#cnf(i_0_29, plain, (~test_repair(X1)|~a2_e(X1))).
+#
+#cnf(i_0_166, plain, (l_s(esk7_0)|~a2_e(esk8_0)|~a2_s(X1))).
+###
+#cnf(i_0_23, plain, (~end(X1)|~a2_e(X1))).
+###
+#cnf(i_0_21, plain, (x2_e(esk14_0)|x2_s(esk13_0)|~restart_repair(X1)|~x2_s(X2))).
+#
+#cnf(i_0_67, plain, (~repair_simple(X1)|~x2_s(X1))).
+#
+#cnf(i_0_168, plain, (x2_s(esk13_0)|~restart_repair(X1)|~x2_s(X2)|~a2_s(esk14_0))).
+#
+#cnf(i_0_19, plain, (x2_e(esk14_0)|x2_s(esk13_0)|~restart_repair(X1)|~x2_e(X2))).
+#
+#cnf(i_0_172, plain, (x2_s(esk13_0)|~restart_repair(X1)|~x2_e(X2)|~a2_s(esk14_0))).
+#
+#cnf(i_0_34, plain, (~repair_complex(X1)|~x2_s(X1))).
+#
+#cnf(i_0_183, plain, (repair_simple(esk19_0)|~x2_s(esk20_0)|~x2_s(X1))).
+###
+#cnf(i_0_58, plain, (~x2_e(X1)|~x2_s(X1))).
+#
+#cnf(i_0_189, plain, (l_s(esk29_0)|~x2_s(esk29_0))).
+#
+#cnf(i_0_191, plain, (x2_s(esk17_0)|~l_s(X1)|~x2_s(esk18_0))).
+#
+#cnf(i_0_198, plain, (x2_s(esk17_0)|~x2_s(esk18_0))).
+#
+#cnf(i_0_15, plain, (~l_s(X1)|~x2_s(X1))).
+#
+#cnf(i_0_190, plain, (x2_s(esk27_0)|~restart_repair(X1)|~x2_s(esk28_0))).
+#
+#cnf(i_0_194, plain, (x2_s(esk5_0)|~x2_s(esk6_0)|~a2_s(X1))).
+#
+#cnf(i_0_193, plain, (x2_s(esk13_0)|~restart_repair(X1)|~x2_e(X2)|~x2_s(esk14_0))).
+#
+#cnf(i_0_203, plain, (~x2_s(esk29_0))).
+#
+#cnf(i_0_192, plain, (x2_s(esk13_0)|~restart_repair(X1)|~x2_s(esk14_0)|~x2_s(X2))).
+###
+#cnf(i_0_204, plain, (~x2_s(esk25_0))).
+####
+#cnf(i_0_12, plain, (~inform_user(X1)|~x2_s(X1))).
+##
+#cnf(i_0_176, plain, (l_s(esk29_0)|x2_s(esk13_0)|~restart_repair(X1)|~a2_s(esk14_0))).
+##
+#cnf(i_0_71, plain, (~restart_repair(X1)|~x2_s(X1))).
+##
+#cnf(i_0_210, plain, (l_s(esk29_0)|x2_s(esk13_0)|~restart_repair(X1)|~x2_s(esk14_0))).
+##
+#cnf(i_0_224, plain, (~restart_repair(esk1_0))).
+####
+#cnf(i_0_42, plain, (~tau(X1)|~x2_s(X1))).
+#
+#cnf(i_0_227, plain, (inform_user(esk22_0)|~x2_s(esk21_0)|~x2_s(X1))).
+###
+#cnf(i_0_59, plain, (~archive_repair(X1)|~register(X1))).
+####
+#cnf(i_0_27, plain, (~end(X1)|~register(X1))).
+###
+#cnf(i_0_178, plain, (x2_s(esk13_0)|x2_s(esk17_0)|~restart_repair(X1)|~l_s(X2)|~a2_s(esk14_0))).
+#
+#cnf(i_0_43, plain, (~end(X1)|~archive_repair(X1))).
+#
+#cnf(i_0_237, plain, (x2_s(esk13_0)|x2_s(esk17_0)|~restart_repair(X1)|~a2_s(esk14_0))).
+#
+#cnf(i_0_243, plain, (x2_s(esk17_0)|~restart_repair(X1)|~a2_s(esk13_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_244, plain, (x2_s(esk17_0)|~restart_repair(esk13_0)|~restart_repair(X1)|~a2_s(esk14_0))).
+#
+#cnf(i_0_76, plain, (~repair_complex(X1)|~repair_simple(X1))).
+##
+#cnf(i_0_212, plain, (x2_s(esk13_0)|x2_s(esk17_0)|~restart_repair(X1)|~l_s(X2)|~x2_s(esk14_0))).
+#
+#cnf(i_0_254, plain, (x2_s(esk13_0)|x2_s(esk17_0)|~restart_repair(X1)|~x2_s(esk14_0))).
+#
+#cnf(i_0_44, plain, (~x2_e(X1)|~repair_simple(X1))).
+#
+#cnf(i_0_211, plain, (x2_s(esk13_0)|x2_s(esk27_0)|~restart_repair(X1)|~restart_repair(X2)|~x2_s(esk14_0))).
+#
+#cnf(i_0_215, plain, (x2_s(esk13_0)|x2_s(esk5_0)|~restart_repair(X1)|~x2_s(esk14_0)|~a2_s(X2))).
+#
+#cnf(i_0_177, plain, (x2_s(esk13_0)|x2_s(esk27_0)|~restart_repair(X1)|~restart_repair(X2)|~a2_s(esk14_0))).
+#
+#cnf(i_0_28, plain, (~x2_e(X1)|~repair_complex(X1))).
+#
+#cnf(i_0_264, plain, (repair_simple(esk19_0)|~x2_e(esk20_0)|~x2_s(X1))).
+###
+#cnf(i_0_14, plain, (~l_s(X1)|~x2_e(X1))).
+#
+#cnf(i_0_272, plain, (x2_s(esk27_0)|~restart_repair(X1)|~l_s(esk28_0))).
+#
+#cnf(i_0_273, plain, (x2_s(esk17_0)|~l_s(esk18_0)|~l_s(X1))).
+#
+#cnf(i_0_276, plain, (x2_s(esk5_0)|~l_s(esk6_0)|~a2_s(X1))).
+#
+#cnf(i_0_17, plain, (~test_repair(X1)|~x2_e(X1))).
+#
+#cnf(i_0_284, plain, (l_s(esk7_0)|~x2_e(esk8_0)|~a2_s(X1))).
+#
+#cnf(i_0_275, plain, (x2_s(esk13_0)|~restart_repair(X1)|~l_s(esk14_0)|~x2_e(X2))).
+#
+#cnf(i_0_274, plain, (x2_s(esk13_0)|~restart_repair(X1)|~l_s(esk14_0)|~x2_s(X2))).
+#
+#cnf(i_0_72, plain, (~inform_user(X1)|~x2_e(X1))).
+###
+#cnf(i_0_278, plain, (x2_s(esk17_0)|~l_s(esk18_0)|~a2_s(esk8_0)|~a2_s(X1))).
+#
+#cnf(i_0_70, plain, (~restart_repair(X1)|~x2_e(X1))).
+#
+#cnf(i_0_296, plain, (l_s(esk29_0)|~restart_repair(esk29_0))).
+#
+#cnf(i_0_298, plain, (x2_s(esk17_0)|~restart_repair(esk18_0)|~l_s(X1))).
+#
+#cnf(i_0_308, plain, (x2_s(esk17_0)|~restart_repair(esk18_0))).
+#
+#cnf(i_0_45, plain, (~tau(X1)|~x2_e(X1))).
+#
+#cnf(i_0_297, plain, (x2_s(esk27_0)|~restart_repair(esk28_0)|~restart_repair(X1))).
+#
+#cnf(i_0_301, plain, (x2_s(esk5_0)|~restart_repair(esk6_0)|~a2_s(X1))).
+#
+#cnf(i_0_315, plain, (inform_user(esk22_0)|~x2_e(esk21_0)|~x2_s(X1))).
+#
+#cnf(i_0_18, plain, (~test_repair(X1)|~l_s(X1))).
+##
+#cnf(i_0_327, plain, (l_s(esk7_0)|~l_s(esk8_0)|~a2_s(X1))).
+#
+#cnf(i_0_300, plain, (x2_s(esk13_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~x2_e(X2))).
+#
+#cnf(i_0_53, plain, (~restart_repair(X1)|~l_s(X1))).
+#
+#cnf(i_0_299, plain, (x2_s(esk13_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(X2))).
+###
+#cnf(i_0_338, plain, (~restart_repair(esk29_0))).
+##
+#cnf(i_0_279, plain, (x2_s(esk17_0)|~l_s(esk18_0)|~x2_s(esk24_0)|~a2_s(X1))).
+#
+#cnf(i_0_280, plain, (x2_s(esk17_0)|~l_s(esk18_0)|~register(esk24_0)|~a2_s(X1))).
+#
+#cnf(i_0_339, plain, (~restart_repair(esk25_0))).
+####
+#cnf(i_0_75, plain, (~tau(X1)|~inform_user(X1))).
+##
+#cnf(i_0_286, plain, (l_s(esk29_0)|x2_s(esk13_0)|~restart_repair(X1)|~l_s(esk14_0))).
+#
+#cnf(i_0_329, plain, (l_s(esk29_0)|x2_s(esk13_0)|~restart_repair(esk14_0)|~restart_repair(X1))).
+#
+#cnf(i_0_77, plain, (~register(X1)|~a2_s(esk23_0))).
+####
+#cnf(i_0_356, plain, (~a2_s(esk23_0))).
+####
+#cnf(i_0_83, plain, (~a2_e(X1)|~analyze_defect(esk3_0))).
+#
+#cnf(i_0_361, plain, (l_s(esk7_0)|~a2_s(X1)|~analyze_defect(esk3_0))).
+#
+#cnf(i_0_362, plain, (a2_s(esk10_0)|~analyze_defect(esk3_0)|~analyze_defect(X1))).
+##
+#cnf(i_0_86, plain, (~archive_repair(X1)|~analyze_defect(esk15_0))).
+##
+#cnf(i_0_331, plain, (x2_s(esk13_0)|x2_s(esk17_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~l_s(X2))).
+#
+#cnf(i_0_368, plain, (x2_s(esk13_0)|x2_s(esk17_0)|~restart_repair(esk14_0)|~restart_repair(X1))).
+#
+#cnf(i_0_99, plain, (~a2_e(X1)|~a2_s(esk3_0))).
+#
+#cnf(i_0_382, plain, (a2_s(esk10_0)|~a2_s(esk3_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_383, plain, (a2_s(esk10_0)|~register(X1)|~a2_s(esk3_0))).
+#
+#cnf(i_0_384, plain, (a2_s(esk10_0)|~a2_s(esk3_0))).
+#
+#cnf(i_0_116, plain, (~x2_e(X1)|~a2_s(esk16_0))).
+#
+#cnf(i_0_386, plain, (l_s(esk29_0)|~a2_s(esk16_0))).
+#
+#cnf(i_0_388, plain, (x2_s(esk17_0)|~l_s(X1)|~a2_s(esk16_0))).
+#
+#cnf(i_0_399, plain, (x2_s(esk17_0)|~a2_s(esk16_0))).
+#
+#cnf(i_0_117, plain, (~l_s(X1)|~a2_s(esk16_0))).
+#
+#cnf(i_0_381, plain, (l_s(esk7_0)|~a2_s(esk3_0)|~a2_s(X1))).
+#
+#cnf(i_0_387, plain, (x2_s(esk27_0)|~restart_repair(X1)|~a2_s(esk16_0))).
+#
+#cnf(i_0_391, plain, (x2_s(esk5_0)|~a2_s(esk16_0)|~a2_s(X1))).
+#
+#cnf(i_0_410, plain, (~a2_s(esk16_0))).
+#
+#cnf(i_0_420, plain, (x2_s(esk17_0)|~l_s(esk18_0)|~a2_s(esk3_0)|~a2_s(X1))).
+#
+#cnf(i_0_373, plain, (x2_s(esk17_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~a2_s(esk13_0))).
+#
+#cnf(i_0_374, plain, (x2_s(esk17_0)|~restart_repair(esk13_0)|~restart_repair(esk14_0)|~restart_repair(X1))).
+#
+#cnf(i_0_124, plain, (~archive_repair(X1)|~a2_s(esk15_0))).
+#
+#cnf(i_0_261, plain, (x2_s(esk27_0)|~restart_repair(X1)|~restart_repair(X2)|~a2_s(esk13_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_262, plain, (x2_s(esk27_0)|~restart_repair(esk13_0)|~restart_repair(X1)|~restart_repair(X2)|~a2_s(esk14_0))).
+#
+#cnf(i_0_287, plain, (x2_s(esk13_0)|x2_s(esk27_0)|~restart_repair(X1)|~restart_repair(X2)|~l_s(esk14_0))).
+#
+#cnf(i_0_125, plain, (~x2_s(X1)|~a2_s(esk4_0))).
+#
+#cnf(i_0_447, plain, (x2_s(esk17_0)|~restart_repair(X1)|~a2_s(esk4_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_449, plain, (x2_s(esk17_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~a2_s(esk4_0))).
+#
+#cnf(i_0_446, plain, (x2_s(esk27_0)|~restart_repair(X1)|~restart_repair(X2)|~a2_s(esk4_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_452, plain, (~a2_s(esk4_0))).
+#
+#cnf(i_0_288, plain, (x2_s(esk13_0)|x2_s(esk17_0)|~restart_repair(X1)|~l_s(esk14_0)|~l_s(X2))).
+#
+#cnf(i_0_291, plain, (x2_s(esk13_0)|x2_s(esk5_0)|~restart_repair(X1)|~l_s(esk14_0)|~a2_s(X2))).
+#
+#cnf(i_0_181, plain, (x2_s(esk13_0)|x2_s(esk5_0)|~restart_repair(X1)|~a2_s(esk14_0)|~a2_s(X2))).
+#
+#cnf(i_0_128, plain, (~x2_e(X1)|~x2_s(esk26_0))).
+#
+#cnf(i_0_467, plain, (l_s(esk29_0)|~x2_s(esk26_0))).
+#
+#cnf(i_0_469, plain, (x2_s(esk17_0)|~l_s(X1)|~x2_s(esk26_0))).
+#
+#cnf(i_0_480, plain, (x2_s(esk17_0)|~x2_s(esk26_0))).
+#
+#cnf(i_0_129, plain, (~l_s(X1)|~x2_s(esk24_0))).
+#
+#cnf(i_0_468, plain, (x2_s(esk27_0)|~restart_repair(X1)|~x2_s(esk26_0))).
+#
+#cnf(i_0_472, plain, (x2_s(esk5_0)|~x2_s(esk26_0)|~a2_s(X1))).
+##
+#cnf(i_0_493, plain, (~x2_s(esk24_0))).
+#
+#cnf(i_0_470, plain, (x2_s(esk13_0)|~restart_repair(X1)|~x2_s(esk26_0)|~x2_s(X2))).
+##
+#cnf(i_0_462, plain, (x2_s(esk5_0)|~restart_repair(X1)|~a2_s(esk13_0)|~a2_s(esk14_0)|~a2_s(X2))).
+##
+#cnf(i_0_463, plain, (x2_s(esk5_0)|~restart_repair(esk13_0)|~restart_repair(X1)|~a2_s(esk14_0)|~a2_s(X2))).
+##
+#cnf(i_0_330, plain, (x2_s(esk13_0)|x2_s(esk27_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~restart_repair(X2))).
+#
+#cnf(i_0_136, plain, (~x2_e(X1)|~register(esk26_0))).
+#
+#cnf(i_0_524, plain, (l_s(esk29_0)|~register(esk26_0))).
+#
+#cnf(i_0_526, plain, (x2_s(esk17_0)|~l_s(X1)|~register(esk26_0))).
+#
+#cnf(i_0_538, plain, (x2_s(esk17_0)|~register(esk26_0))).
+#
+#cnf(i_0_137, plain, (~l_s(X1)|~register(esk24_0))).
+#
+#cnf(i_0_525, plain, (x2_s(esk27_0)|~restart_repair(X1)|~register(esk26_0))).
+#
+#cnf(i_0_529, plain, (x2_s(esk5_0)|~register(esk26_0)|~a2_s(X1))).
+##
+#cnf(i_0_549, plain, (~register(esk24_0))).
+#
+#cnf(i_0_527, plain, (x2_s(esk13_0)|~restart_repair(X1)|~register(esk26_0)|~x2_s(X2))).
+#
+#cnf(i_0_518, plain, (x2_s(esk27_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~restart_repair(X2)|~a2_s(esk13_0))).
+#
+#cnf(i_0_519, plain, (x2_s(esk27_0)|~restart_repair(esk13_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~restart_repair(X2))).
+##
+#cnf(i_0_334, plain, (x2_s(esk13_0)|x2_s(esk5_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~a2_s(X2))).
+#
+#cnf(i_0_558, plain, (x2_s(esk5_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~a2_s(esk13_0)|~a2_s(X2))).
+#
+#cnf(i_0_559, plain, (x2_s(esk5_0)|~restart_repair(esk13_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~a2_s(X2))).
+#
+#cnf(i_0_148, plain, (~x2_s(X1)|~a2_s(esk30_0))).
+#
+#cnf(i_0_584, plain, (x2_s(esk17_0)|~restart_repair(X1)|~a2_s(esk30_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_586, plain, (x2_s(esk17_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~a2_s(esk30_0))).
+#
+#cnf(i_0_582, plain, (x2_s(esk27_0)|~restart_repair(X1)|~restart_repair(X2)|~a2_s(esk30_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_597, plain, (~a2_s(esk30_0))).
+####
+#cnf(i_0_157, plain, (~l_s(esk26_0)|~x2_e(X1))).
+#
+#cnf(i_0_608, plain, (l_s(esk29_0)|~l_s(esk26_0))).
+#
+#cnf(i_0_609, plain, (x2_s(esk27_0)|~restart_repair(X1)|~l_s(esk26_0))).
+#
+#cnf(i_0_610, plain, (x2_s(esk17_0)|~l_s(esk26_0)|~l_s(X1))).
+#
+#cnf(i_0_159, plain, (~l_s(esk24_0)|~x2_e(X1))).
+#
+#cnf(i_0_619, plain, (l_s(esk29_0)|~l_s(esk24_0))).
+#
+#cnf(i_0_613, plain, (x2_s(esk5_0)|~l_s(esk26_0)|~a2_s(X1))).
+#
+#cnf(i_0_620, plain, (x2_s(esk27_0)|~restart_repair(X1)|~l_s(esk24_0))).
+#
+#cnf(i_0_167, plain, (~archive_repair(X1)|~a2_e(esk15_0))).
+#
+#cnf(i_0_621, plain, (x2_s(esk17_0)|~l_s(esk24_0)|~l_s(X1))).
+#
+#cnf(i_0_624, plain, (x2_s(esk5_0)|~l_s(esk24_0)|~a2_s(X1))).
+#
+#cnf(i_0_629, plain, (x2_s(esk17_0)|~l_s(esk24_0)|~a2_s(X1))).
+#
+#cnf(i_0_233, plain, (~register(esk3_0)|~a2_e(X1))).
+#
+#cnf(i_0_636, plain, (a2_s(esk10_0)|~register(esk3_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_637, plain, (a2_s(esk10_0)|~register(esk3_0)|~register(X1))).
+#
+#cnf(i_0_635, plain, (l_s(esk7_0)|~register(esk3_0)|~a2_s(X1))).
+#
+#cnf(i_0_234, plain, (~archive_repair(X1)|~register(esk15_0))).
+###
+#cnf(i_0_611, plain, (x2_s(esk13_0)|~restart_repair(X1)|~l_s(esk26_0)|~x2_s(X2))).
+#
+#cnf(i_0_295, plain, (~restart_repair(esk30_0)|~x2_s(X1))).
+#
+#cnf(i_0_622, plain, (x2_s(esk13_0)|~restart_repair(X1)|~l_s(esk24_0)|~x2_s(X2))).
+#
+#cnf(i_0_615, plain, (x2_s(esk17_0)|~l_s(esk26_0)|~a2_s(esk8_0)|~a2_s(X1))).
+##
+#cnf(i_0_676, plain, (~restart_repair(esk30_0))).
+#
+#cnf(i_0_617, plain, (x2_s(esk17_0)|~l_s(esk26_0)|~a2_s(esk3_0)|~a2_s(X1))).
+###
+#cnf(i_0_302, plain, (~restart_repair(esk4_0)|~x2_s(X1))).
+#
+#cnf(i_0_641, plain, (x2_s(esk17_0)|~l_s(esk18_0)|~register(esk3_0)|~a2_s(X1))).
+#
+#cnf(i_0_642, plain, (x2_s(esk17_0)|~l_s(esk26_0)|~register(esk3_0)|~a2_s(X1))).
+##
+#cnf(i_0_707, plain, (~restart_repair(esk4_0))).
+####
+#cnf(i_0_325, plain, (~l_s(esk16_0)|~x2_e(X1))).
+#
+#cnf(i_0_709, plain, (l_s(esk29_0)|~l_s(esk16_0))).
+#
+#cnf(i_0_710, plain, (x2_s(esk27_0)|~restart_repair(X1)|~l_s(esk16_0))).
+#
+#cnf(i_0_711, plain, (x2_s(esk17_0)|~l_s(esk16_0)|~l_s(X1))).
+#
+#cnf(i_0_364, plain, (~a2_e(X1)|~analyze_defect(esk15_0))).
+#
+#cnf(i_0_714, plain, (x2_s(esk5_0)|~l_s(esk16_0)|~a2_s(X1))).
+#
+#cnf(i_0_724, plain, (l_s(esk7_0)|~a2_s(X1)|~analyze_defect(esk15_0))).
+#
+#cnf(i_0_725, plain, (a2_s(esk10_0)|~analyze_defect(esk15_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_377, plain, (~x2_s(X1)|~a2_s(esk3_0))).
+##
+#cnf(i_0_712, plain, (x2_s(esk13_0)|~restart_repair(X1)|~l_s(esk16_0)|~x2_s(X2))).
+#
+#cnf(i_0_716, plain, (x2_s(esk17_0)|~l_s(esk16_0)|~a2_s(esk8_0)|~a2_s(X1))).
+#
+#cnf(i_0_756, plain, (~a2_s(esk3_0))).
+##
+#cnf(i_0_719, plain, (x2_s(esk17_0)|~l_s(esk16_0)|~register(esk3_0)|~a2_s(X1))).
+##
+#cnf(i_0_430, plain, (~a2_e(X1)|~a2_s(esk15_0))).
+#
+#cnf(i_0_762, plain, (a2_s(esk10_0)|~a2_s(esk15_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_763, plain, (a2_s(esk10_0)|~register(X1)|~a2_s(esk15_0))).
+#
+#cnf(i_0_764, plain, (a2_s(esk10_0)|~a2_s(esk15_0))).
+#
+#cnf(i_0_632, plain, (~x2_e(X1)|~register(esk3_0))).
+#
+#cnf(i_0_766, plain, (l_s(esk29_0)|~register(esk3_0))).
+#
+#cnf(i_0_768, plain, (x2_s(esk17_0)|~l_s(X1)|~register(esk3_0))).
+#
+#cnf(i_0_781, plain, (x2_s(esk17_0)|~register(esk3_0))).
+#
+#cnf(i_0_633, plain, (~l_s(X1)|~register(esk3_0))).
+#
+#cnf(i_0_767, plain, (x2_s(esk27_0)|~restart_repair(X1)|~register(esk3_0))).
+#
+#cnf(i_0_771, plain, (x2_s(esk5_0)|~register(esk3_0)|~a2_s(X1))).
+#
+#cnf(i_0_761, plain, (l_s(esk7_0)|~a2_s(esk15_0)|~a2_s(X1))).
+#
+#cnf(i_0_791, plain, (~register(esk3_0))).
+#
+#cnf(i_0_799, plain, (x2_s(esk17_0)|~l_s(esk18_0)|~a2_s(esk15_0)|~a2_s(X1))).
+#
+#cnf(i_0_800, plain, (x2_s(esk17_0)|~l_s(esk26_0)|~a2_s(esk15_0)|~a2_s(X1))).
+##
+#cnf(i_0_645, plain, (~register(esk15_0)|~a2_e(X1))).
+#
+#cnf(i_0_809, plain, (a2_s(esk10_0)|~register(esk15_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_810, plain, (a2_s(esk10_0)|~register(esk15_0)|~register(X1))).
+#
+#cnf(i_0_808, plain, (l_s(esk7_0)|~register(esk15_0)|~a2_s(X1))).
+#
+#cnf(i_0_757, plain, (~x2_s(X1)|~a2_s(esk15_0))).
+#
+#cnf(i_0_803, plain, (x2_s(esk17_0)|~l_s(esk16_0)|~a2_s(esk15_0)|~a2_s(X1))).
+#
+#cnf(i_0_814, plain, (x2_s(esk17_0)|~l_s(esk18_0)|~register(esk15_0)|~a2_s(X1))).
+#
+#cnf(i_0_815, plain, (x2_s(esk17_0)|~l_s(esk26_0)|~register(esk15_0)|~a2_s(X1))).
+#
+#cnf(i_0_848, plain, (~a2_s(esk15_0))).
+##
+#cnf(i_0_817, plain, (x2_s(esk17_0)|~l_s(esk16_0)|~register(esk15_0)|~a2_s(X1))).
+##
+#cnf(i_0_805, plain, (~x2_e(X1)|~register(esk15_0))).
+#
+#cnf(i_0_850, plain, (l_s(esk29_0)|~register(esk15_0))).
+#
+#cnf(i_0_852, plain, (x2_s(esk17_0)|~l_s(X1)|~register(esk15_0))).
+#
+#cnf(i_0_863, plain, (x2_s(esk17_0)|~register(esk15_0))).
+#
+#cnf(i_0_806, plain, (~l_s(X1)|~register(esk15_0))).
+#
+#cnf(i_0_851, plain, (x2_s(esk27_0)|~restart_repair(X1)|~register(esk15_0))).
+#
+#cnf(i_0_855, plain, (x2_s(esk5_0)|~register(esk15_0)|~a2_s(X1))).
+##
+#cnf(i_0_873, plain, (~register(esk15_0))).
+####
+#cnf(i_0_78, plain, (~register(esk23_0)|~register(X1))).
+####
+#cnf(i_0_79, plain, (~l_s(X1)|~analyze_defect(esk24_0))).
+####
+#cnf(i_0_80, plain, (~x2_s(X1)|~analyze_defect(esk26_0))).
+####
+#cnf(i_0_81, plain, (~x2_e(X1)|~analyze_defect(esk26_0))).
+####
+#cnf(i_0_82, plain, (~a2_s(X1)|~analyze_defect(esk3_0))).
+#
+#cnf(i_0_88, plain, (~x2_e(X1)|~analyze_defect(esk24_0))).
+##
+#cnf(i_0_127, plain, (~x2_s(esk26_0)|~x2_s(X1))).
+#
+#cnf(i_0_893, plain, (~x2_s(esk26_0))).
+#
+#cnf(i_0_135, plain, (~register(esk26_0)|~x2_s(X1))).
+#
+#cnf(i_0_143, plain, (~a2_e(esk3_0)|~a2_s(X1))).
+#
+#cnf(i_0_144, plain, (~a2_e(esk3_0)|~a2_e(X1))).
+#
+#cnf(i_0_149, plain, (~x2_e(esk26_0)|~x2_s(X1))).
+#
+#cnf(i_0_909, plain, (a2_s(esk10_0)|~a2_e(esk3_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_150, plain, (~x2_e(esk26_0)|~x2_e(X1))).
+#
+#cnf(i_0_911, plain, (x2_s(esk27_0)|~restart_repair(X1)|~x2_e(esk26_0))).
+#
+#cnf(i_0_151, plain, (~l_s(X1)|~x2_e(esk24_0))).
+#
+#cnf(i_0_912, plain, (x2_s(esk17_0)|~l_s(X1)|~x2_e(esk26_0))).
+#
+#cnf(i_0_915, plain, (x2_s(esk5_0)|~x2_e(esk26_0)|~a2_s(X1))).
+##
+#cnf(i_0_152, plain, (~x2_e(esk24_0)|~x2_e(X1))).
+#
+#cnf(i_0_918, plain, (x2_s(esk27_0)|~restart_repair(X1)|~x2_e(esk24_0))).
+##
+#cnf(i_0_922, plain, (x2_s(esk5_0)|~x2_e(esk24_0)|~a2_s(X1))).
+#
+#cnf(i_0_156, plain, (~l_s(esk26_0)|~x2_s(X1))).
+##
+#cnf(i_0_920, plain, (x2_s(esk13_0)|~restart_repair(X1)|~x2_e(esk24_0)|~x2_s(X2))).
+##
+#cnf(i_0_158, plain, (~l_s(esk24_0)|~l_s(X1))).
+#
+#cnf(i_0_164, plain, (~x2_e(X1)|~a2_e(esk16_0))).
+#
+#cnf(i_0_165, plain, (~l_s(X1)|~a2_e(esk16_0))).
+#
+#cnf(i_0_188, plain, (~x2_s(esk30_0)|~x2_s(X1))).
+#
+#cnf(i_0_195, plain, (~x2_s(esk4_0)|~x2_s(X1))).
+#
+#cnf(i_0_941, plain, (x2_s(esk17_0)|~restart_repair(X1)|~x2_s(esk30_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_943, plain, (x2_s(esk17_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(esk30_0))).
+#
+#cnf(i_0_967, plain, (x2_s(esk17_0)|~restart_repair(X1)|~x2_s(esk4_0)|~a2_s(esk14_0))).
+##
+#cnf(i_0_969, plain, (x2_s(esk17_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(esk4_0))).
+#
+#cnf(i_0_939, plain, (x2_s(esk27_0)|~restart_repair(X1)|~restart_repair(X2)|~x2_s(esk30_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_940, plain, (x2_s(esk5_0)|~restart_repair(X1)|~x2_s(esk30_0)|~a2_s(esk14_0)|~a2_s(X2))).
+#
+#cnf(i_0_242, plain, (~archive_repair(esk15_0)|~archive_repair(X1))).
+#
+#cnf(i_0_944, plain, (x2_s(esk27_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~restart_repair(X2)|~x2_s(esk30_0))).
+#
+#cnf(i_0_945, plain, (x2_s(esk5_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(esk30_0)|~a2_s(X2))).
+#
+#cnf(i_0_965, plain, (x2_s(esk27_0)|~restart_repair(X1)|~restart_repair(X2)|~x2_s(esk4_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_270, plain, (~l_s(esk30_0)|~x2_s(X1))).
+#
+#cnf(i_0_966, plain, (x2_s(esk5_0)|~restart_repair(X1)|~x2_s(esk4_0)|~a2_s(esk14_0)|~a2_s(X2))).
+#
+#cnf(i_0_970, plain, (x2_s(esk27_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~restart_repair(X2)|~x2_s(esk4_0))).
+#
+#cnf(i_0_971, plain, (x2_s(esk5_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(esk4_0)|~a2_s(X2))).
+#
+#cnf(i_0_277, plain, (~l_s(esk4_0)|~x2_s(X1))).
+#
+#cnf(i_0_282, plain, (~x2_e(esk16_0)|~x2_e(X1))).
+#
+#cnf(i_0_1026, plain, (x2_s(esk27_0)|~restart_repair(X1)|~x2_e(esk16_0))).
+#
+#cnf(i_0_1027, plain, (x2_s(esk17_0)|~l_s(X1)|~x2_e(esk16_0))).
+#
+#cnf(i_0_283, plain, (~l_s(X1)|~x2_e(esk16_0))).
+#
+#cnf(i_0_1030, plain, (x2_s(esk5_0)|~x2_e(esk16_0)|~a2_s(X1))).
+#
+#cnf(i_0_1028, plain, (x2_s(esk13_0)|~restart_repair(X1)|~x2_e(esk16_0)|~x2_s(X2))).
+##
+#cnf(i_0_326, plain, (~l_s(esk16_0)|~l_s(X1))).
+#
+#cnf(i_0_357, plain, (~x2_s(X1)|~analyze_defect(esk3_0))).
+#
+#cnf(i_0_358, plain, (~x2_e(X1)|~analyze_defect(esk3_0))).
+#
+#cnf(i_0_359, plain, (~l_s(X1)|~analyze_defect(esk3_0))).
+##
+#cnf(i_0_363, plain, (~a2_s(X1)|~analyze_defect(esk15_0))).
+#####
+#cnf(i_0_618, plain, (~l_s(esk24_0)|~x2_s(X1))).
+##
+#cnf(i_0_626, plain, (~a2_e(esk15_0)|~a2_s(X1))).
+#
+#cnf(i_0_627, plain, (~a2_e(esk15_0)|~a2_e(X1))).
+#
+#cnf(i_0_1033, plain, (a2_s(esk10_0)|~a2_e(esk15_0)|~analyze_defect(X1))).
+#
+#cnf(i_0_708, plain, (~l_s(esk16_0)|~x2_s(X1))).
+##
+#cnf(i_0_720, plain, (~x2_s(X1)|~analyze_defect(esk15_0))).
+#
+#cnf(i_0_721, plain, (~x2_e(X1)|~analyze_defect(esk15_0))).
+#
+#cnf(i_0_722, plain, (~l_s(X1)|~analyze_defect(esk15_0))).
+####
+#cnf(i_0_917, plain, (~x2_e(esk24_0)|~x2_s(X1))).
+##
+#cnf(i_0_925, plain, (~l_s(esk24_0)|~a2_s(X1))).
+#
+#cnf(i_0_110, plain, (~a2_s(esk17_0)|~a2_s(esk18_0))).
+#
+#cnf(i_0_221, plain, (~restart_repair(esk17_0)|~a2_s(esk18_0))).
+#
+#cnf(i_0_313, plain, (~restart_repair(esk18_0)|~a2_s(esk17_0))).
+#
+#cnf(i_0_314, plain, (~restart_repair(esk17_0)|~restart_repair(esk18_0))).
+####
+#cnf(i_0_932, plain, (~x2_s(esk30_0)|~a2_s(esk18_0))).
+#
+#cnf(i_0_935, plain, (~restart_repair(esk18_0)|~x2_s(esk30_0))).
+#
+#cnf(i_0_958, plain, (~x2_s(esk4_0)|~a2_s(esk18_0))).
+#
+#cnf(i_0_961, plain, (~restart_repair(esk18_0)|~x2_s(esk4_0))).
+#
+#cnf(i_0_50, plain, (~repair_complex(X2)|~repair_simple(X1)|~x2_s(X3))).
+##
+#cnf(i_0_55, plain, (~tau(X1)|~inform_user(X2)|~x2_s(X3))).
+#
+#cnf(i_0_169, plain, (~repair_simple(X1)|~x2_s(esk19_0)|~x2_s(X2))).
+##
+#cnf(i_0_184, plain, (~repair_complex(X1)|~x2_s(esk20_0)|~x2_s(X2))).
+##
+#cnf(i_0_217, plain, (~inform_user(X1)|~x2_s(esk22_0)|~x2_s(X2))).
+#
+#cnf(i_0_228, plain, (~tau(X1)|~x2_s(esk21_0)|~x2_s(X2))).
+###
+#cnf(i_0_259, plain, (~x2_e(esk19_0)|~repair_simple(X1)|~x2_s(X2))).
+#
+#cnf(i_0_265, plain, (~x2_e(esk20_0)|~repair_complex(X1)|~x2_s(X2))).
+##
+#cnf(i_0_293, plain, (~inform_user(X1)|~x2_e(esk22_0)|~x2_s(X2))).
+#
+#cnf(i_0_316, plain, (~tau(X1)|~x2_e(esk21_0)|~x2_s(X2))).
+###
+#cnf(i_0_320, plain, (~restart_repair(esk5_0)|~restart_repair(esk6_0)|~a2_s(X1))).
+#
+#cnf(i_0_1058, plain, (~restart_repair(esk5_0)|~restart_repair(esk6_0))).
+#
+#cnf(i_0_107, plain, (~a2_s(esk5_0)|~a2_s(esk6_0)|~a2_s(X1))).
+#
+#cnf(i_0_112, plain, (~restart_repair(X1)|~a2_s(esk27_0)|~a2_s(esk28_0))).
+#
+#cnf(i_0_119, plain, (~a2_s(esk7_0)|~a2_s(esk8_0)|~a2_s(X1))).
+#
+#cnf(i_0_185, plain, (~x2_s(esk19_0)|~x2_s(esk20_0)|~x2_s(X1))).
+#
+#cnf(i_0_1062, plain, (x2_s(esk17_0)|~restart_repair(X1)|~x2_s(esk19_0)|~x2_s(esk20_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_1064, plain, (x2_s(esk17_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(esk19_0)|~x2_s(esk20_0))).
+#
+#cnf(i_0_1060, plain, (x2_s(esk27_0)|~restart_repair(X1)|~restart_repair(X2)|~x2_s(esk19_0)|~x2_s(esk20_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_205, plain, (~x2_s(esk7_0)|~a2_s(esk8_0)|~a2_s(X1))).
+#
+#cnf(i_0_1061, plain, (x2_s(esk5_0)|~restart_repair(X1)|~x2_s(esk19_0)|~x2_s(esk20_0)|~a2_s(esk14_0)|~a2_s(X2))).
+#
+#cnf(i_0_1065, plain, (x2_s(esk27_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~restart_repair(X2)|~x2_s(esk19_0)|~x2_s(esk20_0))).
+#
+#cnf(i_0_1066, plain, (x2_s(esk5_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(esk19_0)|~x2_s(esk20_0)|~a2_s(X2))).
+#
+#cnf(i_0_220, plain, (~restart_repair(esk27_0)|~restart_repair(X1)|~a2_s(esk28_0))).
+#
+#cnf(i_0_223, plain, (~restart_repair(esk5_0)|~a2_s(esk6_0)|~a2_s(X1))).
+#
+#cnf(i_0_229, plain, (~x2_s(esk22_0)|~x2_s(esk21_0)|~x2_s(X1))).
+#
+#cnf(i_0_1070, plain, (x2_s(esk17_0)|~restart_repair(X1)|~x2_s(esk22_0)|~x2_s(esk21_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_260, plain, (~x2_e(esk19_0)|~x2_s(esk20_0)|~x2_s(X1))).
+#
+#cnf(i_0_1072, plain, (x2_s(esk17_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(esk22_0)|~x2_s(esk21_0))).
+#
+#cnf(i_0_1068, plain, (x2_s(esk27_0)|~restart_repair(X1)|~restart_repair(X2)|~x2_s(esk22_0)|~x2_s(esk21_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_1069, plain, (x2_s(esk5_0)|~restart_repair(X1)|~x2_s(esk22_0)|~x2_s(esk21_0)|~a2_s(esk14_0)|~a2_s(X2))).
+#
+#cnf(i_0_266, plain, (~x2_e(esk20_0)|~x2_s(esk19_0)|~x2_s(X1))).
+#
+#cnf(i_0_1073, plain, (x2_s(esk27_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~restart_repair(X2)|~x2_s(esk22_0)|~x2_s(esk21_0))).
+#
+#cnf(i_0_1074, plain, (x2_s(esk5_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(esk22_0)|~x2_s(esk21_0)|~a2_s(X2))).
+#
+#cnf(i_0_268, plain, (~x2_e(esk19_0)|~x2_e(esk20_0)|~x2_s(X1))).
+#
+#cnf(i_0_294, plain, (~x2_e(esk22_0)|~x2_s(esk21_0)|~x2_s(X1))).
+#
+#cnf(i_0_317, plain, (~restart_repair(esk28_0)|~restart_repair(X1)|~a2_s(esk27_0))).
+#
+#cnf(i_0_318, plain, (~restart_repair(esk27_0)|~restart_repair(esk28_0)|~restart_repair(X1))).
+#
+#cnf(i_0_319, plain, (~restart_repair(esk6_0)|~a2_s(esk5_0)|~a2_s(X1))).
+#
+#cnf(i_0_321, plain, (~x2_e(esk21_0)|~x2_s(esk22_0)|~x2_s(X1))).
+#
+#cnf(i_0_323, plain, (~x2_e(esk22_0)|~x2_e(esk21_0)|~x2_s(X1))).
+#
+#cnf(i_0_340, plain, (~restart_repair(esk7_0)|~a2_s(esk8_0)|~a2_s(X1))).
+##
+#cnf(i_0_926, plain, (~restart_repair(X1)|~x2_s(esk30_0)|~a2_s(esk28_0))).
+#
+#cnf(i_0_930, plain, (~restart_repair(esk28_0)|~restart_repair(X1)|~x2_s(esk30_0))).
+#
+#cnf(i_0_946, plain, (~x2_s(esk30_0)|~a2_s(esk6_0)|~a2_s(X1))).
+#
+#cnf(i_0_948, plain, (~restart_repair(esk6_0)|~x2_s(esk30_0)|~a2_s(X1))).
+#
+#cnf(i_0_952, plain, (~restart_repair(X1)|~x2_s(esk4_0)|~a2_s(esk28_0))).
+#
+#cnf(i_0_956, plain, (~restart_repair(esk28_0)|~restart_repair(X1)|~x2_s(esk4_0))).
+#
+#cnf(i_0_972, plain, (~x2_s(esk4_0)|~a2_s(esk6_0)|~a2_s(X1))).
+#
+#cnf(i_0_974, plain, (~restart_repair(esk6_0)|~x2_s(esk4_0)|~a2_s(X1))).
+#
+#cnf(i_0_980, plain, (~restart_repair(X1)|~x2_s(esk30_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_984, plain, (~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(esk30_0))).
+#
+#cnf(i_0_989, plain, (~restart_repair(X1)|~x2_s(esk4_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_993, plain, (~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(esk4_0))).
+#
+#cnf(i_0_1031, plain, (~l_s(esk16_0)|~a2_s(esk8_0)|~a2_s(X1))).
+############
+#cnf(i_0_170, plain, (~restart_repair(X1)|~x2_s(X2)|~a2_s(esk13_0)|~a2_s(esk14_0))).
+####
+#cnf(i_0_1102, plain, (~restart_repair(X1)|~a2_s(esk13_0)|~a2_s(esk14_0))).
+#
+#cnf(i_0_222, plain, (~restart_repair(esk13_0)|~restart_repair(X1)|~x2_s(X2)|~a2_s(esk14_0))).
+###
+#cnf(i_0_1126, plain, (~restart_repair(esk13_0)|~restart_repair(X1)|~a2_s(esk14_0))).
+#
+#cnf(i_0_344, plain, (~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(X2)|~a2_s(esk13_0))).
+###
+#cnf(i_0_1147, plain, (~restart_repair(esk14_0)|~restart_repair(X1)|~a2_s(esk13_0))).
+#
+#cnf(i_0_345, plain, (~restart_repair(esk13_0)|~restart_repair(esk14_0)|~restart_repair(X1)|~x2_s(X2))).
+###
+#cnf(i_0_1165, plain, (~restart_repair(esk13_0)|~restart_repair(esk14_0)|~restart_repair(X1))).
+################
+# No proof found!
+# SZS status Satisfiable
+

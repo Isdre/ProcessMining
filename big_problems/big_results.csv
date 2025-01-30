@@ -1,17 +1,17 @@
-big_problems/hospital/satisfiability_0,% SZS status Satisfiable for tptp % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
-big_problems/hospital/satisfiability_25,% Refutation found. Thanks to Tanya! % SZS status Unsatisfiable for tptp % Termination reason: Refutation,# Proof found! # SZS status Unsatisfiable
+big_problems/hospital/satisfiability_0,% SZS status Satisfiable for tptp_0 % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
+big_problems/hospital/satisfiability_25,% Refutation found. Thanks to Tanya! % SZS status Unsatisfiable for tptp_25 % Termination reason: Refutation,# Proof found! # SZS status Unsatisfiable
 big_problems/hospital/comparison_0_25_equivalent,% Refutation found. Thanks to Tanya! % SZS status Theorem for tptp_EQUIVALENT % Termination reason: Refutation,# Proof found! # SZS status ContradictoryAxioms
 big_problems/hospital/comparison_0_25_implies,% Refutation found. Thanks to Tanya! % SZS status Theorem for tptp_IMPLIES % Termination reason: Refutation,# Proof found! # SZS status ContradictoryAxioms
 big_problems/hospital/thesis_0,% Refutation found. Thanks to Tanya! % SZS status Theorem for tptp_thesis % Termination reason: Refutation,# Proof found! # SZS status Theorem
 big_problems/hospital/thesis_1,% Refutation found. Thanks to Tanya! % SZS status Theorem for tptp_thesis % Termination reason: Refutation,# Proof found! # SZS status Theorem
-big_problems/bpic/satisfiability_0,% Refutation found. Thanks to Tanya! % SZS status Unsatisfiable for tptp % Termination reason: Refutation,# Proof found! # SZS status Unsatisfiable
-big_problems/bpic/satisfiability_25,% SZS status Satisfiable for tptp % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
+big_problems/bpic/satisfiability_0,% Refutation found. Thanks to Tanya! % SZS status Unsatisfiable for tptp_0 % Termination reason: Refutation,# Proof found! # SZS status Unsatisfiable
+big_problems/bpic/satisfiability_25,% SZS status Satisfiable for tptp_25 % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
 big_problems/bpic/comparison_0_25_equivalent,% Refutation found. Thanks to Tanya! % SZS status Theorem for tptp_EQUIVALENT % Termination reason: Refutation,# Proof found! # SZS status ContradictoryAxioms
 big_problems/bpic/comparison_0_25_implies,% Refutation found. Thanks to Tanya! % SZS status Theorem for tptp_IMPLIES % Termination reason: Refutation,# Proof found! # SZS status ContradictoryAxioms
 big_problems/bpic/thesis_0,% Refutation found. Thanks to Tanya! % SZS status Theorem for tptp_thesis % Termination reason: Refutation,# Proof found! # SZS status Theorem
 big_problems/bpic/thesis_1,% SZS status CounterSatisfiable for tptp_thesis % Termination reason: Satisfiable,# No proof found! # SZS status CounterSatisfiable
-big_problems/artificial/satisfiability_0,% SZS status Satisfiable for tptp % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
-big_problems/artificial/satisfiability_25,% SZS status Satisfiable for tptp % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
+big_problems/artificial/satisfiability_0,% SZS status Satisfiable for tptp_0 % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
+big_problems/artificial/satisfiability_25,% SZS status Satisfiable for tptp_25 % Termination reason: Satisfiable,# No proof found! # SZS status Satisfiable
 big_problems/artificial/comparison_0_25_equivalent,% SZS status CounterSatisfiable for tptp_EQUIVALENT % Termination reason: Satisfiable,# No proof found! # SZS status CounterSatisfiable
 big_problems/artificial/comparison_0_25_implies,% SZS status CounterSatisfiable for tptp_IMPLIES % Termination reason: Satisfiable,# No proof found! # SZS status CounterSatisfiable
 big_problems/artificial/thesis_0,% SZS status CounterSatisfiable for tptp_thesis % Termination reason: Satisfiable,# No proof found! # SZS status CounterSatisfiable

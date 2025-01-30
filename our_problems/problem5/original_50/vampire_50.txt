@@ -1,0 +1,337 @@
+% Running in auto input_syntax mode. Trying TPTP
+% SZS status Satisfiable for tptp_50
+% # SZS output start Saturation.
+cnf(u264,axiom,
+    archive_repair(sK0)).
+
+cnf(u279,axiom,
+    inform_user(sK1)).
+
+cnf(u288,axiom,
+    ~tau_b0(X2)).
+
+cnf(u297,axiom,
+    a2_s_b0(sK3)).
+
+cnf(u316,axiom,
+    ~restart_repair(X1)).
+
+cnf(u330,axiom,
+    ~l_s_b0(sK6)).
+
+cnf(u335,axiom,
+    x2_e_b1(sK6)).
+
+cnf(u343,axiom,
+    repair_complex(sK7)).
+
+cnf(u347,axiom,
+    ~repair_simple(sK8)).
+
+cnf(u352,axiom,
+    ~repair_simple(X2)).
+
+cnf(u358,axiom,
+    test_repair(sK10)).
+
+cnf(u366,axiom,
+    ~l_s_b0(sK12)).
+
+cnf(u371,axiom,
+    test_repair(sK12)).
+
+cnf(u375,axiom,
+    ~x2_s_b0(sK13)).
+
+cnf(u380,axiom,
+    x2_e_b0(sK13)).
+
+cnf(u388,axiom,
+    analyze_defect(sK15)).
+
+cnf(u396,axiom,
+    a2_e_b0(sK16)).
+
+cnf(u405,axiom,
+    a2_e_b0(sK17)).
+
+cnf(u420,axiom,
+    x2_e_b0(sK19)).
+
+cnf(u426,axiom,
+    x2_e_b1(sK22)).
+
+cnf(u435,axiom,
+    end(sK23)).
+
+cnf(u440,axiom,
+    x2_s_b1(sK24)).
+
+cnf(u234,axiom,
+    register(sK20)).
+
+cnf(u227,axiom,
+    ~l_s_b0(X0) | ~x2_e_b1(X0)).
+
+cnf(u216,axiom,
+    ~register(X0) | ~a2_e_b0(X0)).
+
+cnf(u209,axiom,
+    ~repair_simple(X0) | ~x2_s_b1(X0)).
+
+cnf(u516,axiom,
+    ~a2_e_b0(sK23)).
+
+cnf(u246,axiom,
+    ~test_repair(X0) | ~a2_s_b0(X0)).
+
+cnf(u239,axiom,
+    ~restart_repair(X0) | ~x2_s_b1(X0)).
+
+cnf(u512,axiom,
+    ~a2_s_b0(sK21)).
+
+cnf(u518,axiom,
+    ~x2_s_b0(sK1)).
+
+cnf(u492,axiom,
+    ~a2_e_b0(sK19)).
+
+cnf(u514,axiom,
+    ~a2_s_b0(sK12)).
+
+cnf(u506,axiom,
+    ~x2_s_b1(sK6)).
+
+cnf(u256,axiom,
+    ~register(X0) | ~end(X0)).
+
+cnf(u488,axiom,
+    ~a2_s_b0(sK20)).
+
+cnf(u478,axiom,
+    ~a2_s_b0(sK15)).
+
+cnf(u491,axiom,
+    ~a2_e_b0(sK13)).
+
+cnf(u500,axiom,
+    ~l_s_b0(sK10)).
+
+cnf(u522,axiom,
+    ~x2_e_b0(sK1)).
+
+cnf(u503,axiom,
+    ~x2_e_b1(sK12)).
+
+cnf(u496,axiom,
+    ~analyze_defect(sK23)).
+
+cnf(u222,axiom,
+    ~test_repair(X0) | ~a2_e_b0(X0)).
+
+cnf(u215,axiom,
+    ~register(X0) | ~a2_s_b0(X0)).
+
+cnf(u485,axiom,
+    ~repair_complex(sK6)).
+
+cnf(u204,axiom,
+    a2_s_b0(sK11)).
+
+cnf(u184,axiom,
+    ~x2_e_b0(X0) | ~x2_s_b0(X0)).
+
+cnf(u499,axiom,
+    ~x2_e_b1(sK21)).
+
+cnf(u237,axiom,
+    ~inform_user(X0) | ~tau_b0(X0)).
+
+cnf(u211,axiom,
+    ~tau_b0(X0) | ~x2_s_b0(X0)).
+
+cnf(u251,axiom,
+    ~tau_b0(X0) | ~x2_e_b0(X0)).
+
+cnf(u240,axiom,
+    ~restart_repair(X0) | ~x2_e_b1(X0)).
+
+cnf(u233,axiom,
+    ~archive_repair(X0) | ~a2_e_b0(X0)).
+
+cnf(u230,axiom,
+    ~test_repair(X0) | ~l_s_b0(X0)).
+
+cnf(u245,axiom,
+    ~l_s_b0(X0) | ~a2_s_b0(X0)).
+
+cnf(u226,axiom,
+    ~l_s_b0(X0) | ~x2_s_b1(X0)).
+
+cnf(u219,axiom,
+    ~x2_s_b0(X0) | ~a2_e_b0(X0)).
+
+cnf(u519,axiom,
+    ~archive_repair(sK20)).
+
+cnf(u517,axiom,
+    ~archive_repair(sK15)).
+
+cnf(u248,axiom,
+    ~end(X0) | ~a2_e_b0(X0)).
+
+cnf(u490,axiom,
+    ~a2_e_b0(sK9)).
+
+cnf(u513,axiom,
+    ~a2_s_b0(sK10)).
+
+cnf(u502,axiom,
+    ~x2_e_b1(sK10)).
+
+cnf(u190,axiom,
+    ~repair_complex(X0) | ~x2_s_b1(X0)).
+
+cnf(u183,axiom,
+    ~analyze_defect(X0) | ~a2_e_b0(X0)).
+
+cnf(u487,axiom,
+    ~archive_repair(sK23)).
+
+cnf(u498,axiom,
+    ~x2_s_b1(sK21)).
+
+cnf(u521,axiom,
+    ~end(sK20)).
+
+cnf(u509,axiom,
+    ~a2_s_b0(sK9)).
+
+cnf(u510,axiom,
+    ~a2_s_b0(sK13)).
+
+cnf(u221,axiom,
+    ~l_s_b0(X0) | ~a2_e_b0(X0)).
+
+cnf(u191,axiom,
+    ~x2_e_b1(X0) | ~repair_simple(X0)).
+
+cnf(u505,axiom,
+    ~a2_e_b0(sK0)).
+
+cnf(u495,axiom,
+    ~a2_e_b0(sK12)).
+
+cnf(u235,axiom,
+    l_s_b0(sK21)).
+
+cnf(u224,axiom,
+    ~end(X0) | ~analyze_defect(X0)).
+
+cnf(u254,axiom,
+    ~register(X0) | ~archive_repair(X0)).
+
+cnf(u247,axiom,
+    ~end(X0) | ~a2_s_b0(X0)).
+
+cnf(u236,axiom,
+    ~x2_e_b1(X0) | ~x2_s_b1(X0)).
+
+cnf(u520,axiom,
+    ~analyze_defect(sK20)).
+
+cnf(u210,axiom,
+    x2_s_b1(sK14)).
+
+cnf(u250,axiom,
+    ~analyze_defect(X0) | ~archive_repair(X0)).
+
+cnf(u243,axiom,
+    ~x2_s_b0(X0) | ~a2_s_b0(X0)).
+
+cnf(u232,axiom,
+    ~archive_repair(X0) | ~a2_s_b0(X0)).
+
+cnf(u225,axiom,
+    ~l_s_b0(X0) | ~restart_repair(X0)).
+
+cnf(u255,axiom,
+    ~register(X0) | ~analyze_defect(X0)).
+
+cnf(u244,axiom,
+    ~x2_e_b0(X0) | ~a2_s_b0(X0)).
+
+cnf(u486,axiom,
+    ~repair_complex(sK22)).
+
+cnf(u481,axiom,
+    ~x2_s_b0(sK19)).
+
+cnf(u482,axiom,
+    ~x2_s_b1(sK7)).
+
+cnf(u511,axiom,
+    ~a2_s_b0(sK19)).
+
+cnf(u493,axiom,
+    ~a2_e_b0(sK21)).
+
+cnf(u504,axiom,
+    ~a2_s_b0(sK0)).
+
+cnf(u494,axiom,
+    ~a2_e_b0(sK10)).
+
+cnf(u205,axiom,
+    ~x2_e_b1(X0) | ~repair_complex(X0)).
+
+cnf(u257,axiom,
+    ~inform_user(X0) | ~x2_e_b0(X0)).
+
+cnf(u182,axiom,
+    ~analyze_defect(X0) | ~a2_s_b0(X0)).
+
+cnf(u507,axiom,
+    ~x2_s_b1(sK22)).
+
+cnf(u489,axiom,
+    ~a2_e_b0(sK20)).
+
+cnf(u208,axiom,
+    ~end(X0) | ~archive_repair(X0)).
+
+cnf(u479,axiom,
+    ~a2_e_b0(sK15)).
+
+cnf(u201,axiom,
+    x2_s_b0(sK9)).
+
+cnf(u238,axiom,
+    ~repair_simple(X0) | ~repair_complex(X0)).
+
+cnf(u231,axiom,
+    ~test_repair(X0) | ~x2_e_b1(X0)).
+
+cnf(u220,axiom,
+    ~x2_e_b0(X0) | ~a2_e_b0(X0)).
+
+cnf(u515,axiom,
+    ~a2_s_b0(sK23)).
+
+cnf(u253,axiom,
+    ~inform_user(X0) | ~x2_s_b0(X0)).
+
+% # SZS output end Saturation.
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 525
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

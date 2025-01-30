@@ -1,0 +1,59 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for tptp_0
+% SZS output start Proof for tptp_0
+46. ! [X1] : (x2_s_a17(X1) => ((? [X4] : (a4_e_a6(X4) | a4_s_a6(X4)) & ~? [X3] : (x2_e_a22(X3) | x2_s_a18(X3))) | (~? [X2] : (a4_e_a6(X2) | a4_s_a6(X2)) & ? [X0] : (x2_e_a22(X0) | x2_s_a18(X0))))) [input]
+246. ? [X0] : x2_s_a18(X0) [input]
+268. ? [X0] : a4_s_a6(X0) [input]
+314. ? [X0] : x2_s_a17(X0) [input]
+376. ! [X0] : (x2_s_a17(X0) => ((? [X1] : (a4_e_a6(X1) | a4_s_a6(X1)) & ~? [X2] : (x2_e_a22(X2) | x2_s_a18(X2))) | (~? [X3] : (a4_e_a6(X3) | a4_s_a6(X3)) & ? [X4] : (x2_e_a22(X4) | x2_s_a18(X4))))) [rectify 46]
+514. ! [X0] : (((? [X1] : (a4_e_a6(X1) | a4_s_a6(X1)) & ! [X2] : (~x2_e_a22(X2) & ~x2_s_a18(X2))) | (! [X3] : (~a4_e_a6(X3) & ~a4_s_a6(X3)) & ? [X4] : (x2_e_a22(X4) | x2_s_a18(X4)))) | ~x2_s_a17(X0)) [ennf transformation 376]
+515. ! [X0] : ((? [X1] : (a4_e_a6(X1) | a4_s_a6(X1)) & ! [X2] : (~x2_e_a22(X2) & ~x2_s_a18(X2))) | (! [X3] : (~a4_e_a6(X3) & ~a4_s_a6(X3)) & ? [X4] : (x2_e_a22(X4) | x2_s_a18(X4))) | ~x2_s_a17(X0)) [flattening 514]
+813. (! [X3] : (~a4_e_a6(X3) & ~a4_s_a6(X3)) & ? [X4] : (x2_e_a22(X4) | x2_s_a18(X4))) | ~sP0 [predicate definition introduction]
+814. ! [X0] : ((? [X1] : (a4_e_a6(X1) | a4_s_a6(X1)) & ! [X2] : (~x2_e_a22(X2) & ~x2_s_a18(X2))) | sP0 | ~x2_s_a17(X0)) [definition folding 515,813]
+857. (! [X3] : (~a4_e_a6(X3) & ~a4_s_a6(X3)) & ? [X4] : (x2_e_a22(X4) | x2_s_a18(X4))) | ~sP0 [nnf transformation 813]
+858. (! [X0] : (~a4_e_a6(X0) & ~a4_s_a6(X0)) & ? [X1] : (x2_e_a22(X1) | x2_s_a18(X1))) | ~sP0 [rectify 857]
+859. ? [X1] : (x2_e_a22(X1) | x2_s_a18(X1)) => (x2_e_a22(sK25) | x2_s_a18(sK25)) [choice axiom]
+860. (! [X0] : (~a4_e_a6(X0) & ~a4_s_a6(X0)) & (x2_e_a22(sK25) | x2_s_a18(sK25))) | ~sP0 [skolemisation 858,859]
+861. ? [X1] : (a4_e_a6(X1) | a4_s_a6(X1)) => (a4_e_a6(sK26) | a4_s_a6(sK26)) [choice axiom]
+862. ! [X0] : (((a4_e_a6(sK26) | a4_s_a6(sK26)) & ! [X2] : (~x2_e_a22(X2) & ~x2_s_a18(X2))) | sP0 | ~x2_s_a17(X0)) [skolemisation 814,861]
+1038. ? [X0] : x2_s_a18(X0) => x2_s_a18(sK123) [choice axiom]
+1039. x2_s_a18(sK123) [skolemisation 246,1038]
+1061. ? [X0] : a4_s_a6(X0) => a4_s_a6(sK137) [choice axiom]
+1062. a4_s_a6(sK137) [skolemisation 268,1061]
+1122. ? [X0] : x2_s_a17(X0) => x2_s_a17(sK168) [choice axiom]
+1123. x2_s_a17(sK168) [skolemisation 314,1122]
+1271. ~a4_s_a6(X0) | ~sP0 [cnf transformation 860]
+1273. ~x2_s_a18(X2) | sP0 | ~x2_s_a17(X0) [cnf transformation 862]
+1638. x2_s_a18(sK123) [cnf transformation 1039]
+1680. a4_s_a6(sK137) [cnf transformation 1062]
+1774. x2_s_a17(sK168) [cnf transformation 1123]
+2084. 52 <=> ! [X0] : ~x2_s_a18(X0) [avatar definition]
+2085. ~x2_s_a18(X0) <- (52) [avatar component clause 2084]
+2114. 59 <=> sP0 [avatar definition]
+2122. 61 <=> ! [X0] : ~a4_s_a6(X0) [avatar definition]
+2123. ~a4_s_a6(X0) <- (61) [avatar component clause 2122]
+2124. ~59 | 61 [avatar split clause 1271,2122,2114]
+2135. 64 <=> ! [X0] : ~x2_s_a17(X0) [avatar definition]
+2136. ~x2_s_a17(X0) <- (64) [avatar component clause 2135]
+2150. 64 | 59 | 52 [avatar split clause 1273,2084,2114,2135]
+3531. $false <- (52) [resolution 2085,1638]
+3532. ~52 [avatar contradiction clause 3531]
+3557. $false <- (61) [resolution 2123,1680]
+3558. ~61 [avatar contradiction clause 3557]
+3581. $false <- (64) [resolution 2136,1774]
+3582. ~64 [avatar contradiction clause 3581]
+3583. $false [avatar sat refutation 2124,2150,3532,3558,3582]
+% SZS output end Proof for tptp_0
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 1752
+% Time elapsed: 0.008 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

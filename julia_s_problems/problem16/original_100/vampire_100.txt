@@ -1,0 +1,26 @@
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for tptp_100
+% SZS output start Proof for tptp_100
+7. ! [X0] : ~((repair_simple(X0) | l_s(X0)) & (test_repair(X0) | l_s(X0))) [input]
+39. ? [X0] : l_s(X0) [input]
+75. ! [X0] : ((~repair_simple(X0) & ~l_s(X0)) | (~test_repair(X0) & ~l_s(X0))) [ennf transformation 7]
+161. ? [X0] : l_s(X0) => l_s(sK22) [choice axiom]
+162. l_s(sK22) [skolemisation 39,161]
+189. ~l_s(X0) | ~l_s(X0) [cnf transformation 75]
+244. l_s(sK22) [cnf transformation 162]
+281. ~l_s(X0) [duplicate literal removal 189]
+386. $false [subsumption resolution 244,281]
+% SZS output end Proof for tptp_100
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Refutation
+
+% Memory used [KB]: 498
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)

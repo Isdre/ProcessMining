@@ -1,293 +1,37 @@
 # Initializing proof state
 # Scanning for AC axioms
 #
-#cnf(i_0_56, plain, (a2_s(esk24_0))).
+#cnf(i_0_67, negated_conjecture, (reject_request(esk29_0))).
 #
-#cnf(i_0_23, plain, (x2_s(esk13_0))).
+#cnf(i_0_2, plain, (x2_s(esk1_0))).
 #
-#cnf(i_0_63, plain, (l_s(esk27_0))).
+#cnf(i_0_8, plain, (a2_s(esk4_0))).
 #
-#cnf(i_0_11, plain, (~decide(X1)|~a2_s(X1))).
-#
-#cnf(i_0_32, plain, (register_request(esk17_0))).
+#cnf(i_0_1, plain, (~x2_e(X1)|~reject_request(X1))).
 #
 #cnf(i_0_66, negated_conjecture, (pay_compensation(esk29_0))).
 #
-#cnf(i_0_67, negated_conjecture, (reject_request(esk29_0))).
+#cnf(i_0_39, plain, (l_s(esk14_0))).
 #
-#cnf(i_0_5, plain, (~x2_s(X1)|~a2_s(X1))).
+#cnf(i_0_64, plain, (register_request(esk27_0))).
 #
-#cnf(i_0_15, plain, (a2_e(esk9_0)|~x2_e(X1))).
+#cnf(i_0_16, plain, (~x2_s(X1)|~reject_request(X1))).
 #
-#cnf(i_0_18, plain, (a2_e(esk10_0)|~check_ticket(X1))).
+#cnf(i_0_25, plain, (x2_e(esk10_0)|~examine_thoroughly(X1))).
 #
-#cnf(i_0_25, plain, (x2_e(esk14_0)|~examine_casually(X1))).
+#cnf(i_0_26, plain, (x2_e(esk10_0)|~examine_casually(X1))).
 #
-#cnf(i_0_68, plain, (~a2_s(esk13_0))).
+#cnf(i_0_24, plain, (a2_e(esk9_0)|~check_ticket(X1))).
 #
-#cnf(i_0_24, plain, (x2_e(esk14_0)|~examine_thoroughly(X1))).
+#cnf(i_0_68, plain, (~reject_request(esk1_0))).
 #
-#cnf(i_0_16, plain, (a2_e(esk9_0)|~x2_s(X1))).
+#cnf(i_0_42, plain, (a2_e(esk15_0)|~x2_e(X1))).
 #
-#cnf(i_0_2, plain, (decide(esk1_0)|~a2_s(X1))).
+#cnf(i_0_18, plain, (x2_e(esk8_0)|~reject_request(X1))).
 #
-#cnf(i_0_6, plain, (~check_ticket(X1)|~a2_s(X1))).
+#cnf(i_0_17, plain, (x2_e(esk8_0)|~pay_compensation(X1))).
 #
-#cnf(i_0_1, plain, (decide(esk1_0)|~a2_e(X1))).
-#
-#cnf(i_0_14, plain, (check_ticket(esk6_0)|~a2_s(X1))).
-#
-#cnf(i_0_47, plain, (x2_e(esk20_0)|~pay_compensation(X1))).
-#
-#cnf(i_0_4, plain, (~x2_e(X1)|~a2_s(X1))).
-#
-#cnf(i_0_46, plain, (x2_e(esk20_0)|~reject_request(X1))).
-#
-#cnf(i_0_72, plain, (a2_e(esk10_0)|~a2_s(X1))).
-#
-#cnf(i_0_73, plain, (a2_e(esk9_0)|~pay_compensation(X1))).
-#
-#cnf(i_0_43, plain, (~l_s(X1)|~a2_s(X1))).
-#
-#cnf(i_0_75, plain, (a2_e(esk9_0)|~reject_request(X1))).
-#
-#cnf(i_0_64, plain, (a2_e(esk28_0)|a2_s(esk28_0))).
-#
-#cnf(i_0_55, plain, (reinitiate_request(esk21_0)|~reinitiate_request(X1)|~a2_s(X2))).
-#
-#cnf(i_0_77, plain, (~a2_s(esk27_0))).
-#
-#cnf(i_0_78, plain, (reinitiate_request(esk21_0)|~reinitiate_request(X1))).
-###
-#cnf(i_0_34, plain, (~reinitiate_request(X1)|~a2_s(X1))).
-#
-#cnf(i_0_29, plain, (examine_casually(esk15_0)|~examine_casually(X1)|~x2_s(X2))).
-##
-#cnf(i_0_22, plain, (pay_compensation(esk11_0)|~pay_compensation(X1)|~x2_s(X2))).
-#
-#cnf(i_0_80, plain, (~reinitiate_request(esk24_0))).
-#
-#cnf(i_0_19, plain, (reject_request(esk12_0)|~reject_request(X1)|~x2_s(X2))).
-#
-#cnf(i_0_26, plain, (examine_thoroughly(esk16_0)|~examine_thoroughly(X1)|~x2_s(X2))).
-##
-#cnf(i_0_10, plain, (~decide(X1)|~a2_e(X1))).
-#
-#cnf(i_0_44, plain, (x2_e(esk19_0)|x2_s(esk18_0)|~decide(X1))).
-#
-#cnf(i_0_7, plain, (decide(esk3_0)|a2_s(esk2_0)|~l_s(X1))).
-#
-#cnf(i_0_92, plain, (a2_s(esk2_0)|~l_s(X1)|~a2_s(esk3_0))).
-#
-#cnf(i_0_50, plain, (~x2_s(X1)|~a2_e(X1))).
-#
-#cnf(i_0_94, plain, (a2_s(esk2_0)|~a2_s(esk3_0))).
-#
-#cnf(i_0_95, plain, (a2_s(esk28_0)|~x2_s(esk28_0))).
-#
-#cnf(i_0_91, plain, (a2_s(esk2_0)|~l_s(X1)|~a2_e(esk3_0))).
-#
-#cnf(i_0_51, plain, (~check_ticket(X1)|~a2_e(X1))).
-#
-#cnf(i_0_57, plain, (decide(esk26_0)|a2_s(esk25_0)|~reinitiate_request(X1))).
-#
-#cnf(i_0_101, plain, (a2_s(esk25_0)|~reinitiate_request(X1)|~a2_e(esk26_0))).
-#
-#cnf(i_0_102, plain, (a2_s(esk25_0)|~reinitiate_request(X1)|~a2_s(esk26_0))).
-#
-#cnf(i_0_49, plain, (~x2_e(X1)|~a2_e(X1))).
-#
-#cnf(i_0_8, plain, (l_s(esk4_0)|decide(esk5_0)|~register_request(X1))).
-#
-#cnf(i_0_107, plain, (l_s(esk4_0)|~register_request(X1)|~a2_s(esk5_0))).
-#
-#cnf(i_0_109, plain, (l_s(esk4_0)|~a2_s(esk5_0))).
-#
-#cnf(i_0_36, plain, (~x2_s(X1)|~decide(X1))).
-#
-#cnf(i_0_112, plain, (l_s(esk4_0)|~register_request(X1)|~x2_s(esk5_0))).
-#
-#cnf(i_0_116, plain, (l_s(esk4_0)|~x2_s(esk5_0))).
-#
-#cnf(i_0_113, plain, (a2_s(esk2_0)|~l_s(X1)|~x2_s(esk3_0))).
-#
-#cnf(i_0_35, plain, (~x2_e(X1)|~decide(X1))).
-#
-#cnf(i_0_118, plain, (a2_s(esk2_0)|~x2_s(esk3_0))).
-#
-#cnf(i_0_106, plain, (l_s(esk4_0)|~register_request(X1)|~a2_e(esk5_0))).
-#
-#cnf(i_0_111, plain, (a2_s(esk25_0)|~reinitiate_request(X1)|~x2_s(esk26_0))).
-#
-#cnf(i_0_42, plain, (~l_s(X1)|~decide(X1))).
-#
-#cnf(i_0_127, plain, (l_s(esk4_0)|~register_request(X1)|~l_s(esk5_0))).
-#
-#cnf(i_0_131, plain, (l_s(esk4_0)|~l_s(esk5_0))).
-#
-#cnf(i_0_121, plain, (a2_s(esk25_0)|~reinitiate_request(X1)|~x2_e(esk26_0))).
-#
-#cnf(i_0_59, plain, (~register_request(X1)|~decide(X1))).
-#
-#cnf(i_0_122, plain, (l_s(esk4_0)|~register_request(X1)|~x2_e(esk5_0))).
-#
-#cnf(i_0_123, plain, (a2_s(esk2_0)|~l_s(X1)|~x2_e(esk3_0))).
-#
-#cnf(i_0_126, plain, (a2_s(esk25_0)|~reinitiate_request(X1)|~l_s(esk26_0))).
-#
-#cnf(i_0_33, plain, (~reinitiate_request(X1)|~decide(X1))).
-#
-#cnf(i_0_139, plain, (l_s(esk4_0)|~reinitiate_request(esk5_0)|~register_request(X1))).
-#
-#cnf(i_0_143, plain, (l_s(esk4_0)|~reinitiate_request(esk5_0))).
-#
-#cnf(i_0_140, plain, (a2_s(esk2_0)|~reinitiate_request(esk3_0)|~l_s(X1))).
-#
-#cnf(i_0_3, plain, (~examine_casually(X1)|~x2_s(X1))).
-#
-#cnf(i_0_145, plain, (a2_s(esk2_0)|~reinitiate_request(esk3_0))).
-#
-#cnf(i_0_128, plain, (a2_s(esk2_0)|~l_s(esk3_0)|~l_s(X1))).
-#
-#cnf(i_0_133, plain, (a2_s(esk25_0)|~reinitiate_request(X1)|~register_request(esk26_0))).
-#
-#cnf(i_0_48, plain, (~x2_e(X1)|~x2_s(X1))).
-#
-#cnf(i_0_134, plain, (l_s(esk4_0)|~register_request(esk5_0)|~register_request(X1))).
-#
-#cnf(i_0_135, plain, (a2_s(esk2_0)|~register_request(esk3_0)|~l_s(X1))).
-#
-#cnf(i_0_138, plain, (a2_s(esk25_0)|~reinitiate_request(esk26_0)|~reinitiate_request(X1))).
-#
-#cnf(i_0_38, plain, (~l_s(X1)|~x2_s(X1))).
-#
-#cnf(i_0_13, plain, (x2_e(esk8_0)|x2_s(esk7_0)|~a2_s(X1))).
-#
-#cnf(i_0_166, plain, (x2_s(esk7_0)|~a2_e(esk8_0)|~a2_s(X1))).
-#
-#cnf(i_0_167, plain, (x2_s(esk7_0)|~x2_s(esk8_0)|~a2_s(X1))).
-#
-#cnf(i_0_159, plain, (~x2_s(esk27_0))).
-#
-#cnf(i_0_165, plain, (x2_s(esk7_0)|~a2_s(esk8_0)|~a2_s(X1))).
-#
-#cnf(i_0_45, plain, (x2_e(esk19_0)|x2_s(esk18_0)|~l_s(X1))).
-#
-#cnf(i_0_170, plain, (x2_s(esk18_0)|~l_s(X1)|~a2_s(esk19_0))).
-#
-#cnf(i_0_40, plain, (~register_request(X1)|~x2_s(X1))).
-#
-#cnf(i_0_173, plain, (x2_s(esk18_0)|~a2_s(esk19_0))).
-#
-#cnf(i_0_172, plain, (x2_s(esk18_0)|~l_s(X1)|~x2_s(esk19_0))).
-#
-#cnf(i_0_180, plain, (x2_s(esk18_0)|~x2_s(esk19_0))).
-#
-#cnf(i_0_178, plain, (~x2_s(esk17_0))).
-#
-#cnf(i_0_171, plain, (x2_s(esk18_0)|~l_s(X1)|~a2_e(esk19_0))).
-#
-#cnf(i_0_28, plain, (examine_thoroughly(esk16_0)|examine_casually(esk15_0)|~x2_s(X1))).
-#
-#cnf(i_0_21, plain, (reject_request(esk12_0)|pay_compensation(esk11_0)|~x2_s(X1))).
-#
-#cnf(i_0_17, plain, (~pay_compensation(X1)|~x2_s(X1))).
-#
-#cnf(i_0_89, plain, (x2_e(esk19_0)|x2_s(esk18_0)|~a2_e(X1))).
-###
-#cnf(i_0_188, negated_conjecture, (~x2_s(esk29_0))).
-#
-#cnf(i_0_192, plain, (x2_s(esk18_0)|~a2_e(esk19_0)|~a2_e(X1))).
-#
-#cnf(i_0_90, plain, (x2_e(esk19_0)|x2_s(esk18_0)|~a2_s(X1))).
-#
-#cnf(i_0_196, plain, (x2_s(esk18_0)|~a2_e(esk19_0)|~a2_s(X1))).
-#
-#cnf(i_0_61, plain, (~reject_request(X1)|~x2_s(X1))).
-###
-#cnf(i_0_199, plain, (pay_compensation(esk11_0)|~x2_s(esk12_0)|~x2_s(X1))).
-##
-#cnf(i_0_164, plain, (x2_s(esk7_0)|a2_e(esk9_0)|~a2_s(X1))).
-#
-#cnf(i_0_203, plain, (x2_s(esk7_0)|~x2_s(esk9_0)|~a2_s(X1))).
-#
-#cnf(i_0_169, plain, (x2_s(esk18_0)|a2_e(esk9_0)|~l_s(X1))).
-#
-#cnf(i_0_12, plain, (~examine_thoroughly(X1)|~x2_s(X1))).
-#
-#cnf(i_0_205, plain, (x2_s(esk18_0)|~l_s(X1)|~x2_s(esk9_0))).
-#
-#cnf(i_0_208, plain, (x2_s(esk18_0)|~x2_s(esk9_0))).
-#
-#cnf(i_0_206, plain, (examine_casually(esk15_0)|~x2_s(esk16_0)|~x2_s(X1))).
-#
-#cnf(i_0_31, plain, (~x2_e(X1)|~examine_casually(X1))).
-#
-#cnf(i_0_214, plain, (x2_e(esk14_0)|~x2_s(esk16_0)|~x2_s(X1))).
-##
-#cnf(i_0_185, plain, (x2_e(esk14_0)|examine_casually(esk15_0)|~x2_s(X1))).
-#
-#cnf(i_0_41, plain, (~examine_thoroughly(X1)|~examine_casually(X1))).
-#
-#cnf(i_0_223, plain, (x2_e(esk14_0)|~x2_s(X1))).
-###
-#cnf(i_0_37, plain, (~l_s(X1)|~x2_e(X1))).
-#
-#cnf(i_0_236, plain, (x2_s(esk18_0)|~l_s(esk19_0)|~a2_e(X1))).
-#
-#cnf(i_0_243, plain, (x2_s(esk18_0)|~pay_compensation(X1)|~l_s(esk19_0))).
-#
-#cnf(i_0_247, negated_conjecture, (x2_s(esk18_0)|~l_s(esk19_0))).
-#
-#cnf(i_0_39, plain, (~register_request(X1)|~x2_e(X1))).
-#
-#cnf(i_0_253, plain, (x2_s(esk18_0)|~register_request(esk19_0)|~a2_e(X1))).
-#
-#cnf(i_0_260, plain, (x2_s(esk18_0)|~pay_compensation(X1)|~register_request(esk19_0))).
-#
-#cnf(i_0_264, negated_conjecture, (x2_s(esk18_0)|~register_request(esk19_0))).
-#
-#cnf(i_0_30, plain, (~pay_compensation(X1)|~x2_e(X1))).
-#
-#cnf(i_0_270, plain, (x2_s(esk18_0)|~pay_compensation(esk19_0)|~a2_e(X1))).
-#
-#cnf(i_0_278, plain, (x2_s(esk18_0)|~reject_request(X1)|~pay_compensation(esk19_0))).
-#
-#cnf(i_0_281, negated_conjecture, (x2_s(esk18_0)|~pay_compensation(esk19_0))).
-#
-#cnf(i_0_62, plain, (~reject_request(X1)|~x2_e(X1))).
-#
-#cnf(i_0_287, plain, (x2_s(esk18_0)|~reject_request(esk19_0)|~a2_e(X1))).
-###
-#cnf(i_0_58, plain, (~examine_thoroughly(X1)|~x2_e(X1))).
-#
-#cnf(i_0_239, plain, (x2_s(esk7_0)|~l_s(esk8_0)|~a2_s(X1))).
-###
-#cnf(i_0_60, plain, (~register_request(X1)|~l_s(X1))).
-#
-#cnf(i_0_256, plain, (x2_s(esk7_0)|~register_request(esk8_0)|~a2_s(X1))).
-###
-#cnf(i_0_300, plain, (~l_s(esk17_0))).
-#
-#cnf(i_0_273, plain, (x2_s(esk7_0)|~pay_compensation(esk8_0)|~a2_s(X1))).
-#
-#cnf(i_0_286, plain, (x2_s(esk18_0)|~reject_request(esk19_0)|~l_s(X1))).
-#
-#cnf(i_0_288, plain, (x2_s(esk18_0)|~reject_request(esk19_0)|~a2_s(X1))).
-#
-#cnf(i_0_65, plain, (~reinitiate_request(X1)|~l_s(X1))).
-#
-#cnf(i_0_290, plain, (x2_s(esk7_0)|~reject_request(esk8_0)|~a2_s(X1))).
-##
-#cnf(i_0_293, plain, (x2_s(esk18_0)|~reject_request(esk19_0)|~x2_s(X1))).
-#
-#cnf(i_0_301, plain, (~reinitiate_request(esk27_0))).
-#
-#cnf(i_0_294, plain, (x2_s(esk18_0)|~reject_request(esk19_0)|~pay_compensation(X1))).
-#
-#cnf(i_0_295, plain, (x2_s(esk18_0)|~reject_request(esk19_0)|~reject_request(X1))).
-##
-#cnf(i_0_9, plain, (~reject_request(X1)|~pay_compensation(X1))).
+#cnf(i_0_5, plain, (~pay_compensation(X1)|~reject_request(X1))).
 
 # Proof found!
 # SZS status Theorem

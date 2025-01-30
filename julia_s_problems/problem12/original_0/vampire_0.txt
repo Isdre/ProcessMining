@@ -1,0 +1,277 @@
+% Running in auto input_syntax mode. Trying TPTP
+% SZS status Satisfiable for tptp_0
+% # SZS output start Saturation.
+cnf(u199,axiom,
+    x2_s(sK1)).
+
+cnf(u202,axiom,
+    ~x2_e(sK1)).
+
+cnf(u215,axiom,
+    x2_s(sK3)).
+
+cnf(u218,axiom,
+    ~x2_e(sK3)).
+
+cnf(u224,axiom,
+    check_ticket(sK4)).
+
+cnf(u232,axiom,
+    x2_e(sK5)).
+
+cnf(u236,axiom,
+    ~reject_request(X0)).
+
+cnf(u244,axiom,
+    a2_e(sK6)).
+
+cnf(u252,axiom,
+    x2_e(sK7)).
+
+cnf(u256,axiom,
+    ~examine_casually(X0)).
+
+cnf(u264,axiom,
+    decide(sK8)).
+
+cnf(u270,axiom,
+    a2_s(sK9)).
+
+cnf(u282,axiom,
+    a2_e(sK11)).
+
+cnf(u291,axiom,
+    examine_thoroughly(sK12)).
+
+cnf(u303,axiom,
+    pay_compensation(sK14)).
+
+cnf(u322,axiom,
+    ~reinitiate_request(X1)).
+
+cnf(u346,axiom,
+    l_s(sK19)).
+
+cnf(u349,axiom,
+    ~decide(sK19)).
+
+cnf(u355,axiom,
+    a2_s(sK21)).
+
+cnf(u190,axiom,
+    ~examine_thoroughly(X0) | ~x2_s(X0)).
+
+cnf(u165,axiom,
+    ~l_s(X0) | ~decide(X0)).
+
+cnf(u146,axiom,
+    ~register_request(X0) | ~x2_s(X0)).
+
+cnf(u383,axiom,
+    ~a2_s(sK8)).
+
+cnf(u186,axiom,
+    ~register_request(X0) | ~l_s(X0)).
+
+cnf(u409,axiom,
+    ~x2_e(sK11)).
+
+cnf(u128,axiom,
+    ~x2_e(X0) | ~reject_request(X0)).
+
+cnf(u179,axiom,
+    ~pay_compensation(X0) | ~x2_s(X0)).
+
+cnf(u168,axiom,
+    ~reinitiate_request(X0) | ~decide(X0)).
+
+cnf(u410,axiom,
+    ~x2_s(sK10)).
+
+cnf(u399,axiom,
+    ~x2_e(sK12)).
+
+cnf(u161,axiom,
+    ~decide(X0) | ~x2_s(X0)).
+
+cnf(u392,axiom,
+    ~x2_e(sK21)).
+
+cnf(u421,axiom,
+    ~x2_s(sK14)).
+
+cnf(u191,axiom,
+    register_request(sK20)).
+
+cnf(u422,axiom,
+    ~l_s(sK20)).
+
+cnf(u418,axiom,
+    ~decide(sK10)).
+
+cnf(u417,axiom,
+    ~a2_s(sK19)).
+
+cnf(u154,axiom,
+    ~check_ticket(X0) | ~a2_e(X0)).
+
+cnf(u147,axiom,
+    ~register_request(X0) | ~x2_e(X0)).
+
+cnf(u136,axiom,
+    ~check_ticket(X0) | ~a2_s(X0)).
+
+cnf(u129,axiom,
+    x2_s(sK0)).
+
+cnf(u407,axiom,
+    ~x2_s(sK11)).
+
+cnf(u187,axiom,
+    ~register_request(X0) | ~decide(X0)).
+
+cnf(u389,axiom,
+    ~x2_s(sK21)).
+
+cnf(u400,axiom,
+    ~x2_e(sK0)).
+
+cnf(u166,axiom,
+    l_s(sK10)).
+
+cnf(u148,axiom,
+    ~examine_thoroughly(X0) | ~x2_e(X0)).
+
+cnf(u390,axiom,
+    ~x2_e(sK2)).
+
+cnf(u141,axiom,
+    ~pay_compensation(X0) | ~x2_e(X0)).
+
+cnf(u188,axiom,
+    ~examine_casually(X0) | ~x2_e(X0)).
+
+cnf(u412,axiom,
+    ~x2_s(sK8)).
+
+cnf(u162,axiom,
+    ~l_s(X0) | ~x2_e(X0)).
+
+cnf(u155,axiom,
+    ~a2_e(X0) | ~x2_s(X0)).
+
+cnf(u386,axiom,
+    ~a2_s(sK4)).
+
+cnf(u137,axiom,
+    ~a2_s(X0) | ~x2_s(X0)).
+
+cnf(u415,axiom,
+    ~x2_e(sK8)).
+
+cnf(u397,axiom,
+    ~x2_s(sK20)).
+
+cnf(u408,axiom,
+    ~x2_e(sK6)).
+
+cnf(u398,axiom,
+    ~x2_e(sK20)).
+
+cnf(u167,axiom,
+    ~reinitiate_request(X0) | ~a2_s(X0)).
+
+cnf(u156,axiom,
+    ~a2_e(X0) | ~x2_e(X0)).
+
+cnf(u149,axiom,
+    ~examine_casually(X0) | ~examine_thoroughly(X0)).
+
+cnf(u130,axiom,
+    ~decide(X0) | ~a2_s(X0)).
+
+cnf(u411,axiom,
+    ~x2_s(sK19)).
+
+cnf(u393,axiom,
+    ~x2_e(sK14)).
+
+cnf(u163,axiom,
+    ~decide(X0) | ~x2_e(X0)).
+
+cnf(u423,axiom,
+    ~decide(sK20)).
+
+cnf(u416,axiom,
+    ~a2_s(sK10)).
+
+cnf(u405,axiom,
+    ~a2_e(sK4)).
+
+cnf(u142,axiom,
+    ~reinitiate_request(X0) | ~l_s(X0)).
+
+cnf(u135,axiom,
+    a2_s(sK2)).
+
+cnf(u185,axiom,
+    ~examine_casually(X0) | ~x2_s(X0)).
+
+cnf(u164,axiom,
+    ~l_s(X0) | ~a2_s(X0)).
+
+cnf(u406,axiom,
+    ~x2_s(sK6)).
+
+cnf(u388,axiom,
+    ~x2_s(sK9)).
+
+cnf(u138,axiom,
+    ~a2_s(X0) | ~x2_e(X0)).
+
+cnf(u131,axiom,
+    ~decide(X0) | ~a2_e(X0)).
+
+cnf(u391,axiom,
+    ~x2_e(sK9)).
+
+cnf(u384,axiom,
+    ~a2_e(sK8)).
+
+cnf(u160,axiom,
+    ~l_s(X0) | ~x2_s(X0)).
+
+cnf(u150,axiom,
+    ~x2_s(X0) | ~x2_e(X0)).
+
+cnf(u143,axiom,
+    ~x2_s(X0) | ~reject_request(X0)).
+
+cnf(u132,axiom,
+    ~pay_compensation(X0) | ~reject_request(X0)).
+
+cnf(u413,axiom,
+    ~x2_e(sK10)).
+
+cnf(u424,axiom,
+    ~x2_s(sK12)).
+
+cnf(u387,axiom,
+    ~x2_s(sK2)).
+
+cnf(u414,axiom,
+    ~x2_e(sK19)).
+
+% # SZS output end Saturation.
+% ------------------------------
+% Version: Vampire 4.9 (commit 5ad494e78 on 2024-06-14 14:05:27 +0100)
+% Linked with Z3 4.12.3.0 79bbbf76d0c123481c8ca05cd3a98939270074d3 z3-4.8.4-7980-g79bbbf76d
+% Termination reason: Satisfiable
+
+% Memory used [KB]: 511
+% Time elapsed: 0.002 s
+% ------------------------------
+% ------------------------------
+
+perf_event_open failed (instruction limiting will be disabled): Permission denied
+(If you are seeing 'Permission denied' ask your admin to run 'sudo sysctl -w kernel.perf_event_paranoid=-1' for you.)
