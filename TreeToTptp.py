@@ -270,6 +270,9 @@ class Parallelism:
         elif len(labelled_expression) == 3:
             pattern_name = 'And3'
             labelled_expression = ['a3_s'] + labelled_expression + ['a3_e']
+        elif len(labelled_expression) == 4:
+            pattern_name = 'And4'
+            labelled_expression = ['a4_s'] + labelled_expression + ['a4_e']
         else:
             raise Exception("pattern does not exist")
         new_labelled_expression = "(" + str(pattern_label_number) + "]" + ",".join(
@@ -673,6 +676,8 @@ class TreeToTptp:
         return pattern_expression, '\n'.join(results), tptp
 
 
+import graphviz
+
 if __name__ == "__main__":
     # Load the logs
     # ----------------------------------------------
@@ -680,7 +685,7 @@ if __name__ == "__main__":
     # log_1 = pm4py.read_xes('Data/bpic2012.xes')
     # ----------------------------------------------
     # problem2 A noise 0.5 B noise 1
-    log_1 = pm4py.format_dataframe(pd.read_csv("Data/repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
+    # log_1 = pm4py.format_dataframe(pd.read_csv("Data/repairExample.csv", sep=','), case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
     # ----------------------------------------------
     # problem6 A noise 0.5 B noise 0.25
     # log_1 = pm4py.read_xes('Hospital Billing - Event Log.xes')
@@ -695,8 +700,68 @@ if __name__ == "__main__":
     # problem7 A noise 0.25 B noise 0.5
     # log_1 = pm4py.read_xes('Data/log_3_1732138120.xes')
 
-    process_tree_1 = pm4py.discover_process_tree_inductive(
-        log_1,0.25, activity_key='concept:name', case_id_key='case:concept:name', timestamp_key='time:timestamp')
-    pm4py.view_process_tree(process_tree_1)
+    log_1 = pm4py.read_xes('Data/running-example.xes')
 
-    TreeToTptp().tree_to_tptp(process_tree_1, "problem.txt")
+    def create_tree_graph(process_tree, output_file="process_tree"):
+        if not output_file.endswith('.png'):
+            output_file = output_file + '.png'
+
+        dot = graphviz.Digraph()
+        dot.attr(rankdir='TB')
+
+        def add_nodes_edges(tree, parent_id=None, counter=[0]):
+            current_id = str(counter[0])
+            counter[0] += 1
+
+            if tree.children:
+                label = str(tree.operator)
+                label = 'seq' if label == '->' else 'xor' if label == 'X' else 'loop' if label == '*' else 'and' if label == '+' else label
+                dot.node(current_id, label, shape='box')
+            else:
+                if tree.label is None:
+                    dot.node(current_id, "", shape='circle',
+                             style='filled', fillcolor='black', width='0.3')
+                else:
+                    dot.node(current_id, tree.label, shape='oval')
+
+            if parent_id is not None:
+                dot.edge(str(parent_id), current_id)
+
+            for child in tree.children:
+                add_nodes_edges(child, int(current_id), counter)
+
+        add_nodes_edges(process_tree)
+        dot.render(output_file[:-4], format='png', cleanup=True)
+
+        if not os.path.exists(output_file):
+            raise FileNotFoundError(f"Failed to create image file: {output_file}")
+
+        return output_file
+
+    def run_satisfiability(folder_name, log, threshold, prefix='', use_julia=False):
+        try:
+            os.makedirs(folder_name, exist_ok=True)
+
+            process_tree = pm4py.discover_process_tree_inductive(
+                log, threshold, activity_key='concept:name', case_id_key='case:concept:name',
+                timestamp_key='time:timestamp')
+
+            expr, spec, tptp = TreeToTptp(prefix).tree_to_tptp(process_tree)
+
+            with open(f'{folder_name}/expression_{int(threshold * 100)}.txt', 'w') as f:
+                f.write(expr)
+            with open(f'{folder_name}/specification_{int(threshold * 100)}.txt', 'w') as f:
+                f.write(spec)
+            with open(f'{folder_name}/tptp_{int(threshold * 100)}.p', 'w') as f:
+                f.write(tptp)
+
+
+            create_tree_graph(process_tree, f'{folder_name}/process_tree_{int(threshold * 100)}.png')
+
+            return folder_name
+        except Exception as e:
+            print(e)
+            return folder_name, f'Error: {e}', f'Error: {e}'
+
+    run_satisfiability("run_satisfiability",log_1,0)
+

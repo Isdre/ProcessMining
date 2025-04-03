@@ -433,8 +433,7 @@ class WorkflowPattern:
                 temp_arg = ""
 
         if len(arguments) != number_of_arguments:
-            raise Exception(f"Found arguments ({
-                            arguments}) different from the required number ({number_of_arguments})")
+            raise Exception(f"Found arguments ({arguments}) different from the required number ({number_of_arguments})")
         return arguments
 
     @staticmethod
@@ -579,11 +578,11 @@ if __name__ == "__main__":
     # Load the logs
     # ----------------------------------------------
     # problem4 A noise 0.25 B noise 0.5
-    # log_1 = pm4py.read_xes('Data/bpic2012.xes')
+    log_1 = pm4py.read_xes('Data/bpic2012.xes')
     # ----------------------------------------------
     # problem2 A noise 0.5 B noise 1
-    log_1 = pm4py.format_dataframe(pd.read_csv("Data/repairExample.csv", sep=','),
-                                   case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
+    # log_1 = pm4py.format_dataframe(pd.read_csv("Data/repairExample.csv", sep=','),
+    #                                case_id='Case ID', activity_key='Activity', timestamp_key='Start Timestamp')
     # ----------------------------------------------
     # problem6 A noise 0.5 B noise 0.25
     # log_1 = pm4py.read_xes('Hospital Billing - Event Log.xes')
@@ -600,7 +599,7 @@ if __name__ == "__main__":
     #
     # log_1 = pm4py.read_xes("Data/running-example.xes")
 
-    tree_1 = pm4py.discover_process_tree_inductive(log_1, noise_threshold=1.0)
+    tree_1 = pm4py.discover_process_tree_inductive(log_1, noise_threshold=0.25)
 
     W1 = str(tree_1)
 
